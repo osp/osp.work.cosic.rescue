@@ -1,0 +1,10 @@
+.svn
+*~
+*.pyc
+*.pid
+*.DS_Store
+*.rej
+*.orig
+venv
+*.db
+*.swp
