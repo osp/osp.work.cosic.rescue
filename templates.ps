@@ -1,0 +1,38 @@
+% dictionary template:
+/mydict 24 dict def
+mydict begin
+
+end %mydict
+
+% procedure template:
+/newline								% - newline -
+{ %def
+	% this procedure will simulate “newline”
+	% on a line printer
+} bind def
+
+% conditional template:
+currentgray 0.5 gt { %ifelse
+
+}{ %else
+
+} ifelse
+
+% loop template:
+0 10 360 { %for
+
+} for
+
+% combination template:
+/mydict 24 dict def
+mydict begin
+	/newline							% - newline -
+	{ %def
+		currentpoint pop 550 gt { %ifelse
+		}{ %else
+			0 10 360 { %for
+			} for
+		} ifelse
+	} bind def
+end
+

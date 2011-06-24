@@ -1,0 +1,13 @@
+%!
+% randlines
+
+/foo {
+    rand 200 mod rand 200 mod moveto
+    rand 200 mod rand 200 mod lineto
+    stroke
+} def
+realtime srand
+%/Times-Bold findfont 20 scalefont setfont
+%10 10 moveto (Hello World!) show
+100 { foo } repeat
+showpage
