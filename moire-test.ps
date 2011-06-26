@@ -1,0 +1,32 @@
+%!
+
+/++ {
+	dup load
+	15 add
+	def
+} def
+
+/x 0 def
+/y 0 def
+
+/gen {
+	x y 10 0 360 arc closepath
+	fill
+	/x ++
+	/y ++
+} def
+
+gen
+
+0 10 200 { %for 
+	dup dup add 5 2 index 340 arc closepath
+	stroke
+} for
+
+
+% working dot accumulator
+0 10 200 { %for
+	dup add dup
+	10 0 360 arc closepath
+	stroke
+} for
