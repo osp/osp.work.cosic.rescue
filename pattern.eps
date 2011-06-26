@@ -1,0 +1,78 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 200 200
+%%LanguageLevel: 2
+/eps_state save def
+/showpage { } def
+%/foo {
+    %rand 200 mod rand 200 mod moveto
+    %rand 200 mod rand 200 mod lineto
+    %stroke
+%} def
+%realtime srand
+%100 { foo } repeat
+/circle {
+    0 0 2 0 360 arc closepath
+    fill
+} def
+
+%1 setgray
+%circle
+
+%0 10 1000 {
+    %0 2 0 360 arc closepath
+    %fill
+%} for
+
+2 2 scale
+100 100 translate
+
+0 0 1 setrgbcolor
+
+0 6 100 { 
+    /x exch def 
+    0 6 100 { 
+        /y exch def 
+        x y 2 0 360 arc closepath 
+        fill 
+    } for 
+} for
+
+50 50 translate
+30 rotate
+-50 -50 translate
+
+1 0 0 setrgbcolor
+
+0 6 100 { 
+    /x exch def 
+    0 6 100 { 
+        /y exch def 
+        x y 2 0 360 arc closepath 
+        fill 
+    } for 
+} for
+
+%5 rotate
+
+%0 6 100 { 
+    %/x exch def 
+    %0 6 100 { 
+        %/y exch def 
+        %x y 2 0 360 arc closepath 
+        %fill 
+    %} for 
+%} for
+
+%5 rotate
+
+%0 6 100 { 
+    %/x exch def 
+    %0 6 100 { 
+        %/y exch def 
+        %x y 2 0 360 arc closepath 
+        %fill 
+    %} for 
+%} for
+
+showpage
+eps_state restore
