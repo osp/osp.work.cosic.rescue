@@ -1,0 +1,32 @@
+%!
+%%BeginFont: UserFont
+14 dict begin
+/FontName /UserFont def
+/FontType 3 def
+/FontMatrix [ .001 0 0 .001 0 0 ] def
+/FontBoundingBox [ 0 0 1000 1000 ] def
+/Encoding /StandardEncoding load def
+/BuildChar
+% fontdict charcode BuildChar -
+{ %def
+exch begin
+Encoding exch get
+500 0 setcharwidth
+CharDefs exch get exec
+end
+} bind def
+/CharDefs 256 dict def
+CharDefs begin
+Encoding { %forall
+{ %def
+4 { rand 1000 mod } repeat
+moveto lineto stroke
+} def
+} bind forall
+end
+currentdict end dup /FontName get exch definefont pop
+%%EndFont
+/UserFont 48 selectfont
+10 10 moveto (abcdefg) show
+showpage
+
