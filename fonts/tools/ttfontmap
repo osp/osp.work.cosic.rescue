@@ -1,0 +1,21 @@
+#!/usr/bin/perl
+    # ttfontmap -- generate fontmap file for TrueType fonts
+    my $directory=shift || print STDERR "Usage: ttfontmap {directory}\n";
+
+    $directory=~s/\/$//;
+
+    for my $fontname ( glob ( "$directory/*.ttf" ) )
+    {
+    open ( R, "sh -c \"ttf2pt1 -A $fontname - 2>/dev/null\" |" );
+    while ( <R> )
+    {
+    if ( $_ =~ /^FontName/ )
+    {
+    s/^FontName\s*//;
+    chomp;
+    print "/" . $_ . " ($fontname);\n" ;
+    }
+    }
+    close R;
+    }
+

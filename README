@@ -1,1 +1,24 @@
 This is the Cosic visual identity repository.
+
+
+= Font Embedding =
+
+There are only two options when it comes to embedding fonts in PostScript: PostScript Type 1 or Type 42. Type 42 is generally easier to convert into from TrueType, so that is likely what we will be using.
+
+== Testing via TTF ==
+
+For testing purposes we can simply use TTF files (OpenType fonts will have to be converted to TTF first; see 'fonts/tools/otf2ttf'). Though this will make the git repository slightly fatter, it gives us the ability to easily switch fonts in our designs. At some point, however, we will want to create a subset font and convert it to Type42.
+
+For testing purposes, it is necessary to maintain a Fontmap file which Ghostscript will read in order to easily load/switch a font. Included is 'fonts/tools/ttfontmap', which can be invoked as
+
+  ttfontmap cosic/fonts > cosic/fonts/Fontmap
+
+== Subsetting ==
+
+In the 'fonts/tools' directory I have included an archive which contains a Ruby library for modifying TTF. Included in this archive is a tool called 'ttfsubset' which takes a TTF file and a textfile of characters as input and produces a new TTF containing only those characters as the output. There is already a text file, 'fonts/chars.txt', which contains 'COSI' and 'cosi'.
+
+NOTE: The 'fonts/lato-black.ttf' and 'fonts/lato-bold.ttf' files are both already subsetted.
+
+== Converting to Type 42 ==
+
+This is as simple as installing the 'ttftotype42' program, generally available in distribution repositories.
