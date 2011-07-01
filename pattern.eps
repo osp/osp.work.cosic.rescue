@@ -26,7 +26,7 @@
 2 2 scale
 100 100 translate
 
-0 0 1 setrgbcolor
+%0 0 1 setrgbcolor
 
 0 6 100 { 
     /x exch def 
@@ -41,7 +41,7 @@
 30 rotate
 -50 -50 translate
 
-1 0 0 setrgbcolor
+%1 0 0 setrgbcolor
 
 0 6 100 { 
     /x exch def 
@@ -73,6 +73,23 @@
         %fill 
     %} for 
 %} for
+
+% this is for creating the text for the log and keeping it from  being obscured by the moire
+
+/headerfont /Lato-Black-subset findfont 48 scalefont def
+
+-30 rotate
+
+headerfont setfont
+-8 50 moveto
+1.0 setgray % we need to outline the font in white
+25 setlinewidth
+(cosic) false charpath stroke 
+
+0.0 setgray
+-8 50 moveto
+(cosic) show
+
 
 showpage
 eps_state restore

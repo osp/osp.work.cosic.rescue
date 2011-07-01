@@ -1,24 +1,35 @@
 This is the Cosic visual identity repository.
 
 
+= Links =
+
+* [Links to many PostScript resources](http://www.inkguides.com/postscript-programming.asp)
+* [PostScript Tutorial](http://www.tailrecursive.org/postscript/postscript.html)
+* [PostCanvas: a JavaScript PS interpretor](http://www.feiri.de/pcan/)
+
+
 = Font Embedding =
 
 There are only two options when it comes to embedding fonts in PostScript: PostScript Type 1 or Type 42. Type 42 is generally easier to convert into from TrueType, so that is likely what we will be using.
 
 == Testing via TTF ==
 
-For testing purposes we can simply use TTF files (OpenType fonts will have to be converted to TTF first; see 'fonts/tools/otf2ttf'). Though this will make the git repository slightly fatter, it gives us the ability to easily switch fonts in our designs. At some point, however, we will want to create a subset font and convert it to Type42.
+For testing purposes we can simply use TTF files (OpenType fonts will have to be converted to TTF first; see 'fonts/tools/otf2ttf'). Though this will make the git repository slightly fatter, it gives us the ability to easily switch fonts in our designs. At some point, however, we will want to create a subset font and convert it to Type 42.
 
 For testing purposes, it is necessary to maintain a Fontmap file which Ghostscript will read in order to easily load/switch a font. Included is 'fonts/tools/ttfontmap', which can be invoked as
 
   ttfontmap cosic/fonts > cosic/fonts/Fontmap
 
+Then you are almost finished. The final step is to pass in the 'cosic/fonts' directory using the -I switch for gs (a la `gs -I/home/serk17/OSP/cosic/fonts`). For the sake of this project, it might be useful to add it as an alias to your shell's RC file (~/.bashrc, ~/.zshrc, etc).
+
 == Subsetting ==
 
-In the 'fonts/tools' directory I have included an archive which contains a Ruby library for modifying TTF. Included in this archive is a tool called 'ttfsubset' which takes a TTF file and a textfile of characters as input and produces a new TTF containing only those characters as the output. There is already a text file, 'fonts/chars.txt', which contains 'COSI' and 'cosi'.
+In the 'fonts/tools' directory I have included an archive which contains a Ruby library for modifying TTF. Included in this archive is a tool called 'ttfsubset' which takes a TTF file and a textfile of characters as input and produces a new TTF containing only those characters as the output. There is already a text file, 'fonts/chars.txt', which contains 'COSI' and 'cosi'. 
+
+The 'ttfsubset' tool is called via `ruby ttfsubset`. I installed it in my own '~/.scripts' directory (which is in my $PATH) after running `sudo ruby setup.rb` in the 'ruby-ttf' directory.
 
 NOTE: The 'fonts/lato-black.ttf' and 'fonts/lato-bold.ttf' files are both already subsetted.
 
 == Converting to Type 42 ==
 
-This is as simple as installing the 'ttftotype42' program, generally available in distribution repositories.
+This is as simple as installing the 'ttftotype42' program, generally available in distribution repositories. You then paste the resulting output into the top of your .ps file.
