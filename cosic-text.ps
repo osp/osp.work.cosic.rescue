@@ -1,0 +1,31 @@
+%! cosic-text.ps
+%
+% 		This code is intended to produce the cosic logo with whitespace
+%			surrounding the text, which can be overlayed onto any given
+%			background.
+%
+%		PROBLEMS
+%			- Currently a line width of 25 is required when the font is scaled
+%				to 48pt. This is necessary in order to ensure there are no 'holes'
+%				in the outline mask. (Choose a smaller linewidth and you will see 
+%				the effect). This is a problem because it is very likely that a 
+%				slightly smaller mask radius is desired than that provided by
+%				the linewidth of 25.
+
+/headerfont /Lato-Black-subset findfont 48 scalefont def
+/outline		/Lato-Black-subset findfont 36 scalefont def
+
+100 100 moveto
+
+headerfont setfont
+%1.0 setgray 	% we need to outline the font in white
+0.8 setgray		% but for testing purposes, lets use a gray
+25 setlinewidth
+(cosic) false charpath stroke 
+
+100 100 moveto
+
+headerfont setfont
+0.0 setgray
+(cosic) show
+
