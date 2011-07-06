@@ -1,0 +1,358 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 200 200
+
+/spiral_angle
+{
+  save
+  exch
+  /params exch def
+
+  /local params length dict def
+  params local copy pop
+  local begin
+
+  /pi 3.141592654 def
+  /tan {dup sin exch cos div} def
+  /curr_angle{
+    /r exch def
+    /curve exch def
+    /scale r r_min sub r_max r_min sub div curve length 1 sub mul def
+    /angle1 curve scale floor cvi get def
+    /angle2 curve scale ceiling cvi get def
+    angle1 angle2 angle1 sub scale scale floor sub mul add
+  }
+  def
+
+  /spiralpath
+  {
+    /loopend false def
+    {
+      /a_m curve_m r curr_angle def
+      /tan_a_m a_m tan def
+
+      /da 180 pi div dr mul tan_a_m r div mul def
+
+      r dr add r_out ge
+      {
+        /dr_co r_out r sub def
+        /loopend true def
+      }
+      {
+        /dr_co dr def
+      }
+      ifelse
+      /r r dr_co add def
+      /da_co dr_co dr div da mul def
+      /a a da_co add def
+
+      loopend {exit} if
+    }
+    loop
+  }
+  def
+
+  /r r_in def
+  /a 0 def
+  spiralpath
+
+  a
+  end
+  exch restore
+}
+def
+
+/spiral
+{
+  save
+  5 1 roll
+  /layer exch def
+  /a1 exch def
+  /a0 exch def
+  /params exch def
+
+  /local params length dict def
+  params local copy pop
+  local begin
+
+  /pi 3.141592654 def
+  /xy {r a cos mul r a sin mul} def
+  /tan {dup sin exch cos div} def
+  /curr_angle{
+    /r exch def
+    /curve exch def
+    /scale r r_min sub r_max r_min sub div curve length 1 sub mul def
+    /angle1 curve scale floor cvi get def
+    /angle2 curve scale ceiling cvi get def
+    angle1 angle2 angle1 sub scale scale floor sub mul add
+  }
+  def
+
+  /spiralpath
+  {
+    /loopend false def
+    {
+      /a_b curve_b r curr_angle def
+      /tan_a_b a_b tan def
+      layer (b) eq
+      {
+        /tan_a tan_a_b def
+      }
+      {
+        /a_m curve_m r curr_angle def
+        /tan_a_m a_m tan def
+        /tan_a_r n_b n_r div tan_a_b mul 1 n_b n_r div sub tan_a_m mul add def
+        /tan_a tan_a_r def
+      }
+      ifelse
+
+      /da 180 pi div dr mul tan_a r div mul def
+
+      r dr add r_out ge
+      {
+        /dr_co r_out r sub def
+        /loopend true def
+      }
+      {
+        /dr_co dr def
+      }
+      ifelse
+      /r r dr_co add def
+      /da_co dr_co dr div da mul def
+      /a a da_co add def
+
+      xy lineto
+      loopend {exit} if
+    }
+    loop
+  }
+  def
+
+  /a_width a1 a0 sub def
+  newpath
+  /r r_in def
+  /a a0 def
+  xy moveto
+  spiralpath
+  reversepath
+  /r r_in def
+  /a a1 def
+  %0 0 r a a_width sub a arc
+  xy lineto
+  spiralpath
+  %0 0 r a a a_width sub arcn
+  closepath
+  fill
+
+  end
+  restore
+}
+def
+
+/spirals
+{
+  save
+  3 1 roll
+  /layer exch def
+  /params exch def
+
+  /local params length dict def
+  params local copy pop
+  local begin
+
+  layer (b) eq
+  {
+    /a_w 360 n_b div 1 op_b sub mul def
+    /a zero_angle a_w 2 div sub def
+    n_b
+    {
+      params a a a_w add (b) spiral
+      /a a 360 n_b div add def
+    }
+    repeat
+  }
+  {
+    /a_w 360 n_r div 1 op_r sub mul def
+    /a zero_angle a_w 2 div sub def
+    n_r
+    {
+      params a a a_w add (r) spiral
+      /a a 360 n_r div add def
+    }
+    repeat
+  }
+  ifelse
+
+  end
+
+  restore
+}
+def
+
+/getmin
+{
+  dup /min exch 0 get def
+  {
+    dup min lt {/min exch def} {pop} ifelse
+  }
+  forall
+  min
+}
+def
+
+/getmax
+{
+  dup /max exch 0 get def
+  {
+    dup max gt {/max exch def} {pop} ifelse
+  }
+  forall
+  max
+}
+def
+
+/rings
+{
+  save
+  3 1 roll
+  /layer exch def
+  /params exch def
+
+  /local params length dict def
+  params local copy pop
+  local begin
+
+  /r_min radiuses getmin def
+  /r_max radiuses getmax def
+
+  /zero_angle 0 def
+  1 1 radiuses length 1 sub
+  {
+    /i exch def
+    /n spots i 1 sub get def
+
+    <<
+      /r_in radiuses i 1 sub get def
+      /r_out radiuses i get def
+      /dr 1
+      /curve_b curve_b
+      /curve_m curve_m
+      /r_min r_min
+      /r_max r_max
+      /n_b kb n mul
+      /n_r kr n mul
+      /op_b op_b
+      /op_r op_r
+      /zero_angle zero_angle positive{360 n div 2 div sub}if
+    >> layer spirals
+
+    <<
+      /r_in radiuses i 1 sub get def
+      /r_out radiuses i get def
+      /dr 1
+      /curve_m curve_m
+      /curve_r_in 50
+      /curve_r_out 300
+    >> spiral_angle
+    /zero_angle exch zero_angle add def
+  }
+  for
+
+  end
+  restore
+}
+def
+
+/noover 15 def
+
+/clip_b
+{
+  0 dict begin
+  newpath
+  0 0 r_out noover 90 noover sub arc
+  0 0 r_in 90 noover sub noover arcn
+  closepath
+  clip
+  newpath
+  0 0 r_out 90 noover sub dup 1 sub exch arc
+  0 0 r_in 90 noover sub dup 1 sub arcn
+  closepath
+  fill
+  newpath
+  0 0 r_out noover noover 1 add arc
+  0 0 r_in noover 1 add noover arcn
+  closepath
+  fill
+  end
+}
+def
+
+/clip_r
+{
+  0 dict begin
+  newpath
+  0 0 r_out r_width 0.15 mul sub 0 90 arc
+  0 0 r_in r_width 0.15 mul add 90 0 arcn
+  closepath
+  clip
+  end
+}
+def
+
+/fsz 12 def
+/Courier findfont fsz scalefont setfont
+
+/puttext
+{
+  0 dict begin
+  /s exch def
+  /y exch def
+  /x exch def
+  x y moveto
+  (s) stringwidth pop 2 div neg 0 rmoveto
+  0 fsz 0.25 mul neg rmoveto
+  s show
+  end
+}
+def
+
+/r_in 60 def
+/r_out 200 def
+/r_width r_out r_in sub def
+/kr 20 def
+/n_m 9 def
+/pages 1 def
+
+/params <<
+  /radiuses [r_in r_out] def
+  /spots [n_m] def
+  /kb 19
+  /kr kr
+  /curve_b [0]
+  /curve_m [45 -45 45 -45 45]
+  /op_b 0.5
+  /op_r 0.5
+  /positive true
+>> def
+
+{
+  r_in 4 div dup (\(b\)) puttext
+  params /curve_b [4 -1 roll 4{dup neg}repeat] put
+
+  gsave
+  clip_b
+  params (b) rings
+  grestore
+
+  gsave
+  clip_r
+  params (r) rings
+  grestore
+
+  showpage
+}
+-45 exch exec
+
+
+
+pstack
+

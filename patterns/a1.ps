@@ -1,0 +1,50 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 300 300
+
+/xmax 300 def
+/ymax 300 def
+/pex 5 def
+/pey 5 def
+/r 1 def
+/fluct 0.5 def
+
+/rand01
+{
+  rand 1000 mod 1000 div
+}
+def
+
+/grid{
+  0 pey ymax
+  {
+    /y exch def
+    0 pex xmax
+    {
+      /x exch def
+      /dx pex fluct neg fluct 2 mul rand01 mul add mul def
+      /dy pey fluct neg fluct 2 mul rand01 mul add mul def
+      newpath x dx add y dy add r 0 360 arc fill
+    }
+    for
+  }
+  for
+}
+def
+
+{
+  /alpha exch def
+  1 srand
+  grid
+  xmax 2 div ymax 2 div translate
+  alpha rotate
+  xmax 2 div neg ymax 2 div neg translate
+  1 srand
+  grid
+  showpage
+}
+dup
+0 0.4 4.5 4 -1 roll for
+4 -0.4 0.3 4 -1 roll for
+
+
+
