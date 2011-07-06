@@ -1,5 +1,23 @@
 This is the Cosic visual identity repository.
 
+= Structure of the repository =
+
+
+docs
+:    documentation
+fonts
+:    fonts
+inspiration
+:    inspirational material
+literaldraw-research
+:    experiments with Literal Draw, in particular with the svg-effect command that allows to tile a pattern over an image and transform (scale or rotate) the former according to the HSL/RGB values of the image.
+patterns
+:   repository of patterns in both svg/ps extracted from the moiré effect pdf, or made by "mouse".
+research
+:   Edu's experiments with patterns from the PDF compiling moiré effects.
+ps
+:   Home of the hand-made postcript files
+
 
 = Links =
 
@@ -39,3 +57,9 @@ NOTE: The 'fonts/lato-black.ttf' and 'fonts/lato-bold.ttf' files are both alread
 == Converting to Type 42 ==
 
 This is as simple as installing the 'ttftotype42' program, generally available in distribution repositories. You then paste the resulting output into the top of your .ps file.
+
+= Tips = 
+
+== Clean postcript file from inkscape == 
+
+It is possible to improve the readability of inkscape generated postcript files by setting the document unit to "point" and then using the grid to snap the curve/line points to round values. However it appears that it is still necessary to fix some floating points values by hand, but it is much better. SVG Cairo uses aliases to shorten the files, and it is necessary to search n replace a couple of aliases (mainly c to curveto, and m to moveto). Might be automated, not sure...
