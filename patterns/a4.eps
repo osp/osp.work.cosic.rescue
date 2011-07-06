@@ -1,0 +1,88 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 270 255
+
+/grating
+{
+  save
+  6 1 roll
+  /op exch def
+  /pe exch def
+  /a exch def
+  /r exch def
+  /h exch def
+
+  /lw pe 1 op sub mul def
+  /xsh r a cos mul def
+  /ysh r a sin mul def
+
+  0 pe h
+  {
+    /y exch def
+    0 y moveto
+    0 lw rlineto
+    xsh ysh rlineto
+    0 lw neg rlineto
+    closepath
+    fill
+  }
+  for
+
+  restore
+}
+def
+
+/tan
+{
+  dup sin exch cos div
+}
+def
+
+/fsz 12 def
+/Courier findfont fsz scalefont setfont
+
+/puttext
+{
+  0 dict begin
+  /s exch def
+  /y exch def
+  /x exch def
+  gsave
+  x y translate
+  90 rotate
+  0 fsz 0.25 mul neg moveto
+  s show
+  grestore
+  end
+}
+def
+
+/pe_b 6.0 def
+/pe_r 5.5 def
+/a_b 0 def
+/a_r 0 def
+
+/pages 6 def
+
+/yshift 0 def
+/pg 1 def
+pages
+{
+  pg 1 eq
+  {
+    35 25 translate
+    -20 dup translate
+    fsz 0.75 mul neg 0 (the base layer) puttext
+    200 200 a_b pe_b 0.5 grating
+    40 dup translate
+    fsz 0.75 mul 200 add 0 (the revealing layer) puttext
+    0 yshift translate
+    200 200 a_r pe_r 0.5 grating
+    showpage
+  }
+  if
+  /yshift yshift pe_r pages div add def
+  /pg pg 1 add def
+}
+repeat
+
+

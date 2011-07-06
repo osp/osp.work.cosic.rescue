@@ -1,0 +1,71 @@
+%!PS-Adobe
+%%BoundingBox: 30 200 650 400
+
+% Sine wave drawing by Toby Thain (mailto:toby@telegraphics.com.au)
+% - straight line approximation
+% - simplistic Bezier curve fitting
+% both governed by "step" parameter (radians)
+
+%    Copyright (C) 2001-3 Toby Thain, toby@telegraphics.com.au
+%
+%    This program is free software; you can redistribute it and/or modify
+%    it under the terms of the GNU General Public License as published by  
+%    the Free Software Foundation; either version 2 of the License, or
+%    (at your option) any later version.
+%
+%    This program is distributed in the hope that it will be useful,
+%    but WITHOUT ANY WARRANTY; without even the implied warranty of
+%    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%    GNU General Public License for more details.
+%
+%    You should have received a copy of the GNU General Public License  
+%    along with this program; if not, write to the Free Software
+%    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+0 setgray
+
+/pi 3.14159265 def
+/step pi 4 div def % length of each line/curve segment; radians
+/curvelength 33 def % curve length in radians
+
+/r2d { 180 pi div mul } def % radians to degrees (approx)
+/f { r2d sin } def % function to plot
+/f' { r2d cos } def % first derivative
+
+/drawpolygon {
+	0 dup f moveto
+	step dup curvelength {  % loop parameters for straight lines (radian units)
+		dup f lineto
+	} for
+} def
+
+/drawcurve {
+	0 6 60 {
+		0 1 index f moveto
+		/third step 3 div def
+		%0 dup f moveto
+		0 step curvelength {  % loop parameters for Bezier approximation
+			/x exch def
+			x third add   x f x f' third mul add 
+			x step third sub add   x step add dup f exch f' third mul sub 
+			x step add   dup f  
+			curveto
+		} for
+		stroke
+	} for
+} def
+
+% transformation of unit sine wave - x radians, y -1..1
+50 300 translate
+10 10 scale
+
+0.1 setlinewidth
+% drawpolygon .6 setgray stroke
+
+
+%10 20 translate
+%drawcurve 0 setgray stroke
+
+drawcurve
+
+showpage

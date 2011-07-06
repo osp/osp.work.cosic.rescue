@@ -1,0 +1,115 @@
+%!
+%
+%	Debugging Inkscape (Cairo) generated patterns is a non-starter.
+%	Best to reimplement the patterns ourselves.
+
+%!PS
+% Sine-wave plotting by Daniel Martinoli
+
+/magnitude 14 def % Defines the magnitude of the sine-wave
+/maximay 0 def    % Will represent the y-ordinate of the 'peak' of the sine-wave
+/minimay 0 def    % Will represent the y-ordinate of the 'trough' of the sine-wave
+
+/negpix 100 def      % The x-ordinate of -pi
+/neghalfpix 200 def  % The x-ordinate of -pi/2
+/origin 300 def      % The x and y co-ordinates of the origin (origin is at origin,origin)
+/halfpix 400 def     % The x-ordinate of pi/2
+/pix 500 def         % The x-ordinate of pi
+% Example usage: the co-ordinates of pi on the x-axis are pix,origin
+
+/straightline {
+  newpath
+  exch exch moveto
+  exch exch lineto
+  closepath
+  stroke
+} def
+
+%Draw axis
+300 100 300 500 straightline
+100 300 500 300 straightline
+%Finished drawing axis
+
+%Label axis
+/LatoBlack-subset findfont
+15 scalefont
+setfont
+
+310 505 moveto
+(y) show
+510 285 moveto
+(x) show
+%Finished labelling axis
+
+gsave
+
+%Begin marking x-axis
+0 0 1 setrgbcolor
+100 100 500 {
+  /current exch def
+  current 300 ne {
+    current 298 current 302 straightline
+  } if
+} for
+%Finished marking x-axis
+
+% Label the x-axis
+grestore
+/Times findfont
+6 scalefont
+setfont
+negpix 3 sub origin 10 sub moveto
+(-pi) show
+neghalfpix 3 sub origin 10 sub moveto
+(-pi / 2) show
+halfpix 3 sub origin 10 sub moveto
+(pi / 2) show
+pix 3 sub origin 10 sub moveto
+(pi) show
+gsave
+% Finished labelling the x-axis
+
+%Begin marking y-axis
+0 0 1 setrgbcolor
+/label -20 def
+100 10 500 {
+  /current exch def
+  label magnitude eq {
+    /maximay current def
+  } if
+  label -1 mul magnitude eq {
+    /minimay current def
+  } if
+  current 300 ne {
+    298 current 302 current straightline
+    %Draw labels
+    gsave
+    0 setgray
+    /Times findfont
+    6 scalefont
+    setfont
+    285 current 3 sub moveto
+    label 3 string cvs show
+    grestore
+    %Finished drawing label
+  } if
+  /label label 1 add def
+} for
+%Finished marking y-axis
+
+%Axis are drawn and labelled, now we're going to draw the sine curve
+/maximar maximay origin sub def             % Distance from x-axis to maxima
+/thirdmag maximar 3 div def                 % 1/3 of the magnitude
+/thirdmagy thirdmag origin add def          % y-ordinate for 1/3 magnitude
+/negthirdmagy origin thirdmag sub def       % y-ordinate for -1/3 magnitude
+1 1 0 setrgbcolor
+newpath
+negpix origin moveto
+133 negthirdmagy 166 minimay neghalfpix minimay curveto
+233 minimay 266 negthirdmagy origin origin curveto
+333 thirdmagy 366 maximay halfpix maximay curveto
+433 maximay 466 thirdmagy pix origin curveto
+stroke
+%Done!
+
+showpage
