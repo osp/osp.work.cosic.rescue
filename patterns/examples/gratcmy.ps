@@ -1,0 +1,137 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure "gratcmy" from the Moire Demonstration Kit accompanying the book: 
+%		"The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 14, 1999
+%
+% ********************************************************************************
+%
+% A periodic line grating whose period consists of C,M,Y stripes
+%
+% The adjustable parameters are as follows:
+% 
+% theta1 - the grating angle, in degrees.
+% len - the length of the grating along its main axis, in centiinches.
+% wid - the width of the grating (= its lines length), in centiinches.
+%
+% ********************************************************************************
+%
+
+
+
+
+
+% ************ Adjustable parameters for the grating:
+
+
+/theta1 90 def		% angle of the grating in degrees
+
+/len 800 def		% length of the grating along its main axis in centiinches
+
+/wid 700 def		% width of the grating (= its lines length) in centiinches
+
+
+
+
+% ************ Definitions:
+
+/inch {72 mul} def
+
+/centiinch {0.72 mul} def
+
+/pix {72 mul 600 div} def
+
+/p1 3 def		% period of the grating along its main axis in centiinches
+
+0.2 inch 3.0 inch translate
+
+
+
+/ntiles {len p1 div round cvi} def		% no. of tiles to be drawn (each tile = 1 period)
+/rows 1 def
+/cols 18 def		% 1 period = 6-6-6 pixels, or 8-8 pixels, etc.
+/rows2 {0.5 rows mul} def
+/cols2 {0.5 cols mul ntiles mul} def
+
+
+
+% pattern of CMY grating:
+
+/tileCMY		% x y => --
+{
+	gsave
+
+	1 pix cols mul wid centiinch scale	% scale from 1x1" to real size
+
+	cols rows 8 [cols 0 0 rows neg cols2 rows2]
+
+	{<FFFFFFFFFFFF000000000000000000000000>}
+
+	{<000000000000FFFFFFFFFFFF000000000000>}
+
+	{<000000000000000000000000FFFFFFFFFFFF>}
+
+	{<000000000000000000000000000000000000>}
+
+	true 4 colorimage
+
+	grestore
+
+	translate
+} def
+
+
+
+
+
+% ************ Draw the grating:
+
+gsave
+4 inch 4.0 inch translate
+theta1 rotate
+
+ntiles {1 pix cols mul 0 pix tileCMY} repeat
+
+grestore
+
+
+
+gsave
+1.75 inch -1.0 inch translate
+0.5 inch 0 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+(Figure  ) show
+/Times-Bold findfont
+12 scalefont setfont
+(gratcmy) show
+/Times-Roman findfont
+12 scalefont setfont
+(  from the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Demonstration Kit) show
+0.1 inch -0.25 inch moveto
+(accompanying the book:  ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0.1 inch -0.5 inch moveto
+(by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+grestore
+
+
+
+
+showpage

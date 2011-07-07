@@ -1,0 +1,125 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure C.6 from the book: "The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 9, 1999
+%
+% ********************************************************************************
+%
+% An auto moire:
+%
+% The grating parameters are as follows:
+% 
+% theta1 - the grating angles, in degrees.
+% p1 - the respective grating periods, in deciinches.
+% len - the grating length in centiinches
+% wid - the grating width in centiinches
+%
+% ********************************************************************************
+%
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+0.6 centiinch setlinewidth
+
+
+/len 130 def		% grating length in centiinches
+/wid 130 def		% grating width in centiinches
+/len2 len 2 div def
+/wid2 wid 2 div def
+
+
+
+1.6 inch 2.5 inch translate
+gsave
+
+
+
+% ******************************** draw left image:
+
+/theta1 45 def		% angle of the grating
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 2.11 def		% period of the grating
+
+
+
+% Draw grating:
+gsave
+1 inch 5.2 inch translate
+theta1 rot add rotate
+newpath
+0 p1 len		% draw lines
+{centiinch len2 centiinch sub -1 inch moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+grestore
+
+
+
+% ******************************** draw right image:
+
+/theta1 42.2 def	% angle of the grating
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 2.142 def		% period of the grating
+
+
+
+% Draw grating:
+gsave
+3.6 inch 5.2 inch translate
+theta1 rot add rotate
+newpath
+0 p1 len		% draw lines
+{centiinch len2 centiinch sub -1 inch moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+grestore
+
+
+gsave
+0.6 inch 4 inch translate
+/Times-Roman findfont
+12 scalefont setfont
+0 inch 0 inch moveto
+((a)) show
+2.6 inch 0 inch moveto
+((b)) show
+grestore
+
+
+gsave
+0.35 inch 0 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure C.6) show
+/Times-Roman findfont
+12 scalefont setfont
+( from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0 inch -0.25 inch moveto
+(  by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+grestore
+
+
+grestore
+
+showpage

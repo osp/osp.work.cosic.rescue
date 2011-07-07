@@ -1,0 +1,159 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure "star2" from the Moire Demonstration Kit accompanying the book: 
+%		"The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Springer, 2007.
+%
+%		* * *  Copyright (c) 2007 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: March 30, 2007
+%
+% ********************************************************************************
+%
+% An aperiodic dot screen
+%
+% ********************************************************************************
+%
+
+
+
+% ************ Draw the dot-screen:
+
+/inch {72 mul} def
+
+/centiinch {0.72 mul} def
+
+1.5 centiinch setlinewidth
+
+/dim 450 def		% dimensions of the screen in centiinches
+
+/dim2 225 def		% dim/2
+
+/myrand {rand 2147483647 div 2 mul 1 sub} def	% random number between -1...1
+
+1 setlinecap
+
+
+0.1 inch 0 inch translate
+
+
+
+/p2 3 def		% period for second dot screen
+
+/p2y 3 def		% period for second dot screen
+
+
+/rr 1 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+
+
+% draw second dot screen:
+
+8 srand		% same seed for rand
+
+/y dim2 neg def
+
+gsave
+4.0 inch 6.0 inch translate
+
+0 p2y 17		% draw DUMMY horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p2y div round p2y mul sub def
+	0 p2 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p2 div round p2 mul sub def
+		xsave x sub
+		x						% g3(x,y)
+		add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y						% g4(x,y)
+		add
+		centiinch myrand rr mul sub moveto
+%		0 0 rlineto
+		/x x p2 add def
+	} for
+%	stroke
+	/y y p2y add def
+} for
+
+18 p2y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p2y div round p2y mul sub def
+	0 p2 14		% draw DUMMY beginning of a horizontal line of dots
+		{/xsave exch dim2 p2 div round p2 mul sub def
+		xsave x sub
+		x						% g3(x,y)
+		add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y						% g4(x,y)
+		add
+		centiinch myrand rr mul sub moveto
+%		0 0 rlineto
+		/x x p2 add def
+	} for
+	15 p2 dim	% draw the rest of the horizontal line of dots
+		{/xsave exch dim2 p2 div round p2 mul sub def
+		xsave x sub
+		x						% g3(x,y)
+		add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y						% g4(x,y)
+		add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p2 add def
+	} for
+	stroke
+	/y y p2y add def
+} for
+
+grestore
+
+
+
+
+gsave
+1.75 inch 2.0 inch translate
+0.5 inch 0 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+(Figure  ) show
+/Times-Bold findfont
+12 scalefont setfont
+(star2) show
+/Times-Roman findfont
+12 scalefont setfont
+(  from the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Demonstration Kit) show
+0.1 inch -0.25 inch moveto
+(accompanying the book:  ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+-0.1 inch -0.5 inch moveto
+(Vol. II: Aperiodic Layers) show
+/Times-Roman findfont
+12 scalefont setfont
+(, by I. Amidror, published by Springer, 2007.) show
+grestore
+
+
+
+
+showpage

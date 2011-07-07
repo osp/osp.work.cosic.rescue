@@ -1,0 +1,91 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Colour Plate 4 from the book: "The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: July 29, 1999
+%
+% ********************************************************************************
+%
+% Superposition of 2 colour line gratings - second layer only:
+%
+% ********************************************************************************
+%
+
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+1.5 centiinch setlinewidth
+
+
+0.25 inch -0.5 inch translate 
+
+
+
+
+% ************************************ Black grating:
+
+/len 600 def		% grating length in centiinches
+/wid 430 def		% grating width in centiinches
+/len2 len 2 div def
+/wid2 wid 2 div def
+
+
+/theta1 93 def			% angle of the grating, in degrees
+
+/rot 0 def			% general rotation to prevent printer artifacts
+
+/p1 3 def			% period of the black grating, in centiinches
+
+/xshift1 0.0 p1 mul def		% period-shift of the black grating (e.g. 0.5)
+
+
+
+% Draw grating:
+
+gsave
+2.95 inch 7.6 inch translate
+theta1 rot add rotate
+0 0 0 1 setcmykcolor
+1.5 centiinch setlinewidth
+newpath
+0 p1 len		% draw lines
+{centiinch len2 p1 div round p1 mul xshift1 sub centiinch sub -3.15 inch moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+grestore
+
+
+gsave
+1.6 inch 2.9 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Colour Plate 4) show
+/Times-Roman findfont
+12 scalefont setfont
+( from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0 inch -0.25 inch moveto
+(    by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+1.7 inch -0.65 inch moveto
+((Second layer only.)) show
+grestore
+
+
+showpage
+
+

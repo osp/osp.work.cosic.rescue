@@ -1,0 +1,481 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Colour Plate 2  from the book: "The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: July 29, 1999
+%
+% ********************************************************************************
+%
+% Superpositions of 2 colour line gratings - first layer only:
+%
+% The grating parameters are as follows:
+% 
+% theta1 - the grating angle, in degrees.
+% ntiles - no. of tiles to be drawn across each grating (each tile = 1 period).
+% height - line length of each grating in inches.
+%
+% ********************************************************************************
+%
+
+
+
+
+% ************ Adjustable parameters for the grating:
+
+
+/theta1 0 def		% angle of the grating in degrees
+
+/ntiles 39 def		% no. of tiles to be drawn (each tile = 1 period)
+
+/height 1.55 def	% grating length in inches
+
+
+
+% ************ Definitions:
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+/pix {72 mul 600 div} def
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/factor 1 def
+
+
+
+/rows 1 def
+/cols 18 def		% 1 period = 6-6-6 pixels, or 8-8 pixels, etc.
+/rows2 {0.5 rows mul} def
+/cols2 {0.5 cols mul ntiles mul} def
+
+
+
+/Times-Roman findfont
+10 scalefont setfont
+
+
+
+
+% pattern of RGB grating:
+
+/tileRGB		% x y => --
+{
+	gsave
+
+	1 pix cols mul factor mul height inch scale	% scale from 1x1" to real size
+
+	cols rows 8 [cols 0 0 rows neg cols2 rows2]
+
+	{<000000000000FFFFFFFFFFFFFFFFFFFFFFFF>}
+
+	{<FFFFFFFFFFFF000000000000FFFFFFFFFFFF>}
+
+	{<FFFFFFFFFFFFFFFFFFFFFFFF000000000000>}
+
+	{<000000000000000000000000000000000000>}
+
+	true 4 colorimage
+
+	grestore
+
+	translate
+} def
+
+
+
+% pattern of BGR grating:
+
+/tileBGR		% x y => --
+{
+	gsave
+
+	1 pix cols mul factor mul height inch scale	% scale from 1x1" to real size
+
+	cols rows 8 [cols 0 0 rows neg cols2 rows2]
+
+	{<FFFFFFFFFFFFFFFFFFFFFFFF000000000000>}
+
+	{<FFFFFFFFFFFF000000000000FFFFFFFFFFFF>}
+
+	{<000000000000FFFFFFFFFFFFFFFFFFFFFFFF>}
+
+	{<000000000000000000000000000000000000>}
+
+	true 4 colorimage
+
+	grestore
+
+	translate
+} def
+
+
+
+% pattern of RG grating:
+
+/tileRG			% x y => --
+{
+	gsave
+
+	1 pix cols mul factor mul height inch scale	% scale from 1x1" to real size
+
+	cols rows 8 [cols 0 0 rows neg cols2 rows2]
+
+	{<000000000000000000FFFFFFFFFFFFFFFFFF>}
+
+	{<FFFFFFFFFFFFFFFFFF000000000000000000>}
+
+	{<FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF>}
+
+	{<000000000000000000000000000000000000>}
+
+	true 4 colorimage
+
+	grestore
+
+	translate
+} def
+
+
+
+
+% pattern of black/white grating:
+
+/tileKW			% x y => --
+{
+	gsave
+
+	1 pix cols mul factor mul height inch scale	% scale from 1x1" to real size
+
+	cols rows 8 [cols 0 0 rows neg cols2 rows2]
+
+	{<000000000000000000000000000000000000>}
+
+	{<000000000000000000000000000000000000>}
+
+	{<000000000000000000000000000000000000>}
+
+	{<FFFFFFFFFFFFFFFFFF000000000000000000>}
+
+	true 4 colorimage
+
+	grestore
+
+	translate
+} def
+
+
+
+
+% pattern of red/white grating:
+
+/tileRW			% x y => --
+{
+	gsave
+
+	1 pix cols mul factor mul height inch scale	% scale from 1x1" to real size
+
+	cols rows 8 [cols 0 0 rows neg cols2 rows2]
+
+	{<000000000000000000000000000000000000>}
+
+	{<FFFFFFFFFFFFFFFFFF000000000000000000>}
+
+	{<FFFFFFFFFFFFFFFFFF000000000000000000>}
+
+	{<000000000000000000000000000000000000>}
+
+	true 4 colorimage
+
+	grestore
+
+	translate
+} def
+
+
+
+
+% pattern of green/white grating:
+
+/tileGW			% x y => --
+{
+	gsave
+
+	1 pix cols mul factor mul height inch scale	% scale from 1x1" to real size
+
+	cols rows 8 [cols 0 0 rows neg cols2 rows2]
+
+	{<FFFFFFFFFFFFFFFFFF000000000000000000>}
+
+	{<000000000000000000000000000000000000>}
+
+	{<FFFFFFFFFFFFFFFFFF000000000000000000>}
+
+	{<000000000000000000000000000000000000>}
+
+	true 4 colorimage
+
+	grestore
+
+	translate
+} def
+
+
+
+
+
+% Draw crosses:
+
+gsave
+1 pix setlinewidth
+3.8 inch 7.3 inch translate
+newpath
+-2.800 inch -3.500 inch moveto
+0.4 inch 0 inch rlineto
+-0.2 inch -0.2 inch rmoveto
+0 inch 0.4 inch rlineto
+3.000 inch -3.500 inch moveto
+0.4 inch 0 inch rlineto
+-0.2 inch -0.2 inch rmoveto
+0 inch 0.4 inch rlineto
+-2.800 inch 3.300 inch moveto
+0.4 inch 0 inch rlineto
+-0.2 inch -0.2 inch rmoveto
+0 inch 0.4 inch rlineto
+3.000 inch 3.300 inch moveto
+0.4 inch 0 inch rlineto
+-0.2 inch -0.2 inch rmoveto
+0 inch 0.4 inch rlineto
+stroke
+grestore
+
+
+
+% ************************************* Draw image (a):
+
+gsave
+-1.7 inch 3 inch translate
+
+
+% draw first grating:
+
+gsave
+4 inch 6.5 inch translate
+theta1 rot add rotate
+-0.55 inch -0.95 inch moveto
+((a)) show
+
+ntiles factor idiv {1 pix cols mul factor mul 0 pix tileKW} repeat
+
+grestore
+
+grestore
+
+
+% ************************************* Draw image (b):
+
+gsave
+0 inch 3 inch translate
+
+
+% draw first grating:
+
+gsave
+4 inch 6.5 inch translate
+theta1 rot add rotate
+-0.55 inch -0.95 inch moveto
+((b)) show
+
+ntiles factor idiv {1 pix cols mul factor mul 0 pix tileRW} repeat
+
+grestore
+
+
+grestore
+
+
+% ************************************* Draw image (c):
+
+gsave
+1.7 inch 3 inch translate
+
+
+% draw first grating:
+
+gsave
+4 inch 6.5 inch translate
+theta1 rot add rotate
+-0.55 inch -0.95 inch moveto
+((c)) show
+
+ntiles factor idiv {1 pix cols mul factor mul 0 pix tileGW} repeat
+
+grestore
+
+
+grestore
+
+
+% ************************************* Draw image (d):
+
+gsave
+-1.7 inch 0.8 inch translate
+
+
+% draw first grating:
+
+gsave
+4 inch 6.5 inch translate
+theta1 rot add rotate
+-0.55 inch -0.95 inch moveto
+((d)) show
+
+ntiles factor idiv {1 pix cols mul factor mul 0 pix tileRW} repeat
+
+grestore
+
+
+grestore
+
+
+% ************************************* Draw image (e):
+
+gsave
+0 inch 0.8 inch translate
+
+
+% draw first grating:
+
+gsave
+4 inch 6.5 inch translate
+theta1 rot add rotate
+-0.55 inch -0.95 inch moveto
+((e)) show
+
+ntiles factor idiv {1 pix cols mul factor mul 0 pix tileRG} repeat
+
+grestore
+
+
+grestore
+
+
+% ************************************* Draw image (f):
+
+gsave
+1.7 inch 0.8 inch translate
+
+
+% draw first grating:
+
+gsave
+4 inch 6.5 inch translate
+theta1 rot add rotate
+-0.55 inch -0.95 inch moveto
+((f)) show
+
+ntiles factor idiv {1 pix cols mul factor mul 0 pix tileRG} repeat
+
+grestore
+
+grestore
+
+
+% ************************************* Draw image (g):
+
+gsave
+-1.7 inch -1.4 inch translate
+
+
+% draw first grating:
+
+gsave
+4 inch 6.5 inch translate
+theta1 rot add rotate
+-0.55 inch -0.95 inch moveto
+((g)) show
+
+ntiles factor idiv {1 pix cols mul factor mul 0 pix tileRGB} repeat
+
+grestore
+
+grestore
+
+
+% ************************************* Draw image (h):
+
+gsave
+0 inch -1.4 inch translate
+
+
+% draw first grating:
+
+
+gsave
+4 inch 6.5 inch translate
+theta1 rot add rotate
+-0.55 inch -0.95 inch moveto
+((h)) show
+
+ntiles factor idiv {1 pix cols mul factor mul 0 pix tileRGB} repeat
+
+grestore
+
+grestore
+
+
+% ************************************* Draw image (i):
+
+gsave
+1.7 inch -1.4 inch translate
+
+% draw first grating:
+
+gsave
+4 inch 6.5 inch translate
+theta1 rot add rotate
+-0.55 inch -0.95 inch moveto
+((i)) show
+
+ntiles factor idiv {1 pix cols mul factor mul 0 pix tileRGB} repeat
+
+grestore
+
+grestore
+
+
+
+gsave
+1.75 inch 2.5 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Colour Plate 2) show
+/Times-Roman findfont
+12 scalefont setfont
+( from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0 inch -0.25 inch moveto
+(    by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+1.7 inch -0.65 inch moveto
+((First layer only.)) show
+grestore
+
+
+showpage
+
+
+
+

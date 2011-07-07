@@ -1,0 +1,717 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 8.15 from the book: "The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 9, 1999
+%
+% ********************************************************************************
+%
+% (a) ... (f): Superpositions of 2 or 3 screens using circles instead of dots:
+%
+% The screen parameters for each superposition are as follows:
+% 
+% theta1, theta2, theta3 - the screen angles, in degrees.
+% p1, p2, p3 - the respective screen periods (main direction), in deciinches.
+% p1y, p2y, p3y - the respective screen periods (perpendicular direction), in 
+%	deciinches.
+% xshifti, yshifti - the respective period-shifts for the i-th screen, in terms
+%	of period fractions.
+% len - the length (and width) of each of the screens, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+0.5 centiinch setlinewidth
+
+
+1 setlinecap
+
+
+/len 220 def		% screen length in centiinches
+/len2 len 2 div def
+
+
+/Helvetica findfont
+10 scalefont setfont
+
+
+gsave
+1.65 inch 7 inch translate
+
+
+% ********************************** Fig. (a):
+
+/theta1 30 def		% angle of screen A
+/theta2 -30 def		% angle of screen B
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/r1 4.5 def		% radius of circles in screen A
+/r2 3.15 def		% radius of circles in screen B
+
+/p1 3 def		% period of screen A
+/p2 3 def		% period of screen B
+
+/p1y 3 def		% period of screen A (in the perpendicular direction)
+/p2y 3 def		% period of screen B (in the perpendicular direction)
+
+/factor 5 def
+
+/pp1 p1 factor mul def
+/pp2 p2 factor mul def
+
+/pp1y p1y factor mul def
+/pp2y p2y factor mul def
+
+/xshift1 0 p1 mul def		% x period-shift of screen A (e.g. 0.5)
+/yshift1 0 p1y mul def		% y period-shift of screen A (e.g. 0.5)
+/xshift2 0 p2 mul def		% x period-shift of screen B
+/yshift2 0 p2y mul def		% y period-shift of screen B
+
+/xshift1f xshift1 factor mul def
+/yshift1f yshift1 factor mul def
+/xshift2f xshift2 factor mul def
+/yshift2f yshift2 factor mul def
+
+
+% Draw screen A:
+gsave
+1 inch 2.5 inch translate
+
+% Draw axes:
+0.3 centiinch setlinewidth
+-1.5 inch 0 inch moveto
+3 inch 0 inch rlineto
+0 inch -1.5 inch moveto
+0 inch 3 inch rlineto
+stroke
+
+0.5 centiinch setlinewidth
+theta1 rot add rotate
+0 pp1y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp1y div round pp1y mul yshift1f sub centiinch sub def
+	0 pp1 len		% draw a row of circles
+	{/xsave exch centiinch len2 pp1 div round pp1 mul xshift1f sub centiinch sub def
+	newpath
+	xsave ysave r1 centiinch 0 360 arc
+	stroke} for
+} for
+-1.25 inch 0.97 inch moveto
+(A) show
+grestore
+
+
+% Draw screen B:
+gsave
+1 inch 2.5 inch translate
+theta2 rot add rotate
+0 pp2y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp2y div round pp2y mul yshift2f sub centiinch sub def
+	0 pp2 len		% draw a rows of circles
+	{/xsave exch centiinch len2 pp2 div round pp2 mul xshift2f sub centiinch sub def
+	newpath
+	xsave ysave r2 centiinch 0 360 arc
+	stroke} for
+} for
+-1.25 inch 0.97 inch moveto
+(B) show
+grestore
+
+
+
+
+% ********************************** Fig. (b):
+
+/theta1 30 def		% angle of screen A
+/theta2 -30 def		% angle of screen B
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/r1 4.5 def		% radius of circles in screen A
+/r2 3.15 def		% radius of circles in screen B
+
+
+/p1 3 def		% period of screen A
+/p2 3 def		% period of screen B
+
+/p1y 3 def		% period of screen A (in the perpendicular direction)
+/p2y 3 def		% period of screen B (in the perpendicular direction)
+
+/factor 5 def
+
+/pp1 p1 factor mul def
+/pp2 p2 factor mul def
+
+/pp1y p1y factor mul def
+/pp2y p2y factor mul def
+
+/xshift1 0.5 p1 mul def		% x period-shift of screen A (e.g. 0.5)
+/yshift1 0.5 p1y mul def	% y period-shift of screen A (e.g. 0.5)
+/xshift2 0.5 p2 mul def		% x period-shift of screen B
+/yshift2 0.5 p2y mul def	% y period-shift of screen B
+
+/xshift1f xshift1 factor mul def
+/yshift1f yshift1 factor mul def
+/xshift2f xshift2 factor mul def
+/yshift2f yshift2 factor mul def
+
+
+
+% Draw screen A:
+gsave
+4.2 inch 2.5 inch translate
+
+% Draw axes:
+0.3 centiinch setlinewidth
+-1.5 inch 0 inch moveto
+3 inch 0 inch rlineto
+0 inch -1.5 inch moveto
+0 inch 3 inch rlineto
+stroke
+
+0.5 centiinch setlinewidth
+theta1 rot add rotate
+0 pp1y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp1y div round pp1y mul yshift1f sub centiinch sub def
+	0 pp1 len		% draw a row of circles
+	{/xsave exch centiinch len2 pp1 div round pp1 mul xshift1f sub centiinch sub def
+	newpath
+	xsave ysave r1 centiinch 0 360 arc
+	stroke} for
+} for
+-1.2 inch 0.97 inch moveto
+(A) show
+grestore
+
+
+% Draw screen B:
+gsave
+4.2 inch 2.5 inch translate
+theta2 rot add rotate
+0 pp2y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp2y div round pp2y mul yshift2f sub centiinch sub def
+	0 pp2 len		% draw a row of circles
+	{/xsave exch centiinch len2 pp2 div round pp2 mul xshift2f sub centiinch sub def
+	newpath
+	xsave ysave r2 centiinch 0 360 arc
+	stroke} for
+} for
+-1.2 inch 0.97 inch moveto
+(B) show
+grestore
+
+
+
+grestore
+gsave
+1.65 inch 3.8 inch translate
+
+
+% ********************************** Fig. (c):
+
+/theta1 30 def		% angle of screen A
+/theta2 -30 def		% angle of screen B
+/theta3 0 def		% angle of screen C
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/r1 4.5 def		% radius of circles in screen A
+/r2 3.15 def		% radius of circles in screen B
+/r3 1.75 def		% radius of circles in screen C
+
+
+/p1 3 def		% period of screen A
+/p2 3 def		% period of screen B
+/p3 3 def		% period of screen C
+
+/p1y 3 def		% period of screen A (in the perpendicular direction)
+/p2y 3 def		% period of screen B (in the perpendicular direction)
+/p3y 3 def		% period of screen C (in the perpendicular direction)
+
+/factor 5 def
+
+/pp1 p1 factor mul def
+/pp2 p2 factor mul def
+/pp3 p3 factor mul def
+
+/pp1y p1y factor mul def
+/pp2y p2y factor mul def
+/pp3y p3y factor mul def
+
+/xshift1 0 p1 mul def		% x period-shift of screen A (e.g. 0.5)
+/yshift1 0 p1y mul def		% y period-shift of screen A (e.g. 0.5)
+/xshift2 0 p2 mul def		% x period-shift of screen B
+/yshift2 0 p2y mul def		% y period-shift of screen B
+/xshift3 0 p3 mul def		% x period-shift of screen C
+/yshift3 0 p3y mul def		% y period-shift of screen C
+
+/xshift1f xshift1 factor mul def
+/yshift1f yshift1 factor mul def
+/xshift2f xshift2 factor mul def
+/yshift2f yshift2 factor mul def
+/xshift3f xshift3 factor mul def
+/yshift3f yshift3 factor mul def
+
+
+
+% Draw screen A:
+gsave
+1 inch 2.5 inch translate
+
+% Draw axes:
+0.3 centiinch setlinewidth
+-1.5 inch 0 inch moveto
+3 inch 0 inch rlineto
+0 inch -1.5 inch moveto
+0 inch 3 inch rlineto
+stroke
+
+0.5 centiinch setlinewidth
+theta1 rot add rotate
+0 pp1y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp1y div round pp1y mul yshift1f sub centiinch sub def
+	0 pp1 len		% draw a rows of circles
+	{/xsave exch centiinch len2 pp1 div round pp1 mul xshift1f sub centiinch sub def
+	newpath
+	xsave ysave r1 centiinch 0 360 arc
+	stroke} for
+} for
+-1.25 inch 0.97 inch moveto
+(A) show
+grestore
+
+
+% Draw screen B:
+gsave
+1 inch 2.5 inch translate
+theta2 rot add rotate
+0 pp2y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp2y div round pp2y mul yshift2f sub centiinch sub def
+	0 pp2 len		% draw a row of circles
+	{/xsave exch centiinch len2 pp2 div round pp2 mul xshift2f sub centiinch sub def
+	newpath
+	xsave ysave r2 centiinch 0 360 arc
+	stroke} for
+} for
+-1.25 inch 0.97 inch moveto
+(B) show
+grestore
+
+
+% Draw screen C:
+gsave
+1 inch 2.5 inch translate
+theta3 rot add rotate
+0 pp3y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp3y div round pp3y mul yshift3f sub centiinch sub def
+	0 pp3 len		% draw a row of circles
+	{/xsave exch centiinch len2 pp3 div round pp3 mul xshift3f sub centiinch sub def
+	newpath
+	xsave ysave r3 centiinch 0 360 arc
+	stroke} for
+} for
+-1.25 inch 0.97 inch moveto
+(C) show
+grestore
+
+
+% ********************************** Fig. (d):
+
+/theta1 30 def		% angle of screen A
+/theta2 -30 def		% angle of screen B
+/theta3 0 def		% angle of screen C
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/r1 4.5 def		% radius of circles in screen A
+/r2 3.15 def		% radius of circles in screen B
+/r3 1.75 def		% radius of circles in screen C
+
+
+/p1 3 def		% period of screen A
+/p2 3 def		% period of screen B
+/p3 3 def		% period of screen C
+
+/p1y 3 def		% period of screen A (in the perpendicular direction)
+/p2y 3 def		% period of screen B (in the perpendicular direction)
+/p3y 3 def		% period of screen C (in the perpendicular direction)
+
+/factor 5 def
+
+/pp1 p1 factor mul def
+/pp2 p2 factor mul def
+/pp3 p3 factor mul def
+
+/pp1y p1y factor mul def
+/pp2y p2y factor mul def
+/pp3y p3y factor mul def
+
+/xshift1 0 p1 mul def		% x period-shift of screen A (e.g. 0.5)
+/yshift1 0 p1y mul def		% y period-shift of screen A (e.g. 0.5)
+/xshift2 0 p2 mul def		% x period-shift of screen B
+/yshift2 0 p2y mul def		% y period-shift of screen B
+/xshift3 0.5 p3 mul def		% x period-shift of screen C
+/yshift3 0.5 p3y mul def	% y period-shift of screen C
+
+/xshift1f xshift1 factor mul def
+/yshift1f yshift1 factor mul def
+/xshift2f xshift2 factor mul def
+/yshift2f yshift2 factor mul def
+/xshift3f xshift3 factor mul def
+/yshift3f yshift3 factor mul def
+
+
+
+% Draw screen A:
+gsave
+4.2 inch 2.5 inch translate
+
+% Draw axes:
+0.3 centiinch setlinewidth
+-1.5 inch 0 inch moveto
+3 inch 0 inch rlineto
+0 inch -1.5 inch moveto
+0 inch 3 inch rlineto
+stroke
+
+0.5 centiinch setlinewidth
+theta1 rot add rotate
+0 pp1y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp1y div round pp1y mul yshift1f sub centiinch sub def
+	0 pp1 len		% draw a row of circles
+	{/xsave exch centiinch len2 pp1 div round pp1 mul xshift1f sub centiinch sub def
+	newpath
+	xsave ysave r1 centiinch 0 360 arc
+	stroke} for
+} for
+-1.25 inch 0.92 inch moveto
+(A) show
+grestore
+
+
+% Draw screen B:
+gsave
+4.2 inch 2.5 inch translate
+theta2 rot add rotate
+0 pp2y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp2y div round pp2y mul yshift2f sub centiinch sub def
+	0 pp2 len		% draw a row of circles
+	{/xsave exch centiinch len2 pp2 div round pp2 mul xshift2f sub centiinch sub def
+	newpath
+	xsave ysave r2 centiinch 0 360 arc
+	stroke} for
+} for
+-1.25 inch 0.97 inch moveto
+(B) show
+grestore
+
+
+% Draw screen C:
+gsave
+4.2 inch 2.5 inch translate
+theta3 rot add rotate
+0 pp3y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp3y div round pp3y mul yshift3f sub centiinch sub def
+	0 pp3 len		% draw a row of circles
+	{/xsave exch centiinch len2 pp3 div round pp3 mul xshift3f sub centiinch sub def
+	newpath
+	xsave ysave r3 centiinch 0 360 arc
+	stroke} for
+} for
+-1.2 inch 0.97 inch moveto
+(C) show
+grestore
+
+grestore
+gsave
+1.65 inch 0.6 inch translate
+
+
+% ********************************** Fig. (e):
+
+/theta1 30 def		% angle of screen A
+/theta2 -30 def		% angle of screen B
+/theta3 0 def		% angle of screen C
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/r1 4.5 def		% radius of circles in screen A
+/r2 3.15 def		% radius of circles in screen B
+/r3 1.75 def		% radius of circles in screen C
+
+
+/p1 3 def		% period of screen A
+/p2 3 def		% period of screen B
+/p3 3 def		% period of screen C
+
+/p1y 3 def		% period of screen A (in the perpendicular direction)
+/p2y 3 def		% period of screen B (in the perpendicular direction)
+/p3y 3 def		% period of screen C (in the perpendicular direction)
+
+/factor 5 def
+
+/pp1 p1 factor mul def
+/pp2 p2 factor mul def
+/pp3 p3 factor mul def
+
+/pp1y p1y factor mul def
+/pp2y p2y factor mul def
+/pp3y p3y factor mul def
+
+/xshift1 0.5 p1 mul def		% x period-shift of screen A (e.g. 0.5)
+/yshift1 0.5 p1y mul def	% y period-shift of screen A (e.g. 0.5)
+/xshift2 0.5 p2 mul def		% x period-shift of screen B
+/yshift2 0.5 p2y mul def	% y period-shift of screen B
+/xshift3 0.5 p3 mul def		% x period-shift of screen C
+/yshift3 0.5 p3y mul def	% y period-shift of screen C
+
+/xshift1f xshift1 factor mul def
+/yshift1f yshift1 factor mul def
+/xshift2f xshift2 factor mul def
+/yshift2f yshift2 factor mul def
+/xshift3f xshift3 factor mul def
+/yshift3f yshift3 factor mul def
+
+
+
+% Draw screen A:
+gsave
+1 inch 2.5 inch translate
+
+% Draw axes:
+0.3 centiinch setlinewidth
+-1.5 inch 0 inch moveto
+3 inch 0 inch rlineto
+0 inch -1.5 inch moveto
+0 inch 3 inch rlineto
+stroke
+
+0.5 centiinch setlinewidth
+theta1 rot add rotate
+0 pp1y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp1y div round pp1y mul yshift1f sub centiinch sub def
+	0 pp1 len		% draw a row of circles
+	{/xsave exch centiinch len2 pp1 div round pp1 mul xshift1f sub centiinch sub def
+	newpath
+	xsave ysave r1 centiinch 0 360 arc
+	stroke} for
+} for
+-1.2 inch 0.97 inch moveto
+(A) show
+grestore
+
+
+% Draw screen B:
+gsave
+1 inch 2.5 inch translate
+theta2 rot add rotate
+0 pp2y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp2y div round pp2y mul yshift2f sub centiinch sub def
+	0 pp2 len		% draw a row of circles
+	{/xsave exch centiinch len2 pp2 div round pp2 mul xshift2f sub centiinch sub def
+	newpath
+	xsave ysave r2 centiinch 0 360 arc
+	stroke} for
+} for
+-1.2 inch 0.97 inch moveto
+(B) show
+grestore
+
+
+% Draw screen C:
+gsave
+1 inch 2.5 inch translate
+theta3 rot add rotate
+0 pp3y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp3y div round pp3y mul yshift3f sub centiinch sub def
+	0 pp3 len		% draw a row of circles
+	{/xsave exch centiinch len2 pp3 div round pp3 mul xshift3f sub centiinch sub def
+	newpath
+	xsave ysave r3 centiinch 0 360 arc
+	stroke} for
+} for
+-1.2 inch 0.97 inch moveto
+(C) show
+grestore
+
+
+% ********************************** Fig. (f):
+
+/theta1 30 def		% angle of screen A
+/theta2 -30 def		% angle of screen B
+/theta3 0 def		% angle of screen C
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/r1 4.5 def		% radius of circles in screen A
+/r2 3.15 def		% radius of circles in screen B
+/r3 1.75 def		% radius of circles in screen C
+
+
+/p1 3 def		% period of screen A
+/p2 3 def		% period of screen B
+/p3 3 def		% period of screen C
+
+/p1y 3 def		% period of screen A (in the perpendicular direction)
+/p2y 3 def		% period of screen B (in the perpendicular direction)
+/p3y 3 def		% period of screen C (in the perpendicular direction)
+
+/factor 5 def
+
+/pp1 p1 factor mul def
+/pp2 p2 factor mul def
+/pp3 p3 factor mul def
+
+/pp1y p1y factor mul def
+/pp2y p2y factor mul def
+/pp3y p3y factor mul def
+
+/xshift1 0 p1 mul def		% x period-shift of screen A (e.g. 0.5)
+/yshift1 0 p1y mul def		% y period-shift of screen A (e.g. 0.5)
+/xshift2 0 p2 mul def		% x period-shift of screen B
+/yshift2 0 p2y mul def		% y period-shift of screen B
+/xshift3 0.5 p3 mul def		% x period-shift of screen C
+/yshift3 0 p3y mul def		% y period-shift of screen C
+
+/xshift1f xshift1 factor mul def
+/yshift1f yshift1 factor mul def
+/xshift2f xshift2 factor mul def
+/yshift2f yshift2 factor mul def
+/xshift3f xshift3 factor mul def
+/yshift3f yshift3 factor mul def
+
+
+
+% Draw screen A:
+gsave
+4.2 inch 2.5 inch translate
+
+% Draw axes:
+0.3 centiinch setlinewidth
+-1.5 inch 0 inch moveto
+3 inch 0 inch rlineto
+0 inch -1.5 inch moveto
+0 inch 3 inch rlineto
+stroke
+
+0.5 centiinch setlinewidth
+theta1 rot add rotate
+0 pp1y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp1y div round pp1y mul yshift1f sub centiinch sub def
+	0 pp1 len		% draw a row of circles
+	{/xsave exch centiinch len2 pp1 div round pp1 mul xshift1f sub centiinch sub def
+	newpath
+	xsave ysave r1 centiinch 0 360 arc
+	stroke} for
+} for
+-1.25 inch 0.92 inch moveto
+(A) show
+grestore
+
+
+% Draw screen B:
+gsave
+4.2 inch 2.5 inch translate
+theta2 rot add rotate
+0 pp2y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp2y div round pp2y mul yshift2f sub centiinch sub def
+	0 pp2 len		% draw a row of circles
+	{/xsave exch centiinch len2 pp2 div round pp2 mul xshift2f sub centiinch sub def
+	newpath
+	xsave ysave r2 centiinch 0 360 arc
+	stroke} for
+} for
+-1.25 inch 0.97 inch moveto
+(B) show
+grestore
+
+
+% Draw screen C:
+gsave
+4.2 inch 2.5 inch translate
+theta3 rot add rotate
+0 pp3y len		% draw rows of circles
+{
+	/ysave exch centiinch len2 pp3y div round pp3y mul yshift3f sub centiinch sub def
+	0 pp3 len		% draw a row of circles
+	{/xsave exch centiinch len2 pp3 div round pp3 mul xshift3f sub centiinch sub def
+	newpath
+	xsave ysave r3 centiinch 0 360 arc
+	stroke} for
+} for
+-1.2 inch 0.97 inch moveto
+(C) show
+grestore
+
+grestore
+
+
+
+/Times-Roman findfont
+12 scalefont setfont
+
+
+0 0 translate
+1.4 inch 8.2 inch moveto
+((a)) show
+4.6 inch 8.2 inch moveto
+((b)) show
+1.4 inch 5.0 inch moveto
+((c)) show
+4.6 inch 5.0 inch moveto
+((d)) show
+1.4 inch 1.8 inch moveto
+((e)) show
+4.6 inch 1.8 inch moveto
+((f)) show
+
+
+
+gsave
+2 inch 1 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure 8.15) show
+/Times-Roman findfont
+12 scalefont setfont
+(  from the book:  ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0 inch -0.25 inch moveto
+(    by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+grestore
+
+
+
+showpage

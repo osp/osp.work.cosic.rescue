@@ -1,0 +1,207 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 5.7(top) from the book: "The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 9, 1999
+%
+% ********************************************************************************
+%
+% (a), (b) - Superpositions of 2 dot-screens:
+%
+% The screen parameters are as follows:
+% 
+% theta1, theta2 - the screen angles, in degrees.
+% p1, p2  - the respective screen periods (main direction), in deciinches.
+% p1y, p2y - the respective screen periods (perpendicular direction), in 
+%	deciinches.
+% xshifti, yshifti - the respective period-shifts for the i-th screen, in terms
+%	of period fractions.
+% len - the length (and width) of each of the screens, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+0.8 centiinch setlinewidth
+
+
+1 setlinecap
+
+
+/len 200 def		% screen length in centiinches
+/len2 len 2 div def
+
+
+/Helvetica findfont
+10 scalefont setfont
+
+
+1.05 inch 4.7 inch translate
+gsave
+
+
+% ******************************** Fig. (a):
+
+/theta1 0 def		% angle of screen A
+/theta2 45 def		% angle of screen B
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3.5 def		% period of screen A
+/p2 2.47488 def		% period of screen B
+
+/p1y 3.5 def		% period of screen A (in the perpendicular direction)
+/p2y 2.47488 def		% period of screen B (in the perpendicular direction)
+
+/xshift1 0 p1 mul def		% x period-shift of screen A (e.g. 0.5)
+/yshift1 0 p1y mul def		% y period-shift of screen A (e.g. 0.5)
+/xshift2 0 p2 mul def		% x period-shift of screen B
+/yshift2 0 p2y mul def		% y period-shift of screen B
+
+
+% Draw screen A:
+gsave
+1.5 centiinch setlinewidth
+1.2 inch 2.5 inch translate
+theta1 rot add rotate
+0 p1y len		% draw rows of dots
+{newpath
+	/ysave exch centiinch len2 p1y div round p1y mul yshift1 sub centiinch sub def
+	0 p1 len		% draw a row of dots
+	{centiinch len2 p1 div round p1 mul xshift1 sub centiinch sub ysave moveto
+	0 0 rlineto} for
+	stroke
+} for
+-1.14 inch 0.8 inch moveto
+(A) show
+grestore
+
+
+% Draw screen B:
+gsave
+1.2 inch 2.5 inch translate
+theta2 rot add rotate
+0 p2y len		% draw rows of dots
+{newpath
+	/ysave exch centiinch len2 p2y div round p2y mul yshift2 sub centiinch sub def
+	0 p2 len		% draw a row of dots
+	{centiinch len2 p2 div round p2 mul xshift2 sub centiinch sub ysave moveto
+	0 0 rlineto} for
+	stroke
+} for
+-1.12 inch 0.8 inch moveto
+(B) show
+grestore
+
+
+gsave
+1.2 inch 2.5 inch translate
+/Times-Roman findfont
+12 scalefont setfont
+-0.075 inch -1.7 inch moveto
+((a)) show
+grestore
+
+
+
+% ******************************** Fig. (b):
+
+/theta1 0 def		% angle of screen A
+/theta2 39.5 def	% angle of screen B
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3.5 def		% period of screen A
+/p2 2.47488 def		% period of screen B
+
+/p1y 3.5 def		% period of screen A (in the perpendicular direction)
+/p2y 2.47488 def	% period of screen B (in the perpendicular direction)
+
+/xshift1 0 p1 mul def		% x period-shift of screen A (e.g. 0.5)
+/yshift1 0 p1y mul def		% y period-shift of screen A (e.g. 0.5)
+/xshift2 0 p2 mul def		% x period-shift of screen B
+/yshift2 0 p2y mul def		% y period-shift of screen B
+
+
+% Draw screen A:
+gsave
+1.5 centiinch setlinewidth
+5.1 inch 2.5 inch translate
+theta1 rot add rotate
+0 p1y len		% draw rows of dots
+{newpath
+	/ysave exch centiinch len2 p1y div round p1y mul yshift1 sub centiinch sub def
+	0 p1 len		% draw a row of dots
+	{centiinch len2 p1 div round p1 mul xshift1 sub centiinch sub ysave moveto
+	0 0 rlineto} for
+	stroke
+} for
+-1.14 inch 0.8 inch moveto
+(A) show
+grestore
+
+
+% Draw screen B:
+gsave
+5.1 inch 2.5 inch translate
+theta2 rot add rotate
+0 p2y len		% draw rows of dots
+{newpath
+	/ysave exch centiinch len2 p2y div round p2y mul yshift2 sub centiinch sub def
+	0 p2 len		% draw a row of dots
+	{centiinch len2 p2 div round p2 mul xshift2 sub centiinch sub ysave moveto
+	0 0 rlineto} for
+	stroke
+} for
+-1.12 inch 0.8 inch moveto
+(B) show
+grestore
+
+
+gsave
+5.1 inch 2.5 inch translate
+/Times-Roman findfont
+12 scalefont setfont
+-0.075 inch -1.7 inch moveto
+((b)) show
+grestore
+
+
+
+gsave
+0.8 inch -1.7 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure 5.7) show
+/Times-Roman findfont
+12 scalefont setfont
+( (top) from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0 inch -0.25 inch moveto
+(    by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+grestore
+
+
+
+grestore
+
+showpage
+
+
+

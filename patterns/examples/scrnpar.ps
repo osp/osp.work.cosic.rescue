@@ -1,0 +1,123 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure "scrnpar" from the Moire Demonstration Kit accompanying the book: 
+%		"The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 2000.
+%
+%		* * *  Copyright (c) 2000 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: May 24, 2002
+%
+% ********************************************************************************
+%
+% A horizontal parabolic dot-screen
+%
+% The adjustable parameters are as follows:
+% 
+% theta1 - the angle of the screen in degrees.
+% p1 - the period of the screen in its main direction, in centiinches.
+% p1y - the period of the screen in its secondary direction, in centiinches.
+% len - the length of the screen, in centiinches.
+% wid - the width of the screen, in centiinches.
+% diam - the dot diameter, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+
+
+
+% ************ Adjustable parameters for the grid:
+
+
+/theta1 0 def		% angle of the screen in degrees
+
+/p1 3 def		% period of the screen in its main direction in centiinches
+
+/p1y 3 def		% period of the screen in its secondary direction in centiinches
+
+/len 700 def		% length of the screen in centiinches
+
+/wid 700 def		% width of the screen in centiinches
+
+/diam 1.5 def		% the dot diameter in centiinches
+
+
+
+
+% ************ Draw the dot-screen:
+
+/inch {72 mul} def
+
+/centiinch {0.72 mul} def
+
+0.2 inch 3.0 inch translate
+
+
+/len2 len 2 div def
+/wid2 wid 2 div def
+diam centiinch setlinewidth
+
+1 setlinecap
+
+
+/a 0.001 def	% coefficient of x**2 for the parabolas
+
+/x len2 neg def
+/xx x x mul a mul def
+
+
+gsave
+4 inch 4.0 inch translate
+theta1 rotate
+0 p1y len		% draw rows of dots
+{newpath
+	/ysave exch centiinch wid2 centiinch sub def
+	0 p1 len		% draw a row of dots
+	{centiinch len2 xx sub centiinch sub ysave moveto
+	0 0 rlineto} for
+	stroke
+	/x x p1y add def
+	/xx x x mul a mul def
+} for
+grestore
+
+
+
+gsave
+1.75 inch -1.0 inch translate
+0.5 inch 0 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+(Figure  ) show
+/Times-Bold findfont
+12 scalefont setfont
+(scrnpar) show
+/Times-Roman findfont
+12 scalefont setfont
+(  from the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Demonstration Kit) show
+0.1 inch -0.25 inch moveto
+(accompanying the book:  ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0.1 inch -0.5 inch moveto
+(by I. Amidror, published by Kluwer Academic Publishers, 2000.) show
+grestore
+
+
+
+
+showpage
+

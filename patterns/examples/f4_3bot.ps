@@ -1,0 +1,7065 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 4.3(top) from the book: "The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 9, 1999
+%
+% ********************************************************************************
+%
+% (a), (b), (c) - Superpositions of 2 dot-screens:
+%
+% The screen parameters are as follows:
+% 
+% theta1, theta2 - the screen angles, in degrees.
+% p1, p2  - the respective screen periods (main direction), in deciinches.
+% p1y, p2y - the respective screen periods (perpendicular direction), in 
+%	deciinches.
+% xshifti, yshifti - the respective period-shifts for the i-th screen, in terms
+%	of period fractions.
+% len - the length (and width) of each of the screens, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+1.2 centiinch setlinewidth
+
+
+1 setlinecap
+
+
+/Helvetica findfont
+10 scalefont setfont
+
+
+0 inch 1.15 inch translate
+
+gsave
+90 rotate
+
+
+% ****************************************** Labels for Fig. (a):
+
+
+gsave
+2 inch 0 inch translate
+/Times-Roman findfont
+12 scalefont setfont
+-0.07 inch -5.1 inch moveto
+((a)) show
+grestore
+
+
+% ****************************************** Labels for Fig. (b):
+
+gsave
+5 inch 0 inch translate
+
+/Times-Roman findfont
+12 scalefont setfont
+-0.07 inch -5.1 inch moveto
+((b)) show
+
+/Times-Bold findfont
+10 scalefont setfont
+-0.7 inch -4.4 inch moveto
+(a) show
+/Times-Roman findfont
+10 scalefont setfont
+0.05 inch 0 inch rmoveto
+(=) show
+/Times-Bold findfont
+10 scalefont setfont
+0.18 inch 0 inch rmoveto
+(f) show
+/Times-Roman findfont
+6 scalefont setfont
+0.005 inch -0.03 inch rmoveto
+(1) show
+/Times-Roman findfont
+10 scalefont setfont
+0.05 inch 0.03 inch rmoveto
+(+ 2) show
+/Times-Bold findfont
+10 scalefont setfont
+0.01 inch 0 inch rmoveto
+(f) show
+/Times-Roman findfont
+6 scalefont setfont
+0.005 inch -0.03 inch rmoveto
+(2) show
+/Times-Roman findfont
+10 scalefont setfont
+0.05 inch 0.03 inch rmoveto
+(-) show
+-0.02 inch 0 inch rmoveto
+(- 2) show
+/Times-Bold findfont
+10 scalefont setfont
+0.01 inch 0 inch rmoveto
+(f) show
+/Times-Roman findfont
+6 scalefont setfont
+0.005 inch -0.03 inch rmoveto
+(3) show
+/Times-Roman findfont
+10 scalefont setfont
+0.05 inch 0.03 inch rmoveto
+(-) show
+-0.02 inch 0 inch rmoveto
+(-  ) show
+/Times-Bold findfont
+10 scalefont setfont
+0.01 inch 0 inch rmoveto
+(f) show
+/Times-Roman findfont
+6 scalefont setfont
+0.005 inch -0.03 inch rmoveto
+(4) show
+
+/Times-Bold findfont
+10 scalefont setfont
+-0.71 inch -4.65 inch moveto
+(b) show
+/Times-Roman findfont
+10 scalefont setfont
+0.05 inch 0 inch rmoveto
+(= -) show
+-0.02 inch 0 inch rmoveto
+(-2) show
+/Times-Bold findfont
+10 scalefont setfont
+0.01 inch 0 inch rmoveto
+(f) show
+/Times-Roman findfont
+6 scalefont setfont
+0.005 inch -0.03 inch rmoveto
+(1) show
+/Times-Roman findfont
+10 scalefont setfont
+0.05 inch 0.03 inch rmoveto
+(+   ) show
+/Times-Bold findfont
+10 scalefont setfont
+0.01 inch 0 inch rmoveto
+(f) show
+/Times-Roman findfont
+6 scalefont setfont
+0.005 inch -0.03 inch rmoveto
+(2) show
+/Times-Roman findfont
+10 scalefont setfont
+0.05 inch 0.03 inch rmoveto
+(-) show
+-0.02 inch 0 inch rmoveto
+(-  ) show
+/Times-Bold findfont
+10 scalefont setfont
+0.01 inch 0 inch rmoveto
+(f) show
+/Times-Roman findfont
+6 scalefont setfont
+0.005 inch -0.03 inch rmoveto
+(3) show
+/Times-Roman findfont
+10 scalefont setfont
+0.05 inch 0.03 inch rmoveto
+(-) show
+-0.02 inch 0 inch rmoveto
+(- 2) show
+/Times-Bold findfont
+10 scalefont setfont
+0.01 inch 0 inch rmoveto
+(f) show
+/Times-Roman findfont
+6 scalefont setfont
+0.005 inch -0.03 inch rmoveto
+(4) show
+
+grestore
+
+
+% ****************************************** Labels for Fig. (c):
+
+gsave
+8 inch 0 inch translate
+
+/Times-Roman findfont
+12 scalefont setfont
+-0.07 inch -5.1 inch moveto
+((c)) show
+
+/Times-Bold findfont
+10 scalefont setfont
+-0.25 inch -4.4 inch moveto
+(a) show
+/Times-Roman findfont
+10 scalefont setfont
+0.05 inch 0 inch rmoveto
+(=) show
+/Times-Bold findfont
+10 scalefont setfont
+0.05 inch 0 inch rmoveto
+(f) show
+/Times-Roman findfont
+6 scalefont setfont
+0.005 inch -0.03 inch rmoveto
+(1) show
+/Times-Roman findfont
+10 scalefont setfont
+0.04 inch 0.03 inch rmoveto
+(-) show
+-0.02 inch 0 inch rmoveto
+(- ) show
+/Times-Bold findfont
+10 scalefont setfont
+0.01 inch 0 inch rmoveto
+(f) show
+/Times-Roman findfont
+6 scalefont setfont
+0.005 inch -0.03 inch rmoveto
+(3) show
+
+/Times-Bold findfont
+10 scalefont setfont
+-0.26 inch -4.65 inch moveto
+(b) show
+/Times-Roman findfont
+10 scalefont setfont
+0.05 inch 0 inch rmoveto
+(=) show
+/Times-Bold findfont
+10 scalefont setfont
+0.05 inch 0 inch rmoveto
+(f) show
+/Times-Roman findfont
+6 scalefont setfont
+0.005 inch -0.03 inch rmoveto
+(2) show
+/Times-Roman findfont
+10 scalefont setfont
+0.04 inch 0.03 inch rmoveto
+(-) show
+-0.02 inch 0 inch rmoveto
+(- ) show
+/Times-Bold findfont
+10 scalefont setfont
+0.01 inch 0 inch rmoveto
+(f) show
+/Times-Roman findfont
+6 scalefont setfont
+0.005 inch -0.03 inch rmoveto
+(4) show
+
+grestore
+
+
+
+gsave
+2.6 inch -6.5 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure 4.3) show
+/Times-Roman findfont
+12 scalefont setfont
+( (bottom) from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0 inch -0.25 inch moveto
+(        by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+grestore
+
+
+grestore
+
+
+
+% ****************************************** The 3 spectra:
+
+
+%!PS-Adobe-2.0 EPSF-2.0
+%%BoundingBox: 72.0 72.0 540.0 720.0
+%%Creator: Mathematica
+%%CreationDate: Mon Jul  3 15:57:58 MET DST 1995
+%%EndComments
+
+/Mathdict 100 dict def
+Mathdict begin
+/Mlmarg		1.0 72 mul def
+/Mrmarg		1.0 72 mul def
+/Mbmarg		1.0 72 mul def
+/Mtmarg		1.0 72 mul def
+/Mwidth		8.5 72 mul def
+/Mheight	11 72 mul def
+/Mtransform	{  } bind def
+/Mnodistort	true def
+/Mfixwid	false	def
+/Mfixdash	false def
+/Mrot		0	def
+/Mpstart {
+MathPictureStart
+} bind def
+/Mpend {
+MathPictureEnd
+} bind def
+/Mscale {
+0 1 0 1
+5 -1 roll
+MathScale
+} bind def
+/ISOLatin1Encoding dup where
+{ pop pop }
+{
+[
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon /less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+/quoteleft /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/dotlessi /grave /acute /circumflex /tilde /macron /breve /dotaccent
+/dieresis /.notdef /ring /cedilla /.notdef /hungarumlaut /ogonek /caron
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft
+/logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior
+/acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright
+/onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis
+] def
+} ifelse
+/MFontDict 50 dict def
+/MStrCat
+{
+exch
+dup length
+2 index length add
+string
+dup 3 1 roll
+copy
+length
+exch dup
+4 2 roll exch
+putinterval
+} def
+/MCreateEncoding
+{
+1 index
+255 string cvs
+(-) MStrCat
+1 index MStrCat
+cvn exch
+(Encoding) MStrCat
+cvn dup where
+{
+exch get
+}
+{
+pop
+StandardEncoding
+} ifelse
+3 1 roll
+dup MFontDict exch known not
+{
+1 index findfont
+dup length dict
+begin
+{1 index /FID ne
+{def}
+{pop pop}
+ifelse} forall
+/Encoding 3 index
+def
+currentdict
+end
+1 index exch definefont pop
+MFontDict 1 index
+null put
+}
+if
+exch pop
+exch pop
+} def
+/ISOLatin1 { (ISOLatin1) MCreateEncoding } def
+/ISO8859 { (ISOLatin1) MCreateEncoding } def
+/Mcopyfont {
+dup
+maxlength
+dict
+exch
+{
+1 index
+/FID
+eq
+{
+pop pop
+}
+{
+2 index
+3 1 roll
+put
+}
+ifelse
+}
+forall
+} def
+/Plain	/Courier findfont Mcopyfont definefont pop
+/Bold	/Courier-Bold findfont Mcopyfont definefont pop
+/Italic /Courier-Oblique findfont Mcopyfont definefont pop
+/MathPictureStart {
+gsave
+Mtransform
+Mlmarg
+Mbmarg
+translate
+/Mtmatrix
+matrix currentmatrix
+def
+/Mgmatrix
+matrix currentmatrix
+def
+} bind def
+/MathPictureEnd {
+grestore
+} bind def
+/MathSubStart {
+Momatrix
+Mgmatrix Mtmatrix
+Mlmarg Mrmarg
+Mbmarg Mtmarg
+Mwidth Mheight
+11 -2 roll
+moveto
+Mtmatrix setmatrix
+currentpoint
+Mgmatrix setmatrix
+13 -2 roll
+moveto
+Mtmatrix setmatrix
+currentpoint
+2 copy translate
+/Mtmatrix matrix currentmatrix def
+/Mlmarg 0 def
+/Mrmarg 0 def
+/Mbmarg 0 def
+/Mtmarg 0 def
+3 -1 roll
+exch sub
+/Mheight exch def
+sub
+/Mwidth exch def
+} bind def
+/MathSubEnd {
+/Mheight exch def
+/Mwidth exch def
+/Mtmarg exch def
+/Mbmarg exch def
+/Mrmarg exch def
+/Mlmarg exch def
+/Mtmatrix exch def
+dup setmatrix
+/Mgmatrix exch def
+/Momatrix exch def
+} bind def
+/Mdot {
+moveto
+0 0 rlineto
+stroke
+} bind def
+/Mtetra {
+moveto
+lineto
+lineto
+lineto
+fill
+} bind def
+/Metetra {
+moveto
+lineto
+lineto
+lineto
+closepath
+gsave
+fill
+grestore
+0 setgray
+stroke
+} bind def
+/Mistroke {
+flattenpath
+0 0 0
+{
+4 2 roll
+pop pop
+}
+{
+4 -1 roll
+2 index
+sub dup mul
+4 -1 roll
+2 index
+sub dup mul
+add sqrt
+4 -1 roll
+add
+3 1 roll
+}
+{
+stop
+}
+{
+stop
+}
+pathforall
+pop pop
+currentpoint
+stroke
+moveto
+currentdash
+3 -1 roll
+add
+setdash
+} bind def
+/Mfstroke {
+stroke
+currentdash
+pop 0
+setdash
+} bind def
+/Mrotsboxa {
+gsave
+dup
+/Mrot
+exch def
+Mrotcheck
+Mtmatrix
+dup
+setmatrix
+7 1 roll
+4 index
+4 index
+translate
+rotate
+3 index
+-1 mul
+3 index
+-1 mul
+translate
+/Mtmatrix
+matrix
+currentmatrix
+def
+grestore
+Msboxa
+3  -1 roll
+/Mtmatrix
+exch def
+/Mrot
+0 def
+} bind def
+/Msboxa {
+newpath
+5 -1 roll
+Mvboxa
+pop
+Mboxout
+6 -1 roll
+5 -1 roll
+4 -1 roll
+Msboxa1
+5 -3 roll
+Msboxa1
+Mboxrot
+[
+7 -2 roll
+2 copy
+[
+3 1 roll
+10 -1 roll
+9 -1 roll
+]
+6 1 roll
+5 -2 roll
+]
+} bind def
+/Msboxa1 {
+sub
+2 div
+dup
+2 index
+1 add
+mul
+3 -1 roll
+-1 add
+3 -1 roll
+mul
+} bind def
+/Mvboxa	{
+Mfixwid
+{
+Mvboxa1
+}
+{
+dup
+Mwidthcal
+0 exch
+{
+add
+}
+forall
+exch
+Mvboxa1
+4 index
+7 -1 roll
+add
+4 -1 roll
+pop
+3 1 roll
+}
+ifelse
+} bind def
+/Mvboxa1 {
+gsave
+newpath
+[ true
+3 -1 roll
+{
+Mbbox
+5 -1 roll
+{
+0
+5 1 roll
+}
+{
+7 -1 roll
+exch sub
+(m) stringwidth pop
+.3 mul
+sub
+7 1 roll
+6 -1 roll
+4 -1 roll
+Mmin
+3 -1 roll
+5 index
+add
+5 -1 roll
+4 -1 roll
+Mmax
+4 -1 roll
+}
+ifelse
+false
+}
+forall
+{ stop } if
+counttomark
+1 add
+4 roll
+]
+grestore
+} bind def
+/Mbbox {
+1 dict begin
+0 0 moveto
+/temp (T) def
+{	gsave
+currentpoint newpath moveto
+temp 0 3 -1 roll put temp
+false charpath flattenpath currentpoint
+pathbbox
+grestore moveto lineto moveto} forall
+pathbbox
+newpath
+end
+} bind def
+/Mmin {
+2 copy
+gt
+{ exch } if
+pop
+} bind def
+/Mmax {
+2 copy
+lt
+{ exch } if
+pop
+} bind def
+/Mrotshowa {
+dup
+/Mrot
+exch def
+Mrotcheck
+Mtmatrix
+dup
+setmatrix
+7 1 roll
+4 index
+4 index
+translate
+rotate
+3 index
+-1 mul
+3 index
+-1 mul
+translate
+/Mtmatrix
+matrix
+currentmatrix
+def
+Mgmatrix setmatrix
+Mshowa
+/Mtmatrix
+exch def
+/Mrot 0 def
+} bind def
+/Mshowa {
+4 -2 roll
+moveto
+2 index
+Mtmatrix setmatrix
+Mvboxa
+7 1 roll
+Mboxout
+6 -1 roll
+5 -1 roll
+4 -1 roll
+Mshowa1
+4 1 roll
+Mshowa1
+rmoveto
+currentpoint
+Mfixwid
+{
+Mshowax
+}
+{
+Mshoway
+}
+ifelse
+pop pop pop pop
+Mgmatrix setmatrix
+} bind def
+/Mshowax {	
+0 1
+4 index length
+-1 add
+{
+2 index
+4 index
+2 index
+get
+3 index
+add
+moveto
+4 index
+exch get
+Mfixdash
+{
+Mfixdashp		
+}
+if
+show
+} for
+} bind def
+/Mfixdashp {
+dup
+length
+1
+gt
+1 index
+true exch
+{
+45
+eq
+and
+} forall
+and
+{
+gsave
+(--)		
+stringwidth pop
+(-)
+stringwidth pop
+sub
+2 div
+0 rmoveto
+dup
+length
+1 sub
+{
+(-)
+show
+}
+repeat
+grestore
+}
+if
+} bind def	
+/Mshoway {
+3 index
+Mwidthcal
+5 1 roll
+0 1
+4 index length
+-1 add
+{
+2 index
+4 index
+2 index
+get
+3 index
+add
+moveto
+4 index
+exch get
+[
+6 index
+aload
+length
+2 add
+-1 roll
+{
+pop
+Strform
+stringwidth
+pop
+neg 
+exch
+add
+0 rmoveto
+}
+exch
+kshow
+cleartomark
+} for
+pop	
+} bind def
+/Mwidthcal {
+[
+exch
+{
+Mwidthcal1
+}
+forall
+]
+[
+exch
+dup
+Maxlen
+-1 add
+0 1
+3 -1 roll
+{
+[
+exch
+2 index
+{		 
+1 index	
+Mget
+exch
+}
+forall		
+pop
+Maxget
+exch
+}
+for
+pop
+]
+Mreva
+} bind def
+/Mreva	{
+[
+exch
+aload
+length
+-1 1
+{1 roll}
+for
+]
+} bind def
+/Mget	{
+1 index
+length
+-1 add
+1 index
+ge
+{
+get
+}
+{
+pop pop
+0
+}
+ifelse
+} bind def
+/Maxlen	{
+[
+exch
+{
+length
+}
+forall
+Maxget
+} bind def
+/Maxget	{
+counttomark
+-1 add
+1 1
+3 -1 roll
+{
+pop
+Mmax
+}
+for
+exch
+pop
+} bind def
+/Mwidthcal1 {
+[
+exch
+{
+Strform
+stringwidth
+pop
+}
+forall
+]
+} bind def
+/Strform {
+/tem (x) def
+tem 0
+3 -1 roll
+put
+tem
+} bind def
+/Mshowa1 {
+2 copy
+add
+4 1 roll
+sub
+mul
+sub
+-2 div
+} bind def
+/MathScale {
+Mwidth
+Mlmarg Mrmarg add
+sub
+Mheight
+Mbmarg Mtmarg add
+sub
+0 0 moveto
+1 index 0
+lineto
+2 copy
+lineto
+0 1 index
+lineto
+%clip 
+newpath
+Mlp
+translate
+dup
+/Mathabs
+exch def
+scale
+/yscale exch def
+/ybias exch def
+/xscale exch def
+/xbias exch def
+/Momatrix
+xscale yscale matrix scale
+xbias ybias matrix translate
+matrix concatmatrix def
+/Mgmatrix
+matrix currentmatrix
+def
+} bind def
+/Mlp {
+3 copy
+Mlpfirst
+{
+Mnodistort
+{
+Mmin
+dup
+} if
+4 index
+2 index
+2 index
+Mlprun
+11 index
+11 -1 roll
+10 -4 roll
+Mlp1
+8 index
+9 -5 roll
+Mlp1
+4 -1 roll
+and
+{ exit } if
+3 -1 roll
+pop pop
+} loop
+exch
+3 1 roll
+7 -3 roll
+pop pop pop
+} bind def
+/Mlpfirst {
+3 -1 roll
+dup length
+2 copy
+-2 add
+get
+aload
+pop pop pop
+4 -2 roll
+-1 add
+get
+aload
+pop pop pop
+6 -1 roll
+3 -1 roll
+5 -1 roll
+sub
+div
+4 1 roll
+exch sub
+div
+} bind def
+/Mlprun {
+2 copy
+4 index
+0 get
+dup
+4 1 roll
+Mlprun1
+3 copy
+8 -2 roll
+9 -1 roll
+{
+3 copy
+Mlprun1
+3 copy
+11 -3 roll
+/gt Mlpminmax
+8 3 roll
+11 -3 roll
+/lt Mlpminmax
+8 3 roll
+} forall
+pop pop pop pop
+3 1 roll
+pop pop
+aload pop
+5 -1 roll
+aload pop
+exch
+6 -1 roll
+Mlprun2
+8 2 roll
+4 -1 roll
+Mlprun2
+6 2 roll
+3 -1 roll
+Mlprun2
+4 2 roll
+exch
+Mlprun2
+6 2 roll
+} bind def
+/Mlprun1 {
+aload pop
+exch
+6 -1 roll
+5 -1 roll
+mul add
+4 -2 roll
+mul
+3 -1 roll
+add
+} bind def
+/Mlprun2 {
+2 copy
+add 2 div
+3 1 roll
+exch sub
+} bind def
+/Mlpminmax {
+cvx
+2 index
+6 index
+2 index
+exec
+{
+7 -3 roll
+4 -1 roll
+} if
+1 index
+5 index
+3 -1 roll
+exec
+{
+4 1 roll
+pop
+5 -1 roll
+aload
+pop pop
+4 -1 roll
+aload pop
+[
+8 -2 roll
+pop
+5 -2 roll
+pop
+6 -2 roll
+pop
+5 -1 roll
+]
+4 1 roll
+pop
+}
+{
+pop pop pop
+} ifelse
+} bind def
+/Mlp1 {
+5 index
+3 index	sub
+5 index
+2 index mul
+1 index
+le
+1 index
+0 le
+or
+dup
+not
+{
+1 index
+3 index	div
+.99999 mul
+8 -1 roll
+pop
+7 1 roll
+}
+if
+8 -1 roll
+2 div
+7 -2 roll
+pop sub
+5 index
+6 -3 roll
+pop pop
+mul sub
+exch
+} bind def
+/intop 0 def
+/inrht 0 def
+/inflag 0 def
+/outflag 0 def
+/xadrht 0 def
+/xadlft 0 def
+/yadtop 0 def
+/yadbot 0 def
+/Minner {
+outflag
+1
+eq
+{
+/outflag 0 def
+/intop 0 def
+/inrht 0 def
+} if		
+5 index
+gsave
+Mtmatrix setmatrix
+Mvboxa pop
+grestore
+3 -1 roll
+pop
+dup
+intop
+gt
+{
+/intop
+exch def
+}
+{ pop }
+ifelse
+dup
+inrht
+gt
+{
+/inrht
+exch def
+}
+{ pop }
+ifelse
+pop
+/inflag
+1 def
+} bind def
+/Mouter {
+/xadrht 0 def
+/xadlft 0 def
+/yadtop 0 def
+/yadbot 0 def
+inflag
+1 eq
+{
+dup
+0 lt
+{
+dup
+intop
+mul
+neg
+/yadtop
+exch def
+} if
+dup
+0 gt
+{
+dup
+intop
+mul
+/yadbot
+exch def
+}
+if
+pop
+dup
+0 lt
+{
+dup
+inrht
+mul
+neg
+/xadrht
+exch def
+} if
+dup
+0 gt
+{
+dup
+inrht
+mul
+/xadlft
+exch def
+} if
+pop
+/outflag 1 def
+}
+{ pop pop}
+ifelse
+/inflag 0 def
+/inrht 0 def
+/intop 0 def
+} bind def	
+/Mboxout {
+outflag
+1
+eq
+{
+4 -1
+roll
+xadlft
+leadjust
+add
+sub
+4 1 roll
+3 -1
+roll
+yadbot
+leadjust
+add
+sub
+3 1
+roll
+exch
+xadrht
+leadjust
+add
+add
+exch
+yadtop
+leadjust
+add
+add
+/outflag 0 def
+/xadlft 0 def
+/yadbot 0 def
+/xadrht 0 def
+/yadtop 0 def
+} if
+} bind def
+/leadjust {
+(m) stringwidth pop
+.5 mul
+} bind def
+/Mrotcheck {
+dup
+90
+eq
+{
+yadbot
+/yadbot
+xadrht
+def	
+/xadrht
+yadtop
+def
+/yadtop
+xadlft
+def
+/xadlft
+exch
+def
+}
+if
+dup
+cos
+1 index
+sin
+Checkaux
+dup
+cos
+1 index
+sin neg
+exch
+Checkaux
+3 1 roll
+pop pop
+} bind def
+/Checkaux {
+4 index
+exch
+4 index
+mul
+3 1 roll
+mul add
+4 1 roll
+} bind def
+/Mboxrot {
+Mrot
+90 eq
+{
+brotaux
+4 2
+roll
+}
+if
+Mrot
+180 eq
+{
+4 2
+roll
+brotaux
+4 2
+roll
+brotaux
+}	
+if
+Mrot
+270 eq
+{
+4 2
+roll
+brotaux
+}
+if
+} bind def
+/brotaux {
+neg
+exch
+neg
+} bind def
+/Mabswid {
+Mathabs
+div
+setlinewidth	
+} bind def
+/Mabsdash {
+exch
+Mathabs
+[
+3 1 roll
+exch
+{
+exch
+dup
+3 -1 roll
+exch
+div
+exch
+}
+forall
+pop ]
+exch
+setdash
+} bind def
+/MBeginOrig { Momatrix concat} bind def
+/MEndOrig { Mgmatrix setmatrix} bind def
+/colorimage where
+{ pop }
+{
+/colorimage {
+3 1 roll
+pop pop
+5 -1 roll
+mul
+4 1 roll
+{
+currentfile
+1 index
+readhexstring
+pop }
+image
+} bind def
+} ifelse
+/sampledsound where
+{ pop}
+{ /sampledsound {
+exch
+pop
+exch
+5 1 roll
+mul
+4 idiv
+mul
+2 idiv
+exch pop
+exch
+/Mtempproc exch def
+{ Mtempproc pop}
+repeat
+} bind def
+} ifelse
+/setcmykcolor where
+{ pop}
+{ /setcmykcolor {
+4 1
+roll
+[
+4 1 
+roll
+]
+{
+1 index
+sub
+1
+sub neg
+dup
+0
+lt
+{
+pop
+0
+}
+if
+dup
+1
+gt
+{
+pop
+1
+}
+if
+exch
+} forall
+pop
+setrgbcolor
+} bind def
+} ifelse
+
+
+% Figures (a) - (c):
+
+/inch {72 mul} def
+5.5 inch 3.65 inch translate
+90 rotate
+
+%%AspectRatio: 3.2 
+MathPictureStart
+/Times-Roman findfont 8  scalefont  setfont
+% Scaling calculations
+0.0238095 .952381 -1.82857 .952381 [
+[ 0 0 0 0 ]
+[ 1 3.2 0 0 ]
+] MathScale
+% Start of Graphics
+1 setlinecap
+1 setlinejoin
+newpath
+%%Object: Graphics
+[ ] 0 setdash
+0 setgray
+gsave
+grestore
+0 0 moveto
+1 0 lineto
+1 3.2 lineto
+0 3.2 lineto
+closepath
+%clip
+newpath
+gsave
+
+
+% Figure (a):
+
+% Start of sub-graphic
+gsave
+0.02381 2.17143 .97619 3.12381 MathSubStart
+
+-6 inch -5.9 inch translate
+
+/Times-Roman findfont 8  scalefont  setfont
+% Scaling calculations
+.5 0.00416667 .5 0.00416667 [
+[(-100)] 0.08333 0 0 2 Msboxa
+[(-50)] .29167 0 0 2 Msboxa
+[(0)] .5 0 0 2 Msboxa
+[(50)] .70833 0 0 2 Msboxa
+[(100)] .91667 0 0 2 Msboxa
+[(-100)] -0.0125 0.08333 1 0 Msboxa
+[(-50)] -0.0125 .29167 1 0 Msboxa
+[(0)] -0.0125 .5 1 0 Msboxa
+[(50)] -0.0125 .70833 1 0 Msboxa
+[(100)] -0.0125 .91667 1 0 Msboxa
+[ -0.001 -0.001 0 0 ]
+[ 1.001 1.001 0 0 ]
+] MathScale
+% Start of Graphics
+1 setlinecap
+1 setlinejoin
+newpath
+%%Object: Graphics
+[ ] 0 setdash
+gsave
+gsave
+0.002 setlinewidth
+0.08333 0 moveto
+0.08333 0.00625 lineto
+stroke
+grestore
+%[(-100)] 0.08333 0 0 2 Mshowa
+gsave
+0.002 setlinewidth
+.29167 0 moveto
+.29167 0.00625 lineto
+stroke
+grestore
+%[(-50)] .29167 0 0 2 Mshowa
+gsave
+0.002 setlinewidth
+.5 0 moveto
+.5 0.00625 lineto
+stroke
+grestore
+%[(0)] .5 0 0 2 Mshowa
+gsave
+0.002 setlinewidth
+.70833 0 moveto
+.70833 0.00625 lineto
+stroke
+grestore
+%[(50)] .70833 0 0 2 Mshowa
+gsave
+0.002 setlinewidth
+.91667 0 moveto
+.91667 0.00625 lineto
+stroke
+grestore
+%[(100)] .91667 0 0 2 Mshowa
+gsave
+0.001 setlinewidth
+.125 0 moveto
+.125 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.16667 0 moveto
+.16667 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.20833 0 moveto
+.20833 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.25 0 moveto
+.25 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.33333 0 moveto
+.33333 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.375 0 moveto
+.375 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.41667 0 moveto
+.41667 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.45833 0 moveto
+.45833 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.54167 0 moveto
+.54167 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.58333 0 moveto
+.58333 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.625 0 moveto
+.625 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.66667 0 moveto
+.66667 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.75 0 moveto
+.75 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.79167 0 moveto
+.79167 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.83333 0 moveto
+.83333 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.875 0 moveto
+.875 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0.04167 0 moveto
+0.04167 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.95833 0 moveto
+.95833 0.00375 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+0 0 moveto
+1 0 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+0 0.08333 moveto
+0.00625 0.08333 lineto
+stroke
+grestore
+%[(-100)] -0.0125 0.08333 1 0 Mshowa
+gsave
+0.002 setlinewidth
+0 .29167 moveto
+0.00625 .29167 lineto
+stroke
+grestore
+%[(-50)] -0.0125 .29167 1 0 Mshowa
+gsave
+0.002 setlinewidth
+0 .5 moveto
+0.00625 .5 lineto
+stroke
+grestore
+%[(0)] -0.0125 .5 1 0 Mshowa
+gsave
+0.002 setlinewidth
+0 .70833 moveto
+0.00625 .70833 lineto
+stroke
+grestore
+%[(50)] -0.0125 .70833 1 0 Mshowa
+gsave
+0.002 setlinewidth
+0 .91667 moveto
+0.00625 .91667 lineto
+stroke
+grestore
+%[(100)] -0.0125 .91667 1 0 Mshowa
+gsave
+0.001 setlinewidth
+0 .125 moveto
+0.00375 .125 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .16667 moveto
+0.00375 .16667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .20833 moveto
+0.00375 .20833 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .25 moveto
+0.00375 .25 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .33333 moveto
+0.00375 .33333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .375 moveto
+0.00375 .375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .41667 moveto
+0.00375 .41667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .45833 moveto
+0.00375 .45833 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .54167 moveto
+0.00375 .54167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .58333 moveto
+0.00375 .58333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .625 moveto
+0.00375 .625 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .66667 moveto
+0.00375 .66667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .75 moveto
+0.00375 .75 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .79167 moveto
+0.00375 .79167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .83333 moveto
+0.00375 .83333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .875 moveto
+0.00375 .875 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 0.04167 moveto
+0.00375 0.04167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .95833 moveto
+0.00375 .95833 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+0 0 moveto
+0 1 lineto
+stroke
+grestore
+grestore
+gsave
+gsave
+0.002 setlinewidth
+0.08333 .99375 moveto
+0.08333 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.29167 .99375 moveto
+.29167 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.5 .99375 moveto
+.5 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.70833 .99375 moveto
+.70833 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.91667 .99375 moveto
+.91667 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.125 .99625 moveto
+.125 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.16667 .99625 moveto
+.16667 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.20833 .99625 moveto
+.20833 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.25 .99625 moveto
+.25 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.33333 .99625 moveto
+.33333 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.375 .99625 moveto
+.375 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.41667 .99625 moveto
+.41667 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.45833 .99625 moveto
+.45833 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.54167 .99625 moveto
+.54167 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.58333 .99625 moveto
+.58333 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.625 .99625 moveto
+.625 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.66667 .99625 moveto
+.66667 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.75 .99625 moveto
+.75 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.79167 .99625 moveto
+.79167 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.83333 .99625 moveto
+.83333 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.875 .99625 moveto
+.875 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0.04167 .99625 moveto
+0.04167 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.95833 .99625 moveto
+.95833 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+0 1 moveto
+1 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 0.08333 moveto
+1 0.08333 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 .29167 moveto
+1 .29167 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 .5 moveto
+1 .5 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 .70833 moveto
+1 .70833 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 .91667 moveto
+1 .91667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .125 moveto
+1 .125 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .16667 moveto
+1 .16667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .20833 moveto
+1 .20833 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .25 moveto
+1 .25 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .33333 moveto
+1 .33333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .375 moveto
+1 .375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .41667 moveto
+1 .41667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .45833 moveto
+1 .45833 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .54167 moveto
+1 .54167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .58333 moveto
+1 .58333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .625 moveto
+1 .625 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .66667 moveto
+1 .66667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .75 moveto
+1 .75 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .79167 moveto
+1 .79167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .83333 moveto
+1 .83333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .875 moveto
+1 .875 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 0.04167 moveto
+1 0.04167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .95833 moveto
+1 .95833 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+1 0 moveto
+1 1 lineto
+stroke
+grestore
+grestore
+gsave
+gsave
+0.002 setlinewidth
+0 .5 moveto
+1 .5 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.5 0 moveto
+.5 1 lineto
+stroke
+grestore
+grestore
+0 0 moveto
+1 0 lineto
+1 1 lineto
+0 1 lineto
+closepath
+clip
+newpath
+gsave
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.01 setlinewidth
+.5 .5 Mdot
+.66667 .54466 Mdot
+.62201 .62201 Mdot
+.54466 .66667 Mdot
+.45534 .66667 Mdot
+.37799 .62201 Mdot
+.33333 .54466 Mdot
+.33333 .45534 Mdot
+.37799 .37799 Mdot
+.45534 .33333 Mdot
+.54466 .33333 Mdot
+.62201 .37799 Mdot
+.66667 .45534 Mdot
+.62201 .71133 Mdot
+.28868 .62201 Mdot
+.37799 .28868 Mdot
+.71133 .37799 Mdot
+.83333 .5 Mdot
+.78868 .66667 Mdot
+.66667 .78868 Mdot
+.5 .83333 Mdot
+.33333 .78868 Mdot
+.21133 .66667 Mdot
+.16667 .5 Mdot
+.21133 .33333 Mdot
+.33333 .21133 Mdot
+.5 .16667 Mdot
+.66667 .21133 Mdot
+.78868 .33333 Mdot
+.95534 .62201 Mdot
+.83333 .83333 Mdot
+.62201 .95534 Mdot
+.37799 .95534 Mdot
+.16667 .83333 Mdot
+0.04466 .62201 Mdot
+0.04466 .37799 Mdot
+.16667 .16667 Mdot
+.37799 0.04466 Mdot
+.62201 0.04466 Mdot
+.83333 .16667 Mdot
+.95534 .37799 Mdot
+1 .54466 Mdot
+.95534 .71133 Mdot
+.45534 1 Mdot
+.28868 .95534 Mdot
+0 .45534 Mdot
+0.04466 .28868 Mdot
+.54466 0 Mdot
+.71133 0.04466 Mdot
+.78868 1 Mdot
+0 .78868 Mdot
+.21133 0 Mdot
+1 .21133 Mdot
+1.12201 .66667 Mdot
+.95534 .95534 Mdot
+.66667 1.12201 Mdot
+.33333 1.12201 Mdot
+0.04466 .95534 Mdot
+-.12201 .66667 Mdot
+-.12201 .33333 Mdot
+0.04466 0.04466 Mdot
+.33333 -.12201 Mdot
+.66667 -.12201 Mdot
+.95534 0.04466 Mdot
+1.12201 .33333 Mdot
+1.12201 1 Mdot
+.62201 1.28868 Mdot
+0 1.12201 Mdot
+-.28867 .62201 Mdot
+-.12201 0 Mdot
+.37799 -.28867 Mdot
+1 -.12201 Mdot
+1.28868 .37799 Mdot
+1.28868 .71133 Mdot
+.28868 1.28868 Mdot
+-.28867 .28868 Mdot
+.71133 -.28867 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.005 setlinewidth
+.5 .5 Mdot
+.58932 .5 Mdot
+.57735 .54466 Mdot
+.54466 .57735 Mdot
+.5 .58932 Mdot
+.45534 .57735 Mdot
+.42265 .54466 Mdot
+.41068 .5 Mdot
+.42265 .45534 Mdot
+.45534 .42265 Mdot
+.5 .41068 Mdot
+.54466 .42265 Mdot
+.57735 .45534 Mdot
+.74402 .5 Mdot
+.71133 .62201 Mdot
+.5 .74402 Mdot
+.37799 .71133 Mdot
+.25598 .5 Mdot
+.28868 .37799 Mdot
+.5 .25598 Mdot
+.62201 .28868 Mdot
+.75598 .54466 Mdot
+.74402 .58932 Mdot
+.45534 .75598 Mdot
+.41068 .74402 Mdot
+.24402 .45534 Mdot
+.25598 .41068 Mdot
+.54466 .24402 Mdot
+.58932 .25598 Mdot
+.78868 .57735 Mdot
+.71133 .71133 Mdot
+.57735 .78868 Mdot
+.42265 .78868 Mdot
+.28868 .71133 Mdot
+.21133 .57735 Mdot
+.21133 .42265 Mdot
+.28868 .28868 Mdot
+.42265 .21133 Mdot
+.57735 .21133 Mdot
+.71133 .28868 Mdot
+.78868 .42265 Mdot
+.83333 .58932 Mdot
+.74402 .74402 Mdot
+.58932 .83333 Mdot
+.41068 .83333 Mdot
+.25598 .74402 Mdot
+.16667 .58932 Mdot
+.16667 .41068 Mdot
+.25598 .25598 Mdot
+.41068 .16667 Mdot
+.58932 .16667 Mdot
+.74402 .25598 Mdot
+.83333 .41068 Mdot
+.78868 .75598 Mdot
+.57735 .87799 Mdot
+.24402 .78868 Mdot
+.12201 .57735 Mdot
+.21133 .24402 Mdot
+.42265 .12201 Mdot
+.75598 .21133 Mdot
+.87799 .42265 Mdot
+.91068 .54466 Mdot
+.87799 .66667 Mdot
+.83333 .74402 Mdot
+.74402 .83333 Mdot
+.66667 .87799 Mdot
+.54466 .91068 Mdot
+.45534 .91068 Mdot
+.33333 .87799 Mdot
+.25598 .83333 Mdot
+.16667 .74402 Mdot
+.12201 .66667 Mdot
+0.08932 .54466 Mdot
+0.08932 .45534 Mdot
+.12201 .33333 Mdot
+.16667 .25598 Mdot
+.25598 .16667 Mdot
+.33333 .12201 Mdot
+.45534 0.08932 Mdot
+.54466 0.08932 Mdot
+.66667 .12201 Mdot
+.74402 .16667 Mdot
+.83333 .25598 Mdot
+.87799 .33333 Mdot
+.91068 .45534 Mdot
+.74402 .92265 Mdot
+0.07735 .74402 Mdot
+.25598 0.07735 Mdot
+.92265 .25598 Mdot
+.91068 .78868 Mdot
+.78868 .91068 Mdot
+.71133 .95534 Mdot
+.54466 1 Mdot
+.21133 .91068 Mdot
+0.08932 .78868 Mdot
+0.04466 .71133 Mdot
+0 .54466 Mdot
+0.08932 .21133 Mdot
+.21133 0.08932 Mdot
+.28868 0.04466 Mdot
+.45534 0 Mdot
+.78868 0.08932 Mdot
+.91068 .21133 Mdot
+.95534 .28868 Mdot
+1 .45534 Mdot
+.91068 .87799 Mdot
+.62201 1.04466 Mdot
+.12201 .91068 Mdot
+-0.04466 .62201 Mdot
+0.08932 .12201 Mdot
+.37799 -0.04466 Mdot
+.87799 0.08932 Mdot
+1.04466 .37799 Mdot
+1.07735 .5 Mdot
+1 .78868 Mdot
+.5 1.07735 Mdot
+.21133 1 Mdot
+-0.07735 .5 Mdot
+0 .21133 Mdot
+.5 -0.07735 Mdot
+.78868 0 Mdot
+1.07735 .58932 Mdot
+1.04466 .71133 Mdot
+.41068 1.07735 Mdot
+.28868 1.04466 Mdot
+-0.07735 .41068 Mdot
+-0.04466 .28868 Mdot
+.58932 -0.07735 Mdot
+.71133 -0.04466 Mdot
+1.12201 .57735 Mdot
+1.07735 .74402 Mdot
+1 .87799 Mdot
+.87799 1 Mdot
+.74402 1.07735 Mdot
+.57735 1.12201 Mdot
+.42265 1.12201 Mdot
+.25598 1.07735 Mdot
+.12201 1 Mdot
+0 .87799 Mdot
+-0.07735 .74402 Mdot
+-.12201 .57735 Mdot
+-.12201 .42265 Mdot
+-0.07735 .25598 Mdot
+0 .12201 Mdot
+.12201 0 Mdot
+.25598 -0.07735 Mdot
+.42265 -.12201 Mdot
+.57735 -.12201 Mdot
+.74402 -0.07735 Mdot
+.87799 0 Mdot
+1 .12201 Mdot
+1.07735 .25598 Mdot
+1.12201 .42265 Mdot
+1.16667 .5 Mdot
+1.07735 .83333 Mdot
+.83333 1.07735 Mdot
+.5 1.16667 Mdot
+.16667 1.07735 Mdot
+-0.07735 .83333 Mdot
+-.16667 .5 Mdot
+-0.07735 .16667 Mdot
+.16667 -0.07735 Mdot
+.5 -.16667 Mdot
+.83333 -0.07735 Mdot
+1.07735 .16667 Mdot
+1.16667 .58932 Mdot
+1.12201 .75598 Mdot
+.41068 1.16667 Mdot
+.24402 1.12201 Mdot
+-.16667 .41068 Mdot
+-.12201 .24402 Mdot
+.58932 -.16667 Mdot
+.75598 -.12201 Mdot
+.95534 1.04466 Mdot
+.74402 1.16667 Mdot
+-0.04466 .95534 Mdot
+-.16667 .74402 Mdot
+0.04466 -0.04466 Mdot
+.25598 -.16667 Mdot
+1.04466 0.04466 Mdot
+1.16667 .25598 Mdot
+1.07735 .92265 Mdot
+.57735 1.21133 Mdot
+0.07735 1.07735 Mdot
+-.21132 .57735 Mdot
+-0.07735 0.07735 Mdot
+.42265 -.21132 Mdot
+.92265 -0.07735 Mdot
+1.21133 .42265 Mdot
+1.24402 .54466 Mdot
+1.16667 .83333 Mdot
+1.12201 .91068 Mdot
+.91068 1.12201 Mdot
+.83333 1.16667 Mdot
+.54466 1.24402 Mdot
+.45534 1.24402 Mdot
+.16667 1.16667 Mdot
+0.08932 1.12201 Mdot
+-.12201 .91068 Mdot
+-.16667 .83333 Mdot
+-.24402 .54466 Mdot
+-.24402 .45534 Mdot
+-.16667 .16667 Mdot
+-.12201 0.08932 Mdot
+0.08932 -.12201 Mdot
+.16667 -.16667 Mdot
+.45534 -.24402 Mdot
+.54466 -.24402 Mdot
+.83333 -.16667 Mdot
+.91068 -.12201 Mdot
+1.12201 0.08932 Mdot
+1.16667 .16667 Mdot
+1.24402 .45534 Mdot
+1.28868 .62201 Mdot
+1.24402 .78868 Mdot
+1 1.12201 Mdot
+.78868 1.24402 Mdot
+.37799 1.28868 Mdot
+.21133 1.24402 Mdot
+-.12201 1 Mdot
+-.24402 .78868 Mdot
+-.28867 .37799 Mdot
+-.24402 .21133 Mdot
+0 -.12201 Mdot
+.21133 -.24402 Mdot
+.62201 -.28867 Mdot
+.78868 -.24402 Mdot
+1.12201 0 Mdot
+1.24402 .21133 Mdot
+1.07735 1.07735 Mdot
+.71133 1.28868 Mdot
+-0.07735 1.07735 Mdot
+-.28867 .71133 Mdot
+-0.07735 -0.07735 Mdot
+.28868 -.28867 Mdot
+1.07735 -0.07735 Mdot
+1.28868 .28868 Mdot
+.91068 1.21133 Mdot
+-.21132 .91068 Mdot
+0.08932 -.21132 Mdot
+1.21133 0.08932 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.003 setlinewidth
+.5 .5 Mdot
+.62201 .53269 Mdot
+.58932 .58932 Mdot
+.53269 .62201 Mdot
+.46731 .62201 Mdot
+.41068 .58932 Mdot
+.37799 .53269 Mdot
+.37799 .46731 Mdot
+.41068 .41068 Mdot
+.46731 .37799 Mdot
+.53269 .37799 Mdot
+.58932 .41068 Mdot
+.62201 .46731 Mdot
+.57735 .63397 Mdot
+.36603 .57735 Mdot
+.42265 .36603 Mdot
+.63397 .42265 Mdot
+.71133 .53269 Mdot
+.69936 .57735 Mdot
+.66667 .63397 Mdot
+.63397 .66667 Mdot
+.57735 .69936 Mdot
+.53269 .71133 Mdot
+.46731 .71133 Mdot
+.42265 .69936 Mdot
+.36603 .66667 Mdot
+.33333 .63397 Mdot
+.30064 .57735 Mdot
+.28868 .53269 Mdot
+.28868 .46731 Mdot
+.30064 .42265 Mdot
+.33333 .36603 Mdot
+.36603 .33333 Mdot
+.42265 .30064 Mdot
+.46731 .28868 Mdot
+.53269 .28868 Mdot
+.57735 .30064 Mdot
+.63397 .33333 Mdot
+.66667 .36603 Mdot
+.69936 .42265 Mdot
+.71133 .46731 Mdot
+.69936 .66667 Mdot
+.66667 .69936 Mdot
+.58932 .74402 Mdot
+.54466 .75598 Mdot
+.33333 .69936 Mdot
+.30064 .66667 Mdot
+.25598 .58932 Mdot
+.24402 .54466 Mdot
+.30064 .33333 Mdot
+.33333 .30064 Mdot
+.41068 .25598 Mdot
+.45534 .24402 Mdot
+.66667 .30064 Mdot
+.69936 .33333 Mdot
+.74402 .41068 Mdot
+.75598 .45534 Mdot
+.69936 .75598 Mdot
+.62201 .80064 Mdot
+.24402 .69936 Mdot
+.19936 .62201 Mdot
+.30064 .24402 Mdot
+.37799 .19936 Mdot
+.75598 .30064 Mdot
+.80064 .37799 Mdot
+.80064 .71133 Mdot
+.53269 .86603 Mdot
+.28868 .80064 Mdot
+.13398 .53269 Mdot
+.19936 .28868 Mdot
+.46731 .13398 Mdot
+.71133 .19936 Mdot
+.86603 .46731 Mdot
+.87799 .57735 Mdot
+.86603 .62201 Mdot
+.75598 .78868 Mdot
+.62201 .86603 Mdot
+.42265 .87799 Mdot
+.37799 .86603 Mdot
+.21133 .75598 Mdot
+.13398 .62201 Mdot
+.12201 .42265 Mdot
+.13398 .37799 Mdot
+.24402 .21133 Mdot
+.37799 .13398 Mdot
+.57735 .12201 Mdot
+.62201 .13398 Mdot
+.78868 .24402 Mdot
+.86603 .37799 Mdot
+.92265 .5 Mdot
+.86603 .71133 Mdot
+.71133 .86603 Mdot
+.5 .92265 Mdot
+.28868 .86603 Mdot
+.13398 .71133 Mdot
+0.07735 .5 Mdot
+.13398 .28868 Mdot
+.28868 .13398 Mdot
+.5 0.07735 Mdot
+.71133 .13398 Mdot
+.86603 .28868 Mdot
+.92265 .58932 Mdot
+.91068 .63397 Mdot
+.41068 .92265 Mdot
+.36603 .91068 Mdot
+0.07735 .41068 Mdot
+0.08932 .36603 Mdot
+.58932 0.07735 Mdot
+.63397 0.08932 Mdot
+.95534 .53269 Mdot
+.91068 .69936 Mdot
+.87799 .75598 Mdot
+.75598 .87799 Mdot
+.69936 .91068 Mdot
+.53269 .95534 Mdot
+.46731 .95534 Mdot
+.30064 .91068 Mdot
+.24402 .87799 Mdot
+.12201 .75598 Mdot
+0.08932 .69936 Mdot
+0.04466 .53269 Mdot
+0.04466 .46731 Mdot
+0.08932 .30064 Mdot
+.12201 .24402 Mdot
+.24402 .12201 Mdot
+.30064 0.08932 Mdot
+.46731 0.04466 Mdot
+.53269 0.04466 Mdot
+.69936 0.08932 Mdot
+.75598 .12201 Mdot
+.87799 .24402 Mdot
+.91068 .30064 Mdot
+.95534 .46731 Mdot
+.86603 .80064 Mdot
+.57735 .96731 Mdot
+.19936 .86603 Mdot
+0.03269 .57735 Mdot
+.13398 .19936 Mdot
+.42265 0.03269 Mdot
+.80064 .13398 Mdot
+.96731 .42265 Mdot
+1 .63397 Mdot
+.86603 .86603 Mdot
+.63397 1 Mdot
+.36603 1 Mdot
+.13398 .86603 Mdot
+0 .63397 Mdot
+0 .36603 Mdot
+.13398 .13398 Mdot
+.36603 0 Mdot
+.63397 0 Mdot
+.86603 .13398 Mdot
+1 .36603 Mdot
+1.03269 .57735 Mdot
+1 .69936 Mdot
+.92265 .83333 Mdot
+.83333 .92265 Mdot
+.69936 1 Mdot
+.57735 1.03269 Mdot
+.42265 1.03269 Mdot
+.30064 1 Mdot
+.16667 .92265 Mdot
+0.07735 .83333 Mdot
+0 .69936 Mdot
+-0.03269 .57735 Mdot
+-0.03269 .42265 Mdot
+0 .30064 Mdot
+0.07735 .16667 Mdot
+.16667 0.07735 Mdot
+.30064 0 Mdot
+.42265 -0.03269 Mdot
+.57735 -0.03269 Mdot
+.69936 0 Mdot
+.83333 0.07735 Mdot
+.92265 .16667 Mdot
+1 .30064 Mdot
+1.03269 .42265 Mdot
+.95534 .80064 Mdot
+.53269 1.04466 Mdot
+.19936 .95534 Mdot
+-0.04466 .53269 Mdot
+0.04466 .19936 Mdot
+.46731 -0.04466 Mdot
+.80064 0.04466 Mdot
+1.04466 .46731 Mdot
+1.04466 .62201 Mdot
+1.03269 .66667 Mdot
+.87799 .91068 Mdot
+.66667 1.03269 Mdot
+.37799 1.04466 Mdot
+.33333 1.03269 Mdot
+0.08932 .87799 Mdot
+-0.03269 .66667 Mdot
+-0.04466 .37799 Mdot
+-0.03269 .33333 Mdot
+.12201 0.08932 Mdot
+.33333 -0.03269 Mdot
+.62201 -0.04466 Mdot
+.66667 -0.03269 Mdot
+.91068 .12201 Mdot
+1.03269 .33333 Mdot
+.95534 .86603 Mdot
+.86603 .95534 Mdot
+.71133 1.04466 Mdot
+.58932 1.07735 Mdot
+.13398 .95534 Mdot
+0.04466 .86603 Mdot
+-0.04466 .71133 Mdot
+-0.07735 .58932 Mdot
+0.04466 .13398 Mdot
+.13398 0.04466 Mdot
+.28868 -0.04466 Mdot
+.41068 -0.07735 Mdot
+.86603 0.04466 Mdot
+.95534 .13398 Mdot
+1.04466 .28868 Mdot
+1.07735 .41068 Mdot
+1.08932 .54466 Mdot
+1.03269 .75598 Mdot
+.45534 1.08932 Mdot
+.24402 1.03269 Mdot
+-0.08932 .45534 Mdot
+-0.03269 .24402 Mdot
+.54466 -0.08932 Mdot
+.75598 -0.03269 Mdot
+.91068 .96731 Mdot
+.69936 1.08932 Mdot
+0.03269 .91068 Mdot
+-0.08932 .69936 Mdot
+0.08932 0.03269 Mdot
+.30064 -0.08932 Mdot
+.96731 0.08932 Mdot
+1.08932 .30064 Mdot
+.86603 1.04466 Mdot
+.78868 1.08932 Mdot
+-0.04466 .86603 Mdot
+-0.08932 .78868 Mdot
+.13398 -0.04466 Mdot
+.21133 -0.08932 Mdot
+1.04466 .13398 Mdot
+1.08932 .21133 Mdot
+1.03269 .91068 Mdot
+.91068 1.03269 Mdot
+.75598 1.12201 Mdot
+.58932 1.16667 Mdot
+0.08932 1.03269 Mdot
+-0.03269 .91068 Mdot
+-.12201 .75598 Mdot
+-.16667 .58932 Mdot
+-0.03269 0.08932 Mdot
+0.08932 -0.03269 Mdot
+.24402 -.12201 Mdot
+.41068 -.16667 Mdot
+.91068 -0.03269 Mdot
+1.03269 0.08932 Mdot
+1.12201 .24402 Mdot
+1.16667 .41068 Mdot
+1.08932 .87799 Mdot
+.53269 1.19936 Mdot
+.12201 1.08932 Mdot
+-.19936 .53269 Mdot
+-0.08932 .12201 Mdot
+.46731 -.19936 Mdot
+.87799 -0.08932 Mdot
+1.19936 .46731 Mdot
+1.19936 .62201 Mdot
+1.16667 .74402 Mdot
+1.04466 .95534 Mdot
+.62201 1.19936 Mdot
+.37799 1.19936 Mdot
+.25598 1.16667 Mdot
+0.04466 1.04466 Mdot
+-.19936 .62201 Mdot
+-.19936 .37799 Mdot
+-.16667 .25598 Mdot
+-0.04466 0.04466 Mdot
+.37799 -.19936 Mdot
+.62201 -.19936 Mdot
+.74402 -.16667 Mdot
+.95534 -0.04466 Mdot
+1.19936 .37799 Mdot
+1.21133 .66667 Mdot
+1.19936 .71133 Mdot
+1.03269 1 Mdot
+1 1.03269 Mdot
+.71133 1.19936 Mdot
+.66667 1.21133 Mdot
+.33333 1.21133 Mdot
+.28868 1.19936 Mdot
+0 1.03269 Mdot
+-0.03269 1 Mdot
+-.19936 .71133 Mdot
+-.21132 .66667 Mdot
+-.21132 .33333 Mdot
+-.19936 .28868 Mdot
+-0.03269 0 Mdot
+0 -0.03269 Mdot
+.28868 -.19936 Mdot
+.33333 -.21132 Mdot
+.66667 -.21132 Mdot
+.71133 -.19936 Mdot
+1 -0.03269 Mdot
+1.03269 0 Mdot
+1.19936 .28868 Mdot
+1.21133 .33333 Mdot
+.86603 1.13398 Mdot
+-.13397 .86603 Mdot
+.13398 -.13397 Mdot
+1.13398 .13398 Mdot
+1.24402 .63397 Mdot
+1.21133 .75598 Mdot
+.36603 1.24402 Mdot
+.24402 1.21133 Mdot
+-.24402 .36603 Mdot
+-.21132 .24402 Mdot
+.63397 -.24402 Mdot
+.75598 -.21132 Mdot
+1.25598 .58932 Mdot
+1.19936 .80064 Mdot
+.41068 1.25598 Mdot
+.19936 1.19936 Mdot
+-.25598 .41068 Mdot
+-.19936 .19936 Mdot
+.58932 -.25598 Mdot
+.80064 -.19936 Mdot
+1.24402 .69936 Mdot
+1.04466 1.04466 Mdot
+.69936 1.24402 Mdot
+.30064 1.24402 Mdot
+-0.04466 1.04466 Mdot
+-.24402 .69936 Mdot
+-.24402 .30064 Mdot
+-0.04466 -0.04466 Mdot
+.30064 -.24402 Mdot
+.69936 -.24402 Mdot
+1.04466 -0.04466 Mdot
+1.24402 .30064 Mdot
+1.28868 .53269 Mdot
+1.19936 .86603 Mdot
+1.16667 .92265 Mdot
+.92265 1.16667 Mdot
+.86603 1.19936 Mdot
+.53269 1.28868 Mdot
+.46731 1.28868 Mdot
+.13398 1.19936 Mdot
+0.07735 1.16667 Mdot
+-.16667 .92265 Mdot
+-.19936 .86603 Mdot
+-.28867 .53269 Mdot
+-.28867 .46731 Mdot
+-.19936 .13398 Mdot
+-.16667 0.07735 Mdot
+0.07735 -.16667 Mdot
+.13398 -.19936 Mdot
+.46731 -.28867 Mdot
+.53269 -.28867 Mdot
+.86603 -.19936 Mdot
+.92265 -.16667 Mdot
+1.16667 0.07735 Mdot
+1.19936 .13398 Mdot
+1.28868 .46731 Mdot
+1.03269 1.08932 Mdot
+.74402 1.25598 Mdot
+-0.08932 1.03269 Mdot
+-.25598 .74402 Mdot
+-0.03269 -0.08932 Mdot
+.25598 -.25598 Mdot
+1.08932 -0.03269 Mdot
+1.25598 .25598 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.002 setlinewidth
+.5 .5 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.002 setlinewidth
+.5 .5 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0.001 setlinewidth
+newpath
+.5 .5 0.05208 0 365.73 arc
+stroke
+newpath
+.83333 .5 0.01042 0 365.73 arc
+stroke
+newpath
+.16667 .5 0.01042 0 365.73 arc
+stroke
+newpath
+.5 .83333 0.01042 0 365.73 arc
+stroke
+newpath
+.5 .16667 0.01042 0 365.73 arc
+stroke
+newpath
+.78868 .66667 0.01042 0 365.73 arc
+stroke
+newpath
+.21132 .33333 0.01042 0 365.73 arc
+stroke
+newpath
+.33333 .78868 0.01042 0 365.73 arc
+stroke
+newpath
+.66667 .21132 0.01042 0 365.73 arc
+stroke
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(f)] .83333 .53333 0 0 Mshowa
+grestore
+gsave
+/Times-Roman findfont 5 scalefont setfont
+[(1)] .85 .52083 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(f)] .79284 .7 0 0 Mshowa
+grestore
+gsave
+/Times-Roman findfont 5 scalefont setfont
+[(3)] .80534 .6875 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(f)] .46667 .83333 0 0 Mshowa
+grestore
+gsave
+/Times-Roman findfont 5 scalefont setfont
+[(2)] .47917 .82083 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(f)] .3 .78868 0 0 Mshowa
+grestore
+gsave
+/Times-Roman findfont 5 scalefont setfont
+[(4)] .3125 .77618 0 0 Mshowa
+grestore
+grestore
+grestore
+grestore
+MathSubEnd
+grestore
+% End of sub-graphic
+
+
+% Figure (b):
+
+% Start of sub-graphic
+gsave
+0.02381 1.12381 .97619 2.07619 MathSubStart
+
+-3 inch -2.95 inch translate
+
+/Times-Roman findfont 8  scalefont  setfont
+% Scaling calculations
+.5 0.00416667 .5 0.00416667 [
+[(-100)] 0.08333 0 0 2 Msboxa
+[(-50)] .29167 0 0 2 Msboxa
+[(0)] .5 0 0 2 Msboxa
+[(50)] .70833 0 0 2 Msboxa
+[(100)] .91667 0 0 2 Msboxa
+[(-100)] -0.0125 0.08333 1 0 Msboxa
+[(-50)] -0.0125 .29167 1 0 Msboxa
+[(0)] -0.0125 .5 1 0 Msboxa
+[(50)] -0.0125 .70833 1 0 Msboxa
+[(100)] -0.0125 .91667 1 0 Msboxa
+[ -0.001 -0.001 0 0 ]
+[ 1.001 1.001 0 0 ]
+] MathScale
+% Start of Graphics
+1 setlinecap
+1 setlinejoin
+newpath
+%%Object: Graphics
+[ ] 0 setdash
+gsave
+gsave
+0.002 setlinewidth
+0.08333 0 moveto
+0.08333 0.00625 lineto
+stroke
+grestore
+%[(-100)] 0.08333 0 0 2 Mshowa
+gsave
+0.002 setlinewidth
+.29167 0 moveto
+.29167 0.00625 lineto
+stroke
+grestore
+%[(-50)] .29167 0 0 2 Mshowa
+gsave
+0.002 setlinewidth
+.5 0 moveto
+.5 0.00625 lineto
+stroke
+grestore
+%[(0)] .5 0 0 2 Mshowa
+gsave
+0.002 setlinewidth
+.70833 0 moveto
+.70833 0.00625 lineto
+stroke
+grestore
+%[(50)] .70833 0 0 2 Mshowa
+gsave
+0.002 setlinewidth
+.91667 0 moveto
+.91667 0.00625 lineto
+stroke
+grestore
+%[(100)] .91667 0 0 2 Mshowa
+gsave
+0.001 setlinewidth
+.125 0 moveto
+.125 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.16667 0 moveto
+.16667 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.20833 0 moveto
+.20833 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.25 0 moveto
+.25 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.33333 0 moveto
+.33333 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.375 0 moveto
+.375 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.41667 0 moveto
+.41667 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.45833 0 moveto
+.45833 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.54167 0 moveto
+.54167 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.58333 0 moveto
+.58333 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.625 0 moveto
+.625 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.66667 0 moveto
+.66667 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.75 0 moveto
+.75 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.79167 0 moveto
+.79167 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.83333 0 moveto
+.83333 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.875 0 moveto
+.875 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0.04167 0 moveto
+0.04167 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.95833 0 moveto
+.95833 0.00375 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+0 0 moveto
+1 0 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+0 0.08333 moveto
+0.00625 0.08333 lineto
+stroke
+grestore
+%[(-100)] -0.0125 0.08333 1 0 Mshowa
+gsave
+0.002 setlinewidth
+0 .29167 moveto
+0.00625 .29167 lineto
+stroke
+grestore
+%[(-50)] -0.0125 .29167 1 0 Mshowa
+gsave
+0.002 setlinewidth
+0 .5 moveto
+0.00625 .5 lineto
+stroke
+grestore
+%[(0)] -0.0125 .5 1 0 Mshowa
+gsave
+0.002 setlinewidth
+0 .70833 moveto
+0.00625 .70833 lineto
+stroke
+grestore
+%[(50)] -0.0125 .70833 1 0 Mshowa
+gsave
+0.002 setlinewidth
+0 .91667 moveto
+0.00625 .91667 lineto
+stroke
+grestore
+%[(100)] -0.0125 .91667 1 0 Mshowa
+gsave
+0.001 setlinewidth
+0 .125 moveto
+0.00375 .125 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .16667 moveto
+0.00375 .16667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .20833 moveto
+0.00375 .20833 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .25 moveto
+0.00375 .25 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .33333 moveto
+0.00375 .33333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .375 moveto
+0.00375 .375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .41667 moveto
+0.00375 .41667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .45833 moveto
+0.00375 .45833 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .54167 moveto
+0.00375 .54167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .58333 moveto
+0.00375 .58333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .625 moveto
+0.00375 .625 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .66667 moveto
+0.00375 .66667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .75 moveto
+0.00375 .75 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .79167 moveto
+0.00375 .79167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .83333 moveto
+0.00375 .83333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .875 moveto
+0.00375 .875 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 0.04167 moveto
+0.00375 0.04167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .95833 moveto
+0.00375 .95833 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+0 0 moveto
+0 1 lineto
+stroke
+grestore
+grestore
+gsave
+gsave
+0.002 setlinewidth
+0.08333 .99375 moveto
+0.08333 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.29167 .99375 moveto
+.29167 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.5 .99375 moveto
+.5 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.70833 .99375 moveto
+.70833 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.91667 .99375 moveto
+.91667 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.125 .99625 moveto
+.125 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.16667 .99625 moveto
+.16667 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.20833 .99625 moveto
+.20833 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.25 .99625 moveto
+.25 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.33333 .99625 moveto
+.33333 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.375 .99625 moveto
+.375 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.41667 .99625 moveto
+.41667 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.45833 .99625 moveto
+.45833 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.54167 .99625 moveto
+.54167 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.58333 .99625 moveto
+.58333 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.625 .99625 moveto
+.625 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.66667 .99625 moveto
+.66667 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.75 .99625 moveto
+.75 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.79167 .99625 moveto
+.79167 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.83333 .99625 moveto
+.83333 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.875 .99625 moveto
+.875 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0.04167 .99625 moveto
+0.04167 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.95833 .99625 moveto
+.95833 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+0 1 moveto
+1 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 0.08333 moveto
+1 0.08333 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 .29167 moveto
+1 .29167 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 .5 moveto
+1 .5 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 .70833 moveto
+1 .70833 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 .91667 moveto
+1 .91667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .125 moveto
+1 .125 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .16667 moveto
+1 .16667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .20833 moveto
+1 .20833 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .25 moveto
+1 .25 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .33333 moveto
+1 .33333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .375 moveto
+1 .375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .41667 moveto
+1 .41667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .45833 moveto
+1 .45833 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .54167 moveto
+1 .54167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .58333 moveto
+1 .58333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .625 moveto
+1 .625 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .66667 moveto
+1 .66667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .75 moveto
+1 .75 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .79167 moveto
+1 .79167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .83333 moveto
+1 .83333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .875 moveto
+1 .875 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 0.04167 moveto
+1 0.04167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .95833 moveto
+1 .95833 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+1 0 moveto
+1 1 lineto
+stroke
+grestore
+grestore
+gsave
+gsave
+0.002 setlinewidth
+0 .5 moveto
+1 .5 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.5 0 moveto
+.5 1 lineto
+stroke
+grestore
+grestore
+0 0 moveto
+1 0 lineto
+1 1 lineto
+0 1 lineto
+closepath
+clip
+newpath
+gsave
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.01 setlinewidth
+.5 .5 Mdot
+.58186 .63091 Mdot
+.56028 .64214 Mdot
+.36909 .58186 Mdot
+.35786 .56028 Mdot
+.41814 .36909 Mdot
+.43972 .35786 Mdot
+.63091 .41814 Mdot
+.64214 .43972 Mdot
+.69119 .56028 Mdot
+.43972 .69119 Mdot
+.30881 .43972 Mdot
+.56028 .30881 Mdot
+.63091 .75148 Mdot
+.24853 .63091 Mdot
+.36909 .24853 Mdot
+.75148 .36909 Mdot
+.64214 .77305 Mdot
+.22695 .64214 Mdot
+.35786 .22695 Mdot
+.77305 .35786 Mdot
+.83333 .5 Mdot
+.77305 .69119 Mdot
+.5 .83333 Mdot
+.30881 .77305 Mdot
+.16667 .5 Mdot
+.22695 .30881 Mdot
+.5 .16667 Mdot
+.69119 .22695 Mdot
+.91519 .63091 Mdot
+.36909 .91519 Mdot
+0.08481 .36909 Mdot
+.63091 0.08481 Mdot
+.83333 .83333 Mdot
+.58186 .96424 Mdot
+.16667 .83333 Mdot
+0.03576 .58186 Mdot
+.16667 .16667 Mdot
+.41814 0.03576 Mdot
+.83333 .16667 Mdot
+.96424 .41814 Mdot
+1.02453 .56028 Mdot
+.96424 .75148 Mdot
+.43972 1.02453 Mdot
+.24853 .96424 Mdot
+-0.02453 .43972 Mdot
+0.03576 .24853 Mdot
+.56028 -0.02453 Mdot
+.75148 0.03576 Mdot
+.77305 1.02453 Mdot
+-0.02453 .77305 Mdot
+.22695 -0.02453 Mdot
+1.02453 .22695 Mdot
+.91519 .96424 Mdot
+.64214 1.10638 Mdot
+0.03576 .91519 Mdot
+-.10638 .64214 Mdot
+0.08481 0.03576 Mdot
+.35786 -.10638 Mdot
+.96424 0.08481 Mdot
+1.10638 .35786 Mdot
+1.10638 .69119 Mdot
+.30881 1.10638 Mdot
+-.10638 .30881 Mdot
+.69119 -.10638 Mdot
+1.10638 1.02453 Mdot
+.58186 1.29758 Mdot
+-0.02453 1.10638 Mdot
+-.29758 .58186 Mdot
+-.10638 -0.02453 Mdot
+.41814 -.29758 Mdot
+1.02453 -.10638 Mdot
+1.29758 .41814 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.005 setlinewidth
+.5 .5 Mdot
+.51123 .52158 Mdot
+.47843 .51123 Mdot
+.48877 .47843 Mdot
+.52158 .48877 Mdot
+.57062 .60933 Mdot
+.54905 .62057 Mdot
+.39067 .57062 Mdot
+.37943 .54905 Mdot
+.42938 .39067 Mdot
+.45095 .37943 Mdot
+.60933 .42938 Mdot
+.62057 .45095 Mdot
+.71277 .54905 Mdot
+.70243 .58186 Mdot
+.45095 .71277 Mdot
+.41814 .70243 Mdot
+.28723 .45095 Mdot
+.29758 .41814 Mdot
+.54905 .28723 Mdot
+.58186 .29758 Mdot
+.724 .57062 Mdot
+.42938 .724 Mdot
+.276 .42938 Mdot
+.57062 .276 Mdot
+.66372 .76182 Mdot
+.62057 .78428 Mdot
+.23818 .66372 Mdot
+.21572 .62057 Mdot
+.33628 .23818 Mdot
+.37943 .21572 Mdot
+.76182 .33628 Mdot
+.78428 .37943 Mdot
+.81176 .51123 Mdot
+.76182 .66962 Mdot
+.48877 .81176 Mdot
+.33038 .76182 Mdot
+.18824 .48877 Mdot
+.23818 .33038 Mdot
+.51123 .18824 Mdot
+.66962 .23818 Mdot
+.75148 .70243 Mdot
+.52158 .8221 Mdot
+.29758 .75148 Mdot
+.1779 .52158 Mdot
+.24853 .29758 Mdot
+.47843 .1779 Mdot
+.70243 .24853 Mdot
+.8221 .47843 Mdot
+.78428 .71277 Mdot
+.51123 .85491 Mdot
+.28723 .78428 Mdot
+.14509 .51123 Mdot
+.21572 .28723 Mdot
+.48877 .14509 Mdot
+.71277 .21572 Mdot
+.85491 .48877 Mdot
+.88238 .62057 Mdot
+.37943 .88238 Mdot
+.11762 .37943 Mdot
+.62057 .11762 Mdot
+.90396 .60933 Mdot
+.89362 .64214 Mdot
+.39067 .90396 Mdot
+.35786 .89362 Mdot
+0.09604 .39067 Mdot
+.10638 .35786 Mdot
+.60933 0.09604 Mdot
+.64214 .10638 Mdot
+.71277 .88238 Mdot
+.69119 .89362 Mdot
+.11762 .71277 Mdot
+.10638 .69119 Mdot
+.28723 .11762 Mdot
+.30881 .10638 Mdot
+.88238 .28723 Mdot
+.89362 .30881 Mdot
+.8221 .81176 Mdot
+.57062 .94267 Mdot
+.18824 .8221 Mdot
+0.05733 .57062 Mdot
+.1779 .18824 Mdot
+.42938 0.05733 Mdot
+.81176 .1779 Mdot
+.94267 .42938 Mdot
+.724 .90396 Mdot
+.70243 .91519 Mdot
+0.09604 .724 Mdot
+0.08481 .70243 Mdot
+.276 0.09604 Mdot
+.29758 0.08481 Mdot
+.90396 .276 Mdot
+.91519 .29758 Mdot
+.85491 .8221 Mdot
+.56028 .97548 Mdot
+.1779 .85491 Mdot
+0.02452 .56028 Mdot
+.14509 .1779 Mdot
+.43972 0.02452 Mdot
+.8221 .14509 Mdot
+.97548 .43972 Mdot
+1.0461 .54905 Mdot
+.97548 .77305 Mdot
+.45095 1.0461 Mdot
+.22695 .97548 Mdot
+-0.0461 .45095 Mdot
+0.02452 .22695 Mdot
+.54905 -0.0461 Mdot
+.77305 0.02452 Mdot
+1.05733 .57062 Mdot
+.99705 .76182 Mdot
+.42938 1.05733 Mdot
+.23818 .99705 Mdot
+-0.05733 .42938 Mdot
+0.00295 .23818 Mdot
+.57062 -0.05733 Mdot
+.76182 0.00295 Mdot
+.76182 1.00295 Mdot
+-0.00295 .76182 Mdot
+.23818 -0.00295 Mdot
+1.00295 .23818 Mdot
+.90396 .94267 Mdot
+.63091 1.08481 Mdot
+0.05733 .90396 Mdot
+-0.08481 .63091 Mdot
+0.09604 0.05733 Mdot
+.36909 -0.08481 Mdot
+.94267 0.09604 Mdot
+1.08481 .36909 Mdot
+.78428 1.0461 Mdot
+-0.0461 .78428 Mdot
+.21572 -0.0461 Mdot
+1.0461 .21572 Mdot
+.89362 .97548 Mdot
+.66372 1.09515 Mdot
+0.02452 .89362 Mdot
+-0.09515 .66372 Mdot
+.10638 0.02452 Mdot
+.33628 -0.09515 Mdot
+.97548 .10638 Mdot
+1.09515 .33628 Mdot
+1.09515 .66962 Mdot
+1.08481 .70243 Mdot
+.33038 1.09515 Mdot
+.29758 1.08481 Mdot
+-0.09515 .33038 Mdot
+-0.08481 .29758 Mdot
+.66962 -0.09515 Mdot
+.70243 -0.08481 Mdot
+1.02453 .89362 Mdot
+.52158 1.15543 Mdot
+.10638 1.02453 Mdot
+-.15543 .52158 Mdot
+-0.02453 .10638 Mdot
+.47843 -.15543 Mdot
+.89362 -0.02453 Mdot
+1.15543 .47843 Mdot
+1.16667 .5 Mdot
+1.0461 .88238 Mdot
+.5 1.16667 Mdot
+.11762 1.0461 Mdot
+-.16667 .5 Mdot
+-0.0461 .11762 Mdot
+.5 -.16667 Mdot
+.88238 -0.0461 Mdot
+1.05733 .90396 Mdot
+.51123 1.18824 Mdot
+0.09604 1.05733 Mdot
+-.18824 .51123 Mdot
+-0.05733 0.09604 Mdot
+.48877 -.18824 Mdot
+.90396 -0.05733 Mdot
+1.18824 .48877 Mdot
+1.21572 .62057 Mdot
+1.15543 .81176 Mdot
+.37943 1.21572 Mdot
+.18824 1.15543 Mdot
+-.21572 .37943 Mdot
+-.15543 .18824 Mdot
+.62057 -.21572 Mdot
+.81176 -.15543 Mdot
+1.23729 .60933 Mdot
+1.16667 .83333 Mdot
+.85491 1.15543 Mdot
+.83333 1.16667 Mdot
+.39067 1.23729 Mdot
+.16667 1.16667 Mdot
+-.15543 .85491 Mdot
+-.16667 .83333 Mdot
+-.23729 .39067 Mdot
+-.16667 .16667 Mdot
+.14509 -.15543 Mdot
+.16667 -.16667 Mdot
+.60933 -.23729 Mdot
+.83333 -.16667 Mdot
+1.15543 .14509 Mdot
+1.16667 .16667 Mdot
+.96424 1.08481 Mdot
+.71277 1.21572 Mdot
+-0.08481 .96424 Mdot
+-.21572 .71277 Mdot
+0.03576 -0.08481 Mdot
+.28723 -.21572 Mdot
+1.08481 0.03576 Mdot
+1.21572 .28723 Mdot
+1.24852 .63091 Mdot
+1.18824 .8221 Mdot
+.36909 1.24852 Mdot
+.1779 1.18824 Mdot
+-.24852 .36909 Mdot
+-.18824 .1779 Mdot
+.63091 -.24852 Mdot
+.8221 -.18824 Mdot
+.97548 1.10638 Mdot
+.724 1.23729 Mdot
+-.10638 .97548 Mdot
+-.23729 .724 Mdot
+0.02452 -.10638 Mdot
+.276 -.23729 Mdot
+1.10638 0.02452 Mdot
+1.23729 .276 Mdot
+.99705 1.09515 Mdot
+.70243 1.24852 Mdot
+-0.09515 .99705 Mdot
+-.24852 .70243 Mdot
+0.00295 -0.09515 Mdot
+.29758 -.24852 Mdot
+1.09515 0.00295 Mdot
+1.24852 .29758 Mdot
+1.09515 1.00295 Mdot
+.57062 1.276 Mdot
+-0.00295 1.09515 Mdot
+-.276 .57062 Mdot
+-0.09515 -0.00295 Mdot
+.42938 -.276 Mdot
+1.00295 -0.09515 Mdot
+1.276 .42938 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.003 setlinewidth
+.5 .5 Mdot
+.53281 .51035 Mdot
+.48965 .53281 Mdot
+.46719 .48965 Mdot
+.51035 .46719 Mdot
+.60343 .61968 Mdot
+.53871 .65337 Mdot
+.38032 .60343 Mdot
+.34663 .53871 Mdot
+.39657 .38032 Mdot
+.46129 .34663 Mdot
+.61968 .39657 Mdot
+.65337 .46129 Mdot
+.59309 .65248 Mdot
+.57151 .66372 Mdot
+.34752 .59309 Mdot
+.33628 .57151 Mdot
+.40691 .34752 Mdot
+.42849 .33628 Mdot
+.65248 .40691 Mdot
+.66372 .42849 Mdot
+.67996 .53871 Mdot
+.66962 .57151 Mdot
+.46129 .67996 Mdot
+.42849 .66962 Mdot
+.32004 .46129 Mdot
+.33038 .42849 Mdot
+.53871 .32004 Mdot
+.57151 .33038 Mdot
+.70154 .52748 Mdot
+.68085 .59309 Mdot
+.47253 .70154 Mdot
+.40691 .68085 Mdot
+.29846 .47253 Mdot
+.31915 .40691 Mdot
+.52748 .29846 Mdot
+.59309 .31915 Mdot
+.61968 .7299 Mdot
+.2701 .61968 Mdot
+.38032 .2701 Mdot
+.7299 .38032 Mdot
+.65248 .74024 Mdot
+.60933 .76271 Mdot
+.25976 .65248 Mdot
+.23729 .60933 Mdot
+.34752 .25976 Mdot
+.39067 .23729 Mdot
+.74024 .34752 Mdot
+.76271 .39067 Mdot
+.74024 .68085 Mdot
+.51035 .80053 Mdot
+.31915 .74024 Mdot
+.19947 .51035 Mdot
+.25976 .31915 Mdot
+.48965 .19947 Mdot
+.68085 .25976 Mdot
+.80053 .48965 Mdot
+.65337 .79462 Mdot
+.20538 .65337 Mdot
+.34663 .20538 Mdot
+.79462 .34663 Mdot
+.84457 .52158 Mdot
+.79462 .67996 Mdot
+.76271 .724 Mdot
+.53281 .84368 Mdot
+.47843 .84457 Mdot
+.32004 .79462 Mdot
+.276 .76271 Mdot
+.15632 .53281 Mdot
+.15543 .47843 Mdot
+.20538 .32004 Mdot
+.23729 .276 Mdot
+.46719 .15632 Mdot
+.52158 .15543 Mdot
+.67996 .20538 Mdot
+.724 .23729 Mdot
+.84368 .46719 Mdot
+.86614 .51035 Mdot
+.80586 .70154 Mdot
+.48965 .86614 Mdot
+.29846 .80586 Mdot
+.13386 .48965 Mdot
+.19414 .29846 Mdot
+.51035 .13386 Mdot
+.70154 .19414 Mdot
+.89273 .58776 Mdot
+.87204 .65337 Mdot
+.41224 .89273 Mdot
+.34663 .87204 Mdot
+.10727 .41224 Mdot
+.12796 .34663 Mdot
+.58776 .10727 Mdot
+.65337 .12796 Mdot
+.70154 .86081 Mdot
+.67996 .87204 Mdot
+.13919 .70154 Mdot
+.12796 .67996 Mdot
+.29846 .13919 Mdot
+.32004 .12796 Mdot
+.86081 .29846 Mdot
+.87204 .32004 Mdot
+.93677 .61968 Mdot
+.92643 .65248 Mdot
+.38032 .93677 Mdot
+.34752 .92643 Mdot
+0.06323 .38032 Mdot
+0.07358 .34752 Mdot
+.61968 0.06323 Mdot
+.65248 0.07358 Mdot
+.84368 .80053 Mdot
+.54905 .9539 Mdot
+.19947 .84368 Mdot
+0.0461 .54905 Mdot
+.15632 .19947 Mdot
+.45095 0.0461 Mdot
+.80053 .15632 Mdot
+.9539 .45095 Mdot
+.74558 .89273 Mdot
+.68085 .92643 Mdot
+.10727 .74558 Mdot
+0.07358 .68085 Mdot
+.25443 .10727 Mdot
+.31915 0.07358 Mdot
+.89273 .25443 Mdot
+.92643 .31915 Mdot
+.81176 .84457 Mdot
+.60343 .95301 Mdot
+.15543 .81176 Mdot
+0.04699 .60343 Mdot
+.18824 .15543 Mdot
+.39657 0.04699 Mdot
+.84457 .18824 Mdot
+.95301 .39657 Mdot
+.84457 .85491 Mdot
+.59309 .98582 Mdot
+.14509 .84457 Mdot
+0.01418 .59309 Mdot
+.15543 .14509 Mdot
+.40691 0.01418 Mdot
+.85491 .15543 Mdot
+.98582 .40691 Mdot
+.86614 .84368 Mdot
+.57151 .99705 Mdot
+.15632 .86614 Mdot
+0.00295 .57151 Mdot
+.13386 .15632 Mdot
+.42849 0.00295 Mdot
+.84368 .13386 Mdot
+.99705 .42849 Mdot
+1.00295 .57151 Mdot
+.95301 .7299 Mdot
+.42849 1.00295 Mdot
+.2701 .95301 Mdot
+-0.00295 .42849 Mdot
+0.04699 .2701 Mdot
+.57151 -0.00295 Mdot
+.7299 0.04699 Mdot
+1.0133 .53871 Mdot
+.94267 .76271 Mdot
+.46129 1.0133 Mdot
+.23729 .94267 Mdot
+-0.0133 .46129 Mdot
+0.05733 .23729 Mdot
+.53871 -0.0133 Mdot
+.76271 0.05733 Mdot
+1.03487 .52748 Mdot
+.9539 .78428 Mdot
+.47253 1.03487 Mdot
+.21572 .9539 Mdot
+-0.03487 .47253 Mdot
+0.0461 .21572 Mdot
+.52748 -0.03487 Mdot
+.78428 0.0461 Mdot
+1.03576 .58186 Mdot
+.98582 .74024 Mdot
+.41814 1.03576 Mdot
+.25976 .98582 Mdot
+-0.03576 .41814 Mdot
+0.01418 .25976 Mdot
+.58186 -0.03576 Mdot
+.74024 0.01418 Mdot
+.89273 .92109 Mdot
+.61968 1.06323 Mdot
+0.07891 .89273 Mdot
+-0.06323 .61968 Mdot
+.10727 0.07891 Mdot
+.38032 -0.06323 Mdot
+.92109 .10727 Mdot
+1.06323 .38032 Mdot
+.79462 1.0133 Mdot
+.75148 1.03576 Mdot
+-0.0133 .79462 Mdot
+-0.03576 .75148 Mdot
+.20538 -0.0133 Mdot
+.24853 -0.03576 Mdot
+1.0133 .20538 Mdot
+1.03576 .24853 Mdot
+.88238 .9539 Mdot
+.65248 1.07358 Mdot
+0.0461 .88238 Mdot
+-0.07357 .65248 Mdot
+.11762 0.0461 Mdot
+.34752 -0.07357 Mdot
+.9539 .11762 Mdot
+1.07358 .34752 Mdot
+1.07358 .68085 Mdot
+.31915 1.07358 Mdot
+-0.07357 .31915 Mdot
+.68085 -0.07357 Mdot
+.80586 1.03487 Mdot
+.76271 1.05733 Mdot
+-0.03487 .80586 Mdot
+-0.05733 .76271 Mdot
+.19414 -0.03487 Mdot
+.23729 -0.05733 Mdot
+1.03487 .19414 Mdot
+1.05733 .23729 Mdot
+.93677 .95301 Mdot
+.62057 1.11762 Mdot
+0.04699 .93677 Mdot
+-.11762 .62057 Mdot
+0.06323 0.04699 Mdot
+.37943 -.11762 Mdot
+.95301 0.06323 Mdot
+1.11762 .37943 Mdot
+1.0133 .87204 Mdot
+.51035 1.13386 Mdot
+.12796 1.0133 Mdot
+-.13386 .51035 Mdot
+-0.0133 .12796 Mdot
+.48965 -.13386 Mdot
+.87204 -0.0133 Mdot
+1.13386 .48965 Mdot
+1.14509 .51123 Mdot
+1.03487 .86081 Mdot
+.48877 1.14509 Mdot
+.13919 1.03487 Mdot
+-.14509 .48877 Mdot
+-0.03487 .13919 Mdot
+.51123 -.14509 Mdot
+.86081 -0.03487 Mdot
+.92643 .98582 Mdot
+.65337 1.12796 Mdot
+0.01418 .92643 Mdot
+-.12796 .65337 Mdot
+0.07358 0.01418 Mdot
+.34663 -.12796 Mdot
+.98582 0.07358 Mdot
+1.12796 .34663 Mdot
+1.12796 .67996 Mdot
+1.11762 .71277 Mdot
+.32004 1.12796 Mdot
+.28723 1.11762 Mdot
+-.12796 .32004 Mdot
+-.11762 .28723 Mdot
+.67996 -.12796 Mdot
+.71277 -.11762 Mdot
+1.13919 .70154 Mdot
+.29846 1.13919 Mdot
+-.13919 .29846 Mdot
+.70154 -.13919 Mdot
+1.03576 .91519 Mdot
+.53281 1.17701 Mdot
+0.08481 1.03576 Mdot
+-.17701 .53281 Mdot
+-0.03576 0.08481 Mdot
+.46719 -.17701 Mdot
+.91519 -0.03576 Mdot
+1.17701 .46719 Mdot
+1.19948 .51035 Mdot
+1.07891 .89273 Mdot
+.48965 1.19948 Mdot
+.10727 1.07891 Mdot
+-.19947 .48965 Mdot
+-0.07891 .10727 Mdot
+.51035 -.19947 Mdot
+.89273 -0.07891 Mdot
+.84368 1.13386 Mdot
+.8221 1.14509 Mdot
+-.13386 .84368 Mdot
+-.14509 .8221 Mdot
+.15632 -.13386 Mdot
+.1779 -.14509 Mdot
+1.13386 .15632 Mdot
+1.14509 .1779 Mdot
+.95301 1.06323 Mdot
+.70154 1.19414 Mdot
+-0.06323 .95301 Mdot
+-.19414 .70154 Mdot
+0.04699 -0.06323 Mdot
+.29846 -.19414 Mdot
+1.06323 0.04699 Mdot
+1.19414 .29846 Mdot
+1.22606 .58776 Mdot
+1.14509 .84457 Mdot
+.41224 1.22606 Mdot
+.15543 1.14509 Mdot
+-.22606 .41224 Mdot
+-.14509 .15543 Mdot
+.58776 -.22606 Mdot
+.84457 -.14509 Mdot
+1.22695 .64214 Mdot
+1.17701 .80053 Mdot
+.35786 1.22695 Mdot
+.19947 1.17701 Mdot
+-.22695 .35786 Mdot
+-.17701 .19947 Mdot
+.64214 -.22695 Mdot
+.80053 -.17701 Mdot
+.98582 1.07358 Mdot
+.69119 1.22695 Mdot
+-0.07357 .98582 Mdot
+-.22695 .69119 Mdot
+0.01418 -0.07357 Mdot
+.30881 -.22695 Mdot
+1.07358 0.01418 Mdot
+1.22695 .30881 Mdot
+.9539 1.11762 Mdot
+.74558 1.22606 Mdot
+-.11762 .9539 Mdot
+-.22606 .74558 Mdot
+0.0461 -.11762 Mdot
+.25443 -.22606 Mdot
+1.11762 0.0461 Mdot
+1.22606 .25443 Mdot
+.86614 1.17701 Mdot
+.84457 1.18824 Mdot
+-.17701 .86614 Mdot
+-.18824 .84457 Mdot
+.13386 -.17701 Mdot
+.15543 -.18824 Mdot
+1.17701 .13386 Mdot
+1.18824 .15543 Mdot
+1.2701 .61968 Mdot
+1.19948 .84368 Mdot
+.38032 1.2701 Mdot
+.15632 1.19948 Mdot
+-.2701 .38032 Mdot
+-.19947 .15632 Mdot
+.61968 -.2701 Mdot
+.84368 -.19947 Mdot
+1.08481 1.03576 Mdot
+.60343 1.28635 Mdot
+-0.03576 1.08481 Mdot
+-.28635 .60343 Mdot
+-0.08481 -0.03576 Mdot
+.39657 -.28635 Mdot
+1.03576 -0.08481 Mdot
+1.28635 .39657 Mdot
+1.12796 1.0133 Mdot
+.56028 1.30881 Mdot
+-0.0133 1.12796 Mdot
+-.30881 .56028 Mdot
+-.12796 -0.0133 Mdot
+.43972 -.30881 Mdot
+1.0133 -.12796 Mdot
+1.30881 .43972 Mdot
+1.28635 .7299 Mdot
+1.276 .76271 Mdot
+.2701 1.28635 Mdot
+.23729 1.276 Mdot
+-.28635 .2701 Mdot
+-.276 .23729 Mdot
+.7299 -.28635 Mdot
+.76271 -.276 Mdot
+1.11762 1.0461 Mdot
+.59309 1.31915 Mdot
+-0.0461 1.11762 Mdot
+-.31915 .59309 Mdot
+-.11762 -0.0461 Mdot
+.40691 -.31915 Mdot
+1.0461 -.11762 Mdot
+1.31915 .40691 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.002 setlinewidth
+.5 .5 Mdot
+.52246 .54315 Mdot
+.45685 .52246 Mdot
+.47754 .45685 Mdot
+.54315 .47754 Mdot
+.5594 .58776 Mdot
+.53782 .59899 Mdot
+.41224 .5594 Mdot
+.40101 .53782 Mdot
+.4406 .41224 Mdot
+.46218 .40101 Mdot
+.58776 .4406 Mdot
+.59899 .46218 Mdot
+.5922 .5981 Mdot
+.52748 .6318 Mdot
+.4019 .5922 Mdot
+.3682 .52748 Mdot
+.4078 .4019 Mdot
+.47253 .3682 Mdot
+.5981 .4078 Mdot
+.6318 .47253 Mdot
+.65838 .54994 Mdot
+.45006 .65838 Mdot
+.34162 .45006 Mdot
+.54994 .34162 Mdot
+.61467 .64125 Mdot
+.54994 .67495 Mdot
+.35875 .61467 Mdot
+.32505 .54994 Mdot
+.38533 .35875 Mdot
+.45006 .32505 Mdot
+.64125 .38533 Mdot
+.67495 .45006 Mdot
+.73435 .53782 Mdot
+.71365 .60343 Mdot
+.46218 .73435 Mdot
+.39657 .71365 Mdot
+.26565 .46218 Mdot
+.28635 .39657 Mdot
+.53782 .26565 Mdot
+.60343 .28635 Mdot
+.74558 .5594 Mdot
+.73523 .5922 Mdot
+.4406 .74558 Mdot
+.4078 .73523 Mdot
+.25443 .4406 Mdot
+.26477 .4078 Mdot
+.5594 .25443 Mdot
+.5922 .26477 Mdot
+.64125 .71867 Mdot
+.5981 .74113 Mdot
+.28133 .64125 Mdot
+.25887 .5981 Mdot
+.35875 .28133 Mdot
+.4019 .25887 Mdot
+.71867 .35875 Mdot
+.74113 .4019 Mdot
+.79018 .52246 Mdot
+.75059 .64804 Mdot
+.47754 .79018 Mdot
+.35196 .75059 Mdot
+.20982 .47754 Mdot
+.24941 .35196 Mdot
+.52246 .20982 Mdot
+.64804 .24941 Mdot
+.68529 .75059 Mdot
+.59899 .79551 Mdot
+.24941 .68529 Mdot
+.20449 .59899 Mdot
+.31471 .24941 Mdot
+.40101 .20449 Mdot
+.75059 .31471 Mdot
+.79551 .40101 Mdot
+.7299 .71365 Mdot
+.54315 .81087 Mdot
+.28635 .7299 Mdot
+.18913 .54315 Mdot
+.2701 .28635 Mdot
+.45685 .18913 Mdot
+.71365 .2701 Mdot
+.81087 .45685 Mdot
+.82299 .53281 Mdot
+.7834 .65838 Mdot
+.46719 .82299 Mdot
+.34162 .7834 Mdot
+.17701 .46719 Mdot
+.2166 .34162 Mdot
+.53281 .17701 Mdot
+.65838 .2166 Mdot
+.67495 .7834 Mdot
+.6318 .80586 Mdot
+.2166 .67495 Mdot
+.19414 .6318 Mdot
+.32505 .2166 Mdot
+.3682 .19414 Mdot
+.7834 .32505 Mdot
+.80586 .3682 Mdot
+.74113 .73523 Mdot
+.55438 .83245 Mdot
+.26477 .74113 Mdot
+.16755 .55438 Mdot
+.25887 .26477 Mdot
+.44562 .16755 Mdot
+.73523 .25887 Mdot
+.83245 .44562 Mdot
+.79551 .73435 Mdot
+.52246 .87648 Mdot
+.26565 .79551 Mdot
+.12352 .52246 Mdot
+.20449 .26565 Mdot
+.47754 .12352 Mdot
+.73435 .20449 Mdot
+.87648 .47754 Mdot
+.87115 .59899 Mdot
+.86081 .6318 Mdot
+.40101 .87115 Mdot
+.3682 .86081 Mdot
+.12885 .40101 Mdot
+.13919 .3682 Mdot
+.59899 .12885 Mdot
+.6318 .13919 Mdot
+.81087 .79018 Mdot
+.5594 .92109 Mdot
+.20982 .81087 Mdot
+0.07891 .5594 Mdot
+.18913 .20982 Mdot
+.4406 0.07891 Mdot
+.79018 .18913 Mdot
+.92109 .4406 Mdot
+.83245 .77895 Mdot
+.53782 .93232 Mdot
+.22105 .83245 Mdot
+0.06768 .53782 Mdot
+.16755 .22105 Mdot
+.46218 0.06768 Mdot
+.77895 .16755 Mdot
+.93232 .46218 Mdot
+.92554 .5981 Mdot
+.90485 .66372 Mdot
+.4019 .92554 Mdot
+.33628 .90485 Mdot
+0.07446 .4019 Mdot
+0.09515 .33628 Mdot
+.5981 0.07446 Mdot
+.66372 0.09515 Mdot
+.73435 .87115 Mdot
+.66962 .90485 Mdot
+.12885 .73435 Mdot
+0.09515 .66962 Mdot
+.26565 .12885 Mdot
+.33038 0.09515 Mdot
+.87115 .26565 Mdot
+.90485 .33038 Mdot
+.80053 .82299 Mdot
+.5922 .93143 Mdot
+.17701 .80053 Mdot
+0.06857 .5922 Mdot
+.19947 .17701 Mdot
+.4078 0.06857 Mdot
+.82299 .19947 Mdot
+.93143 .4078 Mdot
+.948 .64125 Mdot
+.35875 .948 Mdot
+0.052 .35875 Mdot
+.64125 0.052 Mdot
+.73523 .92554 Mdot
+.71365 .93677 Mdot
+0.07446 .73523 Mdot
+0.06323 .71365 Mdot
+.26477 0.07446 Mdot
+.28635 0.06323 Mdot
+.92554 .26477 Mdot
+.93677 .28635 Mdot
+.87648 .81087 Mdot
+.82299 .86614 Mdot
+.61467 .97459 Mdot
+.53871 .9867 Mdot
+.18913 .87648 Mdot
+.13386 .82299 Mdot
+0.02541 .61467 Mdot
+0.0133 .53871 Mdot
+.12352 .18913 Mdot
+.17701 .13386 Mdot
+.38533 0.02541 Mdot
+.46129 0.0133 Mdot
+.81087 .12352 Mdot
+.86614 .17701 Mdot
+.97459 .38533 Mdot
+.9867 .46129 Mdot
+.99172 .54994 Mdot
+.93143 .74113 Mdot
+.45006 .99172 Mdot
+.25887 .93143 Mdot
+0.00828 .45006 Mdot
+0.06857 .25887 Mdot
+.54994 0.00828 Mdot
+.74113 0.06857 Mdot
+.88772 .83245 Mdot
+.54994 1.00828 Mdot
+.16755 .88772 Mdot
+-0.00828 .54994 Mdot
+.11228 .16755 Mdot
+.45006 -0.00828 Mdot
+.83245 .11228 Mdot
+1.00828 .45006 Mdot
+1.01418 .59309 Mdot
+.97459 .71867 Mdot
+.40691 1.01418 Mdot
+.28133 .97459 Mdot
+-0.01418 .40691 Mdot
+0.02541 .28133 Mdot
+.59309 -0.01418 Mdot
+.71867 0.02541 Mdot
+1.02364 .5059 Mdot
+.93232 .79551 Mdot
+.4941 1.02364 Mdot
+.20449 .93232 Mdot
+-0.02364 .4941 Mdot
+0.06768 .20449 Mdot
+.5059 -0.02364 Mdot
+.79551 0.06768 Mdot
+.75059 .98138 Mdot
+0.01863 .75059 Mdot
+.24941 0.01863 Mdot
+.98138 .24941 Mdot
+.7834 .99172 Mdot
+.74024 1.01418 Mdot
+0.00828 .7834 Mdot
+-0.01418 .74024 Mdot
+.2166 0.00828 Mdot
+.25976 -0.01418 Mdot
+.99172 .2166 Mdot
+1.01418 .25976 Mdot
+1.06768 .53782 Mdot
+.9867 .79462 Mdot
+.46218 1.06768 Mdot
+.20538 .9867 Mdot
+-0.06768 .46218 Mdot
+0.0133 .20538 Mdot
+.53782 -0.06768 Mdot
+.79462 0.0133 Mdot
+.87115 .93232 Mdot
+.64125 1.052 Mdot
+0.06768 .87115 Mdot
+-0.052 .64125 Mdot
+.12885 0.06768 Mdot
+.35875 -0.052 Mdot
+.93232 .12885 Mdot
+1.052 .35875 Mdot
+1.06857 .5922 Mdot
+1.01863 .75059 Mdot
+.4078 1.06857 Mdot
+.24941 1.01863 Mdot
+-0.06857 .4078 Mdot
+-0.01863 .24941 Mdot
+.5922 -0.06857 Mdot
+.75059 -0.01863 Mdot
+1.07891 .5594 Mdot
+1.00828 .7834 Mdot
+.4406 1.07891 Mdot
+.2166 1.00828 Mdot
+-0.07891 .4406 Mdot
+-0.00828 .2166 Mdot
+.5594 -0.07891 Mdot
+.7834 -0.00828 Mdot
+1.08392 .64804 Mdot
+1.06323 .71365 Mdot
+.35196 1.08392 Mdot
+.28635 1.06323 Mdot
+-0.08392 .35196 Mdot
+-0.06323 .28635 Mdot
+.64804 -0.08392 Mdot
+.71365 -0.06323 Mdot
+.92554 .93143 Mdot
+.60933 1.09604 Mdot
+0.06857 .92554 Mdot
+-0.09604 .60933 Mdot
+0.07446 0.06857 Mdot
+.39067 -0.09604 Mdot
+.93143 0.07446 Mdot
+1.09604 .39067 Mdot
+.87204 .9867 Mdot
+.68529 1.08392 Mdot
+0.0133 .87204 Mdot
+-0.08392 .68529 Mdot
+.12796 0.0133 Mdot
+.31471 -0.08392 Mdot
+.9867 .12796 Mdot
+1.08392 .31471 Mdot
+.82743 1.02364 Mdot
+.74113 1.06857 Mdot
+-0.02364 .82743 Mdot
+-0.06857 .74113 Mdot
+.17257 -0.02364 Mdot
+.25887 -0.06857 Mdot
+1.02364 .17257 Mdot
+1.06857 .25887 Mdot
+1.12352 .52246 Mdot
+1.02364 .83923 Mdot
+.47754 1.12352 Mdot
+.16077 1.02364 Mdot
+-.12352 .47754 Mdot
+-0.02364 .16077 Mdot
+.52246 -.12352 Mdot
+.83923 -0.02364 Mdot
+1.11673 .65838 Mdot
+1.09604 .724 Mdot
+.34162 1.11673 Mdot
+.276 1.09604 Mdot
+-.11673 .34162 Mdot
+-0.09604 .276 Mdot
+.65838 -.11673 Mdot
+.724 -0.09604 Mdot
+.79551 1.06768 Mdot
+-0.06768 .79551 Mdot
+.20449 -0.06768 Mdot
+1.06768 .20449 Mdot
+.90485 .99705 Mdot
+.67495 1.11673 Mdot
+0.00295 .90485 Mdot
+-.11673 .67495 Mdot
+0.09515 0.00295 Mdot
+.32505 -.11673 Mdot
+.99705 0.09515 Mdot
+1.11673 .32505 Mdot
+1.00295 .90485 Mdot
+.54315 1.1442 Mdot
+0.09515 1.00295 Mdot
+-.1442 .54315 Mdot
+-0.00295 0.09515 Mdot
+.45685 -.1442 Mdot
+.90485 -0.00295 Mdot
+1.1442 .45685 Mdot
+.948 .97459 Mdot
+.6318 1.13919 Mdot
+0.02541 .948 Mdot
+-.13919 .6318 Mdot
+0.052 0.02541 Mdot
+.3682 -.13919 Mdot
+.97459 0.052 Mdot
+1.13919 .3682 Mdot
+1.01418 .92643 Mdot
+.55438 1.16578 Mdot
+0.07358 1.01418 Mdot
+-.16578 .55438 Mdot
+-0.01418 0.07358 Mdot
+.44562 -.16578 Mdot
+.92643 -0.01418 Mdot
+1.16578 .44562 Mdot
+1.1779 .52158 Mdot
+1.06768 .87115 Mdot
+.47843 1.1779 Mdot
+.12885 1.06768 Mdot
+-.1779 .47843 Mdot
+-0.06768 .12885 Mdot
+.52158 -.1779 Mdot
+.87115 -0.06768 Mdot
+.83245 1.11228 Mdot
+.81087 1.12352 Mdot
+-.11228 .83245 Mdot
+-.12352 .81087 Mdot
+.16755 -.11228 Mdot
+.18913 -.12352 Mdot
+1.11228 .16755 Mdot
+1.12352 .18913 Mdot
+1.19414 .6318 Mdot
+1.1442 .79018 Mdot
+.3682 1.19414 Mdot
+.20982 1.1442 Mdot
+-.19414 .3682 Mdot
+-.1442 .20982 Mdot
+.6318 -.19414 Mdot
+.79018 -.1442 Mdot
+1.06857 .92554 Mdot
+.52246 1.20982 Mdot
+0.07446 1.06857 Mdot
+-.20982 .52246 Mdot
+-0.06857 0.07446 Mdot
+.47754 -.20982 Mdot
+.92554 -0.06857 Mdot
+1.20982 .47754 Mdot
+1.20449 .59899 Mdot
+1.13386 .82299 Mdot
+.40101 1.20449 Mdot
+.17701 1.13386 Mdot
+-.20449 .40101 Mdot
+-.13386 .17701 Mdot
+.59899 -.20449 Mdot
+.82299 -.13386 Mdot
+1.20538 .65337 Mdot
+1.16578 .77895 Mdot
+.34663 1.20538 Mdot
+.22105 1.16578 Mdot
+-.20537 .34663 Mdot
+-.16578 .22105 Mdot
+.65337 -.20537 Mdot
+.77895 -.16578 Mdot
+.97459 1.052 Mdot
+.67996 1.20538 Mdot
+-0.052 .97459 Mdot
+-.20537 .67996 Mdot
+0.02541 -0.052 Mdot
+.32004 -.20537 Mdot
+1.052 0.02541 Mdot
+1.20538 .32004 Mdot
+.94267 1.09604 Mdot
+.73435 1.20449 Mdot
+-0.09604 .94267 Mdot
+-.20449 .73435 Mdot
+0.05733 -0.09604 Mdot
+.26565 -.20449 Mdot
+1.09604 0.05733 Mdot
+1.20449 .26565 Mdot
+.87648 1.1442 Mdot
+.81176 1.1779 Mdot
+-.1442 .87648 Mdot
+-.1779 .81176 Mdot
+.12352 -.1442 Mdot
+.18824 -.1779 Mdot
+1.1442 .12352 Mdot
+1.1779 .18824 Mdot
+1.08392 .98138 Mdot
+.5594 1.25442 Mdot
+0.01863 1.08392 Mdot
+-.25442 .5594 Mdot
+-0.08392 0.01863 Mdot
+.4406 -.25442 Mdot
+.98138 -0.08392 Mdot
+1.25442 .4406 Mdot
+1.25887 .5981 Mdot
+1.1779 .85491 Mdot
+.4019 1.25887 Mdot
+.14509 1.1779 Mdot
+-.25887 .4019 Mdot
+-.1779 .14509 Mdot
+.5981 -.25887 Mdot
+.85491 -.1779 Mdot
+1.07358 1.01418 Mdot
+.5922 1.26477 Mdot
+-0.01418 1.07358 Mdot
+-.26477 .5922 Mdot
+-0.07357 -0.01418 Mdot
+.4078 -.26477 Mdot
+1.01418 -0.07357 Mdot
+1.26477 .4078 Mdot
+.88772 1.16578 Mdot
+.82299 1.19948 Mdot
+-.16578 .88772 Mdot
+-.19947 .82299 Mdot
+.11228 -.16578 Mdot
+.17701 -.19947 Mdot
+1.16578 .11228 Mdot
+1.19948 .17701 Mdot
+1.25976 .65248 Mdot
+1.20982 .81087 Mdot
+.34752 1.25976 Mdot
+.18913 1.20982 Mdot
+-.25976 .34752 Mdot
+-.20982 .18913 Mdot
+.65248 -.25976 Mdot
+.81087 -.20982 Mdot
+1.01863 1.08392 Mdot
+.68085 1.25976 Mdot
+-0.08392 1.01863 Mdot
+-.25976 .68085 Mdot
+-0.01863 -0.08392 Mdot
+.31915 -.25976 Mdot
+1.08392 -0.01863 Mdot
+1.25976 .31915 Mdot
+1.11673 .99172 Mdot
+.54905 1.28723 Mdot
+0.00828 1.11673 Mdot
+-.28723 .54905 Mdot
+-.11673 0.00828 Mdot
+.45095 -.28723 Mdot
+.99172 -.11673 Mdot
+1.28723 .45095 Mdot
+1.28133 .64125 Mdot
+1.22105 .83245 Mdot
+.35875 1.28133 Mdot
+.16755 1.22105 Mdot
+-.28133 .35875 Mdot
+-.22105 .16755 Mdot
+.64125 -.28133 Mdot
+.83245 -.22105 Mdot
+.9867 1.12796 Mdot
+.73523 1.25887 Mdot
+-.12796 .9867 Mdot
+-.25887 .73523 Mdot
+0.0133 -.12796 Mdot
+.26477 -.25887 Mdot
+1.12796 0.0133 Mdot
+1.25887 .26477 Mdot
+1.00828 1.11673 Mdot
+.71365 1.2701 Mdot
+-.11673 1.00828 Mdot
+-.2701 .71365 Mdot
+-0.00828 -.11673 Mdot
+.28635 -.2701 Mdot
+1.11673 -0.00828 Mdot
+1.2701 .28635 Mdot
+1.26477 .74113 Mdot
+.25887 1.26477 Mdot
+-.26477 .25887 Mdot
+.74113 -.26477 Mdot
+1.09604 1.05733 Mdot
+.61467 1.30792 Mdot
+-0.05733 1.09604 Mdot
+-.30792 .61467 Mdot
+-0.09604 -0.05733 Mdot
+.38533 -.30792 Mdot
+1.05733 -0.09604 Mdot
+1.30792 .38533 Mdot
+1.32505 .54994 Mdot
+1.20449 .93232 Mdot
+.45006 1.32505 Mdot
+0.06768 1.20449 Mdot
+-.32505 .45006 Mdot
+-.20449 0.06768 Mdot
+.54994 -.32505 Mdot
+.93232 -.20449 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.002 setlinewidth
+.5 .5 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0.001 setlinewidth
+newpath
+.5 .5 0.05417 0 365.73 arc
+stroke
+newpath
+.83333 .5 0.01042 0 365.73 arc
+stroke
+newpath
+.16667 .5 0.01042 0 365.73 arc
+stroke
+newpath
+.5 .83333 0.01042 0 365.73 arc
+stroke
+newpath
+.5 .16667 0.01042 0 365.73 arc
+stroke
+newpath
+.77305 .69119 0.01042 0 365.73 arc
+stroke
+newpath
+.22695 .30881 0.01042 0 365.73 arc
+stroke
+newpath
+.30881 .77305 0.01042 0 365.73 arc
+stroke
+newpath
+.69119 .22695 0.01042 0 365.73 arc
+stroke
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(f)] .83333 .575 0 0 Mshowa
+grestore
+gsave
+/Times-Roman findfont 5 scalefont setfont
+[(1)] .85 .5625 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(f)] .77305 .76619 0 0 Mshowa
+grestore
+gsave
+/Times-Roman findfont 5 scalefont setfont
+[(3)] .78555 .75369 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(f)] .425 .8375 0 0 Mshowa
+grestore
+gsave
+/Times-Roman findfont 5 scalefont setfont
+[(2)] .4375 .825 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(f)] .23381 .77722 0 0 Mshowa
+grestore
+gsave
+/Times-Roman findfont 5 scalefont setfont
+[(4)] .24631 .76472 0 0 Mshowa
+grestore
+.83333 .5 moveto
+.83333 .55 lineto
+stroke
+.77305 .69119 moveto
+.77305 .74119 lineto
+stroke
+.5 .83333 moveto
+.45 .83333 lineto
+stroke
+.30881 .77305 moveto
+.25881 .77305 lineto
+stroke
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(a)] .45 .58333 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(-a)] .55 .42083 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(b)] .42083 .45 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(-b)] .59167 .55 0 0 Mshowa
+grestore
+.475 .51667 moveto
+.45833 .5625 lineto
+stroke
+.525 .48333 moveto
+.54167 .4375 lineto
+stroke
+.48333 .475 moveto
+.4375 .45833 lineto
+stroke
+.51667 .525 moveto
+.5625 .54167 lineto
+stroke
+grestore
+grestore
+grestore
+MathSubEnd
+grestore
+% End of sub-graphic
+
+
+% Figure (c):
+
+% Start of sub-graphic
+gsave
+0.02381 0.07619 .97619 1.02857 MathSubStart
+
+0 inch 0 inch translate
+
+/Times-Roman findfont 8  scalefont  setfont
+% Scaling calculations
+.5 0.00416667 .5 0.00416667 [
+[(-100)] 0.08333 0 0 2 Msboxa
+[(-50)] .29167 0 0 2 Msboxa
+[(0)] .5 0 0 2 Msboxa
+[(50)] .70833 0 0 2 Msboxa
+[(100)] .91667 0 0 2 Msboxa
+[(-100)] -0.0125 0.08333 1 0 Msboxa
+[(-50)] -0.0125 .29167 1 0 Msboxa
+[(0)] -0.0125 .5 1 0 Msboxa
+[(50)] -0.0125 .70833 1 0 Msboxa
+[(100)] -0.0125 .91667 1 0 Msboxa
+[ -0.001 -0.001 0 0 ]
+[ 1.001 1.001 0 0 ]
+] MathScale
+% Start of Graphics
+1 setlinecap
+1 setlinejoin
+newpath
+%%Object: Graphics
+[ ] 0 setdash
+gsave
+gsave
+0.002 setlinewidth
+0.08333 0 moveto
+0.08333 0.00625 lineto
+stroke
+grestore
+%[(-100)] 0.08333 0 0 2 Mshowa
+gsave
+0.002 setlinewidth
+.29167 0 moveto
+.29167 0.00625 lineto
+stroke
+grestore
+%[(-50)] .29167 0 0 2 Mshowa
+gsave
+0.002 setlinewidth
+.5 0 moveto
+.5 0.00625 lineto
+stroke
+grestore
+%[(0)] .5 0 0 2 Mshowa
+gsave
+0.002 setlinewidth
+.70833 0 moveto
+.70833 0.00625 lineto
+stroke
+grestore
+%[(50)] .70833 0 0 2 Mshowa
+gsave
+0.002 setlinewidth
+.91667 0 moveto
+.91667 0.00625 lineto
+stroke
+grestore
+%[(100)] .91667 0 0 2 Mshowa
+gsave
+0.001 setlinewidth
+.125 0 moveto
+.125 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.16667 0 moveto
+.16667 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.20833 0 moveto
+.20833 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.25 0 moveto
+.25 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.33333 0 moveto
+.33333 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.375 0 moveto
+.375 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.41667 0 moveto
+.41667 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.45833 0 moveto
+.45833 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.54167 0 moveto
+.54167 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.58333 0 moveto
+.58333 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.625 0 moveto
+.625 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.66667 0 moveto
+.66667 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.75 0 moveto
+.75 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.79167 0 moveto
+.79167 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.83333 0 moveto
+.83333 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.875 0 moveto
+.875 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0.04167 0 moveto
+0.04167 0.00375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.95833 0 moveto
+.95833 0.00375 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+0 0 moveto
+1 0 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+0 0.08333 moveto
+0.00625 0.08333 lineto
+stroke
+grestore
+%[(-100)] -0.0125 0.08333 1 0 Mshowa
+gsave
+0.002 setlinewidth
+0 .29167 moveto
+0.00625 .29167 lineto
+stroke
+grestore
+%[(-50)] -0.0125 .29167 1 0 Mshowa
+gsave
+0.002 setlinewidth
+0 .5 moveto
+0.00625 .5 lineto
+stroke
+grestore
+%[(0)] -0.0125 .5 1 0 Mshowa
+gsave
+0.002 setlinewidth
+0 .70833 moveto
+0.00625 .70833 lineto
+stroke
+grestore
+%[(50)] -0.0125 .70833 1 0 Mshowa
+gsave
+0.002 setlinewidth
+0 .91667 moveto
+0.00625 .91667 lineto
+stroke
+grestore
+%[(100)] -0.0125 .91667 1 0 Mshowa
+gsave
+0.001 setlinewidth
+0 .125 moveto
+0.00375 .125 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .16667 moveto
+0.00375 .16667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .20833 moveto
+0.00375 .20833 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .25 moveto
+0.00375 .25 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .33333 moveto
+0.00375 .33333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .375 moveto
+0.00375 .375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .41667 moveto
+0.00375 .41667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .45833 moveto
+0.00375 .45833 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .54167 moveto
+0.00375 .54167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .58333 moveto
+0.00375 .58333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .625 moveto
+0.00375 .625 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .66667 moveto
+0.00375 .66667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .75 moveto
+0.00375 .75 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .79167 moveto
+0.00375 .79167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .83333 moveto
+0.00375 .83333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .875 moveto
+0.00375 .875 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 0.04167 moveto
+0.00375 0.04167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0 .95833 moveto
+0.00375 .95833 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+0 0 moveto
+0 1 lineto
+stroke
+grestore
+grestore
+gsave
+gsave
+0.002 setlinewidth
+0.08333 .99375 moveto
+0.08333 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.29167 .99375 moveto
+.29167 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.5 .99375 moveto
+.5 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.70833 .99375 moveto
+.70833 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.91667 .99375 moveto
+.91667 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.125 .99625 moveto
+.125 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.16667 .99625 moveto
+.16667 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.20833 .99625 moveto
+.20833 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.25 .99625 moveto
+.25 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.33333 .99625 moveto
+.33333 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.375 .99625 moveto
+.375 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.41667 .99625 moveto
+.41667 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.45833 .99625 moveto
+.45833 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.54167 .99625 moveto
+.54167 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.58333 .99625 moveto
+.58333 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.625 .99625 moveto
+.625 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.66667 .99625 moveto
+.66667 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.75 .99625 moveto
+.75 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.79167 .99625 moveto
+.79167 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.83333 .99625 moveto
+.83333 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.875 .99625 moveto
+.875 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+0.04167 .99625 moveto
+0.04167 1 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.95833 .99625 moveto
+.95833 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+0 1 moveto
+1 1 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 0.08333 moveto
+1 0.08333 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 .29167 moveto
+1 .29167 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 .5 moveto
+1 .5 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 .70833 moveto
+1 .70833 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.99375 .91667 moveto
+1 .91667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .125 moveto
+1 .125 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .16667 moveto
+1 .16667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .20833 moveto
+1 .20833 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .25 moveto
+1 .25 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .33333 moveto
+1 .33333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .375 moveto
+1 .375 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .41667 moveto
+1 .41667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .45833 moveto
+1 .45833 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .54167 moveto
+1 .54167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .58333 moveto
+1 .58333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .625 moveto
+1 .625 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .66667 moveto
+1 .66667 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .75 moveto
+1 .75 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .79167 moveto
+1 .79167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .83333 moveto
+1 .83333 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .875 moveto
+1 .875 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 0.04167 moveto
+1 0.04167 lineto
+stroke
+grestore
+gsave
+0.001 setlinewidth
+.99625 .95833 moveto
+1 .95833 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+1 0 moveto
+1 1 lineto
+stroke
+grestore
+grestore
+gsave
+gsave
+0.002 setlinewidth
+0 .5 moveto
+1 .5 lineto
+stroke
+grestore
+gsave
+0.002 setlinewidth
+.5 0 moveto
+.5 1 lineto
+stroke
+grestore
+grestore
+0 0 moveto
+1 0 lineto
+1 1 lineto
+0 1 lineto
+closepath
+clip
+newpath
+gsave
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.01 setlinewidth
+.5 .5 Mdot
+.52905 .50127 Mdot
+.49873 .52905 Mdot
+.47095 .49873 Mdot
+.50127 .47095 Mdot
+.52778 .53032 Mdot
+.46968 .52778 Mdot
+.47222 .46968 Mdot
+.53032 .47222 Mdot
+.80301 .52778 Mdot
+.50127 .80428 Mdot
+.47222 .80301 Mdot
+.19572 .50127 Mdot
+.19699 .47222 Mdot
+.49873 .19572 Mdot
+.52778 .19699 Mdot
+.80428 .49873 Mdot
+.83333 .5 Mdot
+.83207 .52905 Mdot
+.5 .83333 Mdot
+.47095 .83207 Mdot
+.16667 .5 Mdot
+.16793 .47095 Mdot
+.5 .16667 Mdot
+.52905 .16793 Mdot
+.86238 .50127 Mdot
+.86112 .53032 Mdot
+.49873 .86238 Mdot
+.46968 .86112 Mdot
+.13762 .49873 Mdot
+.13888 .46968 Mdot
+.50127 .13762 Mdot
+.53032 .13888 Mdot
+.80428 .83207 Mdot
+.16793 .80428 Mdot
+.19572 .16793 Mdot
+.83207 .19572 Mdot
+.83333 .83333 Mdot
+.80301 .86112 Mdot
+.16667 .83333 Mdot
+.13888 .80301 Mdot
+.16667 .16667 Mdot
+.19699 .13888 Mdot
+.83333 .16667 Mdot
+.86112 .19699 Mdot
+.83207 .86238 Mdot
+.13762 .83207 Mdot
+.16793 .13762 Mdot
+.86238 .16793 Mdot
+1.13635 .52778 Mdot
+.47222 1.13635 Mdot
+-.13635 .47222 Mdot
+.52778 -.13635 Mdot
+1.1654 .52905 Mdot
+.47095 1.1654 Mdot
+-.1654 .47095 Mdot
+.52905 -.1654 Mdot
+1.19445 .53032 Mdot
+.46968 1.19445 Mdot
+-.19445 .46968 Mdot
+.53032 -.19445 Mdot
+1.13635 .86112 Mdot
+.80428 1.1654 Mdot
+.13888 1.13635 Mdot
+-.1654 .80428 Mdot
+-.13635 .13888 Mdot
+.19572 -.1654 Mdot
+.86112 -.13635 Mdot
+1.1654 .19572 Mdot
+1.1654 .86238 Mdot
+.80301 1.19445 Mdot
+.13762 1.1654 Mdot
+-.19445 .80301 Mdot
+-.1654 .13762 Mdot
+.19699 -.19445 Mdot
+.86238 -.1654 Mdot
+1.19445 .19699 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.005 setlinewidth
+.5 .5 Mdot
+.5581 .50254 Mdot
+.49746 .5581 Mdot
+.4419 .49746 Mdot
+.50254 .4419 Mdot
+.55683 .53159 Mdot
+.52652 .55937 Mdot
+.46841 .55683 Mdot
+.44063 .52652 Mdot
+.44317 .46841 Mdot
+.47348 .44063 Mdot
+.53159 .44317 Mdot
+.55937 .47348 Mdot
+.55557 .56064 Mdot
+.43936 .55557 Mdot
+.44443 .43936 Mdot
+.56064 .44443 Mdot
+.77396 .52652 Mdot
+.50254 .77523 Mdot
+.47348 .77396 Mdot
+.22477 .50254 Mdot
+.22604 .47348 Mdot
+.49746 .22477 Mdot
+.52652 .22604 Mdot
+.77523 .49746 Mdot
+.77269 .55557 Mdot
+.53159 .7765 Mdot
+.44443 .77269 Mdot
+.2235 .53159 Mdot
+.22731 .44443 Mdot
+.46841 .2235 Mdot
+.55557 .22731 Mdot
+.7765 .46841 Mdot
+.80175 .55683 Mdot
+.53032 .80555 Mdot
+.44317 .80175 Mdot
+.19445 .53032 Mdot
+.19825 .44317 Mdot
+.46968 .19445 Mdot
+.55683 .19825 Mdot
+.80555 .46968 Mdot
+.8308 .5581 Mdot
+.52905 .8346 Mdot
+.4419 .8308 Mdot
+.1654 .52905 Mdot
+.1692 .4419 Mdot
+.47095 .1654 Mdot
+.5581 .1692 Mdot
+.8346 .47095 Mdot
+.85985 .55937 Mdot
+.52778 .86365 Mdot
+.44063 .85985 Mdot
+.13635 .52778 Mdot
+.14015 .44063 Mdot
+.47222 .13635 Mdot
+.55937 .14015 Mdot
+.86365 .47222 Mdot
+.89144 .50254 Mdot
+.89017 .53159 Mdot
+.49746 .89144 Mdot
+.46841 .89017 Mdot
+.10856 .49746 Mdot
+.10983 .46841 Mdot
+.50254 .10856 Mdot
+.53159 .10983 Mdot
+.8889 .56064 Mdot
+.52652 .8927 Mdot
+.43936 .8889 Mdot
+.1073 .52652 Mdot
+.1111 .43936 Mdot
+.47348 .1073 Mdot
+.56064 .1111 Mdot
+.8927 .47348 Mdot
+.7765 .80175 Mdot
+.19825 .7765 Mdot
+.2235 .19825 Mdot
+.80175 .2235 Mdot
+.80555 .80301 Mdot
+.77523 .8308 Mdot
+.19699 .80555 Mdot
+.1692 .77523 Mdot
+.19445 .19699 Mdot
+.22477 .1692 Mdot
+.80301 .19445 Mdot
+.8308 .22477 Mdot
+.8346 .80428 Mdot
+.77396 .85985 Mdot
+.19572 .8346 Mdot
+.14015 .77396 Mdot
+.1654 .19572 Mdot
+.22604 .14015 Mdot
+.80428 .1654 Mdot
+.85985 .22604 Mdot
+.86365 .80555 Mdot
+.77269 .8889 Mdot
+.19445 .86365 Mdot
+.1111 .77269 Mdot
+.13635 .19445 Mdot
+.22731 .1111 Mdot
+.80555 .13635 Mdot
+.8889 .22731 Mdot
+.86238 .8346 Mdot
+.80175 .89017 Mdot
+.1654 .86238 Mdot
+.10983 .80175 Mdot
+.13762 .1654 Mdot
+.19825 .10983 Mdot
+.8346 .13762 Mdot
+.89017 .19825 Mdot
+.86112 .86365 Mdot
+.8308 .89144 Mdot
+.13635 .86112 Mdot
+.10856 .8308 Mdot
+.13888 .13635 Mdot
+.1692 .10856 Mdot
+.86365 .13888 Mdot
+.89144 .1692 Mdot
+.85985 .8927 Mdot
+.1073 .85985 Mdot
+.14015 .1073 Mdot
+.8927 .14015 Mdot
+1.1073 .52652 Mdot
+.47348 1.1073 Mdot
+-.1073 .47348 Mdot
+.52652 -.1073 Mdot
+1.10603 .55557 Mdot
+.50254 1.10856 Mdot
+.44443 1.10603 Mdot
+-.10856 .50254 Mdot
+-.10603 .44443 Mdot
+.49746 -.10856 Mdot
+.55557 -.10603 Mdot
+1.10856 .49746 Mdot
+1.13508 .55683 Mdot
+.50127 1.13762 Mdot
+.44317 1.13508 Mdot
+-.13762 .50127 Mdot
+-.13508 .44317 Mdot
+.49873 -.13762 Mdot
+.55683 -.13508 Mdot
+1.13762 .49873 Mdot
+1.16667 .5 Mdot
+1.16413 .5581 Mdot
+.5 1.16667 Mdot
+.4419 1.16413 Mdot
+-.16667 .5 Mdot
+-.16413 .4419 Mdot
+.5 -.16667 Mdot
+.5581 -.16413 Mdot
+1.10856 .8308 Mdot
+.7765 1.13508 Mdot
+.1692 1.10856 Mdot
+-.13508 .7765 Mdot
+-.10856 .1692 Mdot
+.2235 -.13508 Mdot
+.8308 -.10856 Mdot
+1.13508 .2235 Mdot
+1.19572 .50127 Mdot
+1.19318 .55937 Mdot
+.49873 1.19572 Mdot
+.44063 1.19318 Mdot
+-.19572 .49873 Mdot
+-.19318 .44063 Mdot
+.50127 -.19572 Mdot
+.55937 -.19318 Mdot
+1.1073 .85985 Mdot
+.80555 1.13635 Mdot
+.14015 1.1073 Mdot
+-.13635 .80555 Mdot
+-.1073 .14015 Mdot
+.19445 -.13635 Mdot
+.85985 -.1073 Mdot
+1.13635 .19445 Mdot
+1.13762 .83207 Mdot
+.77523 1.16413 Mdot
+.16793 1.13762 Mdot
+-.16413 .77523 Mdot
+-.13762 .16793 Mdot
+.22477 -.16413 Mdot
+.83207 -.13762 Mdot
+1.16413 .22477 Mdot
+1.10603 .8889 Mdot
+.8346 1.13762 Mdot
+.1111 1.10603 Mdot
+-.13762 .8346 Mdot
+-.10603 .1111 Mdot
+.1654 -.13762 Mdot
+.8889 -.10603 Mdot
+1.13762 .1654 Mdot
+1.2235 .53159 Mdot
+.46841 1.2235 Mdot
+-.2235 .46841 Mdot
+.53159 -.2235 Mdot
+1.22477 .50254 Mdot
+1.22223 .56064 Mdot
+.49746 1.22477 Mdot
+.43936 1.22223 Mdot
+-.22477 .49746 Mdot
+-.22223 .43936 Mdot
+.50254 -.22477 Mdot
+.56064 -.22223 Mdot
+1.16667 .83333 Mdot
+1.13508 .89017 Mdot
+.83333 1.16667 Mdot
+.77396 1.19318 Mdot
+.16667 1.16667 Mdot
+.10983 1.13508 Mdot
+-.16667 .83333 Mdot
+-.19318 .77396 Mdot
+-.16667 .16667 Mdot
+-.13508 .10983 Mdot
+.16667 -.16667 Mdot
+.22604 -.19318 Mdot
+.83333 -.16667 Mdot
+.89017 -.13508 Mdot
+1.16667 .16667 Mdot
+1.19318 .22604 Mdot
+1.16413 .89144 Mdot
+.83207 1.19572 Mdot
+.10856 1.16413 Mdot
+-.19572 .83207 Mdot
+-.16413 .10856 Mdot
+.16793 -.19572 Mdot
+.89144 -.16413 Mdot
+1.19572 .16793 Mdot
+1.19572 .8346 Mdot
+.77269 1.22223 Mdot
+.1654 1.19572 Mdot
+-.22223 .77269 Mdot
+-.19572 .1654 Mdot
+.22731 -.22223 Mdot
+.8346 -.19572 Mdot
+1.22223 .22731 Mdot
+1.19445 .86365 Mdot
+.80175 1.2235 Mdot
+.13635 1.19445 Mdot
+-.2235 .80175 Mdot
+-.19445 .13635 Mdot
+.19825 -.2235 Mdot
+.86365 -.19445 Mdot
+1.2235 .19825 Mdot
+1.19318 .8927 Mdot
+.8308 1.22477 Mdot
+.1073 1.19318 Mdot
+-.22477 .8308 Mdot
+-.19318 .1073 Mdot
+.1692 -.22477 Mdot
+.8927 -.19318 Mdot
+1.22477 .1692 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.003 setlinewidth
+.5 .5 Mdot
+.58715 .5038 Mdot
+.4962 .58715 Mdot
+.41285 .4962 Mdot
+.5038 .41285 Mdot
+.58589 .53286 Mdot
+.52525 .58843 Mdot
+.46714 .58589 Mdot
+.41158 .52525 Mdot
+.41411 .46714 Mdot
+.47475 .41158 Mdot
+.53286 .41411 Mdot
+.58843 .47475 Mdot
+.58462 .56191 Mdot
+.5543 .58969 Mdot
+.43809 .58462 Mdot
+.41031 .5543 Mdot
+.41538 .43809 Mdot
+.4457 .41031 Mdot
+.56191 .41538 Mdot
+.58969 .4457 Mdot
+.58335 .59096 Mdot
+.40904 .58335 Mdot
+.41665 .40904 Mdot
+.59096 .41665 Mdot
+.74491 .52525 Mdot
+.5038 .74618 Mdot
+.47475 .74491 Mdot
+.25382 .5038 Mdot
+.25509 .47475 Mdot
+.4962 .25382 Mdot
+.52525 .25509 Mdot
+.74618 .4962 Mdot
+.74364 .5543 Mdot
+.53286 .74745 Mdot
+.4457 .74364 Mdot
+.25255 .53286 Mdot
+.25636 .4457 Mdot
+.46714 .25255 Mdot
+.5543 .25636 Mdot
+.74745 .46714 Mdot
+.74237 .58335 Mdot
+.56191 .74871 Mdot
+.41665 .74237 Mdot
+.25129 .56191 Mdot
+.25763 .41665 Mdot
+.43809 .25129 Mdot
+.58335 .25763 Mdot
+.74871 .43809 Mdot
+.77143 .58462 Mdot
+.56064 .77777 Mdot
+.41538 .77143 Mdot
+.22223 .56064 Mdot
+.22858 .41538 Mdot
+.43936 .22223 Mdot
+.58462 .22858 Mdot
+.77777 .43936 Mdot
+.80048 .58589 Mdot
+.55937 .80682 Mdot
+.41411 .80048 Mdot
+.19318 .55937 Mdot
+.19953 .41411 Mdot
+.44063 .19318 Mdot
+.58589 .19953 Mdot
+.80682 .44063 Mdot
+.82953 .58715 Mdot
+.5581 .83587 Mdot
+.41285 .82953 Mdot
+.16413 .5581 Mdot
+.17047 .41285 Mdot
+.4419 .16413 Mdot
+.58715 .17047 Mdot
+.83587 .4419 Mdot
+.74871 .77143 Mdot
+.22858 .74871 Mdot
+.25129 .22858 Mdot
+.77143 .25129 Mdot
+.85858 .58843 Mdot
+.55683 .86492 Mdot
+.41158 .85858 Mdot
+.13508 .55683 Mdot
+.14142 .41158 Mdot
+.44317 .13508 Mdot
+.58843 .14142 Mdot
+.86492 .44317 Mdot
+.77777 .77269 Mdot
+.74745 .80048 Mdot
+.22731 .77777 Mdot
+.19953 .74745 Mdot
+.22223 .22731 Mdot
+.25255 .19953 Mdot
+.77269 .22223 Mdot
+.80048 .25255 Mdot
+.88763 .58969 Mdot
+.55557 .89398 Mdot
+.41031 .88763 Mdot
+.10602 .55557 Mdot
+.11237 .41031 Mdot
+.44443 .10602 Mdot
+.58969 .11237 Mdot
+.89398 .44443 Mdot
+.80682 .77396 Mdot
+.74618 .82953 Mdot
+.22604 .80682 Mdot
+.17047 .74618 Mdot
+.19318 .22604 Mdot
+.25382 .17047 Mdot
+.77396 .19318 Mdot
+.82953 .25382 Mdot
+.92049 .5038 Mdot
+.91922 .53286 Mdot
+.4962 .92049 Mdot
+.46714 .91922 Mdot
+0.07951 .4962 Mdot
+0.08078 .46714 Mdot
+.5038 0.07951 Mdot
+.53286 0.08078 Mdot
+.91795 .56191 Mdot
+.52525 .92176 Mdot
+.43809 .91795 Mdot
+0.07824 .52525 Mdot
+0.08205 .43809 Mdot
+.47475 0.07824 Mdot
+.56191 0.08205 Mdot
+.92176 .47475 Mdot
+.91668 .59096 Mdot
+.5543 .92303 Mdot
+.40904 .91668 Mdot
+0.07698 .5543 Mdot
+0.08332 .40904 Mdot
+.4457 0.07698 Mdot
+.59096 0.08332 Mdot
+.92303 .4457 Mdot
+.83587 .77523 Mdot
+.74491 .85858 Mdot
+.22477 .83587 Mdot
+.14142 .74491 Mdot
+.16413 .22477 Mdot
+.25509 .14142 Mdot
+.77523 .16413 Mdot
+.85858 .25509 Mdot
+.86492 .7765 Mdot
+.74364 .88763 Mdot
+.2235 .86492 Mdot
+.11237 .74364 Mdot
+.13508 .2235 Mdot
+.25636 .11237 Mdot
+.7765 .13508 Mdot
+.88763 .25636 Mdot
+.89398 .77777 Mdot
+.74237 .91668 Mdot
+.22223 .89398 Mdot
+0.08332 .74237 Mdot
+.10602 .22223 Mdot
+.25763 0.08332 Mdot
+.77777 .10602 Mdot
+.91668 .25763 Mdot
+.8927 .80682 Mdot
+.77143 .91795 Mdot
+.19318 .8927 Mdot
+0.08205 .77143 Mdot
+.1073 .19318 Mdot
+.22858 0.08205 Mdot
+.80682 .1073 Mdot
+.91795 .22858 Mdot
+.89144 .83587 Mdot
+.80048 .91922 Mdot
+.16413 .89144 Mdot
+0.08078 .80048 Mdot
+.10856 .16413 Mdot
+.19953 0.08078 Mdot
+.83587 .10856 Mdot
+.91922 .19953 Mdot
+.89017 .86492 Mdot
+.82953 .92049 Mdot
+.13508 .89017 Mdot
+0.07951 .82953 Mdot
+.10983 .13508 Mdot
+.17047 0.07951 Mdot
+.86492 .10983 Mdot
+.92049 .17047 Mdot
+.8889 .89398 Mdot
+.85858 .92176 Mdot
+.10602 .8889 Mdot
+0.07824 .85858 Mdot
+.1111 .10602 Mdot
+.14142 0.07824 Mdot
+.89398 .1111 Mdot
+.92176 .14142 Mdot
+.88763 .92303 Mdot
+0.07698 .88763 Mdot
+.11237 0.07698 Mdot
+.92303 .11237 Mdot
+1.07824 .52525 Mdot
+.47475 1.07824 Mdot
+-0.07824 .47475 Mdot
+.52525 -0.07824 Mdot
+1.07698 .5543 Mdot
+.5038 1.07951 Mdot
+.4457 1.07698 Mdot
+-0.07951 .5038 Mdot
+-0.07697 .4457 Mdot
+.4962 -0.07951 Mdot
+.5543 -0.07697 Mdot
+1.07951 .4962 Mdot
+1.0757 .58335 Mdot
+.53286 1.08078 Mdot
+.41665 1.0757 Mdot
+-0.08078 .53286 Mdot
+-0.0757 .41665 Mdot
+.46714 -0.08078 Mdot
+.58335 -0.0757 Mdot
+1.08078 .46714 Mdot
+1.10476 .58462 Mdot
+.53159 1.10983 Mdot
+.41538 1.10476 Mdot
+-.10983 .53159 Mdot
+-.10476 .41538 Mdot
+.46841 -.10983 Mdot
+.58462 -.10476 Mdot
+1.10983 .46841 Mdot
+1.13381 .58589 Mdot
+.53032 1.13888 Mdot
+.41411 1.13381 Mdot
+-.13888 .53032 Mdot
+-.13381 .41411 Mdot
+.46968 -.13888 Mdot
+.58589 -.13381 Mdot
+1.13888 .46968 Mdot
+1.08078 .80048 Mdot
+.74871 1.10476 Mdot
+.19953 1.08078 Mdot
+-.10476 .74871 Mdot
+-0.08078 .19953 Mdot
+.25129 -.10476 Mdot
+.80048 -0.08078 Mdot
+1.10476 .25129 Mdot
+1.07951 .82953 Mdot
+.77777 1.10603 Mdot
+.17047 1.07951 Mdot
+-.10603 .77777 Mdot
+-0.07951 .17047 Mdot
+.22223 -.10603 Mdot
+.82953 -0.07951 Mdot
+1.10603 .22223 Mdot
+1.16286 .58715 Mdot
+.52905 1.16793 Mdot
+.41285 1.16286 Mdot
+-.16793 .52905 Mdot
+-.16286 .41285 Mdot
+.47095 -.16793 Mdot
+.58715 -.16286 Mdot
+1.16793 .47095 Mdot
+1.10983 .80175 Mdot
+1.07824 .85858 Mdot
+.80682 1.1073 Mdot
+.74745 1.13381 Mdot
+.19825 1.10983 Mdot
+.14142 1.07824 Mdot
+-.1073 .80682 Mdot
+-.13381 .74745 Mdot
+-.10983 .19825 Mdot
+-0.07824 .14142 Mdot
+.19318 -.1073 Mdot
+.25255 -.13381 Mdot
+.80175 -.10983 Mdot
+.85858 -0.07824 Mdot
+1.1073 .19318 Mdot
+1.13381 .25255 Mdot
+1.07698 .88763 Mdot
+.83587 1.10856 Mdot
+.11237 1.07698 Mdot
+-.10856 .83587 Mdot
+-0.07697 .11237 Mdot
+.16413 -.10856 Mdot
+.88763 -0.07697 Mdot
+1.10856 .16413 Mdot
+1.19191 .58843 Mdot
+.52778 1.19699 Mdot
+.41158 1.19191 Mdot
+-.19699 .52778 Mdot
+-.19191 .41158 Mdot
+.47222 -.19699 Mdot
+.58843 -.19191 Mdot
+1.19699 .47222 Mdot
+1.13888 .80301 Mdot
+.74618 1.16286 Mdot
+.19699 1.13888 Mdot
+-.16286 .74618 Mdot
+-.13888 .19699 Mdot
+.25382 -.16286 Mdot
+.80301 -.13888 Mdot
+1.16286 .25382 Mdot
+1.0757 .91668 Mdot
+.86492 1.10983 Mdot
+0.08332 1.0757 Mdot
+-.10983 .86492 Mdot
+-0.0757 0.08332 Mdot
+.13508 -.10983 Mdot
+.91668 -0.0757 Mdot
+1.10983 .13508 Mdot
+1.22097 .58969 Mdot
+.52652 1.22604 Mdot
+.41031 1.22097 Mdot
+-.22604 .52652 Mdot
+-.22097 .41031 Mdot
+.47348 -.22604 Mdot
+.58969 -.22097 Mdot
+1.22604 .47348 Mdot
+1.16793 .80428 Mdot
+.74491 1.19191 Mdot
+.19572 1.16793 Mdot
+-.19191 .74491 Mdot
+-.16793 .19572 Mdot
+.25509 -.19191 Mdot
+.80428 -.16793 Mdot
+1.19191 .25509 Mdot
+1.10476 .91795 Mdot
+.86365 1.13888 Mdot
+0.08205 1.10476 Mdot
+-.13888 .86365 Mdot
+-.10476 0.08205 Mdot
+.13635 -.13888 Mdot
+.91795 -.10476 Mdot
+1.13888 .13635 Mdot
+1.25255 .53286 Mdot
+.46714 1.25255 Mdot
+-.25255 .46714 Mdot
+.53286 -.25255 Mdot
+1.25382 .5038 Mdot
+1.25129 .56191 Mdot
+.4962 1.25382 Mdot
+.43809 1.25129 Mdot
+-.25382 .4962 Mdot
+-.25129 .43809 Mdot
+.5038 -.25382 Mdot
+.56191 -.25129 Mdot
+1.25002 .59096 Mdot
+.52525 1.25509 Mdot
+.40904 1.25002 Mdot
+-.25509 .52525 Mdot
+-.25002 .40904 Mdot
+.47475 -.25509 Mdot
+.59096 -.25002 Mdot
+1.25509 .47475 Mdot
+1.13381 .91922 Mdot
+.86238 1.16793 Mdot
+0.08078 1.13381 Mdot
+-.16793 .86238 Mdot
+-.13381 0.08078 Mdot
+.13762 -.16793 Mdot
+.91922 -.13381 Mdot
+1.16793 .13762 Mdot
+1.19699 .80555 Mdot
+.74364 1.22097 Mdot
+.19445 1.19699 Mdot
+-.22097 .74364 Mdot
+-.19699 .19445 Mdot
+.25636 -.22097 Mdot
+.80555 -.19699 Mdot
+1.22097 .25636 Mdot
+1.16286 .92049 Mdot
+.86112 1.19699 Mdot
+0.07951 1.16286 Mdot
+-.19699 .86112 Mdot
+-.16286 0.07951 Mdot
+.13888 -.19699 Mdot
+.92049 -.16286 Mdot
+1.19699 .13888 Mdot
+1.22604 .80682 Mdot
+.74237 1.25002 Mdot
+.19318 1.22604 Mdot
+-.25002 .74237 Mdot
+-.22604 .19318 Mdot
+.25763 -.25002 Mdot
+.80682 -.22604 Mdot
+1.25002 .25763 Mdot
+1.22477 .83587 Mdot
+.77143 1.25129 Mdot
+.16413 1.22477 Mdot
+-.25129 .77143 Mdot
+-.22477 .16413 Mdot
+.22858 -.25129 Mdot
+.83587 -.22477 Mdot
+1.25129 .22858 Mdot
+1.2235 .86492 Mdot
+1.19191 .92176 Mdot
+.85985 1.22604 Mdot
+.80048 1.25255 Mdot
+.13508 1.2235 Mdot
+0.07824 1.19191 Mdot
+-.22604 .85985 Mdot
+-.25255 .80048 Mdot
+-.2235 .13508 Mdot
+-.19191 0.07824 Mdot
+.14015 -.22604 Mdot
+.19953 -.25255 Mdot
+.86492 -.2235 Mdot
+.92176 -.19191 Mdot
+1.22604 .14015 Mdot
+1.25255 .19953 Mdot
+1.22223 .89398 Mdot
+.82953 1.25382 Mdot
+.10602 1.22223 Mdot
+-.25382 .82953 Mdot
+-.22223 .10602 Mdot
+.17047 -.25382 Mdot
+.89398 -.22223 Mdot
+1.25382 .17047 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.002 setlinewidth
+.5 .5 Mdot
+.61621 .50508 Mdot
+.49493 .61621 Mdot
+.38379 .49493 Mdot
+.50508 .38379 Mdot
+.61494 .53412 Mdot
+.52398 .61748 Mdot
+.46588 .61494 Mdot
+.38253 .52398 Mdot
+.38506 .46588 Mdot
+.47602 .38253 Mdot
+.53412 .38506 Mdot
+.61748 .47602 Mdot
+.61367 .56318 Mdot
+.55303 .61875 Mdot
+.43682 .61367 Mdot
+.38125 .55303 Mdot
+.38633 .43682 Mdot
+.44697 .38125 Mdot
+.56318 .38633 Mdot
+.61875 .44697 Mdot
+.6124 .59223 Mdot
+.58208 .62001 Mdot
+.40777 .6124 Mdot
+.37999 .58208 Mdot
+.3876 .40777 Mdot
+.41792 .37999 Mdot
+.59223 .3876 Mdot
+.62001 .41792 Mdot
+.61113 .62128 Mdot
+.37872 .61113 Mdot
+.38887 .37872 Mdot
+.62128 .38887 Mdot
+.71586 .52398 Mdot
+.50508 .71713 Mdot
+.47602 .71586 Mdot
+.28288 .50508 Mdot
+.28414 .47602 Mdot
+.49493 .28288 Mdot
+.52398 .28414 Mdot
+.71713 .49493 Mdot
+.71459 .55303 Mdot
+.53412 .7184 Mdot
+.44697 .71459 Mdot
+.2816 .53412 Mdot
+.28541 .44697 Mdot
+.46588 .2816 Mdot
+.55303 .28541 Mdot
+.7184 .46588 Mdot
+.71332 .58208 Mdot
+.56318 .71966 Mdot
+.41792 .71332 Mdot
+.28034 .56318 Mdot
+.28668 .41792 Mdot
+.43682 .28034 Mdot
+.58208 .28668 Mdot
+.71966 .43682 Mdot
+.71205 .61113 Mdot
+.59223 .72093 Mdot
+.38887 .71205 Mdot
+.27907 .59223 Mdot
+.28795 .38887 Mdot
+.40777 .27907 Mdot
+.61113 .28795 Mdot
+.72093 .40777 Mdot
+.7411 .6124 Mdot
+.59096 .74998 Mdot
+.3876 .7411 Mdot
+.25002 .59096 Mdot
+.2589 .3876 Mdot
+.40904 .25002 Mdot
+.6124 .2589 Mdot
+.74998 .40904 Mdot
+.77015 .61367 Mdot
+.58969 .77903 Mdot
+.38633 .77015 Mdot
+.22097 .58969 Mdot
+.22985 .38633 Mdot
+.41031 .22097 Mdot
+.61367 .22985 Mdot
+.77903 .41031 Mdot
+.79921 .61494 Mdot
+.58843 .80809 Mdot
+.38506 .79921 Mdot
+.19191 .58843 Mdot
+.20079 .38506 Mdot
+.41158 .19191 Mdot
+.61494 .20079 Mdot
+.80809 .41158 Mdot
+.72093 .7411 Mdot
+.2589 .72093 Mdot
+.27907 .2589 Mdot
+.7411 .27907 Mdot
+.74998 .74237 Mdot
+.71966 .77015 Mdot
+.25763 .74998 Mdot
+.22985 .71966 Mdot
+.25002 .25763 Mdot
+.28034 .22985 Mdot
+.74237 .25002 Mdot
+.77015 .28034 Mdot
+.82826 .61621 Mdot
+.58715 .83714 Mdot
+.38379 .82826 Mdot
+.16286 .58715 Mdot
+.17174 .38379 Mdot
+.41285 .16286 Mdot
+.61621 .17174 Mdot
+.83714 .41285 Mdot
+.77903 .74364 Mdot
+.7184 .79921 Mdot
+.25636 .77903 Mdot
+.20079 .7184 Mdot
+.22097 .25636 Mdot
+.2816 .20079 Mdot
+.74364 .22097 Mdot
+.79921 .2816 Mdot
+.85731 .61748 Mdot
+.58589 .86619 Mdot
+.38253 .85731 Mdot
+.13381 .58589 Mdot
+.14269 .38253 Mdot
+.41411 .13381 Mdot
+.61748 .14269 Mdot
+.86619 .41411 Mdot
+.80809 .74491 Mdot
+.71713 .82826 Mdot
+.25509 .80809 Mdot
+.17174 .71713 Mdot
+.19191 .25509 Mdot
+.28288 .17174 Mdot
+.74491 .19191 Mdot
+.82826 .28288 Mdot
+.88636 .61875 Mdot
+.58462 .89524 Mdot
+.38125 .88636 Mdot
+.10476 .58462 Mdot
+.11364 .38125 Mdot
+.41538 .10476 Mdot
+.61875 .11364 Mdot
+.89524 .41538 Mdot
+.83714 .74618 Mdot
+.71586 .85731 Mdot
+.25382 .83714 Mdot
+.14269 .71586 Mdot
+.16286 .25382 Mdot
+.28414 .14269 Mdot
+.74618 .16286 Mdot
+.85731 .28414 Mdot
+.91542 .62001 Mdot
+.58335 .9243 Mdot
+.37999 .91542 Mdot
+0.0757 .58335 Mdot
+0.08458 .37999 Mdot
+.41665 0.0757 Mdot
+.62001 0.08458 Mdot
+.9243 .41665 Mdot
+.86619 .74745 Mdot
+.71459 .88636 Mdot
+.25255 .86619 Mdot
+.11364 .71459 Mdot
+.13381 .25255 Mdot
+.28541 .11364 Mdot
+.74745 .13381 Mdot
+.88636 .28541 Mdot
+.94954 .50508 Mdot
+.94827 .53412 Mdot
+.49493 .94954 Mdot
+.46588 .94827 Mdot
+0.05046 .49493 Mdot
+0.05173 .46588 Mdot
+.50508 0.05046 Mdot
+.53412 0.05173 Mdot
+.947 .56318 Mdot
+.52398 .95081 Mdot
+.43682 .947 Mdot
+0.04919 .52398 Mdot
+0.053 .43682 Mdot
+.47602 0.04919 Mdot
+.56318 0.053 Mdot
+.95081 .47602 Mdot
+.94574 .59223 Mdot
+.55303 .95208 Mdot
+.40777 .94574 Mdot
+0.04792 .55303 Mdot
+0.05426 .40777 Mdot
+.44697 0.04792 Mdot
+.59223 0.05426 Mdot
+.95208 .44697 Mdot
+.94447 .62128 Mdot
+.58208 .95335 Mdot
+.37872 .94447 Mdot
+0.04665 .58208 Mdot
+0.05553 .37872 Mdot
+.41792 0.04665 Mdot
+.62128 0.05553 Mdot
+.95335 .41792 Mdot
+.89524 .74871 Mdot
+.71332 .91542 Mdot
+.25129 .89524 Mdot
+0.08458 .71332 Mdot
+.10476 .25129 Mdot
+.28668 0.08458 Mdot
+.74871 .10476 Mdot
+.91542 .28668 Mdot
+.9243 .74998 Mdot
+.71205 .94447 Mdot
+.25002 .9243 Mdot
+0.05553 .71205 Mdot
+0.0757 .25002 Mdot
+.28795 0.05553 Mdot
+.74998 0.0757 Mdot
+.94447 .28795 Mdot
+.92303 .77903 Mdot
+.7411 .94574 Mdot
+.22097 .92303 Mdot
+0.05426 .7411 Mdot
+0.07698 .22097 Mdot
+.2589 0.05426 Mdot
+.77903 0.07698 Mdot
+.94574 .2589 Mdot
+.92176 .80809 Mdot
+.77015 .947 Mdot
+.19191 .92176 Mdot
+0.053 .77015 Mdot
+0.07824 .19191 Mdot
+.22985 0.053 Mdot
+.80809 0.07824 Mdot
+.947 .22985 Mdot
+.92049 .83714 Mdot
+.79921 .94827 Mdot
+.16286 .92049 Mdot
+0.05173 .79921 Mdot
+0.07951 .16286 Mdot
+.20079 0.05173 Mdot
+.83714 0.07951 Mdot
+.94827 .20079 Mdot
+1.04919 .52398 Mdot
+.47602 1.04919 Mdot
+-0.04919 .47602 Mdot
+.52398 -0.04919 Mdot
+1.04792 .55303 Mdot
+.50508 1.05046 Mdot
+.44697 1.04792 Mdot
+-0.05046 .50508 Mdot
+-0.04792 .44697 Mdot
+.49493 -0.05046 Mdot
+.55303 -0.04792 Mdot
+1.05046 .49493 Mdot
+1.04665 .58208 Mdot
+.53412 1.05173 Mdot
+.41792 1.04665 Mdot
+-0.05173 .53412 Mdot
+-0.04665 .41792 Mdot
+.46588 -0.05173 Mdot
+.58208 -0.04665 Mdot
+1.05173 .46588 Mdot
+1.04538 .61113 Mdot
+.56318 1.053 Mdot
+.38887 1.04538 Mdot
+-0.053 .56318 Mdot
+-0.04538 .38887 Mdot
+.43682 -0.053 Mdot
+.61113 -0.04538 Mdot
+1.053 .43682 Mdot
+.91922 .86619 Mdot
+.82826 .94954 Mdot
+.13381 .91922 Mdot
+0.05046 .82826 Mdot
+0.08078 .13381 Mdot
+.17174 0.05046 Mdot
+.86619 0.08078 Mdot
+.94954 .17174 Mdot
+.91795 .89524 Mdot
+.85731 .95081 Mdot
+.10476 .91795 Mdot
+0.04919 .85731 Mdot
+0.08205 .10476 Mdot
+.14269 0.04919 Mdot
+.89524 0.08205 Mdot
+.95081 .14269 Mdot
+1.07444 .6124 Mdot
+.56191 1.08205 Mdot
+.3876 1.07444 Mdot
+-0.08205 .56191 Mdot
+-0.07444 .3876 Mdot
+.43809 -0.08205 Mdot
+.6124 -0.07444 Mdot
+1.08205 .43809 Mdot
+.91668 .9243 Mdot
+.88636 .95208 Mdot
+0.0757 .91668 Mdot
+0.04792 .88636 Mdot
+0.08332 0.0757 Mdot
+.11364 0.04792 Mdot
+.9243 0.08332 Mdot
+.95208 .11364 Mdot
+1.10349 .61367 Mdot
+.56064 1.1111 Mdot
+.38633 1.10349 Mdot
+-.1111 .56064 Mdot
+-.10349 .38633 Mdot
+.43936 -.1111 Mdot
+.61367 -.10349 Mdot
+1.1111 .43936 Mdot
+.91542 .95335 Mdot
+0.04665 .91542 Mdot
+0.08458 0.04665 Mdot
+.95335 0.08458 Mdot
+1.053 .77015 Mdot
+.72093 1.07444 Mdot
+.22985 1.053 Mdot
+-0.07444 .72093 Mdot
+-0.053 .22985 Mdot
+.27907 -0.07444 Mdot
+.77015 -0.053 Mdot
+1.07444 .27907 Mdot
+1.05173 .79921 Mdot
+.74998 1.0757 Mdot
+.20079 1.05173 Mdot
+-0.0757 .74998 Mdot
+-0.05173 .20079 Mdot
+.25002 -0.0757 Mdot
+.79921 -0.05173 Mdot
+1.0757 .25002 Mdot
+1.05046 .82826 Mdot
+.77903 1.07698 Mdot
+.17174 1.05046 Mdot
+-0.07697 .77903 Mdot
+-0.05046 .17174 Mdot
+.22097 -0.07697 Mdot
+.82826 -0.05046 Mdot
+1.07698 .22097 Mdot
+1.08205 .77143 Mdot
+.71966 1.10349 Mdot
+.22858 1.08205 Mdot
+-.10349 .71966 Mdot
+-0.08205 .22858 Mdot
+.28034 -.10349 Mdot
+.77143 -0.08205 Mdot
+1.10349 .28034 Mdot
+1.13254 .61494 Mdot
+.55937 1.14015 Mdot
+.38506 1.13254 Mdot
+-.14015 .55937 Mdot
+-.13254 .38506 Mdot
+.44063 -.14015 Mdot
+.61494 -.13254 Mdot
+1.14015 .44063 Mdot
+1.04919 .85731 Mdot
+.80809 1.07824 Mdot
+.14269 1.04919 Mdot
+-0.07824 .80809 Mdot
+-0.04919 .14269 Mdot
+.19191 -0.07824 Mdot
+.85731 -0.04919 Mdot
+1.07824 .19191 Mdot
+1.1111 .77269 Mdot
+.7184 1.13254 Mdot
+.22731 1.1111 Mdot
+-.13254 .7184 Mdot
+-.1111 .22731 Mdot
+.2816 -.13254 Mdot
+.77269 -.1111 Mdot
+1.13254 .2816 Mdot
+1.04792 .88636 Mdot
+.83714 1.07951 Mdot
+.11364 1.04792 Mdot
+-0.07951 .83714 Mdot
+-0.04792 .11364 Mdot
+.16286 -0.07951 Mdot
+.88636 -0.04792 Mdot
+1.07951 .16286 Mdot
+1.16159 .61621 Mdot
+.5581 1.1692 Mdot
+.38379 1.16159 Mdot
+-.1692 .5581 Mdot
+-.16159 .38379 Mdot
+.4419 -.1692 Mdot
+.61621 -.16159 Mdot
+1.1692 .4419 Mdot
+1.04665 .91542 Mdot
+.86619 1.08078 Mdot
+0.08458 1.04665 Mdot
+-0.08078 .86619 Mdot
+-0.04665 0.08458 Mdot
+.13381 -0.08078 Mdot
+.91542 -0.04665 Mdot
+1.08078 .13381 Mdot
+1.14015 .77396 Mdot
+.71713 1.16159 Mdot
+.22604 1.14015 Mdot
+-.16159 .71713 Mdot
+-.14015 .22604 Mdot
+.28288 -.16159 Mdot
+.77396 -.14015 Mdot
+1.16159 .28288 Mdot
+1.19065 .61748 Mdot
+.55683 1.19825 Mdot
+.38253 1.19065 Mdot
+-.19825 .55683 Mdot
+-.19065 .38253 Mdot
+.44317 -.19825 Mdot
+.61748 -.19065 Mdot
+1.19825 .44317 Mdot
+1.04538 .94447 Mdot
+.89524 1.08205 Mdot
+0.05553 1.04538 Mdot
+-0.08205 .89524 Mdot
+-0.04538 0.05553 Mdot
+.10476 -0.08205 Mdot
+.94447 -0.04538 Mdot
+1.08205 .10476 Mdot
+1.1692 .77523 Mdot
+.71586 1.19065 Mdot
+.22477 1.1692 Mdot
+-.19065 .71586 Mdot
+-.1692 .22477 Mdot
+.28414 -.19065 Mdot
+.77523 -.1692 Mdot
+1.19065 .28414 Mdot
+1.07444 .94574 Mdot
+.89398 1.1111 Mdot
+0.05426 1.07444 Mdot
+-.1111 .89398 Mdot
+-0.07444 0.05426 Mdot
+.10602 -.1111 Mdot
+.94574 -0.07444 Mdot
+1.1111 .10602 Mdot
+1.2197 .61875 Mdot
+.55557 1.22731 Mdot
+.38125 1.2197 Mdot
+-.22731 .55557 Mdot
+-.2197 .38125 Mdot
+.44443 -.22731 Mdot
+.61875 -.2197 Mdot
+1.22731 .44443 Mdot
+1.19825 .7765 Mdot
+1.10349 .947 Mdot
+.8927 1.14015 Mdot
+.71459 1.2197 Mdot
+.2235 1.19825 Mdot
+0.053 1.10349 Mdot
+-.14015 .8927 Mdot
+-.2197 .71459 Mdot
+-.19825 .2235 Mdot
+-.10349 0.053 Mdot
+.1073 -.14015 Mdot
+.28541 -.2197 Mdot
+.7765 -.19825 Mdot
+.947 -.10349 Mdot
+1.14015 .1073 Mdot
+1.2197 .28541 Mdot
+1.24875 .62001 Mdot
+.5543 1.25636 Mdot
+.37999 1.24875 Mdot
+-.25636 .5543 Mdot
+-.24875 .37999 Mdot
+.4457 -.25636 Mdot
+.62001 -.24875 Mdot
+1.25636 .4457 Mdot
+1.13254 .94827 Mdot
+.89144 1.1692 Mdot
+0.05173 1.13254 Mdot
+-.1692 .89144 Mdot
+-.13254 0.05173 Mdot
+.10856 -.1692 Mdot
+.94827 -.13254 Mdot
+1.1692 .10856 Mdot
+1.22731 .77777 Mdot
+.71332 1.24875 Mdot
+.22223 1.22731 Mdot
+-.24875 .71332 Mdot
+-.22731 .22223 Mdot
+.28668 -.24875 Mdot
+.77777 -.22731 Mdot
+1.24875 .28668 Mdot
+1.2816 .53412 Mdot
+.46588 1.2816 Mdot
+-.2816 .46588 Mdot
+.53412 -.2816 Mdot
+1.28288 .50508 Mdot
+1.28034 .56318 Mdot
+.49493 1.28288 Mdot
+.43682 1.28034 Mdot
+-.28287 .49493 Mdot
+-.28034 .43682 Mdot
+.50508 -.28287 Mdot
+.56318 -.28034 Mdot
+1.27907 .59223 Mdot
+.52398 1.28414 Mdot
+.40777 1.27907 Mdot
+-.28414 .52398 Mdot
+-.27907 .40777 Mdot
+.47602 -.28414 Mdot
+.59223 -.27907 Mdot
+1.28414 .47602 Mdot
+1.2778 .62128 Mdot
+.55303 1.28541 Mdot
+.37872 1.2778 Mdot
+-.28541 .55303 Mdot
+-.2778 .37872 Mdot
+.44697 -.28541 Mdot
+.62128 -.2778 Mdot
+1.28541 .44697 Mdot
+1.16159 .94954 Mdot
+.89017 1.19825 Mdot
+0.05046 1.16159 Mdot
+-.19825 .89017 Mdot
+-.16159 0.05046 Mdot
+.10983 -.19825 Mdot
+.94954 -.16159 Mdot
+1.19825 .10983 Mdot
+1.25636 .77903 Mdot
+.71205 1.2778 Mdot
+.22097 1.25636 Mdot
+-.2778 .71205 Mdot
+-.25636 .22097 Mdot
+.28795 -.2778 Mdot
+.77903 -.25636 Mdot
+1.2778 .28795 Mdot
+1.25509 .80809 Mdot
+.7411 1.27907 Mdot
+.19191 1.25509 Mdot
+-.27907 .7411 Mdot
+-.25509 .19191 Mdot
+.2589 -.27907 Mdot
+.80809 -.25509 Mdot
+1.27907 .2589 Mdot
+1.053 1.10349 Mdot
+-.10349 1.053 Mdot
+-0.053 -.10349 Mdot
+1.10349 -0.053 Mdot
+1.19065 .95081 Mdot
+.8889 1.22731 Mdot
+0.04919 1.19065 Mdot
+-.22731 .8889 Mdot
+-.19065 0.04919 Mdot
+.1111 -.22731 Mdot
+.95081 -.19065 Mdot
+1.22731 .1111 Mdot
+1.25382 .83714 Mdot
+.77015 1.28034 Mdot
+.16286 1.25382 Mdot
+-.28034 .77015 Mdot
+-.25382 .16286 Mdot
+.22985 -.28034 Mdot
+.83714 -.25382 Mdot
+1.28034 .22985 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0 0 0 1 setcmykcolor
+gsave
+0.002 setlinewidth
+.5 .5 Mdot
+grestore
+grestore
+grestore
+gsave
+gsave
+0.001 setlinewidth
+newpath
+.5 .5 0.05208 0 365.73 arc
+stroke
+newpath
+.83333 .5 0.01042 0 365.73 arc
+stroke
+newpath
+.16667 .5 0.01042 0 365.73 arc
+stroke
+newpath
+.5 .83333 0.01042 0 365.73 arc
+stroke
+newpath
+.5 .16667 0.01042 0 365.73 arc
+stroke
+newpath
+.83206 .52905 0.01042 0 365.73 arc
+stroke
+newpath
+.16794 .47095 0.01042 0 365.73 arc
+stroke
+newpath
+.47095 .83206 0.01042 0 365.73 arc
+stroke
+newpath
+.52905 .16794 0.01042 0 365.73 arc
+stroke
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(f)] .85 .37083 0 0 Mshowa
+grestore
+gsave
+/Times-Roman findfont 5 scalefont setfont
+[(1)] .86667 .35833 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(f)] .84873 .66655 0 0 Mshowa
+grestore
+gsave
+/Times-Roman findfont 5 scalefont setfont
+[(3)] .86123 .65405 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(f)] .625 .85417 0 0 Mshowa
+grestore
+gsave
+/Times-Roman findfont 5 scalefont setfont
+[(2)] .6375 .84167 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(f)] .33761 .84873 0 0 Mshowa
+grestore
+gsave
+/Times-Roman findfont 5 scalefont setfont
+[(4)] .35011 .83623 0 0 Mshowa
+grestore
+.83333 .5 moveto
+.85417 .39583 lineto
+stroke
+.83206 .52905 moveto
+.84456 .63322 lineto
+stroke
+.5 .83333 moveto
+.60417 .85417 lineto
+stroke
+.47095 .83206 moveto
+.36678 .84456 lineto
+stroke
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(b)] .64572 .525 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(-b)] .35428 .475 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(-a)] .475 .64155 0 0 Mshowa
+grestore
+gsave
+/Times-Bold findfont 8 scalefont setfont
+[(a)] .525 .35845 0 0 Mshowa
+grestore
+.52905 .50208 moveto
+.62905 .525 lineto
+stroke
+.47095 .49792 moveto
+.37511 .475 lineto
+stroke
+.49792 .52905 moveto
+.475 .62489 lineto
+stroke
+.50208 .47095 moveto
+.525 .37511 lineto
+stroke
+grestore
+grestore
+grestore
+MathSubEnd
+grestore
+% End of sub-graphic
+grestore
+% End of Graphics
+MathPictureEnd
+end
+showpage

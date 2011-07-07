@@ -1,0 +1,315 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 8.1 from the book: "The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 9, 1999
+%
+% ********************************************************************************
+%
+% (a), (b): Superpositions of 3 line gratings or line grids:
+%
+% The parameters for each superposition are as follows:
+% 
+% theta1, theta2, theta3 - the layer angles, in degrees.
+% p1, p2, p3 - the respective layer periods (main direction), in deciinches.
+% p1y, p2y, p3y - the respective grid periods (perpendicular direction), in 
+%	deciinches.
+% a1, a2, a3 - the respective internal angles of the 3 grids (normally 90 degrees).
+% xshifti, yshifti - the respective period-shifts for the i-th layer, in terms
+%	of period fractions.
+% len - the length of each of the layers, in centiinches.
+% wid - the width of each of the layers, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+0.5 centiinch setlinewidth
+
+
+/len 330 def		% grating length in centiinches
+/wid 280 def		% grating width in centiinches
+/len2 len 2 div def
+/wid2 wid 2 div def
+
+
+% *********************************************** Fig. (a):
+
+/theta1 0 def		% angle of grating A
+/theta2 120 def		% angle of grating B
+/theta3 243.8 def	% angle of grating C
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period of grating A
+/p2 3 def		% period of grating B
+/p3 3 def		% period of grating C
+
+/xshift1 0.5 p1 mul def		% x period-shift of grating A (e.g. 0.5)
+/xshift2 0 p2 mul def		% x period-shift of grating B
+/xshift3 0 p3 mul def		% x period-shift of grating C
+
+/p1 p1 2 mul def
+/p2 p2 2 mul def
+/p3 p3 2 mul def
+
+/xshift1 xshift1 2 mul def
+/xshift2 xshift2 2 mul def
+/xshift3 xshift3 2 mul def
+
+
+0.3 inch 5.7 inch translate
+gsave
+
+
+/Helvetica findfont
+12 scalefont setfont
+
+
+% Draw grating A:
+gsave
+4 inch 3.5 inch translate
+theta1 rot add rotate
+newpath
+0 p1 len		% draw lines
+{centiinch len2 p1 div round p1 mul xshift1 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+-1.8 inch -1.4 inch moveto
+(A) show
+grestore
+
+
+% Draw grating B:
+gsave
+4 inch 3.5 inch translate
+theta2 rot add rotate
+newpath
+0 p2 len		% draw lines
+{centiinch len2 p2 div round p2 mul xshift2 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+-1.82 inch -1.4 inch moveto
+(B) show
+grestore
+
+
+% Draw grating C:
+gsave
+4 inch 3.5 inch translate
+theta3 rot add rotate
+newpath
+0 p3 len		% draw lines
+{centiinch len2 p3 div round p3 mul xshift3 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+-1.82 inch -1.4 inch moveto
+(C) show
+grestore
+
+
+% Draw circles:
+gsave
+4 inch 3.5 inch translate
+4 centiinch setlinewidth
+newpath
+0 inch 0 inch 0.19 inch 0 360 arc
+stroke
+grestore
+
+gsave
+4 inch 3.5 inch translate
+4 centiinch setlinewidth
+newpath
+-0.39 inch 0.19 inch 0.19 inch 0 360 arc
+stroke
+grestore
+
+
+gsave
+4 inch 3.5 inch translate
+/Times-Roman findfont
+12 scalefont setfont
+-2.3 inch -1.9 inch moveto
+((a)) show
+grestore
+
+
+
+grestore
+
+
+
+% *********************************************** Fig. (b):
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+0.4 centiinch setlinewidth
+
+/theta1 0 def		% angle of grid A
+/theta2 36.8699 def	% angle of grid B
+/theta3 63.4349 def	% angle of grid C
+
+/a1 90 def		% internal angle of grid A
+/a2 90 def		% internal angle of grid B
+/a3 90 def		% internal angle of grid C
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period of grid A
+/p2 3 def		% period of grid B
+/p3 3.3541 def		% period of grid C
+
+/p1y 3 def		% period of grid A (in the perpendicular direction)
+/p2y 3 def		% period of grid B (in the perpendicular direction)
+/p3y 3.3541 def		% period of grid C (in the perpendicular direction)
+
+/xshift1 0 p1 mul def		% x period-shift of grid A (e.g. 0.5)
+/yshift1 0 p1y mul def		% y period-shift of grid A (e.g. 0.5)
+/xshift2 0 p2 mul def		% x period-shift of grid B
+/yshift2 0 p2y mul def		% y period-shift of grid B
+/xshift3 0 p3 mul def		% x period-shift of grid C
+/yshift3 0 p3y mul def		% y period-shift of grid C
+
+
+/p1 p1 3 mul def
+/p2 p2 3 mul def
+/p3 p3 3 mul def
+
+/p1y p1y 3 mul def
+/p2y p2y 3 mul def
+/p3y p3y 3 mul def
+
+/xshift1 xshift1 3 mul def
+/yshift1 yshift1 3 mul def
+/xshift2 xshift2 3 mul def
+/yshift2 yshift2 3 mul def
+/xshift3 xshift3 3 mul def
+/yshift3 yshift3 3 mul def
+
+
+0 inch -4.5 inch translate
+gsave
+
+
+/Helvetica findfont
+12 scalefont setfont
+
+
+% Draw grid A:
+gsave
+4 inch 3.5 inch translate
+theta1 rot add rotate
+newpath
+0 p1 len		% draw lines
+{centiinch len2 p1 div round p1 mul xshift1 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+-1.60 inch -1.60 inch moveto
+(A) show
+grestore
+
+gsave
+4 inch 3.5 inch translate
+a1 theta1 add rot add rotate
+newpath
+0 p1y len		% draw lines
+{centiinch len2 p1y div round p1y mul yshift1 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+grestore
+
+
+% Draw grid B:
+gsave
+4 inch 3.5 inch translate
+theta2 rot add rotate
+newpath
+0 p2 len		% draw lines
+{centiinch len2 p2 div round p2 mul xshift2 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+-1.60 inch -1.60 inch moveto
+(B) show
+grestore
+
+gsave
+4 inch 3.5 inch translate
+a2 theta2 add rot add rotate
+newpath
+0 p2y len		% draw lines
+{centiinch len2 p2y div round p2y mul yshift2 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+grestore
+
+
+% Draw grid C:
+gsave
+4 inch 3.5 inch translate
+theta3 rot add rotate
+newpath
+0 p3 len		% draw lines
+{centiinch len2 p3 div round p3 mul xshift3 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+-1.60 inch -1.60 inch moveto
+(C) show
+grestore
+
+gsave
+4 inch 3.5 inch translate
+a3 theta3 add rot add rotate
+newpath
+0 p3y len		% draw lines
+{centiinch len2 p3y div round p3y mul yshift3 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+grestore
+
+
+gsave
+4 inch 3.5 inch translate
+/Times-Roman findfont
+12 scalefont setfont
+-2.3 inch -2.1 inch moveto
+((b)) show
+grestore
+
+
+grestore
+
+
+
+gsave
+1.75 inch 0.5 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure 8.1) show
+/Times-Roman findfont
+12 scalefont setfont
+(  from the book:  ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0 inch -0.25 inch moveto
+(    by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+grestore
+
+
+
+showpage

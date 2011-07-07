@@ -1,0 +1,112 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 7.8(d) from the book: "The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 9, 1999
+%
+% ********************************************************************************
+%
+% A latent image in the superposition of 2 line gratings - second layer only:
+%
+% The grating parameters are as follows:
+% 
+% theta1, theta2 - the grating angles, in degrees.
+% p1, p2 - the respective grating periods, in deciinches.
+% xshifti - the period-shifts for the i-th grating, in terms of period fractions.
+% len - the length of each of the gratings, in centiinches.
+% wid - the width of each of the gratings, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+0.7 centiinch setlinewidth
+
+
+/len 170 def		% grating length in centiinches
+/wid 120 def		% grating width in centiinches
+/len2 len 2 div def
+/wid2 wid 2 div def
+
+
+/Helvetica findfont
+9 scalefont setfont
+
+
+-1 inch 1.45 inch translate
+gsave
+
+
+% ******************************** Fig. (d):
+
+/theta1 0 def		% angle of grating A
+/theta2 0 def		% angle of grating B
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period of grating A
+/p2 3 def		% period of grating A
+
+/xshift1 0 p1 mul def		% period-shift of grating A (e.g. 0.5)
+/xshift2 6.5 p2 mul def		% period-shift of grating B (e.g. 0.5)
+
+
+% Draw grating B:
+gsave
+5 inch 5.8 inch translate
+theta2 rot add rotate
+newpath
+0 p2 len		% draw lines
+{centiinch len2 p2 div round p2 mul xshift2 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+-0.77 inch -0.6 inch moveto
+(B) show
+grestore
+
+
+gsave
+5 inch 6 inch translate
+-0.05 inch -1.08 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+((d)) show
+grestore
+
+
+gsave
+2.75 inch 1 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure 7.8(d)) show
+/Times-Roman findfont
+12 scalefont setfont
+( from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0 inch -0.25 inch moveto
+(    by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+1.7 inch -0.65 inch moveto
+((Second layer only.)) show
+grestore
+
+
+
+grestore
+
+showpage

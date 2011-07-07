@@ -1,0 +1,765 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 3.2(a)-(d) from the book: "The Theory of the Moire Phenomenon, Vol. II"
+% by I. Amidror, published by Springer, 2007.
+%
+%		* * *  Copyright (c) 2007 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: March 21, 2007
+%
+% ********************************************************************************
+%
+% Superpositions of two dot screens - second layer only
+%
+% ********************************************************************************
+%
+
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+1.2 centiinch setlinewidth
+
+/dim 180 def		% dimensions of the screen in centiinches
+/dim2 90 def		% dim/2
+
+/myrand {rand 2147483647 div 2 mul 1 sub} def	% random number between -1...1
+
+1 setlinecap
+
+
+/Helvetica findfont
+10 scalefont setfont
+
+0.5 inch 0.9 inch translate
+
+
+% ************************************** Fig. (a):
+
+
+/alpha 6 def
+
+/theta1 0 def
+/theta2 0 def
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period for first (reference) dot screen
+/p2 3 def		% period for second dot screen
+
+/p1y 3 def		% period for first (reference) dot screen
+/p2y 3 def		% period for second dot screen
+
+/xshift1 0 p1 mul def		% x phase shift for first dot screen (e.g. 0.5)
+/yshift1 0 p1y mul def		% y phase shift for first dot screen (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second dot screen
+/yshift2 0 p2y mul def		% y phase shift for second dot screen
+
+/rr 1 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+% draw first (reference) dot screen:
+
+25 srand		% seed for rand
+
+
+/y dim2 neg def
+
+gsave
+2.5 inch 8.7 inch translate
+
+	% draw cross:
+	gsave
+	newpath
+	2.5 centiinch setlinewidth
+	0.1 inch 0 inch moveto
+	-0.2 inch 0 inch rlineto
+	0 inch 0.1 inch moveto
+	0 inch -0.2 inch rlineto
+	stroke
+	grestore
+
+theta1 rot add rotate
+gsave
+
+% draw surrounding crosses:
+
+gsave
+0.5 centiinch setlinewidth
+
+%-1.400 inch -1.200 inch moveto
+-1.150 inch -1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%1.000 inch -1.200 inch moveto
+0.950 inch -1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%-1.400 inch 1.200 inch moveto
+-1.150 inch 1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%1.000 inch 1.200 inch moveto
+0.950 inch 1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+stroke
+grestore
+
+0 p1y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p1y div round p1y mul sub def
+	0 p1 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p1 div round p1 mul sub def
+		xsave x sub
+		x						% g1(x,y)
+		add xshift1 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y						% g2(x,y)
+		add yshift1 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p1 add def
+	} for
+%	stroke
+	/y y p1y add def
+} for
+
+-1.01 inch -0.91 inch moveto
+%(A) show
+grestore
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+-0.07 inch -1.15 inch moveto
+((a)) show
+grestore
+grestore
+
+
+% draw second dot screen:
+
+25 srand		% same seed for rand
+
+/y dim2 neg def
+
+gsave
+2.5 inch 8.7 inch translate
+theta2 rot add rotate
+0 p2y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p2y div round p2y mul sub def
+	0 p2 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p2 div round p2 mul sub def
+		xsave x sub
+		alpha cos x mul alpha sin y mul sub		% g3(x,y)
+		add xshift2 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		alpha sin x mul alpha cos y mul add		% g4(x,y)
+		add yshift2 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p2 add def
+	} for
+	stroke
+	/y y p2y add def
+} for
+alpha rotate		% rotate the letter B
+-1.01 inch -0.95 inch moveto
+(B) show
+grestore
+
+
+
+
+% ****************************************** Fig. (b):
+
+
+/alpha 6 def
+
+/theta1 0 def
+/theta2 0 def
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period for first (reference) dot screen
+/p2 3 def		% period for second dot screen
+
+/p1y 3 def		% period for first (reference) dot screen
+/p2y 3 def		% period for second dot screen
+
+/xshift1 0.5 p1 mul def		% x phase shift for first dot screen (e.g. 0.5)
+/yshift1 0 p1y mul def		% y phase shift for first dot screen (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second dot screen
+/yshift2 0 p2y mul def		% y phase shift for second dot screen
+
+/rr 1 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+% draw first (reference) dot screen:
+
+25 srand		% seed for rand
+
+
+/y dim2 neg def
+
+gsave
+5 inch 8.7 inch translate
+
+	% draw cross:
+	gsave
+	newpath
+	2.5 centiinch setlinewidth
+	0.1 inch 0 inch moveto
+	-0.2 inch 0 inch rlineto
+	0 inch 0.1 inch moveto
+	0 inch -0.2 inch rlineto
+	stroke
+	grestore
+	1.2 centiinch setlinewidth
+
+% draw surrounding crosses:
+
+gsave
+0.5 centiinch setlinewidth
+
+%-1.400 inch -1.200 inch moveto
+-1.150 inch -1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%1.000 inch -1.200 inch moveto
+0.950 inch -1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%-1.400 inch 1.200 inch moveto
+-1.150 inch 1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%1.000 inch 1.200 inch moveto
+0.950 inch 1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+stroke
+grestore
+
+
+% draw shifted surrounding crosses:
+
+gsave
+1.5 centiinch 0 centiinch translate
+0.5 centiinch setlinewidth
+
+%-1.400 inch -1.200 inch moveto
+-1.150 inch -1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%1.000 inch -1.200 inch moveto
+0.950 inch -1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%-1.400 inch 1.200 inch moveto
+-1.150 inch 1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%1.000 inch 1.200 inch moveto
+0.950 inch 1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+stroke
+grestore
+
+
+
+theta1 rot add rotate
+gsave
+0 p1y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p1y div round p1y mul sub def
+	0 p1 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p1 div round p1 mul sub def
+		xsave x sub
+		x						% g1(x,y)
+		add xshift1 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y						% g2(x,y)
+		add yshift1 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p1 add def
+	} for
+%	stroke
+	/y y p1y add def
+} for
+-1.01 inch -0.91 inch moveto
+%(A) show
+grestore
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+-0.07 inch -1.15 inch moveto
+((b)) show
+grestore
+grestore
+
+
+% draw second dot screen:
+
+25 srand		% same seed for rand
+
+/y dim2 neg def
+
+gsave
+5 inch 8.7 inch translate
+theta2 rot add rotate
+0 p2y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p2y div round p2y mul sub def
+	0 p2 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p2 div round p2 mul sub def
+		xsave x sub
+		alpha cos x mul alpha sin y mul sub		% g3(x,y)
+		add xshift2 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		alpha sin x mul alpha cos y mul add		% g4(x,y)
+		add yshift2 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p2 add def
+	} for
+	stroke
+	/y y p2y add def
+} for
+alpha rotate		% rotate the letter B
+-1.01 inch -0.95 inch moveto
+(B) show
+grestore
+
+
+
+% ************************************** Fig. (c):
+
+
+/alpha 6 def
+
+/theta1 0 def
+/theta2 0 def
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period for first (reference) dot screen
+/p2 3 def		% period for second dot screen
+
+/p1y 3 def		% period for first (reference) dot screen
+/p2y 3 def		% period for second dot screen
+
+/xshift1 0 p1 mul def		% x phase shift for first dot screen (e.g. 0.5)
+/yshift1 0.5 p1y mul def		% y phase shift for first dot screen (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second dot screen
+/yshift2 0 p2y mul def		% y phase shift for second dot screen
+
+/rr 1 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+% draw first (reference) dot screen:
+
+25 srand		% seed for rand
+
+
+/y dim2 neg def
+
+gsave
+2.5 inch 6.1 inch translate
+
+	% draw cross:
+	gsave
+	newpath
+	2.5 centiinch setlinewidth
+	0.1 inch 0 inch moveto
+	-0.2 inch 0 inch rlineto
+	0 inch 0.1 inch moveto
+	0 inch -0.2 inch rlineto
+	stroke
+	grestore
+	1.2 centiinch setlinewidth
+
+% draw surrounding crosses:
+
+gsave
+0.5 centiinch setlinewidth
+
+%-1.400 inch -1.200 inch moveto
+-1.150 inch -1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%1.000 inch -1.200 inch moveto
+0.950 inch -1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%-1.400 inch 1.200 inch moveto
+-1.150 inch 1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%1.000 inch 1.200 inch moveto
+0.950 inch 1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+stroke
+grestore
+
+
+% draw shifted surrounding crosses:
+
+gsave
+0 centiinch 1.5 centiinch translate
+0.5 centiinch setlinewidth
+
+%-1.400 inch -1.200 inch moveto
+-1.150 inch -1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%1.000 inch -1.200 inch moveto
+0.950 inch -1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%-1.400 inch 1.200 inch moveto
+-1.150 inch 1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%1.000 inch 1.200 inch moveto
+0.950 inch 1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+stroke
+grestore
+
+
+theta1 rot add rotate
+gsave
+0 p1y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p1y div round p1y mul sub def
+	0 p1 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p1 div round p1 mul sub def
+		xsave x sub
+		x						% g1(x,y)
+		add xshift1 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y						% g2(x,y)
+		add yshift1 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p1 add def
+	} for
+%	stroke
+	/y y p1y add def
+} for
+-1.01 inch -0.91 inch moveto
+%(A) show
+grestore
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+-0.07 inch -1.15 inch moveto
+((c)) show
+grestore
+grestore
+
+
+% draw second dot screen:
+
+25 srand		% same seed for rand
+
+/y dim2 neg def
+
+gsave
+2.5 inch 6.1 inch translate
+theta2 rot add rotate
+0 p2y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p2y div round p2y mul sub def
+	0 p2 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p2 div round p2 mul sub def
+		xsave x sub
+		alpha cos x mul alpha sin y mul sub		% g3(x,y)
+		add xshift2 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		alpha sin x mul alpha cos y mul add		% g4(x,y)
+		add yshift2 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p2 add def
+	} for
+	stroke
+	/y y p2y add def
+} for
+alpha rotate		% rotate the letter B
+-1.01 inch -0.95 inch moveto
+(B) show
+grestore
+
+
+% ****************************************** Fig. (d):
+
+
+/alpha 6 def
+
+/theta1 0 def
+/theta2 0 def
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period for first (reference) dot screen
+/p2 3 def		% period for second dot screen
+
+/p1y 3 def		% period for first (reference) dot screen
+/p2y 3 def		% period for second dot screen
+
+/xshift1 0.5 p1 mul def		% x phase shift for first dot screen (e.g. 0.5)
+/yshift1 0.5 p1y mul def		% y phase shift for first dot screen (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second dot screen
+/yshift2 0 p2y mul def		% y phase shift for second dot screen
+
+
+
+% draw first (reference) dot screen:
+
+25 srand		% seed for rand
+
+
+/y dim2 neg def
+
+gsave
+5 inch 6.1 inch translate
+
+	% draw cross:
+	gsave
+	newpath
+	2.5 centiinch setlinewidth
+	0.1 inch 0 inch moveto
+	-0.2 inch 0 inch rlineto
+	0 inch 0.1 inch moveto
+	0 inch -0.2 inch rlineto
+	stroke
+	grestore
+	1.2 centiinch setlinewidth
+
+% draw surrounding crosses:
+
+gsave
+0.5 centiinch setlinewidth
+
+%-1.400 inch -1.200 inch moveto
+-1.150 inch -1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%1.000 inch -1.200 inch moveto
+0.950 inch -1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%-1.400 inch 1.200 inch moveto
+-1.150 inch 1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%1.000 inch 1.200 inch moveto
+0.950 inch 1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+stroke
+grestore
+
+% draw shifted surrounding crosses:
+
+gsave
+1.5 centiinch 1.5 centiinch translate
+0.5 centiinch setlinewidth
+
+%-1.400 inch -1.200 inch moveto
+-1.150 inch -1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%1.000 inch -1.200 inch moveto
+0.950 inch -1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%-1.400 inch 1.200 inch moveto
+-1.150 inch 1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+
+%1.000 inch 1.200 inch moveto
+0.950 inch 1.050 inch moveto
+0.2 inch 0 inch rlineto
+-0.1 inch -0.1 inch rmoveto
+0 inch 0.2 inch rlineto
+stroke
+grestore
+
+
+theta1 rot add rotate
+gsave
+0 p1y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p1y div round p1y mul sub def
+	0 p1 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p1 div round p1 mul sub def
+		xsave x sub
+		x						% g1(x,y)
+		add xshift1 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y						% g2(x,y)
+		add yshift1 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p1 add def
+	} for
+%	stroke
+	/y y p1y add def
+} for
+-1.01 inch -0.91 inch moveto
+%(A) show
+grestore
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+-0.07 inch -1.15 inch moveto
+((d)) show
+grestore
+grestore
+
+
+% draw second dot screen:
+
+25 srand		% same seed for rand
+
+
+/y dim2 neg def
+
+gsave
+5 inch 6.1 inch translate
+theta2 rot add rotate
+0 p2y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p2y div round p2y mul sub def
+	0 p2 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p2 div round p2 mul sub def
+		xsave x sub
+		alpha cos x mul alpha sin y mul sub		% g3(x,y)
+		add xshift2 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		alpha sin x mul alpha cos y mul add		% g4(x,y)
+		add yshift2 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p2 add def
+	} for
+	stroke
+	/y y p2y add def
+} for
+alpha rotate		% rotate the letter B
+-1.01 inch -0.95 inch moveto
+(B) show
+grestore
+
+gsave
+1.35 inch 1.4 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure 3.2(a)-(d)) show
+/Times-Roman findfont
+12 scalefont setfont
+( from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+0.05 inch -0.25 inch moveto
+(Vol. II: Aperiodic Layers,) show
+/Times-Roman findfont
+12 scalefont setfont
+( by I. Amidror, published by Springer, 2007.) show
+1.7 inch -0.65 inch moveto
+((Second layer only.)) show
+grestore
+
+
+showpage

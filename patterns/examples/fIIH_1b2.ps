@@ -1,0 +1,151 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure H.1(b) from the book: "The Theory of the Moire Phenomenon, Vol. II"
+% by I. Amidror, published by Springer, 2007.
+%
+%		* * *  Copyright (c) 2007 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: March 21, 2007
+%
+% ********************************************************************************
+%
+% Superpositions of two gratings - second layer only
+%
+% ********************************************************************************
+%
+
+
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+5 centiinch setlinewidth
+
+/dim 650 def		% dimensions of the grating in centiinches
+/dim2 325 def		% dim/2
+
+/myrand {rand 2147483647 div 2 mul 1 sub} def	% random number between -1...1
+
+
+1.6 inch -2.1 inch translate
+
+/theta1 0 def
+/theta2 2 def
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 10 def		% period for first grating
+/p2 10 def		% period for second grating
+/hscale2 1.06 def	% horizontal scaling for second grating (INSTEAD OF
+			% changing p2, which may destroy the random no. sequence
+
+
+/xshift1 0 p1 mul def		% x phase shift for first grating (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second grating
+
+gsave
+
+
+
+% draw second grating (the revealer):
+
+0.6 centiinch setlinewidth
+
+gsave
+2.5 inch 9.4 inch translate
+theta2 rot add rotate
+
+% Draw black background:
+newpath
+3.25 inch 3.25 inch moveto
+-6.5 inch 0 inch rlineto
+0 inch -6.5 inch rlineto
+6.5 inch 0 inch rlineto
+closepath
+fill
+
+1 setgray		% write in white
+
+newpath
+hscale2 1 scale		% horizontal scaling INSTEAD OF changing p2
+0 p2 650		% draw vertical lines
+{centiinch 325 p2 div round p2 mul xshift2 sub centiinch sub -3.25 inch moveto
+0 6.5 inch rlineto} for
+stroke
+grestore
+
+
+% draw first grating (with the information):
+
+5.3333 centiinch setlinewidth
+
+gsave
+2.5 inch 9.4 inch translate
+theta1 rot add rotate
+newpath
+0 p1 650		% draw vertical lines
+{centiinch 325 p1 div round p1 mul xshift1 sub centiinch sub 3.25 inch moveto
+0 -1.5 inch rlineto} for
+%stroke
+grestore
+
+% draw text bands:
+
+/Helvetica-Bold findfont
+12 scalefont setfont
+
+gsave
+2.5 inch 9.4 inch translate
+90 rotate
+
+newpath
+0 p1 650		% draw vertical text lines
+{centiinch 325 p1 div round p1 mul 0.1 inch sub centiinch sub -1.7 inch exch moveto
+gsave
+8 0.4444 scale
+%(EPFL) show
+grestore} for
+grestore
+
+gsave
+2.5 inch 9.4 inch translate
+theta1 rot add rotate
+newpath
+0 p1 650		% draw vertical lines
+{centiinch 325 p1 div round p1 mul xshift1 sub centiinch sub -3.25 inch moveto
+0 1.5 inch rlineto} for
+%stroke
+grestore
+
+grestore
+
+
+gsave
+0.5 inch 4.45 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure H.1(b)) show
+/Times-Roman findfont
+12 scalefont setfont
+( from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+-0.05 inch -0.25 inch moveto
+(Vol. II: Aperiodic Layers,) show
+/Times-Roman findfont
+12 scalefont setfont
+( by I. Amidror, published by Springer, 2007.) show
+1.7 inch -0.65 inch moveto
+((Second layer only.)) show
+grestore
+
+
+showpage

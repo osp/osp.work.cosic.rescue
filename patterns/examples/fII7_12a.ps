@@ -1,0 +1,209 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 7.12(a) from the book: "The Theory of the Moire Phenomenon, Vol. II"
+% by I. Amidror, published by Springer, 2007.
+%
+%		* * *  Copyright (c) 2007 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: March 21, 2007
+%
+% ********************************************************************************
+%
+% Superpositions of two dot screens
+%
+% ********************************************************************************
+%
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+
+
+% ************ Adjustable parameters for the master screen:
+
+/theta1 0 def		% angle of the screen in degrees
+/p1 5 def		% period of the screen in its main direction in centiinches
+/p1y 5 def		% period of the screen in its secondary direction in centiinches
+/xshift1 -0.5 p1 mul def	% x phase shift for first dot screen (e.g. 0.5)
+/yshift1 0 p1 mul def	% y phase shift for first dot screen (e.g. 0.5)
+
+
+
+% ************ Adjustable parameters for the basic screen:
+
+/theta2 0 def		% angle of the screen in degrees
+/p2 5 def		% period of the screen in its main direction in centiinches
+/p2y 5 def		% period of the screen in its secondary direction in centiinches
+/xshift2 0 p1 mul def	% x phase shift for first dot screen (e.g. 0.5)
+/yshift2 -1 p1 mul def	% y phase shift for first dot screen (e.g. 0.5)
+
+
+/len 640 def		% length of the screen in centiinches
+/wid 640 def		% width of the screen in centiinches
+/len2 len 2 div def
+/wid2 wid 2 div def
+/len3 len 3 div def
+/wid3 wid 3 div def
+
+/diam 1 def		% the dot diameter in centiinches
+diam centiinch setlinewidth
+
+
+% ************ Draw the master dot-screen:
+
+gsave
+
+
+/myrand {rand 2147483647 div 2 mul 1 sub} def	% random number between -1...1
+
+9 srand		% seed for rand
+
+/rr 2 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+0.1 inch 3.2 inch translate
+
+1 setlinecap
+
+/a 0.00025 def	% coefficient of x**2 for the parabolas
+
+
+gsave
+4 inch 4.0 inch translate
+theta1 rotate
+
+
+% Draw black background:
+newpath
+wid2 25.5 add xshift1 add centiinch len2 yshift1 add centiinch moveto
+wid neg centiinch 0 centiinch rlineto
+-34 centiinch len3 neg centiinch
+	-34 centiinch len3 neg 2 mul centiinch
+	0 centiinch len neg centiinch rcurveto
+wid centiinch 0 centiinch rlineto
+-34 centiinch len3 centiinch
+	-34 centiinch len3 2 mul centiinch
+	0 centiinch len centiinch rcurveto
+closepath
+fill
+
+1 setgray		% write in white
+
+
+/y len2 neg def
+
+0 p1y len		% draw rows of dots
+{newpath
+	/x wid2 neg def
+	/ysave exch len2 p1y div round p1y mul sub def
+	0 p1 wid	% draw a horizontal line of bullets
+		{/xsave exch wid2 p1 div round p1 mul sub def
+		xsave x sub
+		x y y mul a mul add				% g1(x,y)
+		add xshift1 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y						% g2(x,y)
+		add yshift1 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p1 add def
+	} for
+	stroke
+	/y y p1y add def
+} for
+grestore
+
+grestore
+
+
+
+% ************ Draw the basic dot screen:
+
+gsave
+
+/inch {72 mul} def
+
+/centiinch {0.72 mul} def
+
+/myrand {rand 2147483647 div 2 mul 1 sub} def	% random number between -1...1
+
+9 srand		% seed for rand
+
+/rr 2 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+0.1 inch 3.2 inch translate
+
+1 setlinecap
+
+/a 0.00025 def	% coefficient of x**2 for the parabolas
+
+gsave
+4 inch 4.0 inch translate
+
+/y len2 neg def
+
+/Helvetica-Bold findfont
+4 scalefont setfont
+theta2 rotate
+0 p2y len		% draw rows of dots
+{newpath
+	/x wid2 neg def
+	/ysave exch len2 p2y div round p2y mul sub def
+	0 p2 wid	% draw a horizontal line of bullets
+		{/xsave exch wid2 p2 div round p2 mul sub def
+		xsave x sub
+		x						% g1(x,y)
+		add xshift2 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y x x mul a mul add				% g2(x,y)
+		add yshift2 add
+		centiinch myrand rr mul sub moveto
+%		0 0 rlineto
+		45 rotate
+%		-1.7 centiinch 1.767 centiinch rmoveto
+		(2) show
+		-45 rotate
+		/x x p2 add def
+	} for
+	stroke
+	/y y p2y add def
+} for
+grestore
+
+grestore
+
+
+gsave
+2 inch 2.35 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure 7.12(a)) show
+/Times-Roman findfont
+12 scalefont setfont
+( from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+0 inch -0.25 inch moveto
+(Vol. II: Aperiodic Layers,) show
+/Times-Roman findfont
+12 scalefont setfont
+( by I. Amidror, published by Springer, 2007.) show
+grestore
+
+
+showpage
+
+

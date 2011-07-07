@@ -1,0 +1,144 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 7.5(a) from the book: "The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 9, 1999
+%
+% ********************************************************************************
+%
+% Superpositions of 3 line gratings - first layer only:
+%
+% The grating parameters are as follows:
+% 
+% theta1, theta2, theta3 - the grating angles, in degrees.
+% p1, p2, p3 - the respective grating periods, in deciinches.
+% xshifti - the period-shifts for the i-th grating, in terms of period fractions.
+% len - the length of each of the gratings, in centiinches.
+% wid - the width of each of the gratings, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+0.9 centiinch setlinewidth
+
+
+/len 170 def		% grating length in centiinches
+/wid 120 def		% grating width in centiinches
+/len2 len 2 div def
+/wid2 wid 2 div def
+
+
+/Helvetica findfont
+9 scalefont setfont
+
+
+2.05 inch 1.13 inch translate
+gsave
+
+
+% ******************************** Fig. (a):
+
+/theta1 0 def		% angle of grating A
+/theta2 120 def		% angle of grating B
+/theta3 244.5 def	% angle of grating C
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period of grating A
+/p2 3 def		% period of grating B
+/p3 3 def		% period of grating C
+
+
+/xshift1 0.5 p1 mul def		% period-shift of grating A (e.g. 0.5)
+/xshift2 0 p2 mul def		% period-shift of grating B
+/xshift3 0 p3 mul def		% period-shift of grating C
+
+
+% Draw grating A:
+gsave
+2 inch 6.2 inch translate
+theta1 rot add rotate
+newpath
+0 p1 len		% draw lines
+{centiinch len2 p1 div round p1 mul xshift1 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+-0.95 inch -0.62 inch moveto
+(A) show
+grestore
+
+
+
+% Draw white cross:
+gsave
+2 inch 6.2 inch translate
+newpath
+0.1 inch 0.01 inch moveto
+0 inch -0.02 inch rlineto
+-0.09 inch 0 inch rlineto
+0 inch -0.09 inch rlineto
+-0.02 inch 0 inch rlineto
+0 inch 0.09 inch rlineto
+-0.09 inch 0 inch rlineto
+0 inch 0.02 inch rlineto
+0.09 inch 0 inch rlineto
+0 inch 0.09 inch rlineto
+0.02 inch 0 inch rlineto
+0 inch -0.09 inch rlineto
+closepath
+1 setgray
+fill
+grestore
+
+
+
+gsave
+2 inch 6.2 inch translate
+-0.08 inch -1.28 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+((a)) show
+grestore
+
+
+
+gsave
+-0.25 inch 1.2 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure 7.5(a)) show
+/Times-Roman findfont
+12 scalefont setfont
+( from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0 inch -0.25 inch moveto
+(    by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+1.7 inch -0.65 inch moveto
+((First layer only.)) show
+grestore
+
+
+
+grestore
+
+showpage
+
+
+

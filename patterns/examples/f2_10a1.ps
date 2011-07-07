@@ -1,0 +1,133 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 2.10(a) from the book: "The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 9, 1999
+%
+% ********************************************************************************
+%
+% Superpositions of 2 line grids - first layer only:
+%
+% The grating parameters are as follows:
+% 
+% theta1, theta2 - the grating angles, in degrees.
+% p1, p2 - the respective grating periods, in deciinches.
+% p1y, p2y - the respective grid periods (perpendicular direction), in 
+%	deciinches.
+% a1, a2 - the respective internal angles of the 3 grids (normally 90 degrees).
+% xshifti - the period-shifts for the i-th grating, in terms of period fractions.
+% len - the length of each of the gratings, in centiinches.
+% wid - the width of each of the gratings, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+0.9 centiinch setlinewidth
+
+
+/len 180 def		% grating length in centiinches
+/wid 130 def		% grating width in centiinches
+/len2 len 2 div def
+/wid2 wid 2 div def
+
+
+gsave
+2.2 inch 4.2 inch translate
+
+
+% *********************************************** Fig. (a):
+
+/theta1 0 def		% angle of grid A
+/theta2 15 def		% angle of grid B
+
+/a1 90 def		% internal angle of grid A
+/a2 90 def		% internal angle of grid B
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period of grid A
+/p2 3 def		% period of grid B
+
+/p1y 3 def		% period of grid A (in the perpendicular direction)
+/p2y 3 def		% period of grid B (in the perpendicular direction)
+
+
+/xshift1 0 p1 mul def		% x period-shift of grid A (e.g. 0.5)
+/yshift1 0 p1y mul def		% y period-shift of grid A (e.g. 0.5)
+/xshift2 0 p2 mul def		% x period-shift of grid B
+/yshift2 0 p2y mul def		% x period-shift of grid B
+
+
+
+% Draw first grid:
+gsave
+2 inch 3.5 inch yshift1 add translate
+theta1 rot add rotate
+newpath
+0 p1 len		% draw lines
+{centiinch len2 p1 div round p1 mul xshift1 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+grestore
+
+gsave
+2 inch xshift1 add 3.5 inch translate
+a1 theta1 add rot add rotate
+newpath
+0 p1y len		% draw lines
+{centiinch len2 p1y div round p1y mul yshift1 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+grestore
+
+gsave
+/Helvetica findfont
+9 scalefont setfont
+2 inch 3.5 inch translate
+theta1 rot add rotate
+-1.01 inch -0.65 inch moveto
+(A) show
+-0.67 inch -1.02 inch moveto
+(B) show
+grestore
+gsave
+
+
+
+
+gsave
+-0.4 inch -1.7 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure 2.10(a)) show
+/Times-Roman findfont
+12 scalefont setfont
+(  from the book:  ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0 inch -0.25 inch moveto
+(    by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+1.7 inch -0.65 inch moveto
+((First layer only.)) show
+grestore
+
+
+grestore
+
+showpage

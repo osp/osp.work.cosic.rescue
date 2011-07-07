@@ -1,0 +1,107 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure "gratc" from the Moire Demonstration Kit accompanying the book: 
+%		"The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 14, 1999
+%
+% ********************************************************************************
+%
+% A cyan periodic line grating
+%
+% The adjustable parameters are as follows:
+% 
+% theta1 - the grating angle, in degrees.
+% p1 - the period of the grating along its main axis, in centiinches.
+% len - the length of the grating along its main axis, in centiinches.
+% wid - the width of the grating (= its lines length), in centiinches.
+% lwidth - the linewidth, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+
+
+
+% ************ Adjustable parameters for the grating:
+
+
+/theta1 90 def		% angle of the grating in degrees
+
+/p1 3 def		% period of the grating along its main axis in centiinches
+
+/len 800 def		% length of the grating along its main axis in centiinches
+
+/wid 700 def		% width of the grating (= its lines length) in centiinches
+
+/lwidth 1.0 def		% linewidth in centiinches
+
+
+
+
+
+% ************ Draw the grating:
+
+/inch {72 mul} def
+
+/centiinch {0.72 mul} def
+
+0.2 inch 3.0 inch translate
+
+
+/len2 len 2 div def
+/wid2 wid 2 div def
+lwidth centiinch setlinewidth
+
+gsave
+1 0 0 0 setcmykcolor
+4 inch 4.0 inch translate
+theta1 rotate
+newpath
+0 p1 len		% draw lines
+{centiinch len2 p1 div round p1 mul centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+grestore
+
+
+
+gsave
+1.75 inch -1.0 inch translate
+0.5 inch 0 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+(Figure  ) show
+/Times-Bold findfont
+12 scalefont setfont
+(gratc) show
+/Times-Roman findfont
+12 scalefont setfont
+(  from the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Demonstration Kit) show
+0.1 inch -0.25 inch moveto
+(accompanying the book:  ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0.1 inch -0.5 inch moveto
+(by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+grestore
+
+
+
+
+showpage

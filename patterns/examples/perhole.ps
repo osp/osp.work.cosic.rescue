@@ -1,0 +1,127 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure "perhole" from the Moire Demonstration Kit accompanying the book: 
+%		"The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 2000.
+%
+%		* * *  Copyright (c) 2000 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Generated: August 26, 2002
+%
+% ********************************************************************************
+%
+% A periodic dot-screen with tiny white dots (pinholes) on a black background
+%
+% The adjustable parameters are as follows:
+% 
+% theta1 - the angle of the screen in degrees.
+% p1 - the period of the screen in its main direction, in centiinches.
+% p1y - the period of the screen in its secondary direction, in centiinches.
+% len - the length of the screen, in centiinches.
+% wid - the width of the screen, in centiinches.
+% diam - the dot diameter, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+
+
+
+% ************ Adjustable parameters for the screen:
+
+
+/theta1 0 def		% angle of the screen in degrees
+
+/p1 5 def		% period of the screen in its main direction in centiinches
+
+/p1y 5 def		% period of the screen in its secondary direction in centiinches
+
+/len 700 def		% length of the screen in centiinches
+
+/wid 700 def		% width of the screen in centiinches
+
+/diam 1 def		% the dot diameter in centiinches
+
+
+
+
+% ************ Draw the dot-screen:
+
+/inch {72 mul} def
+
+/centiinch {0.72 mul} def
+
+0.2 inch 3.0 inch translate
+
+
+/len2 len 2 div def
+/wid2 wid 2 div def
+diam centiinch setlinewidth
+
+1 setlinecap
+
+gsave
+4 inch 4.0 inch translate
+theta1 rotate
+
+% Draw black background:
+newpath
+3.5 inch 3.5 inch moveto
+-7 inch 0 inch rlineto
+0 inch -7 inch rlineto
+7 inch 0 inch rlineto
+closepath
+fill
+
+1 setgray		% write in white
+
+0 p1y len		% draw rows of dots
+{newpath
+	/ysave exch centiinch wid2 centiinch sub def
+	0 p1 len		% draw a row of dots
+	{centiinch len2 centiinch sub ysave moveto
+	0 0 rlineto
+	} for
+	stroke
+} for
+grestore
+
+
+
+gsave
+1.75 inch -1.0 inch translate
+0.5 inch 0 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+(Figure  ) show
+/Times-Bold findfont
+12 scalefont setfont
+(perhole) show
+/Times-Roman findfont
+12 scalefont setfont
+(  from the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Demonstration Kit) show
+0.1 inch -0.25 inch moveto
+(Accompanying the book:  ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0.1 inch -0.5 inch moveto
+(by I. Amidror, published by Kluwer Academic Publishers, 2000.) show
+grestore
+
+
+
+
+showpage
+

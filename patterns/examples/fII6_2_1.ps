@@ -1,0 +1,338 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 6.2(a)-(d) from the book: "The Theory of the Moire Phenomenon, Vol. II"
+% by I. Amidror, published by Springer, 2007.
+%
+%		* * *  Copyright (c) 2007 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: March 21, 2007
+%
+% ********************************************************************************
+%
+% Superpositions of two line gratings - first layer only
+%
+% ********************************************************************************
+%
+
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+1.2 centiinch setlinewidth
+
+/dim 250 def		% dimensions of the grating in centiinches
+/dim2 125 def		% dim/2
+
+/myrand {rand 2147483647 div 2 mul 1 sub} def	% random number between -1...1
+
+
+0 inch 0 inch translate
+
+
+
+
+
+
+% ************************************** Fig. (a):
+
+/theta1 3 def
+/theta2 0 def
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period for K1 grating
+/p2 3 def		% period for M1 grating
+
+/p1y 3 def		% period for K2 grating
+/p2y 3 def		% period for M2 grating
+
+/xshift1 0 p1 mul def		% x phase shift for first grid (e.g. 0.5)
+/yshift1 0 p1y mul def		% y phase shift for first grid (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second grid
+/yshift2 0 p2y mul def		% y phase shift for second grid
+
+
+
+/rr 1 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+gsave
+
+
+% draw first grating:
+
+7 srand		% seed for rand
+
+0.9 centiinch setlinewidth
+
+gsave
+2.5 inch 9.4 inch yshift1 centiinch add translate
+1.08 1.03 scale
+theta1 rot add rotate
+newpath
+0 p1 250		% draw vertical lines
+{centiinch 125 p1 div round p1 mul xshift1 sub centiinch sub myrand rr mul sub -1.25 inch moveto
+0 2.5 inch rlineto} for
+stroke
+grestore
+
+
+
+% draw second grating:
+
+7 srand		% seed for rand
+
+0.9 centiinch setlinewidth
+
+gsave
+2.5 inch 9.4 inch yshift2 centiinch add translate
+theta2 rot add rotate
+newpath
+0 p2 250		% draw vertical lines
+{centiinch 125 p2 div round p2 mul xshift2 sub centiinch sub myrand rr mul sub -1.25 inch moveto
+0 2.5 inch rlineto} for
+%stroke
+grestore
+
+
+
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+2.5 inch 9.4 inch translate
+-0.07 inch -1.6 inch moveto
+((a)) show
+grestore
+
+grestore
+
+
+% ****************************************** Fig. (b):
+
+
+
+/p1 3 def		% period for K1 grating
+/p2 3 def		% period for M1 grating
+
+/p1y 3 def		% period for K2 grating
+/p2y 3 def		% period for M2 grating
+
+/xshift1 0 p1 mul def		% x phase shift for first grid (e.g. 0.5)
+/yshift1 0 p1y mul def		% y phase shift for first grid (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second grid
+/yshift2 0 p2y mul def		% y phase shift for second grid
+
+gsave
+
+
+% draw first grating:
+
+0.9 centiinch setlinewidth
+
+gsave
+5.7 inch 9.4 inch yshift1 centiinch add translate
+1.08 1.03 scale
+theta1 rot add rotate
+newpath
+0 p1 250		% draw vertical lines
+{centiinch 125 p1 div round p1 mul xshift1 sub centiinch sub -1.25 inch moveto
+0 2.5 inch rlineto} for
+stroke
+grestore
+
+
+
+% draw second grating:
+
+0.9 centiinch setlinewidth
+
+gsave
+5.7 inch 9.4 inch yshift2 centiinch add translate
+theta2 rot add rotate
+newpath
+0 p2 250		% draw vertical lines
+{centiinch 125 p2 div round p2 mul xshift2 sub centiinch sub -1.25 inch moveto
+0 2.5 inch rlineto} for
+%stroke
+grestore
+
+
+
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+5.7 inch 9.4 inch translate
+-0.07 inch -1.6 inch moveto
+((b)) show
+grestore
+
+grestore
+
+
+
+
+% ************************************** Fig. (c):
+
+/theta1 0 def
+/theta2 5 def
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period for K1 grating
+/p2 3 def		% period for M1 grating
+
+/p1y 3 def		% period for K2 grating
+/p2y 3 def		% period for M2 grating
+
+/xshift1 1 p1 mul def		% x phase shift for first grid (e.g. 0.5)
+/yshift1 0 p1y mul def		% y phase shift for first grid (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second grid
+/yshift2 0 p2y mul def		% y phase shift for second grid
+
+
+
+/rr 1 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+gsave
+
+
+% draw first grating:
+
+7 srand		% seed for rand
+
+0.9 centiinch setlinewidth
+
+gsave
+2.5 inch 6.0 inch yshift1 centiinch add translate
+theta1 rot add rotate
+newpath
+0 p1 250		% draw vertical lines
+{centiinch 125 p1 div round p1 mul xshift1 sub centiinch sub myrand rr mul sub -1.25 inch moveto
+0 2.5 inch rlineto} for
+stroke
+grestore
+
+
+
+% draw second grating:
+
+7 srand		% seed for rand
+
+0.9 centiinch setlinewidth
+
+gsave
+2.5 inch 6.0 inch yshift2 centiinch add translate
+theta2 rot add rotate
+newpath
+0 p2 250		% draw vertical lines
+{centiinch 125 p2 div round p2 mul xshift2 sub centiinch sub myrand rr mul sub -1.25 inch moveto
+0 2.5 inch rlineto} for
+%stroke
+grestore
+
+
+
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+2.5 inch 6.0 inch translate
+-0.07 inch -1.6 inch moveto
+((c)) show
+grestore
+
+grestore
+
+
+% ****************************************** Fig. (d):
+
+
+
+/p1 3 def		% period for K1 grating
+/p2 3 def		% period for M1 grating
+
+/p1y 3 def		% period for K2 grating
+/p2y 3 def		% period for M2 grating
+
+/xshift1 1 p1 mul def		% x phase shift for first grid (e.g. 0.5)
+/yshift1 0 p1y mul def		% y phase shift for first grid (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second grid
+/yshift2 0 p2y mul def		% y phase shift for second grid
+
+gsave
+
+
+% draw first grating:
+
+0.9 centiinch setlinewidth
+
+gsave
+5.7 inch 6.0 inch yshift1 centiinch add translate
+theta1 rot add rotate
+newpath
+0 p1 250		% draw vertical lines
+{centiinch 125 p1 div round p1 mul xshift1 sub centiinch sub -1.25 inch moveto
+0 2.5 inch rlineto} for
+stroke
+grestore
+
+
+
+% draw second grating:
+
+0.9 centiinch setlinewidth
+
+gsave
+5.7 inch 6.0 inch yshift2 centiinch add translate
+theta2 rot add rotate
+newpath
+0 p2 250		% draw vertical lines
+{centiinch 125 p2 div round p2 mul xshift2 sub centiinch sub -1.25 inch moveto
+0 2.5 inch rlineto} for
+%stroke
+grestore
+
+
+
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+5.7 inch 6.0 inch translate
+-0.07 inch -1.6 inch moveto
+((d)) show
+grestore
+
+grestore
+
+
+gsave
+1.75 inch 2.3 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure 6.2(a)-(d)) show
+/Times-Roman findfont
+12 scalefont setfont
+( from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+0.05 inch -0.25 inch moveto
+(Vol. II: Aperiodic Layers,) show
+/Times-Roman findfont
+12 scalefont setfont
+( by I. Amidror, published by Springer, 2007.) show
+1.7 inch -0.65 inch moveto
+((First layer only.)) show
+grestore
+
+
+showpage

@@ -1,0 +1,105 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure "circ2" from the Moire Demonstration Kit accompanying the book: 
+%		"The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 14, 1999
+%
+% ********************************************************************************
+%
+% A circular curvilinear grating (with a larger radial period)
+%
+% The adjustable parameters are as follows:
+% 
+% p1 - the radial period of the circular grating in centiinches.
+% rad - the radius of the circular grating, in centiinches.
+% lwidth - the linewidth, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+
+
+
+% ************ Adjustable parameters for the curvilinear grating:
+
+
+/p1 3.2 def		% radial period of the circular grating in centiinches
+
+/rad 380 def		% radius of the circular grating in centiinches
+
+/lwidth 1.0 def		% linewidth in centiinches
+
+
+
+
+
+% ************ Draw the circular grating:
+
+/inch {72 mul} def
+
+/centiinch {0.72 mul} def
+
+0.15 inch 3.0 inch translate
+
+
+lwidth centiinch setlinewidth
+
+
+
+
+
+gsave
+4 inch 4 inch translate
+
+
+/firstrad p1 2.0 div def
+newpath
+firstrad p1 rad		% draw circles
+{/r exch def
+ 0 0 r centiinch 0 360 arc stroke
+} for
+grestore
+
+
+
+
+gsave
+1.75 inch -1.0 inch translate
+0.5 inch 0 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+(Figure  ) show
+/Times-Bold findfont
+12 scalefont setfont
+(circ2) show
+/Times-Roman findfont
+12 scalefont setfont
+(  from the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Demonstration Kit) show
+0.1 inch -0.25 inch moveto
+(accompanying the book:  ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0.1 inch -0.5 inch moveto
+(by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+grestore
+
+
+
+
+showpage

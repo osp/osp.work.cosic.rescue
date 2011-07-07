@@ -1,0 +1,153 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure "star1" from the Moire Demonstration Kit accompanying the book: 
+%		"The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Springer, 2007.
+%
+%		* * *  Copyright (c) 2007 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: March 30, 2007
+%
+% ********************************************************************************
+%
+% An aperiodic dot screen that has undergone a non-linear transformation
+%
+% ********************************************************************************
+%
+
+
+
+% ************ Draw the dot-screen:
+
+/inch {72 mul} def
+
+/centiinch {0.72 mul} def
+
+1.5 centiinch setlinewidth
+
+/dim 450 def		% dimensions of the screen in centiinches
+
+/dim2 225 def		% dim/2
+
+/myrand {rand 2147483647 div 2 mul 1 sub} def	% random number between -1...1
+
+1 setlinecap
+
+
+0.1 inch 0 inch translate
+
+
+
+/p1 3 def		% period for first (reference) dot screen
+
+/p1y 3 def		% period for first (reference) dot screen
+
+
+/rr 1 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+% draw first (reference) dot screen:
+
+8 srand		% seed for rand
+
+
+/y dim2 neg def
+
+gsave
+4.0 inch 6.0 inch translate
+gsave
+0 p1y dim 20 sub		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p1y div round p1y mul sub def
+	0 p1 dim 20 sub		% draw a horizontal line of dots
+		{/xsave exch dim2 p1 div round p1 mul sub def
+		/x1 x dim2 div def
+		/y1 y dim2 div def
+		/r2 x1 x1 mul y1 y1 mul add def
+		/r r2 sqrt def
+		/t y1 x1 0.00000000001 add atan def	% angle in degrees!
+		/cost t 5 mul sin neg 0.5 mul 1 add def
+
+		xsave x sub
+		x 5 r mul cost mul 2 sub x1 mul r 0.00000000001 add div add		% g1(x,y)
+		add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y 5 r mul cost mul 2 sub y1 mul r 0.00000000001 add div add		% g2(x,y)
+		add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p1 add def
+	} for
+	stroke
+	dim 19 sub p1 dim		% draw a horizontal line of dots
+		{/xsave exch dim2 p1 div round p1 mul sub def
+		/x1 x dim2 div def
+		/y1 y dim2 div def
+		/r2 x1 x1 mul y1 y1 mul add def
+		/r r2 sqrt def
+		/t y1 x1 0.00000000001 add atan def	% angle in degrees!
+		/cost t 5 mul sin neg 0.5 mul 1 add def
+
+		xsave x sub
+		x 5 r mul cost mul 2 sub x1 mul r 0.00000000001 add div add		% g1(x,y)
+		add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y 5 r mul cost mul 2 sub y1 mul r 0.00000000001 add div add		% g2(x,y)
+		add
+		centiinch myrand rr mul sub moveto
+%		0 0 rlineto
+		/x x p1 add def
+	} for
+	/y y p1y add def
+} for
+
+grestore
+grestore
+
+
+
+
+
+
+gsave
+1.75 inch 2.0 inch translate
+0.5 inch 0 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+(Figure  ) show
+/Times-Bold findfont
+12 scalefont setfont
+(star1) show
+/Times-Roman findfont
+12 scalefont setfont
+(  from the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Demonstration Kit) show
+0.1 inch -0.25 inch moveto
+(accompanying the book:  ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+-0.1 inch -0.5 inch moveto
+(Vol. II: Aperiodic Layers) show
+/Times-Roman findfont
+12 scalefont setfont
+(, by I. Amidror, published by Springer, 2007.) show
+grestore
+
+
+
+
+showpage

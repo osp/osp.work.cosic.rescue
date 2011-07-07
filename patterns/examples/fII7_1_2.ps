@@ -1,0 +1,284 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 7.1(a)-(b) from the book: "The Theory of the Moire Phenomenon, Vol. II"
+% by I. Amidror, published by Springer, 2007.
+%
+%		* * *  Copyright (c) 2007 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: March 21, 2007
+%
+% ********************************************************************************
+%
+% Superpositions of two dot screens - second layer only
+%
+% ********************************************************************************
+%
+
+
+
+/inch {72 mul} def
+
+/centiinch {0.72 mul} def
+
+0.15 inch 2.37 inch translate
+
+% ************ Draw Figure (a):
+
+
+% ************ Draw the master dot screen:
+
+/theta1 3.5 def		% angle of the screen in degrees
+/p1 5 def		% period of the screen in its main direction in centiinches
+/p1y 5 def		% period of the screen in its secondary direction in centiinches
+/len 250 def		% length of the screen in centiinches
+/wid 250 def		% width of the screen in centiinches
+/diam 1 def		% the dot diameter in centiinches
+
+
+/myrand {rand 2147483647 div 2 mul 1 sub} def	% random number between -1...1
+
+7 srand		% seed for rand
+
+/rr 2 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+/len2 len 2 div def
+/wid2 wid 2 div def
+diam centiinch setlinewidth
+
+1 setlinecap
+
+gsave
+2.5 inch 7.028 inch translate
+theta1 rotate
+
+% Draw black background:
+newpath
+1.25 inch 1.25 inch moveto
+-2.5 inch 0 inch rlineto
+0 inch -2.5 inch rlineto
+2.5 inch 0 inch rlineto
+closepath
+fill
+
+1 setgray		% write in white
+
+0 p1y len		% draw rows of dots
+{newpath
+	/ysave exch centiinch wid2 centiinch sub def
+	0 p1 len		% draw a row of dots
+	{centiinch len2 centiinch sub 
+	myrand rr mul sub ysave myrand rr mul sub moveto
+	0 0 rlineto
+	} for
+	stroke
+} for
+grestore
+
+
+
+% ************ Draw the basic dot-screen:
+
+/theta1 0 def		% angle of the screen in degrees
+/p1 5 def		% period of the screen in its main direction in centiinches
+/p1y 5 def		% period of the screen in its secondary direction in centiinches
+/len 250 def		% length of the screen in centiinches
+/wid 250 def		% width of the screen in centiinches
+/diam 1.5 def		% the dot diameter in centiinches
+
+
+/myrand {rand 2147483647 div 2 mul 1 sub} def	% random number between -1...1
+
+7 srand		% seed for rand
+
+/rr 2 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+/len2 len 2 div def
+/wid2 wid 2 div def
+diam centiinch setlinewidth
+
+1 setlinecap
+
+
+
+gsave
+2.5 inch 7.0 inch translate
+/Helvetica-Bold findfont
+4 scalefont setfont
+theta1 rotate
+0 p1y len		% draw rows of dots
+{newpath
+	/ysave exch centiinch wid2 centiinch sub def
+	0 p1 len		% draw a row of dots
+	{centiinch len2 centiinch sub 
+	myrand rr mul sub ysave myrand rr mul sub moveto
+	45 rotate
+%	(1) show
+	-0.027 inch 0.0 inch rmoveto
+%	(1) show
+	-45 rotate
+	} for
+%	stroke
+} for
+grestore
+
+
+
+gsave
+2.5 inch 5.45 inch translate
+-0.02 inch 0 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+((a)) show
+grestore
+
+
+
+% ************ Draw Figure (b):
+
+
+% ************ Draw the master dot screen:
+
+/theta1 3.5 def		% angle of the screen in degrees
+/p1 5 def		% period of the screen in its main direction in centiinches
+/p1y 5 def		% period of the screen in its secondary direction in centiinches
+/len 250 def		% length of the screen in centiinches
+/wid 250 def		% width of the screen in centiinches
+/diam 1 def		% the dot diameter in centiinches
+
+
+/myrand {rand 2147483647 div 2 mul 1 sub} def	% random number between -1...1
+
+7 srand		% seed for rand
+
+/rr 0 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+/len2 len 2 div def
+/wid2 wid 2 div def
+diam centiinch setlinewidth
+
+1 setlinecap
+
+gsave
+5.6 inch 7.028 inch translate
+theta1 rotate
+
+% Draw black background:
+newpath
+1.25 inch 1.25 inch moveto
+-2.5 inch 0 inch rlineto
+0 inch -2.5 inch rlineto
+2.5 inch 0 inch rlineto
+closepath
+fill
+
+1 setgray		% write in white
+
+0 p1y len		% draw rows of dots
+{newpath
+	/ysave exch centiinch wid2 centiinch sub def
+	0 p1 len		% draw a row of dots
+	{centiinch len2 centiinch sub 
+	myrand rr mul sub ysave myrand rr mul sub moveto
+	0 0 rlineto
+	} for
+	stroke
+} for
+grestore
+
+
+
+% ************ Draw the basic dot-screen:
+
+/theta1 0 def		% angle of the screen in degrees
+/p1 5 def		% period of the screen in its main direction in centiinches
+/p1y 5 def		% period of the screen in its secondary direction in centiinches
+/len 250 def		% length of the screen in centiinches
+/wid 250 def		% width of the screen in centiinches
+/diam 1.5 def		% the dot diameter in centiinches
+
+
+/myrand {rand 2147483647 div 2 mul 1 sub} def	% random number between -1...1
+
+7 srand		% seed for rand
+
+/rr 0 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+/len2 len 2 div def
+/wid2 wid 2 div def
+diam centiinch setlinewidth
+
+1 setlinecap
+
+
+
+gsave
+5.6 inch 7.0 inch translate
+/Helvetica-Bold findfont
+4 scalefont setfont
+theta1 rotate
+0 p1y len		% draw rows of dots
+{newpath
+	/ysave exch centiinch wid2 centiinch sub def
+	0 p1 len		% draw a row of dots
+	{centiinch len2 centiinch sub 
+	myrand rr mul sub ysave myrand rr mul sub moveto
+	45 rotate
+%	(1) show
+	-0.027 inch 0.0 inch rmoveto
+%	(1) show
+	-45 rotate
+	} for
+%	stroke
+} for
+grestore
+
+
+
+gsave
+5.6 inch 5.45 inch translate
+-0.02 inch 0 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+((b)) show
+grestore
+
+
+gsave
+1.75 inch 0 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure 7.1(a)-(b)) show
+/Times-Roman findfont
+12 scalefont setfont
+( from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+0.05 inch -0.25 inch moveto
+(Vol. II: Aperiodic Layers,) show
+/Times-Roman findfont
+12 scalefont setfont
+( by I. Amidror, published by Springer, 2007.) show
+1.7 inch -0.65 inch moveto
+((Second layer only.)) show
+grestore
+
+
+
+showpage
+

@@ -1,0 +1,212 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 5.3(top) from the book: "The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 9, 1999
+%
+% ********************************************************************************
+%
+% (a), (b) - Superpositions of 3 line gratings:
+%
+% The grating parameters are as follows:
+% 
+% theta1, theta2, theta3 - the grating angles, in degrees.
+% p1, p2, p3 - the respective grating periods, in deciinches.
+% xshifti - the period-shifts for the i-th grating, in terms of period fractions.
+% len - the length of each of the gratings, in centiinches.
+% wid - the width of each of the gratings, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+0.6 centiinch setlinewidth
+
+
+/len 200 def		% grating length in centiinches
+/wid 200 def		% grating width in centiinches
+/len2 len 2 div def
+/wid2 wid 2 div def
+
+
+/Helvetica findfont
+9 scalefont setfont
+
+
+1.05 inch 2 inch translate
+gsave
+
+
+% ******************************** Fig. (a):
+
+/theta1 0 def		% angle of grating A
+/theta2 90 def		% angle of grating B
+/theta3 225 def		% angle of grating C
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period of grating A
+/p2 3 def		% period of grating B
+/p3 2.12133 def		% period of grating C
+
+/xshift1 0 p1 mul def		% period-shift of grating A (e.g. 0.5)
+/xshift2 0 p2 mul def		% period-shift of grating B
+/xshift3 0 p3 mul def		% period-shift of grating C
+
+
+% Draw grating A:
+gsave
+1.2 inch 5.2 inch translate
+theta1 rot add rotate
+newpath
+0 p1 len		% draw lines
+{centiinch len2 p1 div round p1 mul xshift1 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+-1.12 inch -1 inch moveto
+(A) show
+grestore
+
+
+% Draw grating B:
+gsave
+1.2 inch 5.2 inch translate
+theta2 rot add rotate
+newpath
+0 p2 len		% draw lines
+{centiinch len2 p2 div round p2 mul xshift2 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+-1.12 inch -1 inch moveto
+(B) show
+grestore
+
+
+% Draw grating C:
+gsave
+1.2 inch 5.2 inch translate
+theta3 rot add rotate
+newpath
+0 p3 len		% draw lines
+{centiinch len2 p3 div round p3 mul xshift3 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+-1.12 inch -1 inch moveto
+(C) show
+grestore
+
+
+gsave
+1.2 inch 4.8 inch translate
+-0.08 inch -1.28 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+((a)) show
+grestore
+
+
+
+% ******************************** Fig. (b):
+
+/theta1 0 def		% angle of grating A
+/theta2 90 def		% angle of grating B
+/theta3 222.2 def	% angle of grating C
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period of grating A
+/p2 3 def		% period of grating B
+/p3 2.142 def		% period of grating C
+
+/xshift1 0 p1 mul def		% period-shift of grating A (e.g. 0.5)
+/xshift2 0 p2 mul def		% period-shift of grating B
+/xshift3 0 p3 mul def		% period-shift of grating C
+
+
+% Draw grating A:
+gsave
+5.1 inch 5.2 inch translate
+theta1 rot add rotate
+newpath
+0 p1 len		% draw lines
+{centiinch len2 p1 div round p1 mul xshift1 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+-1.12 inch -1 inch moveto
+(A) show
+grestore
+
+
+% Draw grating B:
+gsave
+5.1 inch 5.2 inch translate
+theta2 rot add rotate
+newpath
+0 p2 len		% draw lines
+{centiinch len2 p2 div round p2 mul xshift2 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+-1.12 inch -1 inch moveto
+(B) show
+grestore
+
+
+% draw grating C:
+gsave
+5.1 inch 5.2 inch translate
+theta3 rot add rotate
+newpath
+0 p3 len		% draw lines
+{centiinch len2 p3 div round p3 mul xshift3 sub centiinch sub wid2 centiinch neg moveto
+0 centiinch wid centiinch rlineto} for
+stroke
+-1.12 inch -1 inch moveto
+(C) show
+grestore
+
+
+
+gsave
+5.1 inch 4.8 inch translate
+-0.08 inch -1.28 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+((b)) show
+grestore
+
+
+
+gsave
+0.8 inch 1 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure 5.3) show
+/Times-Roman findfont
+12 scalefont setfont
+( (top) from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0 inch -0.25 inch moveto
+(    by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+grestore
+
+
+
+grestore
+
+showpage

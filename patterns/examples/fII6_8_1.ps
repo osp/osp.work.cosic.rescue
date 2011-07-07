@@ -1,0 +1,513 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 6.8(a)-(d) from the book: "The Theory of the Moire Phenomenon, Vol. II"
+% by I. Amidror, published by Springer, 2007.
+%
+%		* * *  Copyright (c) 2007 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: March 21, 2007
+%
+% ********************************************************************************
+%
+% Superpositions of two line gratings - first layer only
+%
+% ********************************************************************************
+%
+
+
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+1.2 centiinch setlinewidth
+
+/dim 250 def		% dimensions of the grating in centiinches
+/dim2 125 def		% dim/2
+
+/myrand {rand 2147483647 div 2 mul 1 sub} def	% random number between -1...1
+
+
+0 inch 0 inch translate
+
+
+
+
+% ************ Curve definition:
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+/cm {28.3465 mul} def
+/mm {2.83465 mul} def
+/pix {72 mul 600 div} def
+/curve {
+-5.00000 cm 8.75000 cm rmoveto
+0.10000 cm -0.34650 cm rlineto
+0.10000 cm -0.33950 cm rlineto
+0.10000 cm -0.33250 cm rlineto
+0.10000 cm -0.32550 cm rlineto
+0.10000 cm -0.31850 cm rlineto
+0.10000 cm -0.31150 cm rlineto
+0.10000 cm -0.30450 cm rlineto
+0.10000 cm -0.29750 cm rlineto
+0.10000 cm -0.29050 cm rlineto
+0.10000 cm -0.28350 cm rlineto
+0.10000 cm -0.27650 cm rlineto
+0.10000 cm -0.26950 cm rlineto
+0.10000 cm -0.26250 cm rlineto
+0.10000 cm -0.25550 cm rlineto
+0.10000 cm -0.24850 cm rlineto
+0.10000 cm -0.24150 cm rlineto
+0.10000 cm -0.23450 cm rlineto
+0.10000 cm -0.22750 cm rlineto
+0.10000 cm -0.22050 cm rlineto
+0.10000 cm -0.21350 cm rlineto
+0.10000 cm -0.20650 cm rlineto
+0.10000 cm -0.19950 cm rlineto
+0.10000 cm -0.19250 cm rlineto
+0.10000 cm -0.18550 cm rlineto
+0.10000 cm -0.17850 cm rlineto
+0.10000 cm -0.17150 cm rlineto
+0.10000 cm -0.16450 cm rlineto
+0.10000 cm -0.15750 cm rlineto
+0.10000 cm -0.15050 cm rlineto
+0.10000 cm -0.14350 cm rlineto
+0.10000 cm -0.13650 cm rlineto
+0.10000 cm -0.12950 cm rlineto
+0.10000 cm -0.12250 cm rlineto
+0.10000 cm -0.11550 cm rlineto
+0.10000 cm -0.10850 cm rlineto
+0.10000 cm -0.10150 cm rlineto
+0.10000 cm -0.09450 cm rlineto
+0.10000 cm -0.08750 cm rlineto
+0.10000 cm -0.08050 cm rlineto
+0.10000 cm -0.07350 cm rlineto
+0.10000 cm -0.06650 cm rlineto
+0.10000 cm -0.05950 cm rlineto
+0.10000 cm -0.05250 cm rlineto
+0.10000 cm -0.04550 cm rlineto
+0.10000 cm -0.03850 cm rlineto
+0.10000 cm -0.03150 cm rlineto
+0.10000 cm -0.02450 cm rlineto
+0.10000 cm -0.01750 cm rlineto
+0.10000 cm -0.01050 cm rlineto
+0.10000 cm -0.00350 cm rlineto
+0.10000 cm 0.00350 cm rlineto
+0.10000 cm 0.01050 cm rlineto
+0.10000 cm 0.01750 cm rlineto
+0.10000 cm 0.02450 cm rlineto
+0.10000 cm 0.03150 cm rlineto
+0.10000 cm 0.03850 cm rlineto
+0.10000 cm 0.04550 cm rlineto
+0.10000 cm 0.05250 cm rlineto
+0.10000 cm 0.05950 cm rlineto
+0.10000 cm 0.06650 cm rlineto
+0.10000 cm 0.07350 cm rlineto
+0.10000 cm 0.08050 cm rlineto
+0.10000 cm 0.08750 cm rlineto
+0.10000 cm 0.09450 cm rlineto
+0.10000 cm 0.10150 cm rlineto
+0.10000 cm 0.10850 cm rlineto
+0.10000 cm 0.11550 cm rlineto
+0.10000 cm 0.12250 cm rlineto
+0.10000 cm 0.12950 cm rlineto
+0.10000 cm 0.13650 cm rlineto
+0.10000 cm 0.14350 cm rlineto
+0.10000 cm 0.15050 cm rlineto
+0.10000 cm 0.15750 cm rlineto
+0.10000 cm 0.16450 cm rlineto
+0.10000 cm 0.17150 cm rlineto
+0.10000 cm 0.17850 cm rlineto
+0.10000 cm 0.18550 cm rlineto
+0.10000 cm 0.19250 cm rlineto
+0.10000 cm 0.19950 cm rlineto
+0.10000 cm 0.20650 cm rlineto
+0.10000 cm 0.21350 cm rlineto
+0.10000 cm 0.22050 cm rlineto
+0.10000 cm 0.22750 cm rlineto
+0.10000 cm 0.23450 cm rlineto
+0.10000 cm 0.24150 cm rlineto
+0.10000 cm 0.24850 cm rlineto
+0.10000 cm 0.25550 cm rlineto
+0.10000 cm 0.26250 cm rlineto
+0.10000 cm 0.26950 cm rlineto
+0.10000 cm 0.27650 cm rlineto
+0.10000 cm 0.28350 cm rlineto
+0.10000 cm 0.29050 cm rlineto
+0.10000 cm 0.29750 cm rlineto
+0.10000 cm 0.30450 cm rlineto
+0.10000 cm 0.31150 cm rlineto
+0.10000 cm 0.31850 cm rlineto
+0.10000 cm 0.32550 cm rlineto
+0.10000 cm 0.33250 cm rlineto
+0.10000 cm 0.33950 cm rlineto
+} def
+
+
+
+
+% ************************************** Fig. (a):
+
+/theta1 0 def
+/theta2 5 def
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period for K1 grating
+/p2 3 def		% period for M1 grating
+
+/p1y 3 def		% period for K2 grating
+/p2y 3 def		% period for M2 grating
+
+/xshift1 0 p1 mul def		% x phase shift for first grid (e.g. 0.5)
+/yshift1 0 p1y mul def		% y phase shift for first grid (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second grid
+/yshift2 0 p2y mul def		% y phase shift for second grid
+
+
+
+/rr 1 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+gsave
+
+
+% draw first curved grating:
+
+3 srand		% seed for rand
+
+0.5 centiinch setlinewidth
+
+gsave
+2.5 inch 9.4 inch yshift1 centiinch add translate
+-90 rotate
+
+newpath
+-1.25 inch -1.25 inch moveto
+2.5 inch 0 rlineto
+0 2.5 inch rlineto
+-2.5 inch 0 rlineto
+closepath
+clip
+
+0 p1 700		% draw curves
+{newpath 350 sub xshift1 add centiinch myrand rr mul sub 0 inch exch moveto
+curve stroke} for
+
+grestore
+
+
+
+% draw second curved grating:
+
+3 srand		% seed for rand
+
+0.5 centiinch setlinewidth
+
+gsave
+2.5 inch 9.4 inch yshift2 centiinch add translate
+theta2 -90 add rotate
+
+newpath
+-1.25 inch -1.25 inch moveto
+2.5 inch 0 rlineto
+0 2.5 inch rlineto
+-2.5 inch 0 rlineto
+closepath
+clip
+
+0 p2 700		% draw curves
+%{newpath 350 sub xshift2 add centiinch myrand rr mul sub 0 inch exch moveto
+%curve stroke} for
+
+grestore
+
+
+
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+2.5 inch 9.4 inch translate
+-0.07 inch -1.6 inch moveto
+((a)) show
+grestore
+
+grestore
+
+
+% ****************************************** Fig. (b):
+
+
+
+/p1 3 def		% period for K1 grating
+/p2 3 def		% period for M1 grating
+
+/p1y 3 def		% period for K2 grating
+/p2y 3 def		% period for M2 grating
+
+/xshift1 0 p1 mul def		% x phase shift for first grid (e.g. 0.5)
+/yshift1 0 p1y mul def		% y phase shift for first grid (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second grid
+/yshift2 0 p2y mul def		% y phase shift for second grid
+
+gsave
+
+
+% draw first curved grating:
+
+0.5 centiinch setlinewidth
+
+gsave
+5.7 inch 9.4 inch yshift1 centiinch add translate
+-90 rotate
+
+newpath
+-1.25 inch -1.25 inch moveto
+2.5 inch 0 rlineto
+0 2.5 inch rlineto
+-2.5 inch 0 rlineto
+closepath
+clip
+
+0 p1 700		% draw curves
+{newpath 350 sub xshift1 add centiinch 0 inch exch moveto
+curve stroke} for
+
+grestore
+
+
+
+% draw second curved grating:
+
+0.5 centiinch setlinewidth
+
+gsave
+5.7 inch 9.4 inch yshift2 centiinch add translate
+theta2 -90 add rotate
+
+
+newpath
+-1.25 inch -1.25 inch moveto
+2.5 inch 0 rlineto
+0 2.5 inch rlineto
+-2.5 inch 0 rlineto
+closepath
+clip
+
+0 p2 700		% draw curves
+%{newpath 350 sub xshift2 add centiinch 0 inch exch moveto
+%curve stroke} for
+
+grestore
+
+
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+5.7 inch 9.4 inch translate
+-0.07 inch -1.6 inch moveto
+((b)) show
+grestore
+
+grestore
+
+
+
+
+% ************************************** Fig. (c):
+
+/theta1 0 def
+/theta2 5 def
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period for K1 grating
+/p2 3 def		% period for M1 grating
+
+/p1y 3 def		% period for K2 grating
+/p2y 3 def		% period for M2 grating
+
+/xshift1 0 p1 mul def		% x phase shift for first grid (e.g. 0.5)
+/yshift1 1.5 p1y mul def		% y phase shift for first grid (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second grid
+/yshift2 0 p2y mul def		% y phase shift for second grid
+
+
+
+/rr 1 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+gsave
+
+
+% draw first curved grating:
+
+3 srand		% seed for rand
+
+0.5 centiinch setlinewidth
+
+gsave
+2.5 inch 6.0 inch yshift1 centiinch add translate
+-90 rotate
+
+newpath
+-1.25 inch -1.25 inch moveto
+2.5 inch 0 rlineto
+0 2.5 inch rlineto
+-2.5 inch 0 rlineto
+closepath
+clip
+
+0 p1 700		% draw curves
+{newpath 350 sub xshift1 add centiinch myrand rr mul sub 0 inch exch moveto
+curve stroke} for
+
+grestore
+
+
+
+% draw second curved grating:
+
+3 srand		% seed for rand
+
+0.5 centiinch setlinewidth
+
+gsave
+2.5 inch 6.0 inch yshift2 centiinch add translate
+theta2 -90 add rotate
+
+newpath
+-1.25 inch -1.25 inch moveto
+2.5 inch 0 rlineto
+0 2.5 inch rlineto
+-2.5 inch 0 rlineto
+closepath
+clip
+
+0 p2 700		% draw curves
+%{newpath 350 sub xshift2 add centiinch myrand rr mul sub 0 inch exch moveto
+%curve stroke} for
+
+grestore
+
+
+
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+2.5 inch 6.0 inch translate
+-0.07 inch -1.6 inch moveto
+((c)) show
+grestore
+
+grestore
+
+
+% ****************************************** Fig. (d):
+
+
+
+/p1 3 def		% period for K1 grating
+/p2 3 def		% period for M1 grating
+
+/p1y 3 def		% period for K2 grating
+/p2y 3 def		% period for M2 grating
+
+/xshift1 0 p1 mul def		% x phase shift for first grid (e.g. 0.5)
+/yshift1 1.5 p1y mul def		% y phase shift for first grid (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second grid
+/yshift2 0 p2y mul def		% y phase shift for second grid
+
+gsave
+
+
+% draw first curved grating:
+
+0.5 centiinch setlinewidth
+
+gsave
+5.7 inch 6.0 inch yshift1 centiinch add translate
+-90 rotate
+
+newpath
+-1.25 inch -1.25 inch moveto
+2.5 inch 0 rlineto
+0 2.5 inch rlineto
+-2.5 inch 0 rlineto
+closepath
+clip
+
+0 p1 700		% draw curves
+{newpath 350 sub xshift1 add centiinch 0 inch exch moveto
+curve stroke} for
+
+grestore
+
+
+
+% draw second curved grating:
+
+0.5 centiinch setlinewidth
+
+gsave
+5.7 inch 6.0 inch yshift2 centiinch add translate
+theta2 -90 add rotate
+
+newpath
+-1.25 inch -1.25 inch moveto
+2.5 inch 0 rlineto
+0 2.5 inch rlineto
+-2.5 inch 0 rlineto
+closepath
+clip
+
+0 p2 700		% draw curves
+%{newpath 350 sub xshift2 add centiinch 0 inch exch moveto
+%curve stroke} for
+
+grestore
+
+
+
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+5.7 inch 6.0 inch translate
+-0.07 inch -1.6 inch moveto
+((d)) show
+grestore
+
+grestore
+
+
+gsave
+1.75 inch 2.3 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure 6.8(a)-(d)) show
+/Times-Roman findfont
+12 scalefont setfont
+( from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+0.05 inch -0.25 inch moveto
+(Vol. II: Aperiodic Layers,) show
+/Times-Roman findfont
+12 scalefont setfont
+( by I. Amidror, published by Springer, 2007.) show
+1.7 inch -0.65 inch moveto
+((First layer only.)) show
+grestore
+
+
+showpage

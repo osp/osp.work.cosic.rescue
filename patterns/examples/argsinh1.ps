@@ -1,0 +1,266 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure "argsinh1" from the Moire Demonstration Kit accompanying the book: 
+%		"The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 2000.
+%
+%		* * *  Copyright (c) 2000 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: May 24, 2002
+%
+% ********************************************************************************
+%
+% A curvilinear grating:  y = asinh(x)
+%
+% The adjustable parameters are as follows:
+% 
+% theta1 - the grating angle, in degrees.
+% p1 - the period of the grating along its main axis, in centiinches.
+% len - the length of the grating along its main axis, in centiinches.
+% lwidth - the linewidth, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+
+
+
+% ************ Adjustable parameters for the curvilinear grating:
+
+
+/theta1 0 def		% angle of the grating in degrees
+
+/p1 3 def		% period of the grating along its main axis in centiinches
+
+/len 600 def		% length of the grating along its main axis in centiinches
+
+/lwidth 0.5 def		% linewidth in centiinches
+
+
+
+
+% ************ Curve definition:
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+/cm {28.3465 mul} def
+/mm {2.83465 mul} def
+/pix {72 mul 600 div} def
+
+
+/curve {
+-7.50000 cm -2.71247 cm rmoveto
+0.10000 cm 0.01330 cm rlineto
+0.10000 cm 0.01348 cm rlineto
+0.10000 cm 0.01366 cm rlineto
+0.10000 cm 0.01385 cm rlineto
+0.10000 cm 0.01404 cm rlineto
+0.10000 cm 0.01424 cm rlineto
+0.10000 cm 0.01445 cm rlineto
+0.10000 cm 0.01466 cm rlineto
+0.10000 cm 0.01487 cm rlineto
+0.10000 cm 0.01509 cm rlineto
+0.10000 cm 0.01532 cm rlineto
+0.10000 cm 0.01556 cm rlineto
+0.10000 cm 0.01580 cm rlineto
+0.10000 cm 0.01605 cm rlineto
+0.10000 cm 0.01631 cm rlineto
+0.10000 cm 0.01657 cm rlineto
+0.10000 cm 0.01685 cm rlineto
+0.10000 cm 0.01713 cm rlineto
+0.10000 cm 0.01743 cm rlineto
+0.10000 cm 0.01773 cm rlineto
+0.10000 cm 0.01805 cm rlineto
+0.10000 cm 0.01837 cm rlineto
+0.10000 cm 0.01871 cm rlineto
+0.10000 cm 0.01906 cm rlineto
+0.10000 cm 0.01943 cm rlineto
+0.10000 cm 0.01980 cm rlineto
+0.10000 cm 0.02019 cm rlineto
+0.10000 cm 0.02060 cm rlineto
+0.10000 cm 0.02103 cm rlineto
+0.10000 cm 0.02147 cm rlineto
+0.10000 cm 0.02193 cm rlineto
+0.10000 cm 0.02240 cm rlineto
+0.10000 cm 0.02290 cm rlineto
+0.10000 cm 0.02343 cm rlineto
+0.10000 cm 0.02397 cm rlineto
+0.10000 cm 0.02454 cm rlineto
+0.10000 cm 0.02514 cm rlineto
+0.10000 cm 0.02577 cm rlineto
+0.10000 cm 0.02642 cm rlineto
+0.10000 cm 0.02712 cm rlineto
+0.10000 cm 0.02784 cm rlineto
+0.10000 cm 0.02861 cm rlineto
+0.10000 cm 0.02941 cm rlineto
+0.10000 cm 0.03026 cm rlineto
+0.10000 cm 0.03116 cm rlineto
+0.10000 cm 0.03211 cm rlineto
+0.10000 cm 0.03311 cm rlineto
+0.10000 cm 0.03418 cm rlineto
+0.10000 cm 0.03531 cm rlineto
+0.10000 cm 0.03651 cm rlineto
+0.10000 cm 0.03779 cm rlineto
+0.10000 cm 0.03916 cm rlineto
+0.10000 cm 0.04062 cm rlineto
+0.10000 cm 0.04218 cm rlineto
+0.10000 cm 0.04385 cm rlineto
+0.10000 cm 0.04564 cm rlineto
+0.10000 cm 0.04756 cm rlineto
+0.10000 cm 0.04962 cm rlineto
+0.10000 cm 0.05184 cm rlineto
+0.10000 cm 0.05422 cm rlineto
+0.10000 cm 0.05678 cm rlineto
+0.10000 cm 0.05953 cm rlineto
+0.10000 cm 0.06248 cm rlineto
+0.10000 cm 0.06563 cm rlineto
+0.10000 cm 0.06897 cm rlineto
+0.10000 cm 0.07251 cm rlineto
+0.10000 cm 0.07620 cm rlineto
+0.10000 cm 0.08000 cm rlineto
+0.10000 cm 0.08384 cm rlineto
+0.10000 cm 0.08761 cm rlineto
+0.10000 cm 0.09118 cm rlineto
+0.10000 cm 0.09436 cm rlineto
+0.10000 cm 0.09698 cm rlineto
+0.10000 cm 0.09886 cm rlineto
+0.10000 cm 0.09983 cm rlineto
+0.10000 cm 0.09983 cm rlineto
+0.10000 cm 0.09886 cm rlineto
+0.10000 cm 0.09698 cm rlineto
+0.10000 cm 0.09436 cm rlineto
+0.10000 cm 0.09118 cm rlineto
+0.10000 cm 0.08761 cm rlineto
+0.10000 cm 0.08384 cm rlineto
+0.10000 cm 0.08000 cm rlineto
+0.10000 cm 0.07620 cm rlineto
+0.10000 cm 0.07251 cm rlineto
+0.10000 cm 0.06897 cm rlineto
+0.10000 cm 0.06563 cm rlineto
+0.10000 cm 0.06248 cm rlineto
+0.10000 cm 0.05953 cm rlineto
+0.10000 cm 0.05678 cm rlineto
+0.10000 cm 0.05422 cm rlineto
+0.10000 cm 0.05184 cm rlineto
+0.10000 cm 0.04962 cm rlineto
+0.10000 cm 0.04756 cm rlineto
+0.10000 cm 0.04564 cm rlineto
+0.10000 cm 0.04385 cm rlineto
+0.10000 cm 0.04218 cm rlineto
+0.10000 cm 0.04062 cm rlineto
+0.10000 cm 0.03916 cm rlineto
+0.10000 cm 0.03779 cm rlineto
+0.10000 cm 0.03651 cm rlineto
+0.10000 cm 0.03531 cm rlineto
+0.10000 cm 0.03418 cm rlineto
+0.10000 cm 0.03311 cm rlineto
+0.10000 cm 0.03211 cm rlineto
+0.10000 cm 0.03116 cm rlineto
+0.10000 cm 0.03026 cm rlineto
+0.10000 cm 0.02941 cm rlineto
+0.10000 cm 0.02861 cm rlineto
+0.10000 cm 0.02784 cm rlineto
+0.10000 cm 0.02712 cm rlineto
+0.10000 cm 0.02642 cm rlineto
+0.10000 cm 0.02577 cm rlineto
+0.10000 cm 0.02514 cm rlineto
+0.10000 cm 0.02454 cm rlineto
+0.10000 cm 0.02397 cm rlineto
+0.10000 cm 0.02343 cm rlineto
+0.10000 cm 0.02290 cm rlineto
+0.10000 cm 0.02240 cm rlineto
+0.10000 cm 0.02193 cm rlineto
+0.10000 cm 0.02147 cm rlineto
+0.10000 cm 0.02103 cm rlineto
+0.10000 cm 0.02060 cm rlineto
+0.10000 cm 0.02019 cm rlineto
+0.10000 cm 0.01980 cm rlineto
+0.10000 cm 0.01943 cm rlineto
+0.10000 cm 0.01906 cm rlineto
+0.10000 cm 0.01871 cm rlineto
+0.10000 cm 0.01837 cm rlineto
+0.10000 cm 0.01805 cm rlineto
+0.10000 cm 0.01773 cm rlineto
+0.10000 cm 0.01743 cm rlineto
+0.10000 cm 0.01713 cm rlineto
+0.10000 cm 0.01685 cm rlineto
+0.10000 cm 0.01657 cm rlineto
+0.10000 cm 0.01631 cm rlineto
+0.10000 cm 0.01605 cm rlineto
+0.10000 cm 0.01580 cm rlineto
+0.10000 cm 0.01556 cm rlineto
+0.10000 cm 0.01532 cm rlineto
+0.10000 cm 0.01509 cm rlineto
+0.10000 cm 0.01487 cm rlineto
+0.10000 cm 0.01466 cm rlineto
+0.10000 cm 0.01445 cm rlineto
+0.10000 cm 0.01424 cm rlineto
+0.10000 cm 0.01404 cm rlineto
+0.10000 cm 0.01385 cm rlineto
+0.10000 cm 0.01366 cm rlineto
+0.10000 cm 0.01348 cm rlineto
+0.10000 cm 0.01330 cm rlineto
+} def
+
+
+
+
+% ************ Draw the curvilinear grating:
+
+
+0.2 inch 3.0 inch translate
+
+
+/len2 len 2 div def
+lwidth centiinch setlinewidth
+
+
+gsave
+4 inch 4.0 inch translate
+theta1 rotate
+0 p1 len		% draw curves
+{newpath len2 sub centiinch 0 centiinch exch moveto
+	curve
+	stroke
+} for
+grestore
+
+
+
+gsave
+1.75 inch -1.0 inch translate
+0.5 inch 0 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+(Figure  ) show
+/Times-Bold findfont
+12 scalefont setfont
+(argsinh1) show
+/Times-Roman findfont
+12 scalefont setfont
+(  from the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Demonstration Kit) show
+0.1 inch -0.25 inch moveto
+(accompanying the book:  ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0.1 inch -0.5 inch moveto
+(by I. Amidror, published by Kluwer Academic Publishers, 2000.) show
+grestore
+
+
+
+
+showpage

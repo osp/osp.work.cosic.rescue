@@ -1,0 +1,533 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 5.9(e)-(h) from the book: "The Theory of the Moire Phenomenon, Vol. II"
+% by I. Amidror, published by Springer, 2007.
+%
+%		* * *  Copyright (c) 2007 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: March 21, 2007
+%
+% ********************************************************************************
+%
+% Superpositions of two dot screens
+%
+% ********************************************************************************
+%
+
+
+/inch {72 mul} def
+/centiinch {0.72 mul} def
+1.2 centiinch setlinewidth
+
+
+/dim 250 def		% dimensions of the screen in centiinches
+/dim2 125 def		% dim/2
+
+
+/myrand {rand 2147483647 div 2 mul 1 sub} def	% random number between -1...1
+
+1 setlinecap
+
+
+/Helvetica findfont
+10 scalefont setfont
+
+0 inch 0 inch translate
+
+
+
+% ************************************** Fig. (a):
+
+
+/alpha 0 def
+
+
+/theta1 0 def
+/theta2 0 def
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period for first (reference) dot screen
+/p2 3 def		% period for second dot screen
+
+/p1y 3 def		% period for first (reference) dot screen
+/p2y 3 def		% period for second dot screen
+
+/xshift1 0 p1 mul def		% x phase shift for first dot screen (e.g. 0.5)
+/yshift1 -1 p1y mul def		% y phase shift for first dot screen (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second dot screen
+/yshift2 0 p2y mul def		% y phase shift for second dot screen
+
+/xmax 3 def	% the x axis units will be scaled before applying the mappings so
+		% that the max. axis value becomes "xmax units" rather than "dim2 ci".
+/ymax 3 def	% the y axis units will be scaled before applying the mappings so
+		% that the max. axis value becomes "ymax units" rather than "dim2 ci".
+
+/rr 1 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+% draw first (reference) dot screen:
+
+8 srand		% seed for rand
+
+
+/y dim2 neg def
+
+gsave
+2.5 inch 9.4 inch translate
+theta1 rot add rotate
+gsave
+0 p1y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p1y div round p1y mul sub def
+	0 p1 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p1 div round p1 mul sub def
+		/x1 x dim2 div xmax mul def
+		/y1 y dim2 div ymax mul def
+		xsave x sub
+		x 2 x1 mul y1 mul 0.5 mul add				% g1(x,y)
+		add xshift1 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y x1 x1 mul y1 y1 mul sub 0.5 mul add			% g2(x,y)
+		add yshift1 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p1 add def
+	} for
+	stroke
+	/y y p1y add def
+} for
+-1.4 inch -1.35 inch moveto
+%(A) show
+grestore
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+-0.07 inch -1.6 inch moveto
+((a)) show
+grestore
+grestore
+
+
+% draw second dot screen:
+
+8 srand		% same seed for rand
+
+
+/y dim2 neg def
+
+gsave
+2.5 inch 9.4 inch translate
+theta2 rot add rotate
+0 p2y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p2y div round p2y mul sub def
+	0 p2 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p2 div round p2 mul sub def
+		/x1 x dim2 div xmax mul def
+		/y1 y dim2 div ymax mul def
+		xsave x sub
+		x 2 x1 mul y1 mul 0.5 mul sub				% g3(x,y)
+		add xshift2 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y x1 x1 mul y1 y1 mul sub 0.5 mul sub			% g4(x,y)
+		add yshift2 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p2 add def
+	} for
+	stroke
+	/y y p2y add def
+} for
+-1.4 inch -1.35 inch moveto
+%(B) show
+grestore
+
+
+
+
+% ****************************************** Fig. (b):
+
+
+/alpha 0 def
+
+
+/theta1 0 def
+/theta2 0 def
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period for first (reference) dot screen
+/p2 3 def		% period for second dot screen
+
+/p1y 3 def		% period for first (reference) dot screen
+/p2y 3 def		% period for second dot screen
+
+/xshift1 0 p1 mul def		% x phase shift for first dot screen (e.g. 0.5)
+/yshift1 -1 p1y mul def		% y phase shift for first dot screen (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second dot screen
+/yshift2 0 p2y mul def		% y phase shift for second dot screen
+
+/xmax 3 def	% the x axis units will be scaled before applying the mappings so
+		% that the max. axis value becomes "xmax units" rather than "dim2 ci".
+/ymax 3 def	% the y axis units will be scaled before applying the mappings so
+		% that the max. axis value becomes "ymax units" rather than "dim2 ci".
+
+/rr 0 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+% draw first (reference) dot screen:
+
+8 srand		% seed for rand
+
+
+/y dim2 neg def
+
+gsave
+5.7 inch 9.4 inch translate
+theta1 rot add rotate
+gsave
+0 p1y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p1y div round p1y mul sub def
+	0 p1 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p1 div round p1 mul sub def
+		/x1 x dim2 div xmax mul def
+		/y1 y dim2 div ymax mul def
+		xsave x sub
+		x 2 x1 mul y1 mul 0.5 mul add				% g1(x,y)
+		add xshift1 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y x1 x1 mul y1 y1 mul sub 0.5 mul add			% g2(x,y)
+		add yshift1 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p1 add def
+	} for
+	stroke
+	/y y p1y add def
+} for
+-1.4 inch -1.35 inch moveto
+%(A) show
+grestore
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+-0.07 inch -1.6 inch moveto
+((b)) show
+grestore
+grestore
+
+
+% draw second dot screen:
+
+8 srand		% same seed for rand
+
+
+/y dim2 neg def
+
+gsave
+5.7 inch 9.4 inch translate
+theta2 rot add rotate
+0 p2y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p2y div round p2y mul sub def
+	0 p2 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p2 div round p2 mul sub def
+		/x1 x dim2 div xmax mul def
+		/y1 y dim2 div ymax mul def
+		xsave x sub
+		x 2 x1 mul y1 mul 0.5 mul sub				% g3(x,y)
+		add xshift2 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y x1 x1 mul y1 y1 mul sub 0.5 mul sub			% g4(x,y)
+		add yshift2 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p2 add def
+	} for
+	stroke
+	/y y p2y add def
+} for
+
+-1.4 inch -1.35 inch moveto
+%(B) show
+grestore
+
+
+
+
+% ************************************** Fig. (c):
+
+
+/alpha 0 def
+
+
+/theta1 0 def
+/theta2 0 def
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period for first (reference) dot screen
+/p2 3 def		% period for second dot screen
+
+/p1y 3 def		% period for first (reference) dot screen
+/p2y 3 def		% period for second dot screen
+
+/xshift1 -1 p1 mul def		% x phase shift for first dot screen (e.g. 0.5)
+/yshift1 0 p1y mul def		% y phase shift for first dot screen (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second dot screen
+/yshift2 0 p2y mul def		% y phase shift for second dot screen
+
+/xmax 3 def	% the x axis units will be scaled before applying the mappings so
+		% that the max. axis value becomes "xmax units" rather than "dim2 ci".
+/ymax 3 def	% the y axis units will be scaled before applying the mappings so
+		% that the max. axis value becomes "ymax units" rather than "dim2 ci".
+
+/rr 1 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+% draw first (reference) dot screen:
+
+8 srand		% seed for rand
+
+
+/y dim2 neg def
+
+gsave
+2.5 inch 6.0 inch translate
+theta1 rot add rotate
+gsave
+0 p1y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p1y div round p1y mul sub def
+	0 p1 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p1 div round p1 mul sub def
+		/x1 x dim2 div xmax mul def
+		/y1 y dim2 div ymax mul def
+		xsave x sub
+		x 2 x1 mul y1 mul 0.5 mul add				% g1(x,y)
+		add xshift1 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y x1 x1 mul y1 y1 mul sub 0.5 mul add			% g2(x,y)
+		add yshift1 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p1 add def
+	} for
+	stroke
+	/y y p1y add def
+} for
+-1.4 inch -1.35 inch moveto
+%(A) show
+grestore
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+-0.07 inch -1.6 inch moveto
+((c)) show
+grestore
+grestore
+
+
+% draw second dot screen:
+
+8 srand		% same seed for rand
+
+
+/y dim2 neg def
+
+gsave
+2.5 inch 6.0 inch translate
+theta2 rot add rotate
+0 p2y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p2y div round p2y mul sub def
+	0 p2 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p2 div round p2 mul sub def
+		/x1 x dim2 div xmax mul def
+		/y1 y dim2 div ymax mul def
+		xsave x sub
+		x 2 x1 mul y1 mul 0.5 mul sub				% g3(x,y)
+		add xshift2 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y x1 x1 mul y1 y1 mul sub 0.5 mul sub			% g4(x,y)
+		add yshift2 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p2 add def
+	} for
+	stroke
+	/y y p2y add def
+} for
+-1.4 inch -1.35 inch moveto
+%(B) show
+grestore
+
+
+
+
+% ****************************************** Fig. (d):
+
+
+/alpha 0 def
+
+
+/theta1 0 def
+/theta2 0 def
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period for first (reference) dot screen
+/p2 3 def		% period for second dot screen
+
+/p1y 3 def		% period for first (reference) dot screen
+/p2y 3 def		% period for second dot screen
+
+/xshift1 -1 p1 mul def		% x phase shift for first dot screen (e.g. 0.5)
+/yshift1 0 p1y mul def		% y phase shift for first dot screen (e.g. 0.5)
+/xshift2 0 p2 mul def		% x phase shift for second dot screen
+/yshift2 0 p2y mul def		% y phase shift for second dot screen
+
+/xmax 3 def	% the x axis units will be scaled before applying the mappings so
+		% that the max. axis value becomes "xmax units" rather than "dim2 ci".
+/ymax 3 def	% the y axis units will be scaled before applying the mappings so
+		% that the max. axis value becomes "ymax units" rather than "dim2 ci".
+
+/rr 0 def	% random numbers will be generated in the range -rr...rr
+		% (in PostScript points!)
+
+
+% draw first (reference) dot screen:
+
+8 srand		% seed for rand
+
+
+/y dim2 neg def
+
+gsave
+5.7 inch 6.0 inch translate
+theta1 rot add rotate
+gsave
+0 p1y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p1y div round p1y mul sub def
+	0 p1 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p1 div round p1 mul sub def
+		/x1 x dim2 div xmax mul def
+		/y1 y dim2 div ymax mul def
+		xsave x sub
+		x 2 x1 mul y1 mul 0.5 mul add				% g1(x,y)
+		add xshift1 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y x1 x1 mul y1 y1 mul sub 0.5 mul add			% g2(x,y)
+		add yshift1 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p1 add def
+	} for
+	stroke
+	/y y p1y add def
+} for
+-1.4 inch -1.35 inch moveto
+%(A) show
+grestore
+gsave
+/Times-Roman findfont
+12 scalefont setfont
+-0.07 inch -1.6 inch moveto
+((d)) show
+grestore
+grestore
+
+
+% draw second dot screen:
+
+8 srand		% same seed for rand
+
+
+/y dim2 neg def
+
+gsave
+5.7 inch 6.0 inch translate
+theta2 rot add rotate
+0 p2y dim		% draw horizontal lines of dots
+{newpath
+	/x dim2 neg def
+	/ysave exch dim2 p2y div round p2y mul sub def
+	0 p2 dim	% draw a horizontal line of dots
+		{/xsave exch dim2 p2 div round p2 mul sub def
+		/x1 x dim2 div xmax mul def
+		/y1 y dim2 div ymax mul def
+		xsave x sub
+		x 2 x1 mul y1 mul 0.5 mul sub				% g3(x,y)
+		add xshift2 add
+		centiinch myrand rr mul sub 
+
+		ysave y sub
+		y x1 x1 mul y1 y1 mul sub 0.5 mul sub			% g4(x,y)
+		add yshift2 add
+		centiinch myrand rr mul sub moveto
+		0 0 rlineto
+		/x x p2 add def
+	} for
+	stroke
+	/y y p2y add def
+} for
+
+-1.4 inch -1.35 inch moveto
+%(B) show
+grestore
+
+
+gsave
+1.75 inch 2.3 inch translate
+0 inch 0 inch moveto
+/Times-Bold findfont
+12 scalefont setfont
+(Figure 5.9(e)-(h)) show
+/Times-Roman findfont
+12 scalefont setfont
+( from the book: ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+0.05 inch -0.25 inch moveto
+(Vol. II: Aperiodic Layers,) show
+/Times-Roman findfont
+12 scalefont setfont
+( by I. Amidror, published by Springer, 2007.) show
+grestore
+
+
+showpage

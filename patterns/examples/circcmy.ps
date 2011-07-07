@@ -1,0 +1,105 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure "circcmy" from the Moire Demonstration Kit accompanying the book: 
+%		"The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 14, 1999
+%
+% ********************************************************************************
+%
+% A circular grating whose radial period is composed of equal C,M,Y parts
+%
+% The adjustable parameters are as follows:
+% 
+% rad - the radius of the circular grating, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+
+
+
+% ************ Adjustable parameters for the curvilinear grating:
+
+
+/rad 380 def		% radius of the circular grating in centiinches
+
+
+
+
+
+% ************ Draw the circular grating:
+
+/inch {72 mul} def
+
+/centiinch {0.72 mul} def
+
+0.15 inch 3.0 inch translate
+
+0.7 centiinch setlinewidth
+
+/p1 3 def		% radial period of the circular grating in centiinches
+
+
+
+
+
+gsave
+4 inch 4 inch translate
+
+
+/firstrad p1 2.0 div def
+newpath
+rad p1 neg 1		% draw circles
+{/r exch def
+ 1 0 0 0 setcmykcolor
+ 0 0 r centiinch 0 360 arc fill
+ 0 1 0 0 setcmykcolor
+ 0 0 r 1 sub centiinch 0 360 arc fill
+ 0 0 1 0 setcmykcolor
+ 0 0 r 2 sub centiinch 0 360 arc fill
+} for
+grestore
+
+
+
+
+gsave
+1.75 inch -1.0 inch translate
+0.5 inch 0 inch moveto
+/Times-Roman findfont
+12 scalefont setfont
+(Figure  ) show
+/Times-Bold findfont
+12 scalefont setfont
+(circcmy) show
+/Times-Roman findfont
+12 scalefont setfont
+(  from the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Demonstration Kit) show
+0.1 inch -0.25 inch moveto
+(accompanying the book:  ) show
+/Times-Italic findfont
+12 scalefont setfont
+(The Theory of the Moire) show
+-0.06 inch 0 inch rmoveto
+(\302 Phenomenon) show
+/Times-Roman findfont
+12 scalefont setfont
+0.1 inch -0.5 inch moveto
+(by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
+grestore
+
+
+
+
+showpage
