@@ -103,14 +103,14 @@
 }
 def
 
-/width 400 def
-/overlap 1.0 def
+/width 500 def
+/overlap 0.9 def
 
 
 % interesting syntax which i have not seen before.
 % seems to be a means of pushing this given set of values onto the stack
 /params <<
-  /height 450
+  /height 500
   /op_b 0.5
   /op_r 0.5
   /pe_b 6
@@ -125,10 +125,18 @@ def
 /pr 5.5 def
 /prb pr pb div def
 
+
+/headerfont	/UniversElse-Regular findfont 72 scalefont def
+
+
+60 200 moveto 
+headerfont setfont
+(cosic) false charpath clip
+
 {
   params /angles_b [4 -1 roll dup neg dup neg dup neg dup neg] put
 
-  5 40 translate
+  50 40 translate
 
   {
     gsave
