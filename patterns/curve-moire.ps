@@ -110,7 +110,7 @@ def
 % interesting syntax which i have not seen before.
 % seems to be a means of pushing this given set of values onto the stack
 /params <<
-  /height 500
+  /height 260
   /op_b 0.5
   /op_r 0.5
   /pe_b 6
@@ -128,15 +128,37 @@ def
 
 /headerfont	/UniversElse-Regular findfont 72 scalefont def
 
+{
+  params /angles_b [4 -1 roll dup neg dup neg dup neg dup neg] put
+  50 160 translate
+  {
+    gsave
+    newpath 0 -500 moveto width overlap mul 0 rlineto 0 1000 rlineto width overlap mul neg 0 rlineto closepath clip
+    0 -20 translate
+    params (b) curves
+    grestore
+    gsave
+    newpath width 1 overlap sub mul -500 moveto width overlap mul 0 rlineto 0 1000 rlineto width overlap mul neg 0 rlineto closepath clip
+    0 20 translate
+    params (r) curves
+    grestore
+  }
+  exec
 
-60 200 moveto 
+  %showpage
+} 30 exch exec
+pstack % maps all objects on stack with == operator, effectively printing all that is on the stack
+
+% /unclipped gstate def
+
+101 11 moveto 
 headerfont setfont
 (cosic) false charpath clip
 
 {
   params /angles_b [4 -1 roll dup neg dup neg dup neg dup neg] put
 
-  50 40 translate
+  50 20 translate
 
   {
     gsave
@@ -156,6 +178,8 @@ headerfont setfont
 }
 30 exch exec
 
-pstack
+% unclipped setgstate
+
+%180 rotate
 
 
