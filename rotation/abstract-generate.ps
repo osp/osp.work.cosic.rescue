@@ -1,0 +1,181 @@
+%!
+%%
+
+%%% Support functions
+
+/headerfont	/UniversElse-Regular findfont 72 scalefont def
+
+/realrand {
+	(%Calendar%) currentdevparams dup
+	/Second get exch dup
+	/Minute get exch 
+	/Hour get 
+	%/Day get exch dup
+	%/Month get exch dup
+	%30 mul add
+	%24 mul add
+	60 mul add
+	60 mul add
+	realtime add srand
+} def
+
+realrand
+
+/smallrand { rand 2147483647 div 2 mul 1 sub abs } def
+/randarc { smallrand 270 mul } def
+/randrotate { smallrand 360 mul } def
+/randpattern { patterns smallrand patterns length 1 sub mul round cvi get } def
+
+/base {
+%	realrand
+	randpattern exec
+} def
+
+/foretext {
+%	realrand
+	randpattern exec
+} def
+
+/reveal {
+%	realrand
+	randpattern exec
+} def
+
+/cliparc {
+	/rotation exch def
+	/angle exch def	
+
+	gsave
+		100 100 translate 
+		rotation rotate
+		newpath
+			0 	0 	20	 0 		angle 	arc
+			0	0 	120	 angle 	0 		arcn
+		closepath clip 
+		-100 -100 translate
+		reveal
+	grestore
+
+} def
+
+/single {
+	/regy exch def
+	/regx exch def
+	gsave
+		regx regy translate 
+		base
+		randarc randrotate cliparc
+   		gsave
+   			20 80 moveto 
+   			headerfont setfont
+  			(cosic) true charpath clip
+%			0 setgray
+%			(cosic) show
+			foretext
+		grestore
+	grestore
+} def
+
+%%% End Support functions
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%% Generator values
+
+/params <<
+	/theta1 0		% angle of the first grating in degrees
+	/theta2 15		% angle of the second grating in degrees
+	/p1 3 			% period of the first grating in centiinches
+	/p2 3 			% period of the second grating in centiinches
+	/len 200 		% length of the two gratings in centiinches
+	/wid 200 		% width of the two gratings (= lines length) in centiinches
+	/lwidth 1		% linewidth in centiinches
+>> def
+
+%%% End generator
+%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%% Pattern generators
+
+/patterns [
+
+{ % grid
+/p1 params /p1 get def
+/p2 params /p1 get def
+/len params /len get def
+/wid params /wid get def
+/theta1	params /theta1 get def
+/theta2 params /theta2 get def
+
+/len2 len 2 div def
+/wid2 wid 2 div def
+lwidth setlinewidth
+
+0.5 0.5 scale
+
+gsave
+	0 0 translate 
+	theta1 rotate
+	newpath
+	0 p1 len		% draw lines of first grating
+	{len2 sub wid2 neg moveto
+	0 wid rlineto} for
+	stroke
+grestore
+
+
+gsave
+	0 0 translate
+	theta2 rotate
+	newpath
+	0 p2 len		% draw lines of second grating
+	{len2 sub wid2 neg moveto
+	0 wid rlineto} for
+	stroke
+grestore
+} % grid
+
+] def % /patterns
+
+%%% End patterns
+%%%%%%%%%%%%%%%%
+
+
+% and now for the generation of an entire page 
+
+0.5 0.5 scale
+
+10 10 200 { %for
+	/regx exch def
+	regx 41 lt { %if
+		/regy 1250 def
+	} { %else
+		regx 81 lt {
+			/regy 1000 def
+			/regx regx 40 sub def
+		} {
+			regx 121 lt {
+				/regy 750 def
+				/regx regx 80 sub def
+			} { 
+				regx 161 lt {
+					/regy 500 def
+					/regx regx 120 sub def
+				} {
+					regx 201 lt {
+						/regy 250 def
+						/regx regx 160 sub def
+					} if
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse
+	regx 30 mul 250 sub regy single
+} for
+
+showpage

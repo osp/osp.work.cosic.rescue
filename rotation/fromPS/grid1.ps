@@ -1,0 +1,90 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure "grid1" from the Moire Demonstration Kit accompanying the book: 
+%		"The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 14, 1999
+%
+% ********************************************************************************
+%
+% A periodic line grid
+%
+% The adjustable parameters are as follows:
+% 
+% theta1 - the angle of the first grating in degrees.
+% theta2 - the angle of the second grating in degrees.
+% p1 - the period of the first grating, in centiinches.
+% p2 - the period of the second grating, in centiinches.
+% len - the length of the two gratings, in centiinches.
+% wid - the width of the two grating (= their lines length), in centiinches.
+% lwidth - the linewidth, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+
+
+
+% ************ Adjustable parameters for the grid:
+
+
+/theta1 0 def		% angle of the first grating in degrees
+
+/theta2 15 def		% angle of the second grating in degrees
+
+
+/p1 3 def		% period of the first grating in centiinches
+
+/p2 3 def		% period of the second grating in centiinches
+
+/len 200 def		% length of the two gratings in centiinches
+
+/wid 200 def		% width of the two gratings (= lines length) in centiinches
+
+/lwidth 1 def		% linewidth in centiinches
+
+
+
+
+% ************ Draw the grid:
+
+%300 300 translate
+
+/len2 len 2 div def
+/wid2 wid 2 div def
+lwidth setlinewidth
+
+0.5 0.5 scale
+
+200 200 translate
+
+gsave
+0 0 translate 
+theta1 rotate
+newpath
+0 p1 len		% draw lines of first grating
+{len2 sub wid2 neg moveto
+0 wid rlineto} for
+stroke
+grestore
+
+
+gsave
+0 0 translate
+theta2 rotate
+newpath
+0 p2 len		% draw lines of second grating
+{len2 sub wid2 neg moveto
+0 wid rlineto} for
+stroke
+grestore
+
+showpage

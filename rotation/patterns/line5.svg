@@ -28,7 +28,7 @@
      inkscape:zoom="0.55199948"
      inkscape:cx="56.365112"
      inkscape:cy="7.636854"
-     inkscape:document-units="px"
+     inkscape:document-units="pt"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="pt"
@@ -57,7 +57,7 @@
     <path
        inkscape:connector-curvature="0"
        id="rect28820-9"
-       d="m 503.8935,842.3622 0,10 -480,0 0,-10 z"
+       d="m 264.76284,842.3622 0,10 -251.072587,0 0,-10 z"
        style="fill:none;stroke:none" />
     <g
        id="g29863"
@@ -67,7 +67,7 @@
        inkscape:tile-h="481.39352"
        inkscape:tile-x0="-1400"
        inkscape:tile-y0="910"
-       transform="matrix(0,1,-1,0,2196.2557,2202.3622)">
+       transform="matrix(0,1,-0.52306789,0,1149.9832,2202.3622)">
       <path
          inkscape:connector-curvature="0"
          id="path5893-4"

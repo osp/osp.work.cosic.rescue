@@ -1171,6 +1171,7 @@ Q Q
 	/angle exch def	
 
 gsave
+%	100 100 translate
 	100 100 translate
 	rotation rotate
 	newpath
@@ -1178,8 +1179,9 @@ gsave
 		0	0 	120	 angle 	0 		arcn
 	closepath clip 
 %	0 0 0 gencurves1
-	-100 -100 translate
+%	-100 -100 translate
 %	gensunrays
+	-100 -100 translate
 	genpropcircle
 grestore
 
@@ -1196,16 +1198,16 @@ grestore
 %24 mul add
 60 mul add
 60 mul add
-usertime add srand
+realtime add srand
 } def
-
-realrand
 
 /smallrand { rand 2147483647 div 2 mul 1 sub abs } def
 /randarc { smallrand 170 mul } def
 /randrotate { smallrand 360 mul } def
 
-2 2 scale
+
+/single {
+%0.5 0.5 scale
 %50 50 translate
 %genpropcircle
 gensunrays
@@ -1221,33 +1223,55 @@ randarc randrotate cliparc
 %}{ %else
 %	exch -60 cliparc
 %}
-
-showpage
-
-
-%0.5 0.5 scale
-%50 50 translate
-%genpropcircle
-gensunrays
-%120 -60 cliparc
-%123456 { 1 pop } repeat
-%realtime srand
-%rand { 1 pop } repeat
-%realtime srand
-realrand
-randarc randrotate cliparc
-%lessthan180 dup 33 lt { %ifelse
-%	exch 33 add -60 cliparc
-%	(triggered) show 
-%}{ %else
-%	exch -60 cliparc
-%}
-
 gsave
 	20 80 moveto 
 	headerfont setfont
 	(cosic) true charpath clip
 	0 0 30 gencurves1
 grestore
+} def
+
+
+%2 2 scale
+%%50 50 translate
+%%genpropcircle
+%gensunrays
+%%120 -60 cliparc
+%%123456 { 1 pop } repeat
+%%realtime srand
+%%rand { 1 pop } repeat
+%%realtime srand
+%realrand
+%randarc randrotate cliparc
+%%lessthan180 dup 33 lt { %ifelse
+%%	exch 33 add -60 cliparc
+%%	(triggered) show 
+%%}{ %else
+%%	exch -60 cliparc
+%%}
+%
+%gsave
+%	20 80 moveto 
+%	headerfont setfont
+%	(cosic) true charpath clip
+%	0 0 30 gencurves1
+%grestore
+
+0.5 0.5 scale
+
+0 10 200 { %for
+	/reg exch def
+	reg 10 mul 700 moveto
+	reg 41 lt { %if
+		reg 10 mul 700 translate single
+	}{ %else
+		reg 10 mul 600 translate
+		single
+	} ifelse
+} for
+} def
 
 showpage
+
+
+
