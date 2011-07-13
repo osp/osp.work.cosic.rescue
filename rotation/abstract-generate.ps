@@ -87,11 +87,11 @@ realrand
 /params <<
 	/theta1 0		% angle of the first grating in degrees
 	/theta2 15		% angle of the second grating in degrees
-	/p1 3 			% period of the first grating in centiinches
-	/p2 3 			% period of the second grating in centiinches
-	/len 200 		% length of the two gratings in centiinches
-	/wid 200 		% width of the two gratings (= lines length) in centiinches
-	/lwidth 1		% linewidth in centiinches
+	/p1 3 			% period of the first grating in points
+	/p2 3 			% period of the second grating in points
+	/len 200 		% length of the two gratings in points
+	/wid 200 		% width of the two gratings (= lines length) in points
+	/lwidth 1		% linewidth in points
 >> def
 
 %%% End generator
@@ -111,6 +111,7 @@ realrand
 /wid params /wid get def
 /theta1	params /theta1 get def
 /theta2 params /theta2 get def
+/lwidth params /lwidth get def
 
 /len2 len 2 div def
 /wid2 wid 2 div def
