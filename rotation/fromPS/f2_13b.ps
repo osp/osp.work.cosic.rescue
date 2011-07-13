@@ -1,0 +1,61 @@
+%!PS-Adobe-3.0
+
+1 setlinewidth
+1 setlinecap
+
+/len 200 def		        % screen length in centiinches
+/len2 len 1 div def
+
+
+200 200 translate
+gsave
+
+
+% ******************************** Fig. (b):
+
+/theta1 0 def		        % angle of screen A
+/theta2 5 def		        % angle of screen B
+/rot 0 def		            % general rotation to prevent printer artifacts
+/p1 3 def		            % period of screen A
+/p2 3 def		            % period of screen B
+/p1y 3 1 mul def		    % period of screen A (in the perpendicular direction)
+/p2y 3 1 mul def		    % period of screen B (in the perpendicular direction)
+/xshift1 0.5 p1 mul def		% x period-shift of screen A (e.g. 0.5)
+/yshift1 0 p1y mul def		% y period-shift of screen A (e.g. 0.5)
+/xshift2 0.5 p2 mul def		% x period-shift of screen B
+/yshift2 0 p2y mul def		% y period-shift of screen B
+
+
+% Draw screen A:
+gsave
+theta1 rot add rotate
+/xsh len2 p1y div round xshift1 mul neg def
+0 p1y len {		            % draw rows of dots
+    newpath
+	/ysave exch len2 p1y div round p1y mul yshift1 sub sub def
+	0 p1 len {		        % draw a row of dots
+        len2 p1 div round p1 mul xsh sub sub ysave moveto
+        0 0 rlineto
+    } for
+	stroke
+    /xsh xsh xshift1 add def
+} for
+grestore
+
+% Draw screen B:
+gsave
+theta2 rot add rotate
+/xsh len2 p2y div round xshift2 mul neg def
+0 p2y len {		                % draw rows of dots
+    newpath
+	/ysave exch len2 p2y div round p2y mul yshift2 sub sub def
+	0 p2 len {	            	% draw a row of dots
+        len2 p2 div round p2 mul xsh sub sub ysave moveto
+        0 0 rlineto
+    } for
+	stroke
+    /xsh xsh xshift2 add def
+} for
+grestore
+
+showpage

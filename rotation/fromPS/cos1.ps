@@ -1,0 +1,34 @@
+%!PS-Adobe-3.0
+
+/theta1 0 def		% angle of the grating in degrees
+/p1 3 def		% period of the grating along its main axis in centiinches
+/len 200 def		% length of the grating along its main axis in centiinches
+/lwidth 0.25 def		% linewidth in centiinches
+
+
+/curve {
+    40 0 60 20 100 20 curveto
+    140 20 160 0 200 0 rcurveto
+    stroke
+} def
+
+
+
+
+% ************ Draw the curvilinear grating:
+
+4 4 scale
+400 400 moveto
+
+/len2 len 2 div def
+lwidth setlinewidth
+
+gsave
+theta1 rotate
+0 p1 len {
+    newpath
+    len2 sub 0 exch moveto
+	curve
+	stroke
+} for
+grestore
