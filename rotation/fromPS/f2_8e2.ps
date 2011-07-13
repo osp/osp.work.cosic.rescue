@@ -1,0 +1,67 @@
+%!PS-Adobe-3.0
+%
+% ********************************************************************************
+%
+% Figure 2.8(e) from the book: "The Theory of the Moire Phenomenon"
+% by I. Amidror, published by Kluwer Academic Publishers, 1999.
+%
+%		* * *  Copyright (c) 1999 EPFL  * * *
+%
+% Author: I. Amidror
+%
+% Modified: June 9, 1999
+%
+% ********************************************************************************
+%
+% Superpositions of 2 line gratings - second layer only:
+%
+% The grating parameters are as follows:
+% 
+% theta1, theta2 - the grating angles, in degrees.
+% p1, p2 - the respective grating periods, in deciinches.
+% xshifti - the period-shifts for the i-th grating, in terms of period fractions.
+% len - the length of each of the gratings, in centiinches.
+% wid - the width of each of the gratings, in centiinches.
+%
+% ********************************************************************************
+%
+
+
+0.7 setlinewidth
+
+
+/len 170 def		% grating length in centiinches
+/wid 120 def		% grating width in centiinches
+/len2 len 2 div def
+/wid2 wid 2 div def
+
+400 400 translate
+gsave
+
+
+% ******************************** Fig. (e):
+
+
+/theta1 0 def		% angle of grating A
+/theta2 6 def		% angle of grating B
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 3 def		% period of grating A
+/p2 3 def		% period of grating B
+
+/xshift1 0.33 p1 mul def	% period-shift of grating A (e.g. 0.5)
+/xshift2 0 p2 mul def		% period-shift of grating A (e.g. 0.5)
+
+
+% Draw grating B:
+gsave
+0 0 translate
+theta2 rot add rotate
+newpath
+0 p2 len		% draw lines
+{len2 p2 div round p2 mul xshift2 sub sub wid2 neg moveto
+0 wid rlineto} for
+stroke
+grestore
+showpage

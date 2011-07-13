@@ -1,5 +1,5 @@
-%!
-%%
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 90 90
 
 %%% Support functions
 
@@ -367,66 +367,12 @@ gsave
 	stroke
 grestore
 } % rhombus
-
-%{ % dots
-%/len 200 def		% screen length in centiinches
-%/len2 len 2 div def
-%/theta1 0 def
-%/p1 2 def
-%/p1y 2 def
-%/xshift1 0 p1 mul def
-%/yshift1 0 p1y mul def	
-%
-%gsave
-%0 0 translate
-%theta1 rotate
-%0 p1 len		% draw rows of dots
-%{newpath
-%	/ysave exch len2 p1y div round p1y mul sub def
-%	0 p1 len		% draw a row of dots
-%	{len2 p1 div round p1 mul xshift1 sub ysave moveto
-%	0 0 rlineto} for
-%	stroke
-%} for
-%grestore
-%} % dots
-
-] def % /patterns
+] def
 
 %%% End patterns
 %%%%%%%%%%%%%%%%
 
+0.3 0.3 scale
+150 150 single
 
-% and now for the generation of an entire page 
-
-0.45 0.45 scale
-
-10 10 200 { %for
-	/regx exch def
-	regx 41 lt { %if
-		/regy 1500 def
-	} { %else
-		regx 81 lt {
-			/regy 1200 def
-			/regx regx 40 sub def
-		} {
-			regx 121 lt {
-				/regy 900 def
-				/regx regx 80 sub def
-			} { 
-				regx 161 lt {
-					/regy 600 def
-					/regx regx 120 sub def
-				} {
-					regx 201 lt {
-						/regy 300 def
-						/regx regx 160 sub def
-					} if
-				} ifelse
-			} ifelse
-		} ifelse
-	} ifelse
-	regx 33 mul 160 sub regy single
-} for
-
-showpage
+%showpage

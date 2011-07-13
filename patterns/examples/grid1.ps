@@ -36,88 +36,53 @@
 % ************ Adjustable parameters for the grid:
 
 
-/theta1 90 def		% angle of the first grating in degrees
+/theta1 0 def		% angle of the first grating in degrees
 
-/theta2 0 def		% angle of the second grating in degrees
+/theta2 45 def		% angle of the second grating in degrees
 
 /p1 3 def		% period of the first grating in centiinches
 
 /p2 3 def		% period of the second grating in centiinches
 
-/len 699 def		% length of the two gratings in centiinches
+/len 200 def		% length of the two gratings in centiinches
 
-/wid 699 def		% width of the two gratings (= lines length) in centiinches
+/wid 200 def		% width of the two gratings (= lines length) in centiinches
 
-/lwidth 1.0 def		% linewidth in centiinches
+/lwidth 1 def		% linewidth in centiinches
 
 
 
 
 % ************ Draw the grid:
 
-/inch {72 mul} def
-
-/centiinch {0.72 mul} def
-
-0.2 inch 3.0 inch translate
-
+%300 300 translate
 
 /len2 len 2 div def
 /wid2 wid 2 div def
-lwidth centiinch setlinewidth
+lwidth setlinewidth
 
+
+200 200 translate
 
 gsave
-4 inch 4.0 inch translate
+0 0 translate 
 theta1 rotate
 newpath
 0 p1 len		% draw lines of first grating
-{centiinch len2 centiinch sub wid2 centiinch neg moveto
-0 centiinch wid centiinch rlineto} for
+{len2 sub wid2 neg moveto
+0 wid rlineto} for
 stroke
 grestore
 
 
 gsave
-4 inch 4.0 inch translate
+0 0 translate
 theta2 rotate
 newpath
 0 p2 len		% draw lines of second grating
-{centiinch len2 centiinch sub wid2 centiinch neg moveto
-0 centiinch wid centiinch rlineto} for
+{len2 sub wid2 neg moveto
+0 wid rlineto} for
 stroke
 grestore
-
-
-
-gsave
-1.75 inch -1.0 inch translate
-0.5 inch 0 inch moveto
-/Times-Roman findfont
-12 scalefont setfont
-(Figure  ) show
-/Times-Bold findfont
-12 scalefont setfont
-(grid1) show
-/Times-Roman findfont
-12 scalefont setfont
-(  from the Moire) show
--0.06 inch 0 inch rmoveto
-(\302 Demonstration Kit) show
-0.1 inch -0.25 inch moveto
-(accompanying the book:  ) show
-/Times-Italic findfont
-12 scalefont setfont
-(The Theory of the Moire) show
--0.06 inch 0 inch rmoveto
-(\302 Phenomenon) show
-/Times-Roman findfont
-12 scalefont setfont
-0.1 inch -0.5 inch moveto
-(by I. Amidror, published by Kluwer Academic Publishers, 1999.) show
-grestore
-
-
-
 
 showpage
