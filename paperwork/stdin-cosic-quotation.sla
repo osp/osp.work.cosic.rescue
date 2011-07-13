@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCRIBUSUTF8NEW Version="1.3.9.svn">
+    <DOCUMENT ANZPAGES="2" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" PRESET="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" ORIENTATION="0" PAGESIZE="Custom" FIRSTNUM="1" BOOK="0" AUTOSPALTEN="1" ABSTSPALTEN="110.012598425197" UNITS="1" DFONT="Alfphabet IV" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="13" BASEO="0" AUTOL="20" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="1" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPMo="Adobe RGB (1998)" DPPr="Fogra27L CMYK Coated Press" DPIn="Adobe RGB (1998)" DPInCMYK="Fogra27L CMYK Coated Press" DPIn2="Adobe RGB (1998)" DPIn3="Fogra27L CMYK Coated Press" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="English" MINWORDLEN="3" HYCOUNT="2" AUTOMATIC="0" AUTOCHECK="1" GUIDELOCK="0" SnapToGuides="1" SnapToGrid="0" MINGRID="20.0012598425197" MAJGRID="100.00062992126" SHOWGRID="0" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="0" SHOWLAYERM="0" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWControl="0" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.707106781186548" POLYR="0" POLYCUR="0" POLYFD="0" POLYS="0" AutoSave="1" AutoSaveTime="600000" ScratchBottom="20.0012598425197" ScratchLeft="100.00062992126" ScratchRight="100.00062992126" ScratchTop="20.0012598425197" GapHorizontal="0" GapVertical="39.9996850393701" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="Black" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="0" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" MAGMIN="10" MAGMAX="3200" MAGSTEP="200" CPICT="None" PICTSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="3.528" dispY="3.528" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" GuideZ="10" BACKG="1" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PostScript">
+        <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PDF/X-3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PostScript" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <COLOR NAME="Black" CMYK="#000000ff" Spot="0" Register="0"/>
+        <COLOR NAME="Blue" RGB="#0000ff" Spot="0" Register="0"/>
+        <COLOR NAME="Cool Black" CMYK="#990000ff" Spot="0" Register="0"/>
+        <COLOR NAME="Cyan" CMYK="#ff000000" Spot="0" Register="0"/>
+        <COLOR NAME="Green" RGB="#00ff00" Spot="0" Register="0"/>
+        <COLOR NAME="Magenta" CMYK="#00ff0000" Spot="0" Register="0"/>
+        <COLOR NAME="Red" RGB="#ff0000" Spot="0" Register="0"/>
+        <COLOR NAME="Registration" CMYK="#ffffffff" Spot="0" Register="1"/>
+        <COLOR NAME="Rich Black" CMYK="#996666ff" Spot="0" Register="0"/>
+        <COLOR NAME="Warm Black" CMYK="#00994cff" Spot="0" Register="0"/>
+        <COLOR NAME="White" CMYK="#00000000" Spot="0" Register="0"/>
+        <COLOR NAME="Yellow" CMYK="#0000ff00" Spot="0" Register="0"/>
+        <HYPHEN/>
+        <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="0" LINESPMode="2" LINESP="13" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0" FONT="Lato Regular" FONTSIZE="9">
+            <Tabs Type="0" Pos="10" Fill=""/>
+        </STYLE>
+        <STYLE NAME="titre" PARENT="Default Paragraph Style" INDENT="0" FIRST="0" FONT="Lato Bold" FEATURES="" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1"/>
+        <CHARSTYLE CNAME="Default Character Style" DefaultStyle="1" FONT="Alfphabet IV" FONTSIZE="12" FEATURES="inherit" FCOLOR="Black" FSHADE="100" SCOLOR="Black" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="English"/>
+        <LAYERS NUMMER="0" LEVEL="0" NAME="Fond de page" SICHTBAR="1" DRUCKEN="1" EDIT="1" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
+        <Printer firstUse="0" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="1" useColor="0" mirrorH="0" mirrorV="0" useICC="0" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PDLanguage="3" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="Edam" filename="" separationName="Tout" printerCommand="">
+            <Separation Name="Cyan"/>
+            <Separation Name="Magenta"/>
+            <Separation Name="Jaune"/>
+            <Separation Name="Noir"/>
+        </Printer>
+        <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="1" Quality="0" MirrorH="0" MirrorV="0" Clip="0" RotateDeg="0" PresentMode="0" RecalcPic="1" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="150" Resolution="150" Version="15" Intent="1" Intent2="0" SolidP="Adobe RGB (1998)" ImageP="Adobe RGB (1998)" PrintP="Fogra27L CMYK Coated Press" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" PageLayout="0" openAction="">
+            <Fonts Name="Lato Bold"/>
+            <Fonts Name="Lato Italic"/>
+            <Fonts Name="Lato Light"/>
+            <Fonts Name="Lato Light Italic"/>
+            <Fonts Name="Lato Regular"/>
+            <Fonts Name="NotCourierSans Regular"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <LPI Color="" Frequency="10" Angle="0" SpotFunction="0"/>
+            <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
+            <LPI Color="Magenta" Frequency="133" Angle="75" SpotFunction="3"/>
+            <LPI Color="Yellow" Frequency="133" Angle="90" SpotFunction="3"/>
+        </PDF>
+        <DocItemAttributes/>
+        <TablesOfContents/>
+        <PageSets>
+            <Set Name="Single Page" FirstPage="0" Rows="1" Columns="1"/>
+            <Set Name="Double Sided" FirstPage="1" Rows="1" Columns="2">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="3-Fold" FirstPage="0" Rows="1" Columns="3">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="4-Fold" FirstPage="0" Rows="1" Columns="4">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle Left"/>
+                <PageNames Name="Middle Right"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+        </PageSets>
+        <Sections>
+            <Section Number="0" Name="0" From="0" To="1" Type="Type_1_2_3" Start="1" Reversed="0" Active="1"/>
+        </Sections>
+        <MASTERPAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="0" NAM="Normal" MNAM="" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="20.0012598425197" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="0" NAM="" MNAM="Normal" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="10.0006299212598" AGhorizontalAutoCount="0" AGverticalAutoCount="2" AGhorizontalAutoRefer="0" AGverticalAutoRefer="1" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="901.890708661418" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="48.5036220472441" NUM="1" NAM="" MNAM="Normal" Size="Custom" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="85.8593 280.859 541.297 " AGhorizontalAutoGap="0" AGverticalAutoGap="10.0006299212598" AGhorizontalAutoCount="0" AGverticalAutoCount="2" AGhorizontalAutoRefer="0" AGverticalAutoRefer="1" AGSelection="0 0 0 0"/>
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="315.09249343832" YPOS="201.01404771772" WIDTH="340.183727034121" HEIGHT="620.876975904328" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" OpticalMargins="14" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LINESP="12" LINESPMode="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="Lato Regular" ISIZE="10" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 340.184 0 340.184 0 340.184 0 340.184 0 340.184 620.877 340.184 620.877 340.184 620.877 340.184 620.877 0 620.877 0 620.877 0 620.877 0 620.877 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 340.184 0 340.184 0 340.184 0 340.184 0 340.184 620.877 340.184 620.877 340.184 620.877 340.184 620.877 0 620.877 0 620.877 0 620.877 0 620.877 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Lato Bold" FONTSIZE="9" CH="A gen­er­at­ive visu­al iden­tity"/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" KERN="0" CH=" "/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" KERN="0" CH="cryptography, hash, pub­lic/private, pri­vacy, an­onym­ity, trust, theory, discrete mathematics, algorithms, international"/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <ITEXT FONTSIZE="9" CH="Cosic's field of action is quite large, from public cryptography to em­bed­ded devices, not to forget social networks and privacy. A logo is a synthetic image and can only express a limited number of ideas. "/>
+            <ITEXT FONTSIZE="9" FCOLOR="Black" CH="What we would like to re­veal in the Cosic iden­tity are  discrete mathematics and the unique­ness of an iden­ti­fi­er "/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" FCOLOR="Black" CH="(uid, hash…)"/>
+            <ITEXT FONTSIZE="9" FCOLOR="Blue" CH="."/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <tab FONTSIZE="9"/>
+            <ITEXT FONTSIZE="9" CH="Although the first proposed package is cheaper for it won't involve any programming skills, we are much more excited by the second option where we could be much more creative. Generative design is not a me­di­um we al­ways strive for, we re­com­mend it only when it is mean­ing­ful. We think it would really fit your field of research"/>
+            <ITEXT CH=" as it takes advantage of the discrete and generative nature of cryptographic algorithms. Reflecting those algorithms would create a rich and original visual identity system. We are also quite interested, in a broader concern, about a design revealing its own machinery, giving some clues about its construction. It is, we think, necessary in the case of generative design not to be blinded by a technological pirouette. Moreover, since"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" CH=" the let­ter­heads are not pre-­prin­ted, we can make LaTeX (and Word if ne­ces­sar­y) tem­plates with a logo which would be dif­fer­ent everytime."/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" FCOLOR="Blue" CH=" "/>
+            <ITEXT FCOLOR="Black" CH="Such a fea­ture would ac­cen­tu­ate the fact that this logo would be a pro­gram and not just an im­age."/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <tab FONT="Lato Regular" FONTSIZE="9" KERN="0"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" KERN="0" CH="One might be afraid that the identity is not recognizable for it is generated, but generative design doesn't "/>
+            <ITEXT FONTSIZE="9" CH="end up in sev­er­al iden­tit­ies: every pro­duced design is part of a set, a sys­tem, which"/>
+            <ITEXT FONT="Lato Italic" FONTSIZE="9" CH=" makes "/>
+            <ITEXT FONTSIZE="9" CH="the iden­tity "/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" CH="(see ex­amples of vari­able/­gen­er­at­ive iden­tit­ies on the an­nexe page)"/>
+            <ITEXT FONTSIZE="9" CH="."/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <ITEXT FONT="Lato Bold" FONTSIZE="9" CH="Ex­ten­sion"/>
+            <ITEXT FONTSIZE="9" CH=" "/>
+            <ITEXT FONT="Lato Bold" FONTSIZE="9" CH="pack­age"/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" KERN="0" CH="The extension can be added to any of the two packages. We understand that you cannot always use your own PowerPoint templates, but in the few cases that you are allowed to, it would be great to have your own. Also, in the field of science, slides presentation seem to be a much more present media than a letterhead or a business card. The public would associate your research and results to your identity much more easily. That's why we think it's important that you display your identity through these."/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <tab/>
+            <ITEXT CH="As for the website design we talked about during our meeting, it would only include CSS stylesheets as you said the structure could change from time to time. It is not so clear to us which website we are talking about, we found several URLs: "/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <tab/>
+            <ITEXT CH="- http://www.esat.kuleuven.be/cosic/ "/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <tab/>
+            <ITEXT CH="- https://www.cosic.esat.kuleuven.be"/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <tab/>
+            <ITEXT CH="- https://www.cosic.esat.kuleuven.be/course/index.shtml"/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <ITEXT FONT="Lato Bold" FONTSIZE="9" CH="Col­lab­or­a­tion"/>
+            <para PARENT="Default Paragraph Style" LINESPMode="2" LINESP="12" OpticalMargins="14"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" KERN="0" CH="We would like to work on this project with the design collective we belong too,"/>
+            <breakline/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" KERN="0" CH="Open Source Publishing "/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" KERN="0" CH="(http://osp.constantvzw.org)"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" KERN="0" CH=", for they would be as excited "/>
+            <breakline/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" KERN="0" CH="as we are about this project. Moreover, if we choose the generative design package, it would be much easier/faster to do it with them as one of the member is a Scribus developer "/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" KERN="0" CH="(a "/>
+            <ITEXT FONT="Lato Light Italic" FONTSIZE="9" KERN="0" CH="free"/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" KERN="0" CH=" DTP software)"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" KERN="0" CH=", and another member is part of the ConTeXt board "/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" KERN="0" CH="(another flavor of TeX"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" KERN="0" CH=")."/>
+            <trail LINESPMode="2" OpticalMargins="14"/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="140.00062992126" YPOS="60.0012598425197" WIDTH="165.09186351706" HEIGHT="139.12374015748" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="NotCourierSans Regular" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 165.092 0 165.092 0 165.092 0 165.092 0 165.092 139.124 165.092 139.124 165.092 139.124 165.092 139.124 0 139.124 0 139.124 0 139.124 0 139.124 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 165.092 0 165.092 0 165.092 0 165.092 0 165.092 139.124 165.092 139.124 165.092 139.124 165.092 139.124 0 139.124 0 139.124 0 139.124 0 139.124 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" PSTYLE="titre" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT CH="&lt;stdin&gt;"/>
+            <para/>
+            <ITEXT CH="graphic and media design"/>
+            <para/>
+            <ITEXT CH="---------------------------Munthofstraat 27 "/>
+            <para/>
+            <ITEXT CH="1060 Brus­sel"/>
+            <para/>
+            <ITEXT CH="Alex: 04 85 27 76 08"/>
+            <para/>
+            <ITEXT CH="Stéphanie: 04 89 00 88 59"/>
+            <para/>
+            <ITEXT CH="e­mail: echo@stdin.fr "/>
+            <para/>
+            <ITEXT CH="web­site: ht­tp://stdin.­fr/"/>
+            <para/>
+            <ITEXT CH="---------------------------"/>
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="140.000209973754" YPOS="203.198110236221" WIDTH="165.09186351706" HEIGHT="312.866141732283" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" OpticalMargins="14" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="Lato Regular" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 165.092 0 165.092 0 165.092 0 165.092 0 165.092 312.866 165.092 312.866 165.092 312.866 165.092 312.866 0 312.866 0 312.866 0 312.866 0 312.866 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 165.092 0 165.092 0 165.092 0 165.092 0 165.092 312.866 165.092 312.866 165.092 312.866 165.092 312.866 0 312.866 0 312.866 0 312.866 0 312.866 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Lato Bold" FONTSIZE="9" CH="Quote for visual identity for Cosic"/>
+            <para OpticalMargins="14"/>
+            <para OpticalMargins="14"/>
+            <ITEXT FONT="Lato Bold" FONTSIZE="9" CH="Package #1 — 1300€ "/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" CH="excl. V.A"/>
+            <ITEXT CH=".T. "/>
+            <para OpticalMargins="14"/>
+            <tab FONT="Lato Regular" FONTSIZE="9"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" CH="– stat­ic lo­go"/>
+            <para OpticalMargins="14"/>
+            <tab FONT="Lato Regular" FONTSIZE="9"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" CH="– business card­s"/>
+            <para OpticalMargins="14"/>
+            <tab FONT="Lato Regular" FONTSIZE="9"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" CH="– letterheads "/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" CH="Word, LaTeX"/>
+            <para OpticalMargins="14"/>
+            <para OpticalMargins="14"/>
+            <ITEXT FONT="Lato Bold" FONTSIZE="9" CH="Package #2 — 3120€ "/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" CH="ex­cl. V.A"/>
+            <ITEXT CH=".T. "/>
+            <para OpticalMargins="14"/>
+            <tab FONT="Lato Regular" FONTSIZE="9"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" CH="– generative logo "/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" CH="Word, LaTeX"/>
+            <para OpticalMargins="14"/>
+            <tab FONT="Lato Regular" FONTSIZE="9"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" CH="­­– static logo "/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" CH="off­set, other format­s"/>
+            <para OpticalMargins="14"/>
+            <tab FONT="Lato Regular" FONTSIZE="9"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" CH="– business cards "/>
+            <para OpticalMargins="14"/>
+            <tab FONT="Lato Regular" FONTSIZE="9"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" CH="– letterheads "/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" CH="Word, LaTeX"/>
+            <para OpticalMargins="14"/>
+            <para OpticalMargins="14"/>
+            <ITEXT FONT="Lato Bold" FONTSIZE="9" CH="Extension — 1430€ "/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" CH="excl. V.A"/>
+            <ITEXT CH=".T."/>
+            <para OpticalMargins="14"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" CH="­­"/>
+            <tab FONT="Lato Regular" FONTSIZE="9"/>
+            <ITEXT FONT="Lato Regular" FONTSIZE="9" CH="– PowerPoint tem­plates"/>
+            <para OpticalMargins="14"/>
+            <tab FONTSIZE="9"/>
+            <ITEXT FONTSIZE="9" CH="– web­site CSS "/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" CH="(for one web­site)"/>
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="315.092703412074" YPOS="982.080708661417" WIDTH="133.93208661" HEIGHT="43" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.38" LOCALSCY="0.38" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/generative logos/google/1998-08-googleburn.jpg" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 133.932 0 133.932 0 133.932 0 133.932 0 133.932 43 133.932 43 133.932 43 133.932 43 0 43 0 43 0 43 0 43 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 133.932 0 133.932 0 133.932 0 133.932 0 133.932 43 133.932 43 133.932 43 133.932 43 0 43 0 43 0 43 0 43 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="315.092703412074" YPOS="1060.07525590551" WIDTH="124.5" HEIGHT="55.8863188976381" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.3975" LOCALSCY="0.3975" LOCALX="-583.423958787105" LOCALY="-292.326845936711" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/generative logos/google/Google Doodles: 2000 January - March_1295452422208.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 124.5 0 124.5 0 124.5 0 124.5 0 124.5 55.8863 124.5 55.8863 124.5 55.8863 124.5 55.8863 0 55.8863 0 55.8863 0 55.8863 0 55.8863 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 124.5 0 124.5 0 124.5 0 124.5 0 124.5 55.8863 124.5 55.8863 124.5 55.8863 124.5 55.8863 0 55.8863 0 55.8863 0 55.8863 0 55.8863 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="490.184776902887" YPOS="979.246062992126" WIDTH="132.460629925433" HEIGHT="40.6249999999998" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.33" LOCALSCY="0.33" LOCALX="-558.852063946552" LOCALY="-4375.37652111668" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/generative logos/google/Google Doodles: 2006 January - March_1295454259208.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 132.461 0 132.461 0 132.461 0 132.461 0 132.461 40.625 132.461 40.625 132.461 40.625 132.461 40.625 0 40.625 0 40.625 0 40.625 0 40.625 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 132.461 0 132.461 0 132.461 0 132.461 0 132.461 40.625 132.461 40.625 132.461 40.625 132.461 40.625 0 40.625 0 40.625 0 40.625 0 40.625 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="490.184776902887" YPOS="1182.75" WIDTH="165.091443569554" HEIGHT="220" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.432176553847" LOCALSCY="0.432176553847" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/generative logos/Monadnock_files/000887image.jpg" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 165.091 0 165.091 0 165.091 0 165.091 0 165.091 220 165.091 220 165.091 220 165.091 220 0 220 0 220 0 220 0 220 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 165.091 0 165.091 0 165.091 0 165.091 0 165.091 220 165.091 220 165.091 220 165.091 220 0 220 0 220 0 220 0 220 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="433.73049271558" YPOS="1182.75" WIDTH="46.4536542660469" HEIGHT="63.6589881289765" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.385812049266524" LOCALSCY="0.385812049266524" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/generative logos/Monadnock_files/000687image.gif" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 46.4537 0 46.4537 0 46.4537 0 46.4537 0 46.4537 63.659 46.4537 63.659 46.4537 63.659 46.4537 63.659 0 63.659 0 63.659 0 63.659 0 63.659 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 46.4537 0 46.4537 0 46.4537 0 46.4537 0 46.4537 63.659 46.4537 63.659 46.4537 63.659 46.4537 63.659 0 63.659 0 63.659 0 63.659 0 63.659 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="94.9227761843206" gYpos="0" gWidth="141.376430450368" gHeight="231" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="433.73049271558" YPOS="1258.24348971119" WIDTH="46.4536542660469" HEIGHT="63.659008295131" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.385812171485642" LOCALSCY="0.385812171485642" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/generative logos/Monadnock_files/000688image.gif" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 46.4537 0 46.4537 0 46.4537 0 46.4537 0 46.4537 63.659 46.4537 63.659 46.4537 63.659 46.4537 63.659 0 63.659 0 63.659 0 63.659 0 63.659 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 46.4537 0 46.4537 0 46.4537 0 46.4537 0 46.4537 63.659 46.4537 63.659 46.4537 63.659 46.4537 63.659 0 63.659 0 63.659 0 63.659 0 63.659 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="94.9227761843206" gYpos="82.5596947177614" gWidth="141.376430450368" gHeight="231" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="315.092703412074" YPOS="1182.75" WIDTH="46.4536542660469" HEIGHT="63.659008295131" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.385812171485642" LOCALSCY="0.385812171485642" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/generative logos/Monadnock_files/000689image.gif" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 46.4537 0 46.4537 0 46.4537 0 46.4537 0 46.4537 63.659 46.4537 63.659 46.4537 63.659 46.4537 63.659 0 63.659 0 63.659 0 63.659 0 63.659 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 46.4537 0 46.4537 0 46.4537 0 46.4537 0 46.4537 63.659 46.4537 63.659 46.4537 63.659 46.4537 63.659 0 63.659 0 63.659 0 63.659 0 63.659 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="3.47941870973273" gWidth="141.376430450368" gHeight="231" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="374.411598063827" YPOS="1182.75" WIDTH="46.4536542660469" HEIGHT="63.659008295131" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.385812171485642" LOCALSCY="0.385812171485642" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/generative logos/Monadnock_files/000690image.gif" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 46.4537 0 46.4537 0 46.4537 0 46.4537 0 46.4537 63.659 46.4537 63.659 46.4537 63.659 46.4537 63.659 0 63.659 0 63.659 0 63.659 0 63.659 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 46.4537 0 46.4537 0 46.4537 0 46.4537 0 46.4537 63.659 46.4537 63.659 46.4537 63.659 46.4537 63.659 0 63.659 0 63.659 0 63.659 0 63.659 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="6.31958207965823" gYpos="83.4831568602631" gWidth="141.376430450368" gHeight="231" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="315.092703412074" YPOS="1258.24348971119" WIDTH="46.4536542660469" HEIGHT="63.659008295131" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.385812171485642" LOCALSCY="0.385812171485642" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/generative logos/Monadnock_files/000691image.gif" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 46.4537 0 46.4537 0 46.4537 0 46.4537 0 46.4537 63.659 46.4537 63.659 46.4537 63.659 46.4537 63.659 0 63.659 0 63.659 0 63.659 0 63.659 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 46.4537 0 46.4537 0 46.4537 0 46.4537 0 46.4537 63.659 46.4537 63.659 46.4537 63.659 46.4537 63.659 0 63.659 0 63.659 0 63.659 0 63.659 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="7.15542050446629" gYpos="167.340991704869" gWidth="141.376430450368" gHeight="231" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="374.411598063827" YPOS="1258.24348971119" WIDTH="46.4536542660469" HEIGHT="63.659008295131" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.385812171485642" LOCALSCY="0.385812171485642" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/generative logos/Monadnock_files/000692image.gif" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 46.4537 0 46.4537 0 46.4537 0 46.4537 0 46.4537 63.659 46.4537 63.659 46.4537 63.659 46.4537 63.659 0 63.659 0 63.659 0 63.659 0 63.659 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 46.4537 0 46.4537 0 46.4537 0 46.4537 0 46.4537 63.659 46.4537 63.659 46.4537 63.659 46.4537 63.659 0 63.659 0 63.659 0 63.659 0 63.659 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="84.5552220792927" gYpos="166.564123821221" gWidth="141.376430450368" gHeight="231" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="140.00062992126" YPOS="1176.57771653543" WIDTH="165.091443569554" HEIGHT="232" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" OpticalMargins="4" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 165.091 0 165.091 0 165.091 0 165.091 0 165.091 232 165.091 232 165.091 232 165.091 232 0 232 0 232 0 232 0 232 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 165.091 0 165.091 0 165.091 0 165.091 0 165.091 232 165.091 232 165.091 232 165.091 232 0 232 0 232 0 232 0 232 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Lato Bold" CH="Monadnock ar­chi­tect­s"/>
+            <para OpticalMargins="4"/>
+            <ITEXT FONT="Lato Light" CH="ht­tp://www.­mon­ad­nock­.n­l/"/>
+            <para OpticalMargins="4"/>
+            <ITEXT FONT="Lato Light" CH="design by Catalog Tree and Lutz Issler"/>
+            <para OpticalMargins="4"/>
+            <ITEXT CH="Logo for Rot­ter­dam-based architects Monadnock. With each save, export or print command, the logo is automatically generated from a postscript file. The generated shape seems to be one step of a morphing between the different letters of the studio name (A, C, D, O, K, N, M). The sym­bol cre­ated al­ways goes along the full name of the stu­di­o, which makes "/>
+            <breakline/>
+            <ITEXT CH="the logo eas­ily re­cog­niz­able. The read­er then as­so­ci­ates those­ chro­mo­some-­like shapes with the name."/>
+            <para OpticalMargins="4"/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="490.184776902887" YPOS="1060.64809055118" WIDTH="123.718503941181" HEIGHT="60.0378937007877" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.3825" LOCALSCY="0.3825" LOCALX="-586.330193998045" LOCALY="-3096.24265349184" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/generative logos/google/Google Doodles: 2008 January - March_1295454547559.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 123.719 0 123.719 0 123.719 0 123.719 0 123.719 60.0379 123.719 60.0379 123.719 60.0379 123.719 60.0379 0 60.0379 0 60.0379 0 60.0379 0 60.0379 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 123.719 0 123.719 0 123.719 0 123.719 0 123.719 60.0379 123.719 60.0379 123.719 60.0379 123.719 60.0379 0 60.0379 0 60.0379 0 60.0379 0 60.0379 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="315.092703412074" YPOS="1443.1875" WIDTH="127.530510092876" HEIGHT="180.058391577457" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.283464566929134" PCOLOR="None" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.424666017871361" LOCALSCY="0.424666017871361" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/00-Generative/makeart2010/1015-234050+offset.gif" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 127.531 0 127.531 0 127.531 0 127.531 0 127.531 180.058 127.531 180.058 127.531 180.058 127.531 180.058 0 180.058 0 180.058 0 180.058 0 180.058 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 127.531 0 127.531 0 127.531 0 127.531 0 127.531 180.058 127.531 180.058 127.531 180.058 127.531 180.058 0 180.058 0 180.058 0 180.058 0 180.058 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="324.465013119186" gHeight="300" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="490.184776902887" YPOS="1443.1875" WIDTH="127.530510092876" HEIGHT="180.058391577457" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.283464566929134" PCOLOR="None" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.424666017871361" LOCALSCY="0.424666017871361" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/00-Generative/makeart2010/1016-000412+offset.gif" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 127.531 0 127.531 0 127.531 0 127.531 0 127.531 180.058 127.531 180.058 127.531 180.058 127.531 180.058 0 180.058 0 180.058 0 180.058 0 180.058 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 127.531 0 127.531 0 127.531 0 127.531 0 127.531 180.058 127.531 180.058 127.531 180.058 127.531 180.058 0 180.058 0 180.058 0 180.058 0 180.058 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="93.0237061568851" gYpos="66.2921348314605" gWidth="324.465013119186" gHeight="300" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="527.745710379565" YPOS="1515.21845881624" WIDTH="127.530510092876" HEIGHT="180.058391577457" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.283464566929134" PCOLOR="None" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.424666017871361" LOCALSCY="0.424666017871361" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/00-Generative/makeart2010/1016-003158+offset.gif" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 127.531 0 127.531 0 127.531 0 127.531 0 127.531 180.058 127.531 180.058 127.531 180.058 127.531 180.058 0 180.058 0 180.058 0 180.058 0 180.058 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 127.531 0 127.531 0 127.531 0 127.531 0 127.531 180.058 127.531 180.058 127.531 180.058 127.531 180.058 0 180.058 0 180.058 0 180.058 0 180.058 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="196.93450302631" gYpos="119.941608422543" gWidth="324.465013119186" gHeight="300" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="140.000209973753" YPOS="971.575748031497" WIDTH="165.09186351706" HEIGHT="162.609291338582" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" OpticalMargins="4" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" ISIZE="9" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 165.092 0 165.092 0 165.092 0 165.092 0 165.092 162.609 165.092 162.609 165.092 162.609 165.092 162.609 0 162.609 0 162.609 0 162.609 0 162.609 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 165.092 0 165.092 0 165.092 0 165.092 0 165.092 162.609 165.092 162.609 165.092 162.609 165.092 162.609 0 162.609 0 162.609 0 162.609 0 162.609 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Lato Bold" FONTSIZE="9" CH="Google"/>
+            <para OpticalMargins="4"/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" CH="ht­tp://www.­google.­com/­lo­gos/"/>
+            <para OpticalMargins="4"/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" CH="vari­ous au­thor­s"/>
+            <para OpticalMargins="4"/>
+            <ITEXT FONTSIZE="9" CH="A logo you might have seen somewhere… Although it is not generative, it had numerous versions (c­alled “doodles”), commemorating "/>
+            <breakline/>
+            <ITEXT FONTSIZE="9" CH="or celebrating special events. What makes the logo always re­cog­niz­able, throughout its vari­ation­s, is the typeface and/or "/>
+            <breakline/>
+            <ITEXT FONTSIZE="9" CH="the colors."/>
+            <trail OpticalMargins="4"/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="140.000209973753" YPOS="1436.22141732284" WIDTH="165.09186351706" HEIGHT="232.235236220472" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" OpticalMargins="4" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 165.092 0 165.092 0 165.092 0 165.092 0 165.092 232.235 165.092 232.235 165.092 232.235 165.092 232.235 0 232.235 0 232.235 0 232.235 0 232.235 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 165.092 0 165.092 0 165.092 0 165.092 0 165.092 232.235 165.092 232.235 165.092 232.235 165.092 232.235 0 232.235 0 232.235 0 232.235 0 232.235 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Lato Bold" CH="Festival MakeArt 2010"/>
+            <para OpticalMargins="4"/>
+            <ITEXT FONT="Lato Light" CH="ht­tp://­makeart.go­to10.or­g/"/>
+            <para OpticalMargins="4"/>
+            <ITEXT FONT="Lato Light" CH="design by Lafkon"/>
+            <para OpticalMargins="4"/>
+            <ITEXT CH="Visual identity for the free/"/>
+            <ITEXT FONT="Lato Italic" CH="libre"/>
+            <ITEXT CH=" media "/>
+            <breakline/>
+            <ITEXT CH="art festival Make Art. A set of fonts and "/>
+            <breakline/>
+            <ITEXT CH="of shapes have been chosen by the designers. The different elements can change their place, their font… The constant elements here are the colors, the aesthetic of the shapes, the duplication/movement effect and the main zones of layout (top: generated composition, bottom: main information, middle: an oblique line separating the two parts). Note that the “MAKE ART” logo typeface changes but stays at the "/>
+            <breakline/>
+            <ITEXT CH="same place."/>
+            <trail OpticalMargins="4"/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="140.00062992126" YPOS="941.890708661418" WIDTH="261.05708661" HEIGHT="21.8592913385824" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 261.057 0 261.057 0 261.057 0 261.057 0 261.057 21.8593 261.057 21.8593 261.057 21.8593 261.057 21.8593 0 21.8593 0 21.8593 0 21.8593 0 21.8593 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 261.057 0 261.057 0 261.057 0 261.057 0 261.057 21.8593 261.057 21.8593 261.057 21.8593 261.057 21.8593 0 21.8593 0 21.8593 0 21.8593 0 21.8593 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" PSTYLE="titre" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT CH="Examples of variable or generative visual identities"/>
+            <trail PARENT="titre"/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="352.653636881627" YPOS="1515.2184587937" WIDTH="127.5305101" HEIGHT="180.0583916" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="0.283464566929134" PCOLOR="None" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.424666017924528" LOCALSCY="0.424666017924528" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Ressources/Épicerie d'art/Design graphique/00-Generative/makeart2010/1016-003435+offset.gif" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 127.531 0 127.531 0 127.531 0 127.531 0 127.531 180.058 127.531 180.058 127.531 180.058 127.531 180.058 0 180.058 0 180.058 0 180.058 0 180.058 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 127.531 0 127.531 0 127.531 0 127.531 0 127.531 180.058 127.531 180.058 127.531 180.058 127.531 180.058 0 180.058 0 180.058 0 180.058 0 180.058 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="315.092703412074" YPOS="1017.33165354331" WIDTH="165.091443569554" HEIGHT="40.25" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="Lato Light" ISIZE="9" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 165.091 0 165.091 0 165.091 0 165.091 0 165.091 40.25 165.091 40.25 165.091 40.25 165.091 40.25 0 40.25 0 40.25 0 40.25 0 40.25 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 165.091 0 165.091 0 165.091 0 165.091 0 165.091 40.25 165.091 40.25 165.091 40.25 165.091 40.25 0 40.25 0 40.25 0 40.25 0 40.25 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Lato Light" FONTSIZE="9" CH="30/08/1998 — Burning Festival,"/>
+            <para/>
+            <ITEXT FONT="Lato Light" FONTSIZE="9" CH="very first doodle"/>
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="490.184776902887" YPOS="1019.39267716535" WIDTH="165.091443569554" HEIGHT="17.3484251968507" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="Lato Light" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 165.091 0 165.091 0 165.091 0 165.091 0 165.091 17.3484 165.091 17.3484 165.091 17.3484 165.091 17.3484 0 17.3484 0 17.3484 0 17.3484 0 17.3484 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 165.091 0 165.091 0 165.091 0 165.091 0 165.091 17.3484 165.091 17.3484 165.091 17.3484 165.091 17.3484 0 17.3484 0 17.3484 0 17.3484 0 17.3484 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Lato Light" CH="04/01/2006 — Louis Braille"/>
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="490.184776902887" YPOS="1109.61511811024" WIDTH="165.091443569554" HEIGHT="16.8848818897638" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="Lato Light" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 165.091 0 165.091 0 165.091 0 165.091 0 165.091 16.8849 165.091 16.8849 165.091 16.8849 165.091 16.8849 0 16.8849 0 16.8849 0 16.8849 0 16.8849 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 165.091 0 165.091 0 165.091 0 165.091 0 165.091 16.8849 165.091 16.8849 165.091 16.8849 165.091 16.8849 0 16.8849 0 16.8849 0 16.8849 0 16.8849 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Lato Light" CH="28/01/2008 — 50 years of LEGO"/>
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="315.092703412074" YPOS="1101.20665354331" WIDTH="165.091443569554" HEIGHT="29.5" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="Lato Light" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 165.091 0 165.091 0 165.091 0 165.091 0 165.091 29.5 165.091 29.5 165.091 29.5 165.091 29.5 0 29.5 0 29.5 0 29.5 0 29.5 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 165.091 0 165.091 0 165.091 0 165.091 0 165.091 29.5 165.091 29.5 165.091 29.5 165.091 29.5 0 29.5 0 29.5 0 29.5 0 29.5 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Lato Light" CH="17/03/2000 — Saint Patrick's Day"/>
+            <trail/>
+            <Tabs Type="0" Pos="10" Fill=""/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+    </DOCUMENT>
+</SCRIBUSUTF8NEW>

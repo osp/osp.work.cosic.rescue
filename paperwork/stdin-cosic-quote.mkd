@@ -1,0 +1,53 @@
+Quote for visual identity for Cosic
+===================================
+
+130 euros a day: 
+10 jours = 1300 euros
+20 jours = 2600 euros
+30 jours = 3900 euros
+
+Package #1: 1500€ excl. VTA
+---------------------------
+Plain logo, business cards, letterheads (Word + LaTeX?)
+
+Package #2: 3000€ excl; VTA
+--------------------------
+Generative logo for Word and Latex. Static logo for offset or other formats. Business cards and letterheads (Word + LaTeX?).
+
+Extension: 1500€ excl. VTA
+--------------------------
+PowerPoint templates.
+
+
+Goal
+----
+
+keywords: _cryptography_, _hash_, _privacy_, _trust_, _theory_, _discrete mathematics_, _algorithms_, _international_.
+
+Cosic's field of action is quite large, from public cryptography to embed devices, not to forget social networks and privacy. This research formalism and discrete mathematics.
+
+A logo is a syntetic image and can only express a limited number of ideas. On a low-level, what unify all these topics is formalism and discrete mathematics.
+
+After our discussion, we propose you several options. The first one is a logo/sign for Cosic and the corresponding business cards and letterheads. Although this package is cheaper because it won't involve any programming skills, we are much more excited by the second option where we could be much more creative. Making generative design is not an automatism for us, but we think it really fits your field of research. 
+
+...
+
+The extension can be added to any of the two packages. We understand that you cannot always use your own PowerPoint templates, but in the few cases that you are allowed to, it would be great to have your own. Also, in the field of science, slides presentation seem to be a much more present media than a letterhead or a business card. The public would associate your research and results to your identity much more easily. That's why we think it's important that you display your identity through these.
+
+...
+
+We would like to work on this project with the design collective we belong too, Open Source Publishing (http://osp.constantvzw.org), for they would be as excited as we are about this project. Also, if we choose the generative design package, it would be much easier/faster to do it with them as one of the member is a Scribus developer (lay out software), and another member is part of the CONtext board (another flavor of TeX).
+
+Generative design doesn't mean having several visual identities
+
+
+
+Generative design would reflect
+richness and originality
+reflecting algorithms
+taking advantage of the discrete and generative nature of cryptographic algorithm
+a design that reveals its own machinery
+
+examples of changing logo/visual identity:
+- Google
+- Monadnock, architects -- http://www.catalogtree.net/projects/Monadnock
