@@ -1,0 +1,437 @@
+%!
+%%
+
+%%% Support functions
+
+%/headerfont	/UniversElse-Regular findfont 72 scalefont def
+
+%1.0 0.0 0.0 0.0 setcmykcolor
+
+/realrand {
+	(%Calendar%) currentdevparams dup
+	/Second get exch dup
+	/Minute get exch 
+	/Hour get 
+	%/Day get exch dup
+	%/Month get exch dup
+	%30 mul add
+	%24 mul add
+	60 mul add
+	60 mul add
+	realtime add srand
+} def
+
+realrand
+
+/smallrand { rand 2147483647 div 2 mul 1 sub abs } def
+/randarc { smallrand 270 mul dup 70 lt { 90 add } if } def
+/randrotate { smallrand 360 mul } def
+/randpattern { patterns smallrand patterns length 1 sub mul round cvi get } def
+/randp { smallrand 10 mul dup 4.5 lt { 2.5 add } if } def
+
+/base {
+%	realrand
+	randpattern exec
+} def
+
+/foretext {
+%	realrand
+	randpattern exec
+} def
+
+/reveal {
+%	realrand
+	randpattern exec
+} def
+
+/cliparc {
+	/rotation exch def
+	/angle exch def	
+
+	gsave
+		0 0 translate 
+		rotation rotate
+		newpath
+			0 	0 	20	 0 		angle 	arc
+			0	0 	100	 angle 	0 		arcn
+		closepath clip 
+		0 0 translate
+		reveal
+	grestore
+
+} def
+
+/single {
+	/regy exch def
+	/regx exch def
+	gsave
+		regx regy translate 
+  		%gsave
+   		%	-20 0 translate -60 -20 moveto
+   		%	headerfont setfont
+  		%	(cosic) true charpath clip
+		%	0 setgray
+		%	(cosic) show
+		%	foretext
+		%	base
+		%grestore
+		params /p1 randp put
+		gsave
+			%newpath 0 0 100 0 360 arc closepath clip
+			randrotate rotate
+			base
+		grestore
+		params /p1 randp put
+		%randarc randrotate cliparc
+		randrotate rotate
+		reveal
+	grestore
+} def
+
+%%% End Support functions
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+%%% Generator values
+
+/params <<
+	/theta1 0		% angle of the first grating in degrees
+	/theta2 15		% angle of the second grating in degrees
+	/p1 3 			% period of the first grating in points
+	/p2 3 			% period of the second grating in points
+	/len 200 		% length of the two gratings in points
+	/wid 200 		% width of the two gratings (= lines length) in points
+	/lwidth 1		% linewidth in points
+>> def
+
+%%% End generator
+%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%% Pattern generators
+
+/patterns [
+
+{ % grid
+/p1 params /p1 get def
+/len params /len get def
+/wid params /wid get def
+/theta1	params /theta1 get def
+/theta2 params /theta2 get def
+/lwidth params /lwidth get def
+
+/len2 len 2 div def
+/wid2 wid 2 div def
+smallrand dup 0.5 gt { 0.5 sub } if setlinewidth
+
+gsave
+	0 0 translate 
+	theta1 rotate
+
+	
+
+	newpath
+	0 p1 len		% draw lines of first grating
+	{len2 sub wid2 neg moveto
+	0 wid rlineto} for
+	stroke
+grestore
+
+%gsave
+%	0 0 translate
+%	theta2 rotate
+%	newpath
+%	0 p2 len		% draw lines of second grating
+%	{len2 sub wid2 neg moveto
+%	0 wid rlineto} for
+%	stroke
+%grestore
+} % grid
+
+{ % cosine curve
+/inch {72 mul} def
+/centiinch { 1 mul} def
+
+/cm {20 mul} def
+/mm {2.83465 mul} def
+/pix {72 mul 600 div} def
+
+/theta1 0 def		% angle of the grating in degrees
+/p1 params /p1 get def		% period of the grating along its main axis in centiinches
+/len 600 def		% length of the grating along its main axis in centiinches
+/lwidth 0.5 def	
+
+
+/curve {
+-7.50000 cm 0.35355 cm rmoveto
+0.10000 cm -0.05966 cm rlineto
+0.10000 cm -0.06690 cm rlineto
+0.10000 cm -0.07249 cm rlineto
+0.10000 cm -0.07629 cm rlineto
+0.10000 cm -0.07822 cm rlineto
+0.10000 cm -0.07822 cm rlineto
+0.10000 cm -0.07629 cm rlineto
+0.10000 cm -0.07249 cm rlineto
+0.10000 cm -0.06690 cm rlineto
+0.10000 cm -0.05966 cm rlineto
+0.10000 cm -0.05095 cm rlineto
+0.10000 cm -0.04099 cm rlineto
+0.10000 cm -0.03002 cm rlineto
+0.10000 cm -0.01832 cm rlineto
+0.10000 cm -0.00616 cm rlineto
+0.10000 cm 0.00616 cm rlineto
+0.10000 cm 0.01832 cm rlineto
+0.10000 cm 0.03003 cm rlineto
+0.10000 cm 0.04100 cm rlineto
+0.10000 cm 0.05096 cm rlineto
+0.10000 cm 0.05966 cm rlineto
+0.10000 cm 0.06690 cm rlineto
+0.10000 cm 0.07249 cm rlineto
+0.10000 cm 0.07629 cm rlineto
+0.10000 cm 0.07822 cm rlineto
+0.10000 cm 0.07822 cm rlineto
+0.10000 cm 0.07629 cm rlineto
+0.10000 cm 0.07249 cm rlineto
+0.10000 cm 0.06690 cm rlineto
+0.10000 cm 0.05966 cm rlineto
+0.10000 cm 0.05095 cm rlineto
+0.10000 cm 0.04099 cm rlineto
+0.10000 cm 0.03002 cm rlineto
+0.10000 cm 0.01832 cm rlineto
+0.10000 cm 0.00616 cm rlineto
+0.10000 cm -0.00616 cm rlineto
+0.10000 cm -0.01832 cm rlineto
+0.10000 cm -0.03003 cm rlineto
+0.10000 cm -0.04100 cm rlineto
+0.10000 cm -0.05096 cm rlineto
+0.10000 cm -0.05966 cm rlineto
+0.10000 cm -0.06690 cm rlineto
+0.10000 cm -0.07249 cm rlineto
+0.10000 cm -0.07629 cm rlineto
+0.10000 cm -0.07822 cm rlineto
+0.10000 cm -0.07822 cm rlineto
+0.10000 cm -0.07629 cm rlineto
+0.10000 cm -0.07249 cm rlineto
+0.10000 cm -0.06690 cm rlineto
+0.10000 cm -0.05966 cm rlineto
+0.10000 cm -0.05095 cm rlineto
+0.10000 cm -0.04099 cm rlineto
+0.10000 cm -0.03002 cm rlineto
+0.10000 cm -0.01832 cm rlineto
+0.10000 cm -0.00616 cm rlineto
+0.10000 cm 0.00616 cm rlineto
+0.10000 cm 0.01832 cm rlineto
+0.10000 cm 0.03003 cm rlineto
+0.10000 cm 0.04099 cm rlineto
+0.10000 cm 0.05096 cm rlineto
+0.10000 cm 0.05966 cm rlineto
+0.10000 cm 0.06690 cm rlineto
+0.10000 cm 0.07249 cm rlineto
+0.10000 cm 0.07629 cm rlineto
+0.10000 cm 0.07822 cm rlineto
+0.10000 cm 0.07822 cm rlineto
+0.10000 cm 0.07629 cm rlineto
+0.10000 cm 0.07249 cm rlineto
+0.10000 cm 0.06690 cm rlineto
+0.10000 cm 0.05966 cm rlineto
+0.10000 cm 0.05096 cm rlineto
+0.10000 cm 0.04099 cm rlineto
+0.10000 cm 0.03002 cm rlineto
+0.10000 cm 0.01832 cm rlineto
+0.10000 cm 0.00616 cm rlineto
+0.10000 cm -0.00616 cm rlineto
+0.10000 cm -0.01832 cm rlineto
+0.10000 cm -0.03002 cm rlineto
+0.10000 cm -0.04099 cm rlineto
+0.10000 cm -0.05096 cm rlineto
+0.10000 cm -0.05966 cm rlineto
+0.10000 cm -0.06690 cm rlineto
+0.10000 cm -0.07249 cm rlineto
+0.10000 cm -0.07629 cm rlineto
+0.10000 cm -0.07822 cm rlineto
+0.10000 cm -0.07822 cm rlineto
+0.10000 cm -0.07629 cm rlineto
+0.10000 cm -0.07249 cm rlineto
+0.10000 cm -0.06690 cm rlineto
+0.10000 cm -0.05966 cm rlineto
+0.10000 cm -0.05096 cm rlineto
+0.10000 cm -0.04099 cm rlineto
+0.10000 cm -0.03003 cm rlineto
+0.10000 cm -0.01832 cm rlineto
+0.10000 cm -0.00616 cm rlineto
+0.10000 cm 0.00616 cm rlineto
+0.10000 cm 0.01832 cm rlineto
+0.10000 cm 0.03002 cm rlineto
+0.10000 cm 0.04099 cm rlineto
+0.10000 cm 0.05095 cm rlineto
+0.10000 cm 0.05966 cm rlineto
+0.10000 cm 0.06690 cm rlineto
+0.10000 cm 0.07249 cm rlineto
+0.10000 cm 0.07629 cm rlineto
+0.10000 cm 0.07822 cm rlineto
+0.10000 cm 0.07822 cm rlineto
+0.10000 cm 0.07629 cm rlineto
+0.10000 cm 0.07249 cm rlineto
+0.10000 cm 0.06690 cm rlineto
+0.10000 cm 0.05966 cm rlineto
+0.10000 cm 0.05096 cm rlineto
+0.10000 cm 0.04100 cm rlineto
+0.10000 cm 0.03003 cm rlineto
+0.10000 cm 0.01832 cm rlineto
+0.10000 cm 0.00616 cm rlineto
+0.10000 cm -0.00616 cm rlineto
+0.10000 cm -0.01832 cm rlineto
+0.10000 cm -0.03002 cm rlineto
+0.10000 cm -0.04099 cm rlineto
+0.10000 cm -0.05095 cm rlineto
+0.10000 cm -0.05966 cm rlineto
+0.10000 cm -0.06690 cm rlineto
+0.10000 cm -0.07249 cm rlineto
+0.10000 cm -0.07629 cm rlineto
+0.10000 cm -0.07822 cm rlineto
+0.10000 cm -0.07822 cm rlineto
+0.10000 cm -0.07629 cm rlineto
+0.10000 cm -0.07249 cm rlineto
+0.10000 cm -0.06690 cm rlineto
+0.10000 cm -0.05966 cm rlineto
+0.10000 cm -0.05096 cm rlineto
+0.10000 cm -0.04100 cm rlineto
+0.10000 cm -0.03003 cm rlineto
+0.10000 cm -0.01832 cm rlineto
+0.10000 cm -0.00616 cm rlineto
+0.10000 cm 0.00616 cm rlineto
+0.10000 cm 0.01832 cm rlineto
+0.10000 cm 0.03002 cm rlineto
+0.10000 cm 0.04099 cm rlineto
+0.10000 cm 0.05095 cm rlineto
+0.10000 cm 0.05966 cm rlineto
+0.10000 cm 0.06690 cm rlineto
+0.10000 cm 0.07249 cm rlineto
+0.10000 cm 0.07629 cm rlineto
+0.10000 cm 0.07822 cm rlineto
+0.10000 cm 0.07822 cm rlineto
+0.10000 cm 0.07629 cm rlineto
+0.10000 cm 0.07249 cm rlineto
+0.10000 cm 0.06690 cm rlineto
+0.10000 cm 0.05966 cm rlineto
+} def
+
+0 0 translate
+
+
+/len2 len 2 div def
+lwidth centiinch setlinewidth
+
+
+gsave
+theta1 rotate
+
+newpath
+	-100 -100 moveto
+	-100 100 lineto
+	100 100 lineto
+	100 -100 lineto
+closepath clip
+
+0 p1 len		% draw curves
+{newpath len2 sub centiinch 0 centiinch exch moveto
+	curve
+	stroke
+} for
+grestore
+} % cosine curve
+
+{ % rhombus
+0.7 setlinewidth
+/len 200 def		% grating length in centiinches
+/wid 200 def		% grating width in centiinches
+/len2 len 2 div def
+/wid2 wid 2 div def
+/theta1 0 def		% angle of grating A
+/theta2 6 def		% angle of grating B
+
+/rot 0 def		% general rotation to prevent printer artifacts
+
+/p1 params /p1 get def		% period of grating A
+/p2 3 def		% period of grating B
+
+/xshift1 0.33 p1 mul def	% period-shift of grating A (e.g. 0.5)
+/xshift2 0 p2 mul def	
+
+gsave
+	0 0 translate
+	theta2 rot add rotate
+	newpath
+	0 p2 len		% draw lines
+	{len2 p2 div round p2 mul xshift2 sub sub wid2 neg moveto
+	0 wid rlineto} for
+	stroke
+grestore
+} % rhombus
+
+%{ % dots
+%/len 200 def		% screen length in centiinches
+%/len2 len 2 div def
+%/theta1 0 def
+%/p1 2 def
+%/p1y 2 def
+%/xshift1 0 p1 mul def
+%/yshift1 0 p1y mul def	
+%
+%gsave
+%0 0 translate
+%theta1 rotate
+%0 p1 len		% draw rows of dots
+%{newpath
+%	/ysave exch len2 p1y div round p1y mul sub def
+%	0 p1 len		% draw a row of dots
+%	{len2 p1 div round p1 mul xshift1 sub ysave moveto
+%	0 0 rlineto} for
+%	stroke
+%} for
+%grestore
+%} % dots
+
+] def % /patterns
+
+%%% End patterns
+%%%%%%%%%%%%%%%%
+
+
+% and now for the generation of an entire page 
+
+0.4 0.4 scale
+
+10 10 200 { %for
+	/regx exch def
+	regx 41 lt { %if
+		/regy 1500 def
+	} { %else
+		regx 81 lt {
+			/regy 1200 def
+			/regx regx 40 sub def
+		} {
+			regx 121 lt {
+				/regy 900 def
+				/regx regx 80 sub def
+			} { 
+				regx 161 lt {
+					/regy 600 def
+					/regx regx 120 sub def
+				} {
+					regx 201 lt {
+						/regy 300 def
+						/regx regx 160 sub def
+					} if
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse
+	regx 33 mul 150 sub regy single
+} for
+
+showpage
