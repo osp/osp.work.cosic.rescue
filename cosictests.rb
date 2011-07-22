@@ -24,22 +24,50 @@ else
 	mkfile.close
 end
 
-cmd = "pandoc -o #{testing}.tex "
-puts "Generating the LaTeX document"
+puts "\nLaTeX"
+#puts "  -> Generating the LaTeX document (markdown2pdf)"
+#latex = Thread.new do
+#	%x[markdown2pdf -o #{mkd}-latex.pdf #{mkd}]
+#end
+#latex.join
+
+puts "  -> Generating LaTeX with Pandoc"
 latex = Thread.new do
-	%x[markdown2pdf -o #{mkd}-latex.pdf #{mkd}]
+	%x[pandoc -o #{mkd}-latex.tex #{mkd} -s]
 end
 latex.join
 
-puts "  -> Viewing the LaTeX document"
+puts "  -> Generating LaTeX DVI file"
+latex = Thread.new do
+	Dir.chdir("#{dir}/tests")
+	%x[latex #{mkd}-latex.tex]
+end
+latex.join
+
+puts "  -> Converting DVI to PostScript"
+latex = Thread.new do
+	Dir.chdir("#{dir}/tests")
+	%x[dvips #{mkd}-latex.dvi]
+end
+latex.join
+
+puts "  -> Converting PostScript file to PDF"
+latex = Thread.new do
+	Dir.chdir("#{dir}/tests")
+	%x[ps2pdf #{mkd}-latex.ps]
+end
+latex.join
+
+puts "  -> Viewing the LaTeX PDF"
 viewer = Thread.new do 
 	%x[evince #{mkd}-latex.pdf]
 end
 viewer.join
 
-puts "Converting to Context..."
+puts "\nContext"
+puts "  -> Converting to Context..."
 context = Thread.new do
-	%x[pandoc -t context -o #{mkd}-context.tex #{mkd}]
+	%x[pandoc -t context -o #{mkd}-context.tex #{mkd} -s]
 end
 context.join
 
@@ -47,6 +75,7 @@ puts "  -> Running Context to generate PDF"
 context = Thread.new do
 	Dir.chdir("#{dir}/tests")
 	%x[context #{mkd}-context.tex]
+#	File.delete("#{dir}/m_k_i_v_#{File.basename(testing, '.eps')}.pdf")
 end
 context.join
 
@@ -56,7 +85,8 @@ viewer = Thread.new do
 end
 viewer.join
 
-puts "Generating the ODT"
+puts "\nODT"
+puts "  -> Generating the ODT"
 odt = Thread.new do
 	%x[pandoc -o #{mkd}.odt #{mkd}]
 end
