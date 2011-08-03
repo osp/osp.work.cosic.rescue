@@ -1,9 +1,10 @@
 #!/usr/bin/ruby
 
 puts "COSIC Logo Tests"
-puts "	-> LaTeX (markdown2pdf)"
-puts "	-> Context"
-puts "	-> ODT"
+puts "  * LaTeX"
+puts "  * pdfLaTeX (in progress)"
+puts "  * Context"
+puts "  * ODT"
 
 testing = ARGV[0]
 fullpath = File.expand_path(testing)

@@ -24,6 +24,7 @@ ps
 * [Links to many PostScript resources](http://www.inkguides.com/postscript-programming.asp)
 * [PostScript Tutorial](http://www.tailrecursive.org/postscript/postscript.html)
 * [PostCanvas: a JavaScript PS interpretor](http://www.feiri.de/pcan/)
+* [Golfing in PostScript](https://sites.google.com/site/codegolfingtips/Postscript)
 
 == Moire ==
 
