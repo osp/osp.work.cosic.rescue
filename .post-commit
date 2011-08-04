@@ -1,0 +1,31 @@
+#!/usr/bin/ruby
+
+require 'rubygems'
+require 'gollum'
+
+wiki = Gollum::Wiki.new(".git")
+
+pageImage = "# PNG & JPG Images" 
+commit =  {	:message => "automatic generation of SVG images page",
+			:name => "Ms. Pre Commit",
+			:email => "none@devnull.com" }
+
+images = Dir["**/*.{png,jpg}"]
+images.each do |image|
+	pageImage << "\n[[/#{image}|frame|alt=#{image}]]"
+end
+
+puts pageImage
+wiki.write_page('Bitmaps', :markdown, pageImage, commit)
+
+pageImage = "# SVG Images" 
+commit =  {	:message => "automatic generation of SVG images page",
+			:name => "Ms. Pre Commit",
+			:email => "none@devnull.com" }
+
+images = Dir["**/*.{svg}"]
+images.each do |image|
+	pageImage << "\n[[/#{image}|frame|alt=#{image}]]"
+end
+
+wiki.write_page('SVGs', :markdown, pageImage, commit)
