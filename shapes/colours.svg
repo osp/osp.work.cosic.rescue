@@ -3407,22 +3407,22 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.12233963"
-     inkscape:cx="160.13317"
-     inkscape:cy="369.70133"
+     inkscape:zoom="0.53639794"
+     inkscape:cx="293.18445"
+     inkscape:cy="677.59527"
      inkscape:document-units="pt"
      inkscape:current-layer="layer1"
      showgrid="true"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:snap-grids="true"
+     inkscape:snap-grids="false"
      inkscape:snap-to-guides="false"
      inkscape:window-width="1280"
      inkscape:window-height="752"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:snap-page="true"
+     inkscape:snap-page="false"
      units="cm">
     <inkscape:grid
        type="xygrid"
@@ -18782,7 +18782,7 @@
        xml:space="preserve"
        id="flowRoot13102"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(797.8125,2424.4697)"><flowRegion
+       transform="translate(799.67679,2476.6698)"><flowRegion
          id="flowRegion13104"><rect
            id="rect13106"
            width="455.6355"
@@ -18812,7 +18812,7 @@
        xml:space="preserve"
        id="flowRoot13110"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(1249.3125,2890.6572)"><flowRegion
+       transform="matrix(0.91696421,-0.39896947,0.39896947,0.91696421,2276.3269,2276.2875)"><flowRegion
          id="flowRegion13112"><rect
            id="rect13114"
            width="337.034"
@@ -18840,7 +18840,7 @@
        xml:space="preserve"
        id="flowRoot13118"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(839.625,2782.5634)"><flowRegion
+       transform="translate(841.48929,2834.7635)"><flowRegion
          id="flowRegion13120"><rect
            id="rect13122"
            width="632.73364"
@@ -18860,7 +18860,7 @@
        xml:space="preserve"
        id="flowRoot13126"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(371.75,2561.4384)"><flowRegion
+       transform="translate(373.61429,2613.6385)"><flowRegion
          id="flowRegion13128"><rect
            id="rect13130"
            width="155.79874"
@@ -18868,7 +18868,7 @@
            x="-321.13617"
            y="-2378.3894" /></flowRegion><flowPara
          id="flowPara13132"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:135.00000238%;font-family:Lucida Sans Std;-inkscape-font-specification:Lucida Sans Std">July 28, 2011t</flowPara></flowRoot>    <text
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:135.00000238%;font-family:Lucida Sans Std;-inkscape-font-specification:Lucida Sans Std">July 28, 2011</flowPara></flowRoot>    <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="41.313576"
@@ -20304,5 +20304,53 @@
            id="tspan5173-5"
            sodipodi:role="line" /></text>
     </g>
-  </g>
+    <flowRoot
+       transform="matrix(0.93539076,-0.3536158,0.3536158,0.93539076,2169.861,2377.8601)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot16274"
+       xml:space="preserve"><flowRegion
+         id="flowRegion16276"><rect
+           y="-2842.606"
+           x="-1198.6963"
+           height="400.62531"
+           width="337.034"
+           id="rect16278" /></flowRegion><flowPara
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:135.00000238%;font-family:Lucida Sans Std;-inkscape-font-specification:Lucida Sans Std"
+         id="flowPara16280"><flowSpan
+           id="flowSpan16282"
+           style="font-weight:bold;-inkscape-font-specification:Lucida Sans Std Bold"><flowSpan
+             id="flowSpan16284"
+             style="font-weight:normal;-inkscape-font-specification:Lucida Sans Std">COSIC </flowSpan></flowSpan></flowPara><flowPara
+         id="flowPara16286"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:135.00000238%;font-family:Lucida Sans Std;-inkscape-font-specification:Lucida Sans Std">Computer Security &amp; Industrial Cryptography </flowPara><flowPara
+         id="flowPara16288"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:135.00000238%;font-family:Lucida Sans Std;-inkscape-font-specification:Lucida Sans Std">Department of Electric Engineering </flowPara><flowPara
+         id="flowPara16290"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:135.00000238%;font-family:Lucida Sans Std;-inkscape-font-specification:Lucida Sans Std">Faculty of Engineering </flowPara><flowPara
+         id="flowPara16292"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:135.00000238%;font-family:Lucida Sans Std;-inkscape-font-specification:Lucida Sans Std">K. U. Leuven </flowPara><flowPara
+         id="flowPara16294"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:135.00000238%;font-family:Lucida Sans Std;-inkscape-font-specification:Lucida Sans Std">Kasteelpark Atenberg 10 </flowPara><flowPara
+         id="flowPara16296"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:135.00000238%;font-family:Lucida Sans Std;-inkscape-font-specification:Lucida Sans Std">B-3001 Heverlee (Belgium)</flowPara></flowRoot>    <flowRoot
+       transform="matrix(0.99960002,-0.02828064,0.02828064,0.99960002,917.74002,2822.8065)"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       id="flowRoot16298"
+       xml:space="preserve"><flowRegion
+         id="flowRegion16300"><rect
+           y="-2734.5007"
+           x="-451.49835"
+           height="639.09277"
+           width="632.73364"
+           id="rect16302" /></flowRegion><flowPara
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:135.00000238%;font-family:Lucida Sans Std;-inkscape-font-specification:Lucida Sans Std"
+         id="flowPara16304">Mr. John Fox </flowPara><flowPara
+         id="flowPara16306"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:135.00000238%;font-family:Lucida Sans Std;-inkscape-font-specification:Lucida Sans Std">Chief Executive Office </flowPara><flowPara
+         id="flowPara16308"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:135.00000238%;font-family:Lucida Sans Std;-inkscape-font-specification:Lucida Sans Std">Farmville Coorporation </flowPara><flowPara
+         id="flowPara16310"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:135.00000238%;font-family:Lucida Sans Std;-inkscape-font-specification:Lucida Sans Std">Emery Street 143 </flowPara><flowPara
+         id="flowPara16312"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:135.00000238%;font-family:Lucida Sans Std;-inkscape-font-specification:Lucida Sans Std">B-1001 Bruxelles (Belgium)  </flowPara></flowRoot>  </g>
 </svg>
