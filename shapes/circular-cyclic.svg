@@ -1095,9 +1095,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.94844653"
-     inkscape:cx="575.23458"
-     inkscape:cy="755.13054"
+     inkscape:zoom="0.90735402"
+     inkscape:cx="775.19688"
+     inkscape:cy="713.79881"
      inkscape:document-units="pt"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -21713,5 +21713,27 @@
          width="744.09448"
          height="1052.3622" />
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
+       x="684.42859"
+       y="392.04138"
+       id="text7593"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7595"
+         x="684.42859"
+         y="392.04138">3 layers</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Latin Modern Mono;-inkscape-font-specification:Latin Modern Mono"
+       x="738.78522"
+       y="334.37271"
+       id="text7597"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7599"
+         x="738.78522"
+         y="334.37271">2 layers</tspan></text>
   </g>
 </svg>
