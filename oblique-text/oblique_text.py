@@ -3,27 +3,20 @@
 '''
 Basic usage:
 
-    >>> text = "Antoon Bosselears is a super guy"
-    >>> make_oblique(text)
-    u'result'
-
-    >>> text = """
-    ... COSIC
-    ... K. U. Leuven 
-    ... Kasteelpark Atenberg 10 
-    ... B-3001 Heverlee
-    ... (Belgium)
-    ... """
-    >>> make_oblique(text)
-    u'result'
-
-    >>> text = """
-    ... Je t'aime
-    ... ma bichette
-    ... """
-    >>> make_oblique(text)
-    u'result'
+    >>> text = """Super
+    ... Cool"""
+    >>> print(make_oblique(text))
+    S   C
+     u   o
+      p   o
+       e   l
+        r    
+    <BLANKLINE>
 '''
+
+import sys
+from textwrap import dedent
+import fileinput
 
 
 def make_oblique(text):
@@ -46,24 +39,27 @@ def make_oblique(text):
             #output += "\n"
 
     #print(output)
-    
 
-    #import pdb; pdb.set_trace()
     for i in xrange(len(words[0])):
         current = "   ".join(word[i] for word in words)
         output += current.rjust(i + len(current), " ")
         output += "\n"
 
-    print(output)
+    return output
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
-    text = """
-    COSIC - K. U. Leuven 
-    Kasteelpark Atenberg 10 
-    B-3001 Heverlee (Belgium)
-    """
-    make_oblique(text)
+    #import doctest
+    #doctest.testmod()
 
+    import argparse
+
+    parser = argparse.ArgumentParser(description='Makes a text oblique')
+    parser.add_argument('--text', default=None, help='The text to process')
+
+    args = parser.parse_args()
+
+    if args.text is None:
+        print(make_oblique(sys.stdin.read()))
+    else:
+        print(make_oblique(args.text))
