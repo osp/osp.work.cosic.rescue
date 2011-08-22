@@ -19,7 +19,7 @@ from textwrap import dedent
 import fileinput
 
 
-def make_oblique(text):
+def make_oblique(text, separator="   "):
     """docstring for make_oblique"""
     words = text.split("\n")
     max_len = 0
@@ -41,7 +41,7 @@ def make_oblique(text):
     #print(output)
 
     for i in xrange(len(words[0])):
-        current = "   ".join(word[i] for word in words)
+        current = separator.join(word[i] for word in words)
         output += current.rjust(i + len(current), " ")
         output += "\n"
 
@@ -55,11 +55,12 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description='Makes a text oblique')
-    parser.add_argument('--text', default=None, help='The text to process')
+    parser.add_argument('-t', '--text', default=None, help='The text to process')
+    parser.add_argument('-s', '--separator', default="   ", help='The character(s) to seperate words')
 
     args = parser.parse_args()
 
     if args.text is None:
-        print(make_oblique(sys.stdin.read()))
+        print(make_oblique(sys.stdin.read(), separator=args.separator))
     else:
-        print(make_oblique(args.text))
+        print(make_oblique(args.text, separator=args.separator))
