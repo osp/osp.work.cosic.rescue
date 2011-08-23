@@ -41,9 +41,17 @@ $(document).ready( function(){
 	var patterns = new Array( '1.1.svg', '2.1.svg', '2.2.svg', '2.3.svg', '3.1.svg', '3.2.svg', '3.3.svg', '4.1.svg', '4.2.svg', '4.3.svg', '5.1.svg', '5.2.svg', '5.3.svg', '6.1.svg', '6.3.svg', '7.1.svg', '7.2.svg' );
 
 	var pick = Math.floor(Math.random() * patterns.length);
-
+/*
 	$('#logo').append('<img id="pattern1" src="' + patterns[Math.floor(Math.random() * patterns.length)] + '" />').find('#pattern1').css('position', 'absolute').hide();
 	$('#logo').append('<img id="pattern2" src="' + patterns[Math.floor(Math.random() * patterns.length)] + '" />').find('#pattern2').css('position','absolute').hide();
+*/
+
+	var object1 = '<!--[if !IE]>-->' + "\n" + '<object data="' + patterns[Math.floor(Math.random() * patterns.length)] + '" type="image/svg+xml" width="90" height="90" id="pattern1">' + "\n" + '<!--<![endif]-->' + "\n" + '<!--[if lt IE 9]>' + "\n" + '<object src="' + patterns[Math.floor(Math.random() * patterns.length)] + '" classid="image/svg+xml" width="90" height="90" id="pattern1">' + "\n" + '<![endif]-->' + "\n" + '<!--[if gte IE 9]>' + "\n" + '<object data="' + patterns[Math.floor(Math.random() * patterns.length)] + '" type="image/svg+xml" width="90" height="90" id="pattern1">' + "\n" + '<![endif]-->' + "\n" + '<h1>Put optional fallback content here</h1> </object>'
+
+	var object2 = '<!--[if !IE]>-->' + "\n" + '<object data="' + patterns[Math.floor(Math.random() * patterns.length)] + '" type="image/svg+xml" width="90" height="90" id="pattern2">' + "\n" + '<!--<![endif]-->' + "\n" + '<!--[if lt IE 9]>' + "\n" + '<object src="' + patterns[Math.floor(Math.random() * patterns.length)] + '" classid="image/svg+xml" width="90" height="90" id="pattern2">' + "\n" + '<![endif]-->' + "\n" + '<!--[if gte IE 9]>' + "\n" + '<object data="' + patterns[Math.floor(Math.random() * patterns.length)] + '" type="image/svg+xml" width="90" height="90" id="pattern2">' + "\n" + '<![endif]-->' + "\n" + '<h1>Put optional fallback content here</h1> </object>'
+
+	$('#logo').append(object1).find('#pattern1').css('position', 'absolute').hide();
+	$('#logo').append(object2).find('#pattern2').css('position', 'absolute').hide();
 
 	var p1 = $('#pattern1');
 	var p2 = $('#pattern2');
@@ -54,6 +62,7 @@ $(document).ready( function(){
 	p1.rotate(r1);
 	p1.css({ 'left' : '32px', 'top' : '32px' }).show();
 	p2.rotate(r2);
-	p2.css({ 'left' : '48px', 'top' : '48px' }).show();
+	p2.css({ 'left' : '56px', 'top' : '56px' }).show();
+
 });
 
