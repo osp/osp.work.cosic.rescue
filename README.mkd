@@ -70,3 +70,13 @@ This is as simple as installing the 'ttftotype42' program, generally available i
 == Clean postcript file from inkscape == 
 
 It is possible to improve the readability of inkscape generated postcript files by setting the document unit to "point" and then using the grid to snap the curve/line points to round values. However it appears that it is still necessary to fix some floating points values by hand, but it is much better. SVG Cairo uses aliases to shorten the files, and it is necessary to search n replace a couple of aliases (mainly c to curveto, and m to moveto). Might be automated, not sure...
+# meeting notes
+
+- the "color" of the patterns; tweak parameters so that it doesn't get too dark
+- timeline: as soon as possible
+  - they will send and discuss amongst professors
+- public access to source code isn't a problem
+- feedback process
+- send purchase order for "first" part
+	- will hopefully have a decision for the second part by 2 august
+	
