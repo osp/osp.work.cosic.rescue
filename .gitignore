@@ -11,3 +11,4 @@ venv
 *.log
 *.tuc
 m_k_i_v*
+*.autosave

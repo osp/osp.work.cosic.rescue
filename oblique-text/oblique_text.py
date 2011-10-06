@@ -19,6 +19,32 @@ from textwrap import dedent
 import fileinput
 
 
+def make_oblique_3(text):
+    import numpy as np
+    words = text.splitlines()
+    n = max(2 * len(word) for word in words) + len(words)
+    canvas = np.zeros((n, n), dtype='S1')
+    canvas[...] = ' '  # ye mighty FORTRAN, we beseech thee
+
+    for j, word in enumerate(words):
+        i = np.arange(len(word))
+        canvas[i + j, 2 * i] = list(word)
+
+    canvas[:, -1] = '\n'
+    return canvas.tostring().rstrip()
+
+
+def make_oblique_2(text):
+    words = text.splitlines()
+    matrix = [[" " for i in xrange(len(words) + len(max(words)))] \
+            for j in xrange(len(words) + len(max(words)))]
+    for i, word in enumerate(words):
+        for j, letter in enumerate(word):
+            matrix[j + i][j] = letter
+    matrix = map(lambda x: "".join(x), matrix)
+    return "\n".join(matrix)
+
+
 def make_oblique(text, separator="   ", invert=False):
     """docstring for make_oblique"""
     max_len = 0
