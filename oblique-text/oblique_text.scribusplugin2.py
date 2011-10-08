@@ -2,6 +2,6 @@
 
 
 import scribus
-from oblique_text import make_oblique_3
+from oblique_text import make_oblique_4
 
-scribus.setText(make_oblique_3(scribus.getAllText()))
+scribus.setText(make_oblique_4(scribus.getAllText()))

@@ -17,18 +17,40 @@ Basic usage:
 import sys
 from textwrap import dedent
 import fileinput
+import numpy as np
 
+
+def make_oblique_4(text, line_spacing=1, slant=1, letter_spacing=1, reverse=False):
+    words = text.splitlines()
+    if reverse:
+        words.reverse()
+    #n = max(3 * len(word) for word in words) + len(words)
+    n_row = (len(max(words)) + (len(words) * line_spacing)) * slant
+    n_col = len(max(words)) + (len(max(words)) * letter_spacing)
+    #n = 100
+    canvas = np.zeros((n_row, n_col), dtype='S1')
+    canvas[...] = ' '  # ye mighty FORTRAN, we beseech thee
+
+    for i, word in enumerate(words):
+        letters_x = np.multiply(np.arange(len(word)), letter_spacing)
+        letters_y = np.multiply(np.arange(len(word)), slant)
+        canvas[letters_y + (i * line_spacing), letters_x] = list(word)
+
+    canvas[:, -1] = '\n'
+    if reverse:
+        canvas = canvas[::-1]
+    return canvas.tostring().rstrip()
 
 def make_oblique_3(text):
     import numpy as np
     words = text.splitlines()
-    n = max(2 * len(word) for word in words) + len(words)
+    n = max(4 * len(word) for word in words) + len(words)
     canvas = np.zeros((n, n), dtype='S1')
     canvas[...] = ' '  # ye mighty FORTRAN, we beseech thee
 
     for j, word in enumerate(words):
         i = np.arange(len(word))
-        canvas[i + j, 2 * i] = list(word)
+        canvas[i + j * 4 , 2 * i] = list(word)
 
     canvas[:, -1] = '\n'
     return canvas.tostring().rstrip()
