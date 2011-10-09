@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
+apollinaire.py
 """
 
 import sys
@@ -17,25 +18,29 @@ class Example(QtGui.QWidget):
         self.letter_spacing = 1
         self.line_spacing = 1
         self.slant = 1
-        self.source = "Hello\nWorld"
+        self.source = "Il pleut des voix de femmes..."
         self.initUI()
         
     def initUI(self):
-
         source = QtGui.QPlainTextEdit()
+        source.setPlainText(self.source)
         self.connect(source, QtCore.SIGNAL('textChanged()'), self.source_changed) 
 
         self.result = QtGui.QTextEdit()
         #self.result.setFontFamily("Mono")
         self.result.setStyleSheet("font-family: Mono;")
 
-        slant = QtGui.QSlider(QtCore.Qt.Horizontal)
+        slant = QtGui.QSpinBox()
+        slant.setMinimum(1)
+        slant.setValue(self.slant)
         self.connect(slant, QtCore.SIGNAL('valueChanged(int)'), self.slant_changed) 
 
-        letter_spacing = QtGui.QSlider(QtCore.Qt.Horizontal)
+        letter_spacing = QtGui.QSpinBox()
+        letter_spacing.setValue(self.letter_spacing)
         self.connect(letter_spacing, QtCore.SIGNAL('valueChanged(int)'), self.letter_spacing_changed) 
 
-        line_spacing = QtGui.QSlider(QtCore.Qt.Horizontal)
+        line_spacing = QtGui.QSpinBox()
+        line_spacing.setValue(self.line_spacing)
         self.connect(line_spacing, QtCore.SIGNAL('valueChanged(int)'), self.line_spacing_changed) 
 
         qbtn = QtGui.QPushButton('Quit')
@@ -64,6 +69,7 @@ class Example(QtGui.QWidget):
         self.move(300, 150)
         self.setWindowTitle('Calculator')    
         self.show()
+        self.do_it()
 
     def center(self):
         qr = self.frameGeometry()
