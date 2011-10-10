@@ -1,3 +1,4 @@
+#! /usr/bin/env python2
 # -*- coding: utf-8 -*-
 
 import sys
@@ -9,6 +10,10 @@ class MonAppli(QtGui.QMainWindow, Ui_MainWindow):
     def __init__(self):
         QtGui.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)
+
+        QtGui.QApplication.setStyle(QtGui.QStyleFactory.create("GTK+"))
+        QtGui.QApplication.setPalette(QtGui.QApplication.style().standardPalette())
+
         self.is_reversed = False
         self.letter_spacing = 1
         self.line_spacing = 1
@@ -43,7 +48,11 @@ class MonAppli(QtGui.QMainWindow, Ui_MainWindow):
 
     def source_changed(self):
         sender = self.sender()
-        self.source = sender.toPlainText()
+        self.source = unicode(sender.toPlainText())
+        #print(self.source)
+        #print(repr(self.source))
+        #print(type(self.source))
+        #print(repr(self.source))
         self.do_it()
 
     def letter_spacing_changed(self):
