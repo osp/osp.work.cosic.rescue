@@ -120,7 +120,8 @@ end readonly def
 FontName currentdict end definefont pop
 %
 %% easy access to our font
-/headerfont	/MigMix-2M-Bold findfont 48 scalefont def
+/fontsize 32 def
+/headerfont	/MigMix-2M-Bold findfont fontsize scalefont def
 
 % showpage called at the end to treat this eps as a normal ps file during testing
 % showpage is redefined to nothing here for the ghostscript bug report
@@ -145,9 +146,9 @@ FontName currentdict end definefont pop
 unrealrand % add our new seed
 
 /smallrand { rand 2147483647 div 2 mul 1 sub abs } def
-/randarc { smallrand 270 mul dup 70 lt { 90 add } if } def
 /randrotate { smallrand 360 mul } def
 /randpattern { patterns smallrand patterns length 1 sub mul round cvi get } def
+/randline { smallrand 3 mul cvi } def
 
 /base {
 	40 randrotate smallrand 6 mul mul randpattern exec
@@ -446,8 +447,23 @@ unrealrand
 reveal
 
 headerfont setfont
-60 100 moveto
-(COSIC) show
+/text {
+gsave
+	-80 0 translate
+	%(COSIC) show
+	0 randline fontsize mul moveto
+	(C) show
+	fontsize 1 mul randline fontsize mul moveto
+	(O) show
+	fontsize 2 mul randline fontsize mul moveto
+	(S) show
+	fontsize 3 mul randline fontsize mul moveto
+	(I) show
+	fontsize 4 mul randline fontsize mul moveto
+	(C) show
+grestore
+} def
 
+text
 
 showpage
