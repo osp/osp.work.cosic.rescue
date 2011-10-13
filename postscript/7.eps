@@ -1,0 +1,42 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 300 300
+
+% circle1:
+% 	period linewidth radius circle1 -
+
+/circle7 {
+	/rot exch def
+	/radius exch def
+	/thick exch def
+	/period exch def 
+
+	/half { radius 2 div cvi } def
+
+	gsave
+		2 2 scale
+		0 0 translate
+		thick setlinewidth
+
+		rot rotate
+		newpath
+			%radius neg radius neg radius 0 360 arc
+			0 0 radius 0 360 arc
+		closepath clip newpath
+		
+		radius radius 2 div cvi add {
+			radius neg radius 2 mul neg moveto
+			0 period translate
+			2 {
+				half half 2 div rlineto
+				half half 2 div neg rlineto
+			} repeat
+			stroke
+		} repeat
+	grestore
+} def
+
+
+200 200 translate
+3 0.7 80 0 circle7
+
+showpage

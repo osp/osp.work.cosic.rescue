@@ -1,0 +1,319 @@
+SplineFontDB: 3.0
+FontName: Migu-2M-regular_subset
+FullName: Migu 2M regular_subset
+FamilyName: Migu 2M_subset
+Weight: Book
+Copyright: M+ TESTFLIGHT 040: Copyright(c) 2011 M+ FONTS PROJECT\nIPA Gothic Ver.003.03: Copyright(c) Information-technology Promotion Agency, Japan (IPA), 2003-2011. You must accept "http://ipafont.ipa.go.jp/ipa_font_license_v1.html" to use this product.
+Version: 20110610
+ItalicAngle: 0
+UnderlinePosition: -100
+UnderlineWidth: 50
+Ascent: 860
+Descent: 140
+sfntRevision: 0xdd120000
+LayerCount: 2
+Layer: 0 1 "Back"  1
+Layer: 1 1 "Fore"  0
+XUID: [1021 988 1025494395 11909849]
+FSType: 0
+OS2Version: 1
+OS2_WeightWidthSlopeOnly: 0
+OS2_UseTypoMetrics: 1
+CreationTime: -1543868512
+ModificationTime: -1543868512
+PfmFamily: 17
+TTFWeight: 400
+TTFWidth: 5
+LineGap: 0
+VLineGap: 0
+Panose: 2 11 5 9 2 2 3 2 2 7
+OS2TypoAscent: 0
+OS2TypoAOffset: 1
+OS2TypoDescent: 0
+OS2TypoDOffset: 1
+OS2TypoLinegap: 0
+OS2WinAscent: 20
+OS2WinAOffset: 1
+OS2WinDescent: 130
+OS2WinDOffset: 1
+HheadAscent: 20
+HheadAOffset: 1
+HheadDescent: -130
+HheadDOffset: 1
+OS2SubXSize: 650
+OS2SubYSize: 699
+OS2SubXOff: 0
+OS2SubYOff: 140
+OS2SupXSize: 650
+OS2SupYSize: 699
+OS2SupXOff: 0
+OS2SupYOff: 479
+OS2StrikeYSize: 49
+OS2StrikeYPos: 258
+OS2FamilyClass: 2057
+OS2Vendor: 'Mig '
+OS2CodePages: 6012019f.dfd70000
+OS2UnicodeRanges: e00002ff.7ac7fdfb.00000012.00000000
+DEI: 91125
+LangName: 1033 "" "" "regular" "FontForge 2.0 : Migu 2M regular : 10-6-2011_subset" "" "" "" "" "" "" "" "http://mix-mplus-ipa.sourceforge.jp" 
+GaspTable: 1 65535 2 0
+Encoding: UnicodeBmp
+UnicodeInterp: none
+NameList: Adobe Glyph List
+DisplaySize: -96
+AntiAlias: 1
+FitToEm: 1
+WinInfo: 60 6 6
+BeginChars: 65536 9
+
+StartChar: .notdef
+Encoding: 0 -1 0
+AltUni2: 000000.ffffffff.0
+Width: 1000
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+814 -48 m 1,0,-1
+ 501 338 l 1,1,-1
+ 187 -48 l 1,2,-1
+ 814 -48 l 1,0,-1
+467 379 m 1,3,-1
+ 152 768 l 1,4,-1
+ 152 -9 l 1,5,-1
+ 467 379 l 1,3,-1
+848 -8 m 1,6,-1
+ 848 766 l 1,7,-1
+ 534 379 l 1,8,-1
+ 848 -8 l 1,6,-1
+815 808 m 1,9,-1
+ 186 808 l 1,10,-1
+ 501 421 l 1,11,-1
+ 815 808 l 1,9,-1
+900 -100 m 1,12,-1
+ 100 -100 l 1,13,-1
+ 100 860 l 1,14,-1
+ 900 860 l 1,15,-1
+ 900 -100 l 1,12,-1
+EndSplineSet
+EndChar
+
+StartChar: C
+Encoding: 67 67 1
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+55 365 m 0,0,1
+ 55 562 55 562 115.5 651 c 128,-1,2
+ 176 740 176 740 295 740 c 0,3,4
+ 361 740 361 740 420 710 c 1,5,-1
+ 420 635 l 1,6,7
+ 360 668 360 668 300 668 c 0,8,9
+ 135 668 135 668 135 365 c 0,10,11
+ 135 201 135 201 177 131.5 c 128,-1,12
+ 219 62 219 62 300 62 c 0,13,14
+ 362 62 362 62 425 100 c 1,15,-1
+ 425 20 l 1,16,17
+ 366 -10 366 -10 295 -10 c 0,18,19
+ 173 -10 173 -10 114 76 c 128,-1,20
+ 55 162 55 162 55 365 c 0,0,1
+EndSplineSet
+EndChar
+
+StartChar: I
+Encoding: 73 73 2
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+410 0 m 1,0,-1
+ 90 0 l 1,1,-1
+ 90 70 l 1,2,-1
+ 208 70 l 1,3,-1
+ 208 660 l 1,4,-1
+ 90 660 l 1,5,-1
+ 90 730 l 1,6,-1
+ 410 730 l 1,7,-1
+ 410 660 l 1,8,-1
+ 292 660 l 1,9,-1
+ 292 70 l 1,10,-1
+ 410 70 l 1,11,-1
+ 410 0 l 1,0,-1
+EndSplineSet
+EndChar
+
+StartChar: O
+Encoding: 79 79 3
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+250 740 m 128,-1,1
+ 357 740 357 740 408.5 655.5 c 128,-1,2
+ 460 571 460 571 460 365 c 128,-1,3
+ 460 159 460 159 408.5 74.5 c 128,-1,4
+ 357 -10 357 -10 250 -10 c 128,-1,5
+ 143 -10 143 -10 91.5 74.5 c 128,-1,6
+ 40 159 40 159 40 365 c 128,-1,7
+ 40 571 40 571 91.5 655.5 c 128,-1,0
+ 143 740 143 740 250 740 c 128,-1,1
+250 62 m 128,-1,9
+ 294 62 294 62 321 87.5 c 128,-1,10
+ 348 113 348 113 364 181 c 128,-1,11
+ 380 249 380 249 380 365 c 128,-1,12
+ 380 481 380 481 364 549 c 128,-1,13
+ 348 617 348 617 321 642.5 c 128,-1,14
+ 294 668 294 668 250 668 c 128,-1,15
+ 206 668 206 668 179 642.5 c 128,-1,16
+ 152 617 152 617 136 549 c 128,-1,17
+ 120 481 120 481 120 365 c 128,-1,18
+ 120 249 120 249 136 181 c 128,-1,19
+ 152 113 152 113 179 87.5 c 128,-1,8
+ 206 62 206 62 250 62 c 128,-1,9
+EndSplineSet
+EndChar
+
+StartChar: S
+Encoding: 83 83 4
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+260 668 m 0,0,1
+ 213 668 213 668 182.5 637.5 c 128,-1,2
+ 152 607 152 607 152 560 c 0,3,4
+ 152 510 152 510 174 477 c 128,-1,5
+ 196 444 196 444 245 422 c 0,6,7
+ 356 373 356 373 398 319.5 c 128,-1,8
+ 440 266 440 266 440 180 c 0,9,10
+ 440 86 440 86 388.5 38 c 128,-1,11
+ 337 -10 337 -10 240 -10 c 0,12,13
+ 149 -10 149 -10 75 45 c 1,14,-1
+ 75 140 l 1,15,16
+ 155 62 155 62 245 62 c 0,17,18
+ 358 62 358 62 358 180 c 0,19,20
+ 358 235 358 235 332 271 c 128,-1,21
+ 306 307 306 307 245 335 c 0,22,23
+ 151 377 151 377 110.5 430.5 c 128,-1,24
+ 70 484 70 484 70 560 c 0,25,26
+ 70 640 70 640 121 690 c 128,-1,27
+ 172 740 172 740 255 740 c 0,28,29
+ 308 740 308 740 342 732 c 128,-1,30
+ 376 724 376 724 420 700 c 1,31,-1
+ 420 610 l 1,32,33
+ 343 668 343 668 260 668 c 0,0,1
+EndSplineSet
+EndChar
+
+StartChar: c
+Encoding: 99 99 5
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+80 260 m 0,0,1
+ 80 394 80 394 135 462 c 128,-1,2
+ 190 530 190 530 290 530 c 0,3,4
+ 351 530 351 530 415 505 c 1,5,-1
+ 415 425 l 1,6,7
+ 355 458 355 458 295 458 c 0,8,9
+ 232 458 232 458 197 408 c 128,-1,10
+ 162 358 162 358 162 260 c 0,11,12
+ 162 159 162 159 199 109 c 128,-1,13
+ 236 59 236 59 300 59 c 0,14,15
+ 359 59 359 59 420 95 c 1,16,-1
+ 420 15 l 1,17,18
+ 356 -10 356 -10 295 -10 c 0,19,20
+ 193 -10 193 -10 136.5 57.5 c 128,-1,21
+ 80 125 80 125 80 260 c 0,0,1
+EndSplineSet
+EndChar
+
+StartChar: i
+Encoding: 105 105 6
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+316 520 m 1,0,-1
+ 316 68 l 1,1,-1
+ 425 68 l 1,2,-1
+ 425 0 l 1,3,-1
+ 95 0 l 1,4,-1
+ 95 68 l 1,5,-1
+ 234 68 l 1,6,-1
+ 234 452 l 1,7,-1
+ 125 452 l 1,8,-1
+ 125 520 l 1,9,-1
+ 316 520 l 1,0,-1
+214 640 m 1,10,-1
+ 214 760 l 1,11,-1
+ 316 760 l 1,12,-1
+ 316 640 l 1,13,-1
+ 214 640 l 1,10,-1
+EndSplineSet
+EndChar
+
+StartChar: o
+Encoding: 111 111 7
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+250 530 m 128,-1,1
+ 450 530 450 530 450 260 c 128,-1,2
+ 450 -10 450 -10 250 -10 c 128,-1,3
+ 50 -10 50 -10 50 260 c 128,-1,0
+ 50 530 50 530 250 530 c 128,-1,1
+250 59 m 128,-1,5
+ 311 59 311 59 339.5 104.5 c 128,-1,6
+ 368 150 368 150 368 260 c 128,-1,7
+ 368 370 368 370 339.5 415.5 c 128,-1,8
+ 311 461 311 461 250 461 c 128,-1,9
+ 189 461 189 461 160.5 415.5 c 128,-1,10
+ 132 370 132 370 132 260 c 128,-1,11
+ 132 150 132 150 160.5 104.5 c 128,-1,4
+ 189 59 189 59 250 59 c 128,-1,5
+EndSplineSet
+EndChar
+
+StartChar: s
+Encoding: 115 115 8
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+255 463 m 0,0,1
+ 159 463 159 463 159 390 c 0,2,3
+ 159 356 159 356 180 335.5 c 128,-1,4
+ 201 315 201 315 255 300 c 0,5,6
+ 361 270 361 270 395.5 237 c 128,-1,7
+ 430 204 430 204 430 135 c 128,-1,8
+ 430 66 430 66 383 28 c 128,-1,9
+ 336 -10 336 -10 250 -10 c 128,-1,10
+ 164 -10 164 -10 85 30 c 1,11,-1
+ 85 110 l 1,12,13
+ 163 57 163 57 240 57 c 0,14,15
+ 351 57 351 57 351 135 c 0,16,17
+ 351 172 351 172 329.5 192 c 128,-1,18
+ 308 212 308 212 245 230 c 0,19,20
+ 153 256 153 256 116.5 292 c 128,-1,21
+ 80 328 80 328 80 390 c 0,22,23
+ 80 456 80 456 123.5 493 c 128,-1,24
+ 167 530 167 530 250 530 c 0,25,26
+ 334 530 334 530 410 495 c 1,27,-1
+ 410 420 l 1,28,29
+ 331 463 331 463 255 463 c 0,0,1
+EndSplineSet
+EndChar
+EndChars
+EndSplineFont
