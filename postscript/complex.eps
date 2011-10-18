@@ -449,8 +449,11 @@ reveal
 headerfont setfont
 /text {
 gsave
-	-80 0 translate
+%	-80 0 translate
 	%(COSIC) show
+%	0 fontsize 3 mul translate
+	0.11 setgray
+	20 80 translate
 	0 randline fontsize mul moveto
 	(C) show
 	fontsize 1 mul randline fontsize mul moveto
