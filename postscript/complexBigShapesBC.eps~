@@ -1,5 +1,5 @@
 %!PS-Adobe-3.0 EPSF-3.0
-%%BoundingBox: 0 0 595.27545 841.88956
+%%BoundingBox: 0 0 252.283405 144.566895
 
 % Business Card : 0 0 252.283405 144.566895
 % A6            : 0 0 297.637725 420.9447825
@@ -9,15 +9,19 @@
 % A2            : 0 0 1190.5509 1683.77913
 % A1            : 0 0 1683.77913 2381.1018
 
-
 /s 28.34645 def
 
 s s scale
 
+% Finer
+
+/linethickness 0.03 def
+/period 0.09 def
+
 /linethickness 0.05 def
 /period 0.15 def
-/drawwidth 21 def
-/drawheight 29.7 def
+/drawwidth 8.9 def
+/drawheight 5.1 def
 
 drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 
@@ -226,19 +230,32 @@ unrealrand % add our new seed
 
 gsave
     newpath
-        0 0 moveto
-        drawwidth 10 div 0 rlineto
-        0 drawheight rlineto
-        drawwidth 10 div neg 0 rlineto
+       0 0 moveto
+       drawwidth 0 rlineto
+       0 drawheight rlineto
+       drawwidth neg 0 rlineto
+       %drawwidth 2 div drawheight 2 div drawheight 2 div 0 360 arc
     closepath
     clip
     newpath
         drawwidth 2 div drawheight 2 div translate
         unrealrand
         drawpattern
+    closepath
+grestore
+gsave
+    newpath
+       0 0 moveto
+       drawwidth 0 rlineto
+       0 drawheight rlineto
+       drawwidth neg 0 rlineto
+       %drawwidth 2 div drawheight 2 div drawheight 2 div 0 360 arc
+    closepath
+    clip
+    newpath
+        drawwidth 2 div drawheight 2 div translate
         unrealrand
         drawpattern
     closepath
 grestore
-
 showpage

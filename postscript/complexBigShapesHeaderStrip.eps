@@ -1,5 +1,5 @@
 %!PS-Adobe-3.0 EPSF-3.0
-%%BoundingBox: 0 0 595.27545 841.88956
+%%BoundingBox: 0 0 595.27545 200
 
 % Business Card : 0 0 252.283405 144.566895
 % A6            : 0 0 297.637725 420.9447825
@@ -9,15 +9,14 @@
 % A2            : 0 0 1190.5509 1683.77913
 % A1            : 0 0 1683.77913 2381.1018
 
+/cm { 28.34645 mul } def
+/mm {  2.83465 mul } def
 
-/s 28.34645 def
-
-s s scale
-
-/linethickness 0.05 def
-/period 0.15 def
-/drawwidth 21 def
-/drawheight 29.7 def
+/linethickness 0.5 mm def
+/period 1.5 mm def
+/drawwidth 200 mm def
+/drawheight 20 mm def
+/stripes 35 def
 
 drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 
@@ -224,12 +223,8 @@ unrealrand % add our new seed
 /curve      basepatterns 1 get def
 /sharkteeth basepatterns 2 get def
 
-gsave
     newpath
-        0 0 moveto
-        drawwidth 10 div 0 rlineto
-        0 drawheight rlineto
-        drawwidth 10 div neg 0 rlineto
+        drawwidth drawheight box
     closepath
     clip
     newpath
@@ -239,6 +234,5 @@ gsave
         unrealrand
         drawpattern
     closepath
-grestore
 
 showpage

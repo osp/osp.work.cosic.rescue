@@ -1,5 +1,5 @@
 %!PS-Adobe-3.0 EPSF-3.0
-%%BoundingBox: 0 0 595.27545 841.88956
+%%BoundingBox: 0 0 42.519675 42.519675
 
 % Business Card : 0 0 252.283405 144.566895
 % A6            : 0 0 297.637725 420.9447825
@@ -9,15 +9,14 @@
 % A2            : 0 0 1190.5509 1683.77913
 % A1            : 0 0 1683.77913 2381.1018
 
-
-/s 28.34645 def
+/s 2.834645 def
 
 s s scale
 
-/linethickness 0.05 def
-/period 0.15 def
-/drawwidth 21 def
-/drawheight 29.7 def
+/linethickness 0.4 def
+/period 1.2 def
+/drawwidth 15 def
+/drawheight 15 def
 
 drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 
@@ -41,8 +40,24 @@ drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 	realtime add srand
 } def
 
+/shrinkto {
+    /max exch def
+    
+    {
+        dup max gt {-1 bitshift} {exit} ifelse
+    } loop
+
+} def
+
+/todec {
+    {
+        dup 1 ge {.1 mul} {exit} ifelse
+    } loop
+} def
+
 unrealrand % add our new seed
 
+/decrand { rand todec } def
 /smallrand { rand 2147483647 div 2 mul 1 sub abs } def
 /randrotate { smallrand 360 mul smallrand 6 mul mul } def
 /randpattern { patterns smallrand patterns length 1 sub mul round cvi get } def
@@ -78,22 +93,13 @@ unrealrand % add our new seed
 		    stroke
 	    } repeat
     }
-
-    % 1: 10 Sinus waves
-    { 10 sinuswave exec }
-    
-    % 2: 8 Sinus waves
-    { 8 sinuswave exec }
-    
-    % 3: 6 Sinus waves
-    { 6 sinuswave exec }
-    
-    % 4: 5 Sinus waves
-    { 5 sinuswave exec }
     
     % 5: 3 Sinus waves
     { 3 sinuswave exec }
     
+    % 5: 3 Sinus waves
+    { 2 sinuswave exec }
+
     % 6: 1 Sinus wave
     { 1 sinuswave exec }
 
@@ -115,12 +121,6 @@ unrealrand % add our new seed
     % 12: Inv small curve
     { 10 neg curve exec }
     
-    % 13: 8 Sharkteeth
-    { 8 5 sharkteeth exec }
-
-    % 14: 6 Sharkteeth
-    { 6 8 sharkteeth exec }
-
     % 15: 4 Sharkteeth
     { 4 11 sharkteeth exec }
 
@@ -189,7 +189,6 @@ unrealrand % add our new seed
             0 0 moveto
             c h c h width 0 curveto stroke
             0 period translate
-
         } repeat
     }
     
@@ -226,17 +225,18 @@ unrealrand % add our new seed
 
 gsave
     newpath
-        0 0 moveto
-        drawwidth 10 div 0 rlineto
-        0 drawheight rlineto
-        drawwidth 10 div neg 0 rlineto
+       0 0 moveto
+       %drawwidth 0 rlineto
+       %0 drawheight rlineto
+       %drawwidth neg 0 rlineto
+       drawwidth 2 div drawheight 2 div drawheight 2 div 0 360 arc
     closepath
     clip
     newpath
         drawwidth 2 div drawheight 2 div translate
         unrealrand
         drawpattern
-        unrealrand
+        rand rand rand
         drawpattern
     closepath
 grestore

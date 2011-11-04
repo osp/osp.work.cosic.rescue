@@ -1,10 +1,23 @@
 %!PS-Adobe-3.0 EPSF-3.0
-%%BoundingBox: 0 0 420 594
+%%BoundingBox: 0 0 595.27545 841.88956
 
-/linethickness 2 def
-/period 5 def
-/drawwidth 420 def
-/drawheight 594 def
+% Business Card : 0 0 252.283405 144.566895
+% A6            : 0 0 297.637725 420.9447825
+% A5            : 0 0 420.9447825 595.27545
+% A4            : 0 0 595.27545 841.889565
+% A3            : 0 0 841.889565 1190.5509
+% A2            : 0 0 1190.5509 1683.77913
+% A1            : 0 0 1683.77913 2381.1018
+
+
+/s 28.34645 def
+
+s s scale
+
+/linethickness 0.05 def
+/period 0.15 def
+/drawwidth 21 def
+/drawheight 29.7 def
 
 drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 
@@ -39,8 +52,7 @@ unrealrand % add our new seed
     exch dup 0 rlineto
     exch 0 exch rlineto
     neg 0 rlineto
-    closepath
-} def
+} bind def
 
 /drawpattern {
     linethickness setlinewidth 
@@ -212,12 +224,21 @@ unrealrand % add our new seed
 /curve      basepatterns 1 get def
 /sharkteeth basepatterns 2 get def
 
-newpath drawwidth drawheight box clip newpath
-drawwidth 2 div drawheight 2 div translate
-unrealrand
-drawpattern
-unrealrand
-drawpattern
-closepath
+gsave
+    newpath
+        0 0 moveto
+        drawwidth 0 rlineto
+        0 drawheight rlineto
+        drawwidth neg 0 rlineto
+    closepath
+    clip
+    newpath
+        drawwidth 2 div drawheight 2 div translate
+        unrealrand
+        drawpattern
+        unrealrand
+        drawpattern
+    closepath
+grestore
 
 showpage

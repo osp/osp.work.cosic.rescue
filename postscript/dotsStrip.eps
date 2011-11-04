@@ -1,5 +1,5 @@
 %!PS-Adobe-3.0 EPSF-3.0
-%%BoundingBox: 0 0 595.27545 841.88956
+%%BoundingBox: 0 0 141.73225 841.889565
 
 % Business Card : 0 0 252.283405 144.566895
 % A6            : 0 0 297.637725 420.9447825
@@ -10,14 +10,16 @@
 % A1            : 0 0 1683.77913 2381.1018
 
 
-/s 28.34645 def
+/cm { 28.34645 mul } def
+/mm {  2.83465 mul } def
 
-s s scale
+/linethickness .4 mm def
+/period 1 mm def
 
-/linethickness 0.05 def
-/period 0.15 def
-/drawwidth 21 def
-/drawheight 29.7 def
+/drawwidth 60 mm def
+/drawheight 297 mm def
+
+/cr 15 mm def
 
 drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 
@@ -31,6 +33,7 @@ drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 
 % Support functions
 
+
 /unrealrand {
 	(%Calendar%) currentdevparams dup
 	/Second get exch dup
@@ -41,11 +44,32 @@ drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 	realtime add srand
 } def
 
+/shrinkto {
+    /max exch def
+    { dup max gt {-1 bitshift} {exit} ifelse } loop
+} def
+
+% Divides the given number by 10 untill it's a decimal number
+/todec {
+    { dup 1 ge {.1 mul} {exit} ifelse } loop
+} def
+
 unrealrand % add our new seed
 
+/decrand { rand 10000 mod todec } def
 /smallrand { rand 2147483647 div 2 mul 1 sub abs } def
 /randrotate { smallrand 360 mul smallrand 6 mul mul } def
 /randpattern { patterns smallrand patterns length 1 sub mul round cvi get } def
+
+% Gives a random number within the given range
+% Called as [floor] [ceiling] rangerand
+/rangerand { 
+    exch                % Reverse stack so that it's on top 
+    dup                 % Duplicate the floor
+    3 1 roll            % Roll the stack [floor] [ceiling] [floor-dup]
+    sub decrand mul add % Subtract [floor] from [ceiling] = [range] multiply
+                        % by the random decimal and add to the [floor]
+} def
 
 /box {
     0 0 moveto
@@ -224,21 +248,36 @@ unrealrand % add our new seed
 /curve      basepatterns 1 get def
 /sharkteeth basepatterns 2 get def
 
+0 6 rangerand ceiling cvi {
+
+/dx cr drawwidth cr sub rangerand def            
+/dy cr drawheight cr sub rangerand def
+
 gsave
     newpath
-        0 0 moveto
-        drawwidth 10 div 0 rlineto
-        0 drawheight rlineto
-        drawwidth 10 div neg 0 rlineto
+        dx dy cr 2 div 0 360 arc
     closepath
     clip
     newpath
         drawwidth 2 div drawheight 2 div translate
-        unrealrand
         drawpattern
-        unrealrand
+    closepath
+grestore
+gsave   
+    /dx 0 cr 0.5 mul rangerand dx add def
+    /dy 0 cr 0.5 mul rangerand dy add def
+
+    newpath
+        dx dy moveto
+        dx dy cr 2 div 0 360 arc
+    closepath
+    clip
+    newpath
+        drawwidth 2 div drawheight 2 div translate
         drawpattern
     closepath
 grestore
 
-showpage
+} repeat
+
+0 0 moveto

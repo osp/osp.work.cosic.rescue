@@ -31,6 +31,7 @@ drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 
 % Support functions
 
+
 /unrealrand {
 	(%Calendar%) currentdevparams dup
 	/Second get exch dup
@@ -41,11 +42,36 @@ drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 	realtime add srand
 } def
 
+/shrinkto {
+    /max exch def
+    
+    {
+        dup max gt {-1 bitshift} {exit} ifelse
+    } loop
+
+} def
+
+% Divides the given number by 10 untill it's a decimal number
+/todec {
+    { dup 1 ge {.1 mul} {exit} ifelse } loop
+} def
+
 unrealrand % add our new seed
 
+/decrand { rand todec } def
 /smallrand { rand 2147483647 div 2 mul 1 sub abs } def
 /randrotate { smallrand 360 mul smallrand 6 mul mul } def
 /randpattern { patterns smallrand patterns length 1 sub mul round cvi get } def
+
+% Gives a random number within the given range
+% Called as [floor] [ceiling] rangerand
+/rangerand { 
+    exch                % Reverse stack so that it's on top 
+    dup                 % Duplicate the floor
+    3 1 roll            % Roll the stack [floor] [ceiling] [floor-dup]
+    sub decrand mul add % Subtract [floor] from [ceiling] = [range] multiply
+                        % by the random decimal and add to the [floor]
+} def
 
 /box {
     0 0 moveto
@@ -225,20 +251,39 @@ unrealrand % add our new seed
 /sharkteeth basepatterns 2 get def
 
 gsave
-    newpath
-        0 0 moveto
-        drawwidth 10 div 0 rlineto
-        0 drawheight rlineto
-        drawwidth 10 div neg 0 rlineto
-    closepath
-    clip
+        unrealrand
+        newpath
+        5 { rand } repeat
+        1 8 rangerand ceiling cvi {
+            /dx decrand drawwidth 5 div mul def            
+            /dy decrand drawheight mul def
+            dx drawwidth 22 div add dy moveto
+            dx drawwidth 22 div add dy drawwidth 22 div 0 360 arc
+        } repeat 
+        closepath
+    closepath clip
     newpath
         drawwidth 2 div drawheight 2 div translate
-        unrealrand
-        drawpattern
-        unrealrand
+        rand rand rand
         drawpattern
     closepath
 grestore
-
-showpage
+gsave
+        unrealrand
+        newpath
+        5 { rand } repeat
+        1 8 rangerand ceiling cvi {
+            /dx decrand drawwidth 5 div mul def            
+            /dy decrand drawheight mul def
+            dx drawwidth 22 div add dy moveto
+            dx drawwidth 22 div add dy drawwidth 22 div 0 360 arc
+        } repeat 
+        closepath
+    closepath clip
+    newpath
+        drawwidth 2 div drawheight 2 div translate
+        rand rand rand
+        drawpattern
+    closepath
+grestore
+0 0 moveto
