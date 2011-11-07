@@ -1,0 +1,247 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 42.519675 42.519675
+
+% Business Card : 0 0 252.283405 144.566895
+% A6            : 0 0 297.637725 420.9447825
+% A5            : 0 0 420.9447825 595.27545
+% A4            : 0 0 595.27545 841.889565
+% A3            : 0 0 841.889565 1190.5509
+% A2            : 0 0 1190.5509 1683.77913
+% A1            : 0 0 1683.77913 2381.1018
+
+/s 2.834645 def
+
+s s scale
+
+/linethickness 0.4 def
+/period 1.2 def
+/drawwidth 15 def
+/drawheight 15 def
+
+drawheight drawwidth gt {drawheight} {drawwidth} ifelse
+
+2 exp 2 mul sqrt ceiling cvi
+
+/width exch def
+/height width def
+
+/lines height period div ceiling cvi def
+/pi 3.14159 def
+
+% Support functions
+
+/unrealrand {
+	(%Calendar%) currentdevparams dup
+	/Second get exch dup
+	/Minute get exch 
+	/Hour get
+	60 mul add
+	60 mul add
+	realtime add srand
+} def
+
+/shrinkto {
+    /max exch def
+    
+    {
+        dup max gt {-1 bitshift} {exit} ifelse
+    } loop
+
+} def
+
+/todec {
+    {
+        dup 1 ge {.1 mul} {exit} ifelse
+    } loop
+} def
+
+unrealrand % add our new seed
+
+/decrand { rand todec } def
+/smallrand { rand 2147483647 div 2 mul 1 sub abs } def
+/randrotate { smallrand 360 mul smallrand 6 mul mul } def
+/randpattern { patterns smallrand patterns length 1 sub mul round cvi get } def
+
+/box {
+    0 0 moveto
+    exch dup 0 rlineto
+    exch 0 exch rlineto
+    neg 0 rlineto
+} bind def
+
+/drawpattern {
+    linethickness setlinewidth 
+
+    gsave
+        randrotate rotate
+        %0 rotate        
+        width 2 div neg lines period mul 2 div neg translate
+        patterns randpattern exec
+
+        %patterns patterns 7 get exec
+    grestore
+    
+} bind def
+
+/patterns [
+    % 0: Simply lines
+    {
+        lines {
+		    0 0 moveto
+		    0 period translate
+		    width 0 rlineto
+		    stroke
+	    } repeat
+    }
+    
+    % 5: 3 Sinus waves
+    { 3 sinuswave exec }
+    
+    % 5: 3 Sinus waves
+    { 2 sinuswave exec }
+
+    % 6: 1 Sinus wave
+    { 1 sinuswave exec }
+
+    % 7: Big curve
+    { 20 curve exec }
+
+    % 8: Medium curve
+    { 15 curve exec }
+
+    % 9: Small curve
+    { 10 curve exec }
+
+    % 10: Inv big curve
+    { 20 neg curve exec }
+
+    % 11: Inv medium curve
+    { 15 neg curve exec }
+
+    % 12: Inv small curve
+    { 10 neg curve exec }
+    
+    % 15: 4 Sharkteeth
+    { 4 11 sharkteeth exec }
+
+    % 16: 3 Sharkteeth
+    { 3 14 sharkteeth exec }
+
+    % 17: 2 Sharkteeth
+    { 2 17 sharkteeth exec }
+
+    % 19: 1 Sharkteeth
+    { 1 20 sharkteeth exec }
+] def % end patterns
+
+/basepatterns [
+    % begin sinus wave
+    { 
+        % How many curves do we need to draw
+        /curves exch def
+        % Figure out how wide they need to be
+        /cw width curves div ceiling def
+        % Define the half of that width
+        /cwh cw 2 div def
+        
+        % If we only draw a small amount of curves a
+        % big part of the drawing is not covered.
+        % Therefor we're going to draw extra lines
+        % And need extra translation.
+        
+        % gap is curvewidth / (2pi) = .5 curvewidth / pi = cwh pi div
+        % fill lines is gap period div ceiling cvi
+        % filllinestop = filllinesbottom = gap period div 2 div ceiling cvi
+
+        /gap cw pi div def
+        /extralines gap period div ceiling cvi def
+
+        % And perform extra translation
+        0 gap 2 div neg translate 
+
+        lines extralines add{
+		    gsave
+			    curves {
+				    0 0 moveto
+				    cwh cwh cwh cwh neg cw 0 curveto
+				    cw 0 translate
+			    } repeat
+				
+                stroke
+		    grestore
+
+		    0 period translate
+	    } repeat
+    }
+       
+    % Draws a curve width given height,
+    % height defined as a percentage of the width
+    {
+        /h exch 100 div width mul def % Height of the curve
+        /c width 2 div def % Define center of curve
+ 
+        /gap h def
+        /extralines gap abs period div ceiling cvi def
+
+        0 gap neg translate
+
+        lines extralines add {
+            0 0 moveto
+            c h c h width 0 curveto stroke
+            0 period translate
+        } repeat
+    }
+    
+    % Draws sharkteeth. As defined by
+    % points and height
+    {
+        /h exch 100 div height mul ceiling cvi def % Height of the points
+        /p exch def % Amount of points
+        /pw width p div ceiling cvi def
+        /pwh pw 2 div def
+       
+        /extralines h period div ceiling cvi def
+    
+        0 h neg translate
+
+        lines extralines add{          
+            gsave
+                0 0 moveto
+                p {
+                    pwh h rlineto 
+                    pwh h neg rlineto 
+                    pw 0 translate                 
+                } repeat
+                stroke
+            grestore
+            0 period translate
+        } repeat
+    }
+] def % end base patterns
+
+/sinuswave  basepatterns 0 get def
+/curve      basepatterns 1 get def
+/sharkteeth basepatterns 2 get def
+
+gsave
+    newpath
+       0 0 moveto
+       %drawwidth 0 rlineto
+       %0 drawheight rlineto
+       %drawwidth neg 0 rlineto
+       drawwidth 2 div drawheight 2 div drawheight 2 div 0 360 arc
+    closepath
+    clip
+    newpath
+        drawwidth 2 div drawheight 2 div translate
+        unrealrand
+        drawpattern
+        unrealrand
+        unrealrand
+        unrealrand
+        unrealrand
+        drawpattern
+    closepath
+grestore
+
+showpage
