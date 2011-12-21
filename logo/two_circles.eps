@@ -1,0 +1,308 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 125 125
+
+% showpage called at the end to treat this eps as a normal ps file during testing
+% showpage is redefined to nothing here for the ghostscript bug report
+% /showpage {} def
+
+
+/linethickness 0.52 def
+
+% Support functions
+
+/unrealrand {
+	(%Calendar%) currentdevparams dup
+	/Second get exch dup
+	/Minute get exch 
+	/Hour get 
+	%/Day get exch dup
+	%/Month get exch dup
+	%30 mul add
+	%24 mul add
+	60 mul add
+	60 mul add
+	realtime add srand
+} def
+
+unrealrand % add our new seed
+
+/smallrand { rand 2147483647 div 2 mul 1 sub abs } def
+/randrotate { smallrand 360 mul } def
+/randpattern { patterns smallrand patterns length 1 sub mul round cvi get } def
+/randline { smallrand 3 mul cvi } def
+
+/base {
+    /linethickness exch def
+	linethickness 50 randrotate smallrand 6 mul mul randpattern exec
+} def
+
+/reveal {
+    /linethickness exch def
+	linethickness 50 randrotate neg randpattern exec
+} def
+
+%smallrand pop smallrand pop smallrand pop
+
+/patterns [
+
+{ % begin circle1
+	/rot exch def
+	/radius exch def
+	/thick exch def
+	/period 2 def 
+	gsave
+		thick setlinewidth
+
+		rot rotate
+		newpath
+			%radius neg radius neg radius 0 360 arc
+			0 0 radius 0 360 arc
+		closepath clip newpath
+		
+		radius 1 add {
+			radius neg radius neg moveto
+			0 period translate
+			radius 2 mul 0 rlineto
+			stroke
+		} repeat
+	grestore
+} % end circle1
+
+{ % begin circle2
+	/rot exch def
+	/radius exch def
+	/thick exch def
+	/period 2 def
+	gsave
+		thick setlinewidth
+
+		rot rotate
+		newpath
+			0 0 radius 0 360 arc
+		closepath clip newpath
+
+		radius neg radius 1 add neg translate
+		radius 2 add {
+			gsave
+				radius 8 div ceiling cvi {
+					0 0 moveto
+					8 8 8 -8 16 0 curveto
+					stroke
+					16 0 translate
+				} repeat
+			grestore
+			0 period translate
+		} repeat
+	grestore
+} % end circle2
+
+
+{ % begin circle3
+	/rot exch def
+	/radius exch def
+	/thick exch def
+	/period 3 def
+	gsave
+		thick setlinewidth
+
+		rot rotate
+		newpath
+			0 0 radius 0 360 arc
+		closepath clip newpath
+
+		radius neg radius 1 add neg translate
+		radius 4 add {
+			gsave
+				radius 8 div ceiling cvi {
+					0 0 moveto
+					8 8 8 -16 16 0 curveto
+					stroke
+					16 0 translate
+				} repeat
+			grestore
+			0 period translate
+		} repeat
+	grestore
+} % end circle3
+
+{ % begin circle4
+	/rot exch def
+	/radius exch def
+	/thick exch def
+	/period 3 def 
+	gsave
+		thick setlinewidth
+
+		rot rotate
+		newpath
+			%radius neg radius neg radius 0 360 arc
+			0 0 radius 0 360 arc
+		closepath clip newpath
+		
+		radius radius 2 div cvi add {
+			radius neg radius 2 mul neg moveto
+			0 period translate
+			radius radius rlineto
+			radius radius neg rlineto
+			stroke
+		} repeat
+	grestore
+} % end circle4
+
+{ % begin circle5
+	/rot exch def
+	/radius exch def
+	/thick exch def
+	/period 3 def 
+
+	/quarter { radius 4 div cvi } def
+
+	gsave
+		thick setlinewidth
+
+		rot rotate
+		newpath
+			%radius neg radius neg radius 0 360 arc
+			0 0 radius 0 360 arc
+		closepath clip newpath
+		
+		radius radius 2 div cvi add {
+			radius neg radius 2 mul neg moveto
+			0 period translate
+			5 {
+				quarter quarter rlineto
+				quarter quarter neg rlineto
+			} repeat
+			stroke
+		} repeat
+	grestore
+} % end circle5
+
+{ % begin circle6
+	/rot exch def
+	/radius exch def
+	/thick exch def
+	/period 3 def 
+
+	/half { radius 2 div cvi } def
+
+	gsave
+		thick setlinewidth
+
+		rot rotate
+		newpath
+			%radius neg radius neg radius 0 360 arc
+			0 0 radius 0 360 arc
+		closepath clip newpath
+		
+		radius radius 2 div cvi add {
+			radius neg radius 2 mul neg moveto
+			0 period translate
+			2 {
+				half half rlineto
+				half half neg rlineto
+			} repeat
+			stroke
+		} repeat
+	grestore
+} % end circle6
+
+{ % begin circle7
+	/rot exch def
+	/radius exch def
+	/thick exch def
+	/period 3 def 
+
+	/half { radius 2 div cvi } def
+
+	gsave
+		thick setlinewidth
+
+		rot rotate
+		newpath
+			%radius neg radius neg radius 0 360 arc
+			0 0 radius 0 360 arc
+		closepath clip newpath
+		
+		radius radius 2 div cvi add {
+			radius neg radius 2 mul neg moveto
+			0 period translate
+			2 {
+				half half 2 div rlineto
+				half half 2 div neg rlineto
+			} repeat
+			stroke
+		} repeat
+	grestore
+} % end circle7
+
+{ % begin circle 8
+	/rot exch def
+	/radius exch def
+	/thick exch def
+	/period 3 def
+	gsave
+		thick setlinewidth
+
+		rot rotate
+		newpath
+			0 0 radius 0 360 arc
+		closepath clip newpath
+
+		radius neg radius 1 add neg translate
+		radius 5 add {
+			gsave
+				radius 24 div ceiling cvi {
+					0 0 moveto
+					24 24 24 -24 48 0 curveto
+					stroke
+					48 0 translate
+				} repeat
+			grestore
+			0 period translate
+		} repeat
+	grestore
+} % end circle8
+
+{ % begin circle9
+	/rot exch def
+	/radius exch def
+	/thick exch def
+	/period 2 def 
+
+	%/half { radius 2 div cvi } def
+
+	gsave
+		thick setlinewidth
+
+		rot rotate
+		newpath
+			%radius neg radius neg radius 0 360 arc
+			0 0 radius 0 360 arc
+		closepath clip newpath
+		
+		radius radius 2 div cvi add {
+			radius neg radius 2 mul neg moveto
+			0 period translate
+			2 {
+				radius radius 2 div rlineto
+				radius radius 2 div neg rlineto
+			} repeat
+			stroke
+		} repeat
+	grestore
+} % end circle9
+
+] def % end patterns
+
+gsave
+75 50 translate
+linethickness base
+grestore
+gsave
+50 75 translate
+unrealrand
+linethickness reveal
+grestore
+
+%showpage
