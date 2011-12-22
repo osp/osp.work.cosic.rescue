@@ -232,17 +232,19 @@ unrealrand % add our new seed
 /curve      basepatterns 1 get def
 /sharkteeth basepatterns 2 get def
 
-/side 200 def
+/side 160 def
 
 gsave
-		200 100 translate 
+		200 120 translate 
+		unrealrand
+		randrotate rotate
 		newpath
 			side 2 div neg dup moveto
 			side 0 rlineto
 			0 side rlineto
 			side neg 0 rlineto
 		closepath
-		clip
+		clip 
     newpath
         unrealrand
 				randrotate
@@ -250,7 +252,9 @@ gsave
     closepath
 grestore
 gsave
-		200 100 translate
+		200 120 translate
+		unrealrand
+		randrotate rotate
     newpath
 			side 2 div neg dup moveto
 			side 0 rlineto
