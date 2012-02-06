@@ -22,6 +22,9 @@ import numpy as np
 
 def make_oblique_4(text, line_spacing=1, slant=1, letter_spacing=1, reverse=False):
     lines = text.splitlines()  # Splits the text at newlines
+    max_len = max([len(x) for x in lines])
+    lines = [x.ljust(max_len) for x in lines]
+
     if reverse:
         lines.reverse()
 
