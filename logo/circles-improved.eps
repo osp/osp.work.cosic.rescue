@@ -1,5 +1,5 @@
 %!PS-Adobe-3.0 EPSF-3.0
-%%BoundingBox: 0 0 252.283405 144.566895
+%%BoundingBox: 0 0 50 50
 
 % Business Card : 0 0 252.283405 144.566895
 % A6            : 0 0 297.637725 420.9447825
@@ -21,10 +21,10 @@
 %/linethickness 0.03 def
 %/period 0.09 def
 
-/linethickness 0.2 mm def
-/period 1 mm def
-/drawwidth 89 mm def
-/drawheight 51 mm def
+/linethickness 0.25 def
+/period 1 def
+/drawwidth 30 def
+/drawheight 30 def
 
 drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 
@@ -231,33 +231,40 @@ unrealrand % add our new seed
 /curve      basepatterns 1 get def
 /sharkteeth basepatterns 2 get def
 
-/bradius 100 def
-/sradius 80 def
+/bradius 20 def
+
+%newpath
+%0 0 moveto
+%100 0 lineto
+%100 100 lineto
+%0 100 lineto
+%closepath
+%stroke
 
 gsave
-		% position of the larger circler
-		200 100 translate 
-		newpath
-			0 0 bradius 0 360 arc
-		closepath
-		clip
+    30 20 translate 
     newpath
-        unrealrand
-				randrotate
-        drawpattern
-    closepath
-grestore
-gsave
-		% position of the smaller circle
-		120 160 translate
-    newpath
-			0 0 sradius 0 360 arc
+        0 0 bradius 0 360 arc
     closepath
     clip
     newpath
         unrealrand
-				randrotate
+            randrotate
         drawpattern
     closepath
 grestore
+
+gsave
+    20 30 translate 
+    newpath
+        0 0 bradius 0 360 arc
+    closepath
+    clip
+    newpath
+        unrealrand
+            randrotate
+        drawpattern
+    closepath
+grestore
+
 showpage

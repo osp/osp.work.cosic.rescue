@@ -12,3 +12,6 @@ venv
 *.tuc
 m_k_i_v*
 *.autosave
+*.pdf
+cards/backs/
+cards/fronts/
