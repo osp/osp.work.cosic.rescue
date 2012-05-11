@@ -39,13 +39,18 @@ drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 % Support functions
 
 /unrealrand {
-	(%Calendar%) currentdevparams dup
-	/Second get exch dup
-	/Minute get exch 
-	/Hour get
-	60 mul add
-	60 mul add
-	realtime add srand
+  {(%Calendar%) currentdevparams dup} stopped
+  {
+    0
+  }
+  {
+    /Second get exch dup
+    /Minute get exch 
+    /Hour get
+    60 mul add
+    60 mul add
+  } ifelse
+  realtime add srand
 } def
 
 unrealrand % add our new seed
@@ -261,4 +266,3 @@ gsave
         drawpattern
     closepath
 grestore
-showpage

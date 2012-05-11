@@ -1,0 +1,46 @@
+FAQ
+===
+
+Why can't I open my eps files on OSX?
+-------------------------------------
+
+The Calendar device is not necessary available on all plateform. Change the code below
+
+    /unrealrand {
+    	(%Calendar%) currentdevparams dup
+    	/Second get exch dup
+    	/Minute get exch 
+    	/Hour get 
+    	60 mul add
+    	60 mul add
+    	realtime add srand
+    } def
+
+With this on
+
+    /unrealrand {
+      {(%Calendar%) currentdevparams dup} stopped
+      {
+        0
+      }
+      {
+        /Second get exch dup
+        /Minute get exch 
+        /Hour get
+        60 mul add
+        60 mul add
+      } ifelse
+      realtime add srand
+    } def
+
+
+Do I need `showpage` at the end of my eps?
+------------------------------------------
+
+No.
+
+either remove the instruction or redinfe it to a void function
+
+    % showpage called at the end to treat this eps as a normal ps file during testing
+    % showpage is redefined to nothing here for the ghostscript bug report
+    % /showpage {} def

@@ -11,17 +11,18 @@
 % Support functions
 
 /unrealrand {
-	(%Calendar%) currentdevparams dup
-	/Second get exch dup
-	/Minute get exch 
-	/Hour get 
-	%/Day get exch dup
-	%/Month get exch dup
-	%30 mul add
-	%24 mul add
-	60 mul add
-	60 mul add
-	realtime add srand
+  {(%Calendar%) currentdevparams dup} stopped
+  {
+    0
+  }
+  {
+    /Second get exch dup
+    /Minute get exch 
+    /Hour get
+    60 mul add
+    60 mul add
+  } ifelse
+  realtime add srand
 } def
 
 unrealrand % add our new seed
