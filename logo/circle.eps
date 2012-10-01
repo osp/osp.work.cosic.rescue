@@ -1,5 +1,5 @@
 %!PS-Adobe-3.0 EPSF-3.0
-%%BoundingBox: 0 0 100 100
+%%BoundingBox: 0 0 125 125
 
 % showpage called at the end to treat this eps as a normal ps file during testing
 % showpage is redefined to nothing here for the ghostscript bug report
@@ -295,22 +295,14 @@ unrealrand % add our new seed
 
 ] def % end patterns
 
-%newpath
-%0 0 moveto
-%200 0 lineto
-%200 200 lineto
-%0 200 lineto
-%closepath
-%stroke
-
 gsave
 75 50 translate
 linethickness base
 grestore
-gsave
-50 75 translate
-unrealrand
-linethickness reveal
-grestore
+%gsave
+%50 75 translate
+%unrealrand
+%linethickness reveal
+%grestore
 
 %showpage
