@@ -39,7 +39,7 @@ Do I need `showpage` at the end of my eps?
 
 No.
 
-either remove the instruction or redinfe it to a void function
+either remove the instruction or redefine it to a void function
 
     % showpage called at the end to treat this eps as a normal ps file during testing
     % showpage is redefined to nothing here for the ghostscript bug report
