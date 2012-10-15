@@ -12,15 +12,15 @@
 /cm { 28.34645 mul } def
 /mm {  2.83465 mul } def
 
-/linethickness 0.7 mm def
-/period 2.1 mm def
+/linethickness 0.25 mm def
+/period .75 mm def
 /drawwidth 33 mm def
 /drawheight 33 mm def
 /fontsize 20 mm def
 
 0 setgray
 
-0 0 0 setrgbcolor
+0 65 255 div 122 255 div setrgbcolor
 
 drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 
@@ -31,6 +31,8 @@ drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 
 /lines height period div ceiling cvi def
 /pi 3.14159 def
+
+% Support functions
 
 /unrealrand {
 	{(%Calendar%) currentdevparams dup} stopped
@@ -373,3 +375,5 @@ grestore
 
 7 mm 10 mm moveto
 (COSIC) show
+
+showpage

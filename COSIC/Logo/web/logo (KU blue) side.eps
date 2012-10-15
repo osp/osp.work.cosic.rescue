@@ -1,5 +1,5 @@
 %!PS-Adobe-3.0 EPSF-3.0
-%%BoundingBox: 0 0 184 230
+%%BoundingBox: 0 0 700 230
 
 % Business Card : 0 0 252.283405 144.566895
 % A6            : 0 0 297.637725 420.9447825
@@ -16,11 +16,9 @@
 /period 2.1 mm def
 /drawwidth 33 mm def
 /drawheight 33 mm def
-/fontsize 20 mm def
+/fontsize 33 mm def
 
 0 setgray
-
-0 0 0 setrgbcolor
 
 drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 
@@ -32,6 +30,7 @@ drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 /lines height period div ceiling cvi def
 /pi 3.14159 def
 
+% Support functions
 /unrealrand {
 	{(%Calendar%) currentdevparams dup} stopped
 	{
@@ -132,16 +131,16 @@ unrealrand % add our new seed
     { 10 neg curve exec }
     
     % 15: 4 Sharkteeth
-    { 4 11 sharkteeth exec }
+    %{ 4 11 sharkteeth exec }
 
     % 16: 3 Sharkteeth
-    { 3 14 sharkteeth exec }
+    %{ 3 14 sharkteeth exec }
 
     % 17: 2 Sharkteeth
-    { 2 17 sharkteeth exec }
+    %{ 2 17 sharkteeth exec }
 
     % 19: 1 Sharkteeth
-    { 1 20 sharkteeth exec }
+    %{ 1 20 sharkteeth exec }
 ] def % end patterns
 
 /basepatterns [
@@ -332,7 +331,6 @@ headerfont setfont
 
 gsave
     drawwidth 1 mul drawheight 1.5 mul translate
-    rot rotate
     % shape 1
     newpath
     drawwidth 1 mul 2 div neg drawwidth 1 mul 2 div neg moveto
@@ -351,7 +349,7 @@ gsave
     closepath
 grestore
 gsave
-    drawwidth 1 mul drawheight 1.5 mul translate
+    drawwidth 1.4	 mul drawheight 1.4 mul translate
     % shape 1
     rot neg rotate
     newpath
@@ -370,6 +368,7 @@ gsave
         drawpattern
     closepath
 grestore
-
-7 mm 10 mm moveto
-(COSIC) show
+gsave
+    73 mm 38 mm moveto
+    (COSIC) show
+grestore

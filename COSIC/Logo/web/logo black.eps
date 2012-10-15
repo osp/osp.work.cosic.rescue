@@ -20,8 +20,6 @@
 
 0 setgray
 
-0 0 0 setrgbcolor
-
 drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 
 2 exp 2 mul sqrt ceiling cvi
@@ -32,6 +30,7 @@ drawheight drawwidth gt {drawheight} {drawwidth} ifelse
 /lines height period div ceiling cvi def
 /pi 3.14159 def
 
+% Support functions
 /unrealrand {
 	{(%Calendar%) currentdevparams dup} stopped
 	{
@@ -355,7 +354,7 @@ gsave
     % shape 1
     rot neg rotate
     newpath
-    drawwidth 1 mul 2 div neg drawwidth 1 mul 2 div neg moveto
+    drawwidth 1.5 mul 2 div neg drawwidth 1 mul 2 div neg moveto
     %drawwidth 0 rlineto
     %0 drawheight rlineto
     %drawwidth neg 0 rlineto
@@ -370,6 +369,7 @@ gsave
         drawpattern
     closepath
 grestore
-
-7 mm 10 mm moveto
-(COSIC) show
+gsave
+    7 mm 10 mm moveto
+    (COSIC) show
+grestore
