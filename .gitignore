@@ -18,3 +18,5 @@ cards/fronts/
 *.aux
 *.dvi
 *.out
+.~lock*
+*.tar.gz
