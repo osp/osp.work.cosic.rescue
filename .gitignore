@@ -15,3 +15,6 @@ m_k_i_v*
 *.pdf
 cards/backs/
 cards/fronts/
+*.aux
+*.dvi
+*.out
