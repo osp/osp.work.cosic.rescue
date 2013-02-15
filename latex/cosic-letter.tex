@@ -1,7 +1,9 @@
 \documentclass[a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[french]{babel}
+\usepackage{fontspec}
+\setmonofont[Path=/home/aleray/fonts/]{persistent_typeface_PropCourierSans.ttf}
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage[french]{babel}
 \usepackage{amsmath}
 \usepackage{amssymb,amsfonts,textcomp}
 \usepackage{color}
@@ -33,7 +35,7 @@
 
 \fancyfoot{} % clear all footer fields
 \fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
-\fancyfoot[RE,LO]{ESAT/COSIC — Research Applied Cryptography\\Kasteelpark Arenberg 10, bus 2446, B3001 Heverlee, Belgium\\+32 (0) 16 32 18 07 — http://cosic.esat.kuleuven.be/}
+\fancyfoot[RE,LO]{\tt ESAT/COSIC — Research Applied Cryptography\\Kasteelpark Arenberg 10, bus 2446, B3001 Heverlee, Belgium\\+32 (0) 16 32 18 07 — http://cosic.esat.kuleuven.be/}
 
 % Pages styles
 \setlength\parindent{0pt}
