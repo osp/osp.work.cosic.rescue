@@ -1,0 +1,34 @@
+{% load mathfilters %}
+
+<PAGEOBJECT OwnPage="{{ forloop.counter0 }}" PTYPE="4" XPOS="108.50456690326" 
+    
+    {% with foo=PAGEHEIGHT|addf:PAGEYPOS|mul:forloop.counter0 bar=PAGEYPOS|mul:forloop.counter %}
+    YPOS="{{ foo|addf:bar|addf:108.25000004252 }}"
+    {% endwith %}
+    
+    WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+    <para PARENT="Propcouriersans" ALIGN="0"/>
+	<ITEXT CH="{{ participant.email }}"/>
+    <para PARENT="Propcouriersans" ALIGN="0"/>
+	<ITEXT CH="{{ participant.homepage }}"/>
+    <para PARENT="Propcouriersans" ALIGN="0"/>
+	<ITEXT CH="{{ participant.phone }}"/>
+    <trail PARENT="Propcouriersans" ALIGN="0"/>
+    <PageItemAttributes/>
+</PAGEOBJECT>
+
+<PAGEOBJECT OwnPage="{{ forloop.counter0 }}" PTYPE="4" XPOS="108.50456692926" 
+    
+    {% with foo=PAGEHEIGHT|addf:PAGEYPOS|mul:forloop.counter0 bar=PAGEYPOS|mul:forloop.counter %}
+    YPOS="{{ foo|addf:bar|addf:58.4395598425197 }}"
+    {% endwith %}
+    
+    WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+    <para PARENT="Propcouriersans" ALIGN="0"/>
+	<ITEXT CH="{{ participant.name }}"/>
+    <para PARENT="Propcouriersans" ALIGN="0"/>
+	<ITEXT CH="{{ participant.position }}"/>
+    <para PARENT="Propcouriersans" ALIGN="0"/>
+    <para/>
+    <PageItemAttributes/>
+</PAGEOBJECT>

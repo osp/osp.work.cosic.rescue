@@ -1,0 +1,30 @@
+{% load mathfilters %}
+
+<PAGE
+      PAGEXPOS="100.00062992126"
+      {% with foo=PAGEHEIGHT|addf:PAGEYPOS|mul:forloop.counter0 bar=PAGEYPOS|mul:forloop.counter %}
+      PAGEYPOS="{{ foo|addf:bar }}"
+      {% endwith %}
+      PAGEWIDTH="240.944881889764"
+      PAGEHEIGHT="{{ PAGEHEIGHT }}"
+      BORDERLEFT="8.50393700787402"
+      BORDERRIGHT="8.50393700787402"
+      BORDERTOP="8.50393700787402"
+      BORDERBOTTOM="8.50393700787402"
+      NUM="0"
+      NAM=""
+      MNAM="Normal"
+      Size="Custom"
+      Orientation="1"
+      LEFT="0"
+      PRESET="0"
+      VerticalGuides="117.874"
+      HorizontalGuides="58.4383"
+      AGhorizontalAutoGap="0"
+      AGverticalAutoGap="0"
+      AGhorizontalAutoCount="1"
+      AGverticalAutoCount="0"
+      AGhorizontalAutoRefer="0"
+      AGverticalAutoRefer="0"
+      AGSelection="0 0 0 0"
+/>
