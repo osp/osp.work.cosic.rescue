@@ -65,23 +65,41 @@
     \hspace{3cm}\thepage/\pageref{LastPage}
 }
 
+% Signature
+\newcommand{\signature}[1] {
+    \hspace{92,652 mm}\parbox{87,713mm}{#1}
+}
+
+% Date + Subject
+\newcommand{\datesubject}[2] {
+    #1\\
+    {\tt Subject:} #2
+}
+
+% Recipient
+\newcommand{\recipient}[1] {
+    \begin{multicols}{2}
+    \hfill\vfill
+    \columnbreak
+    {
+    \tt \fontsize{10.5}{14}
+    To: #1 \\\\
+    }
+    \end{multicols}
+}
+
 \begin{document}
 
-\begin{multicols}{2}
-\hfill\vfill
-\columnbreak
-{
-\tt \fontsize{10.5}{14}
-To: Dr Helen Smith\\
+\recipient{
+Dr Helen Smith\\
 Cryptography and Information Security Group,\\
 77 Massachusetts Ave,\\
 Cambridge, MA, United States
-\\\\
 }
-\end{multicols}
 
-Leuven, March 17, 2012\\
-{\tt Subject:} Recommendation letter for Dan Peel
+\datesubject
+{Leuven, March 17, 2012}
+{Recommendation letter for dan Peel}
 
 Dear Doctor, 
 
@@ -103,4 +121,8 @@ and I am sure will continue to do so as he grows in your business program and be
 Thank you for the opportunity of correspondence,
 
 Sincerely,
+
+\signature{Dr. Antoon Bosselaers,\\Professor, Whiteman}
+
+
 \end{document}
