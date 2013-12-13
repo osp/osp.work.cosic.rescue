@@ -1,0 +1,6 @@
+1. Create a file named sources.list whose content is the path to the source pdf
+2. Run the command:
+
+    podofoimpose sources.list out.pdf arrange.plan lua
+
+For more info, have a look at <http://stdin.fr/Bazar/PoDoFo>.
