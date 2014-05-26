@@ -15,13 +15,20 @@ MarginRight = 40
 MarginBottom = 40
 MarginLeft = 40
 
+--241 x 156
+--298 x 213
+--57 / 2 = 28.5 
+CropBoxWidth = 298
+CropBoxHeight = 213
+Offset = ((CropBoxWidth - SourceWidth) / 2)
+
 -- Effective Width and Height
 AreaWidth = PageWidth - MarginRight - MarginLeft
 AreaHeight = PageHeight - MarginTop - MarginBottom
 
 -- Computes the number of columns and rows
-cols = math.floor(AreaWidth / SourceWidth)
-rows = math.floor(AreaHeight / SourceHeight)
+cols = math.floor(AreaWidth / CropBoxWidth)
+rows = math.floor(AreaHeight / CropBoxHeight)
 itemsPerPage = cols * rows
 
 -- Records
@@ -31,12 +38,12 @@ do
     -- the current column
     currentCol = (currentSourcePage - 1) % cols
     -- the current x position
-    x = MarginLeft + (SourceWidth * currentCol)
+    x = MarginLeft + (CropBoxWidth * currentCol) + Offset
     
     -- the current row
     currentRow = math.floor((currentSourcePage - 1) / cols) % rows
     -- the current y position
-    y = MarginTop + (SourceHeight * currentRow)
+    y = MarginTop + (CropBoxHeight * currentRow) + Offset
 
     -- the current page
     currentTargetPage = math.ceil(currentSourcePage / itemsPerPage)

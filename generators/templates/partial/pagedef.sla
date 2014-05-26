@@ -1,4 +1,4 @@
-{% load mathfilters %}
+{% load mathfilters mathfiltersextra %}
 
 <PAGE
       PAGEXPOS="100.00062992126"

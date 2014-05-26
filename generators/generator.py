@@ -15,19 +15,17 @@ with open('businesscards_2013.csv', 'rb') as csvfile:
             'name'     : row[0],
             'position' : row[1],
             'phone'    : row[2],
-            'email'   : row[3],
-            'homepage' : row[4],
-            'address'  : row[5]
+            'email'    : row[3],
+            'address'  : row[4],
+            'homepage' : row[5]
         }
 
         rows.append(info)
-        #print(info)
-    
+
     PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
-    print(PROJECT_DIR)
     settings.configure(
         TEMPLATE_DIRS=(os.path.join(PROJECT_DIR, 'templates'),),
-        INSTALLED_APPS=('mathfilters',)
+        INSTALLED_APPS=('mathfilters', 'mathfiltersextra')
     )
     t = loader.get_template('cards.sla')
     c = Context({

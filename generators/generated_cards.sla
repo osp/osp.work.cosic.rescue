@@ -819,11 +819,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="bart.mennink@esat.kuleuven.be"/>
+	<ITEXT CH="josep.balasch@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://homes.esat.kuleuven.be/~bmennink/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~jbalasch/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 10 50"/>
+	<ITEXT CH="+32 (0) 16 32 10 35"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -836,9 +836,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Bart Mennink"/>
+	<ITEXT CH="Josep Balasch"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Post Doctoral Researcher"/>
+	<ITEXT CH="Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -855,11 +855,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="benedikt.gierlichs@esat.kuleuven.be"/>
+	<ITEXT CH="bart.mennink@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://homes.esat.kuleuven.be/~bgierlic/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~bmennink/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 18 11"/>
+	<ITEXT CH="+32 (0) 16 32 10 50"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -872,9 +872,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Benedikt Gierlichs"/>
+	<ITEXT CH="Bart Mennink"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Post Doctoral Researcher"/>
+	<ITEXT CH="Postdoctoral Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -891,11 +891,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="danny.decock@esat.kuleuven.be"/>
+	<ITEXT CH="dries.schellekens@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://www.godot.be/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~dschelle/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 10 73"/>
+	<ITEXT CH="+32 (0) 16 32 86 19"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -908,9 +908,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Danny De Cock"/>
+	<ITEXT CH="Dries Schellekens"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Post Doctoral Researcher"/>
+	<ITEXT CH="Postdoctoral Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -927,11 +927,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="dave.singelee@esat.kuleuven.be"/>
+	<ITEXT CH="anthony.vanherrewege@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://homes.esat.kuleuven.be/~dsingele/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~avanherr/personal_site/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 10 27"/>
+	<ITEXT CH="+32 (0) 16 32 1 700"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -944,9 +944,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Dave Singelée"/>
+	<ITEXT CH="Anthony VanHerrewege"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Post Doctoral Researcher"/>
+	<ITEXT CH="Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -963,11 +963,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="dries.schellekens@esat.kuleuven.be"/>
+	<ITEXT CH="antoon.bosselaers@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://homes.esat.kuleuven.be/~dschelle/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~bosselae/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 86 19"/>
+	<ITEXT CH="+32 (0) 16 32 18 07"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -980,9 +980,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Dries Schellekens"/>
+	<ITEXT CH="Antoon Bosselaers"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Post Doctoral Researcher"/>
+	<ITEXT CH="Senior Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1018,7 +1018,7 @@
     <para PARENT="Propcouriersans" ALIGN="0"/>
 	<ITEXT CH="Elena Andreeva"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Post Doctoral Researcher"/>
+	<ITEXT CH="Postdoctoral Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1035,11 +1035,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="frederik.vercauteren@esat.kuleuven.be"/>
+	<ITEXT CH="danny.decock@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://www.esat.kuleuven.be/~fvercaut/"/>
+	<ITEXT CH="http://www.godot.be/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 10 73"/>
+	<ITEXT CH=""/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1052,9 +1052,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Frederik Vercauteren"/>
+	<ITEXT CH="Danny DeCock"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Post Doctoral Researcher"/>
+	<ITEXT CH="Postdoctoral Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1071,11 +1071,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="jens.hermans@esat.kuleuven.be"/>
+	<ITEXT CH="benedikt.gierlichs@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://www.jenshermans.be/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~bgierlic/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 18 18"/>
+	<ITEXT CH="+32 (0) 16 32 18 11"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1088,9 +1088,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Jens Hermans"/>
+	<ITEXT CH="Benedikt Gierlichs"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Post Doctoral Researcher"/>
+	<ITEXT CH="Postdoctoral Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1107,11 +1107,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="kerem.varici@esat.kuleuven.be"/>
+	<ITEXT CH="jens.hermans@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://homes.esat.kuleuven.be/~kvarici/"/>
+	<ITEXT CH="http://www.jenshermans.be/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 10 50"/>
+	<ITEXT CH="+32 (0) 16 32 18 18"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1124,9 +1124,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Kerem Varici"/>
+	<ITEXT CH="Jens Hermans"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Post Doctoral Researcher"/>
+	<ITEXT CH="Postdoctoral Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1145,9 +1145,9 @@
     <para PARENT="Propcouriersans" ALIGN="0"/>
 	<ITEXT CH="nele.mentens@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://www.esat.kuleuven.be/~nmentens/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~nmentens/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 11 62"/>
+	<ITEXT CH="32497440205"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1162,7 +1162,7 @@
     <para PARENT="Propcouriersans" ALIGN="0"/>
 	<ITEXT CH="Nele Mentens"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Post Doctoral Researcher"/>
+	<ITEXT CH="Assistant Professor"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1198,7 +1198,7 @@
     <para PARENT="Propcouriersans" ALIGN="0"/>
 	<ITEXT CH="Nicky Mouha"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Post Doctoral Researcher"/>
+	<ITEXT CH="Postdoctoral Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1215,11 +1215,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="roel.peeters@esat.kuleuven.be"/>
+	<ITEXT CH="svetla.nikova@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://homes.esat.kuleuven.be/~rpeeters/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~snikova/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 96 17"/>
+	<ITEXT CH="+32 (0) 16 32 96 18"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1232,9 +1232,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Roel Peeters"/>
+	<ITEXT CH="Svetla Nikova"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Post Doctoral Researcher"/>
+	<ITEXT CH="Postdoctoral Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1251,11 +1251,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="stefaan.seys@esat.kuleuven.be"/>
+	<ITEXT CH="roel.peeters@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://homes.esat.kuleuven.be/~sseys/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~rpeeters/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 19 69"/>
+	<ITEXT CH="+32 (0) 16 32 96 17"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1268,9 +1268,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Stefaan Seys"/>
+	<ITEXT CH="Roel Peeters"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Post Doctoral Researcher"/>
+	<ITEXT CH="Postdoctoral Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1287,11 +1287,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="svetla.nikova@esat.kuleuven.be"/>
+	<ITEXT CH="stefaan.seys@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://homes.esat.kuleuven.be/~snikova/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~sseys/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 96 18"/>
+	<ITEXT CH="+32 (0) 16 32 19 69"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1304,9 +1304,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Svetla Nikova"/>
+	<ITEXT CH="Stefaan Seys"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Post Doctoral Researcher"/>
+	<ITEXT CH="Postdoctoral Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1323,11 +1323,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="bart.preneel@esat.kuleuven.be"/>
+	<ITEXT CH="dave.singelee@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://homes.esat.kuleuven.be/~preneel/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~dsingele/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 11 48"/>
+	<ITEXT CH="+32 (0) 16 32 10 27"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1340,9 +1340,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Bart Preneel"/>
+	<ITEXT CH="Dave Singelée"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Professor"/>
+	<ITEXT CH="Postdoctoral Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1359,11 +1359,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="claudia.diaz@esat.kuleuven.be"/>
+	<ITEXT CH="frederik.vercauteren@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://homes.esat.kuleuven.be/~cdiaz/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~fvercaut/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 18 14"/>
+	<ITEXT CH="+32 (0) 16 32 10 73"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1376,9 +1376,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Claudia Diaz"/>
+	<ITEXT CH="Frederik Vercauteren"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Professor"/>
+	<ITEXT CH="Postdoctoral Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1395,11 +1395,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="ingrid.verbauwhede@esat.kuleuven.be"/>
+	<ITEXT CH="saartje.verheyen@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://homes.esat.kuleuven.be/~iverbauw/"/>
+	<ITEXT CH="http://www.cosic.be/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 86 25"/>
+	<ITEXT CH="+32 (0) 16 32 18 85"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1412,9 +1412,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Ingrid Verbauwhede"/>
+	<ITEXT CH="Saartje Verheyen"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Professor"/>
+	<ITEXT CH="Project Coordinator"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1431,11 +1431,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="vincent.rijmen@esat.kuleuven.be"/>
+	<ITEXT CH="claudia.diaz@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://www.esat.kuleuven.be/cosic/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~cdiaz/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 10 68"/>
+	<ITEXT CH="+32 (0) 16 32 18 14"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1448,7 +1448,7 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Vincent Rijmen"/>
+	<ITEXT CH="Claudia Diaz"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
 	<ITEXT CH="Professor"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
@@ -1467,11 +1467,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="saartje.verheyen@esat.kuleuven.be"/>
+	<ITEXT CH="bart.preneel@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://www.cosic.be/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~preneel/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 18 85"/>
+	<ITEXT CH="+32 (0) 16 32 11 48"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1484,9 +1484,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Saartje Verheyen"/>
+	<ITEXT CH="Bart Preneel"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Project Coordinator"/>
+	<ITEXT CH="Professor"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1503,11 +1503,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="anthony.vanherrewege@esat.kuleuven.be"/>
+	<ITEXT CH="vincent.rijmen@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://homes.esat.kuleuven.be/~avanherr/"/>
+	<ITEXT CH="http://www.esat.kuleuven.be/cosic/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 1 700"/>
+	<ITEXT CH="+32 (0) 16 32 10 68"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1520,9 +1520,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Anthony Van Herrewege"/>
+	<ITEXT CH="Vincent Rijmen"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Researcher"/>
+	<ITEXT CH="Professor"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1539,11 +1539,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="josep.balasch@esat.kuleuven.be"/>
+	<ITEXT CH="ingrid.verbauwhede@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://homes.esat.kuleuven.be/~jbalasch/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~iverbauw/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 10 35"/>
+	<ITEXT CH="+32 (0) 16 32 86 25"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1556,9 +1556,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Josep Balasch"/>
+	<ITEXT CH="Ingrid Verbauwhede"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Researcher"/>
+	<ITEXT CH="Professor"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>
@@ -1575,11 +1575,11 @@
     
     WIDTH="223.9370079" HEIGHT="48.65677165" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 223.937 0 223.937 0 223.937 0 223.937 0 223.937 48.6568 223.937 48.6568 223.937 48.6568 223.937 48.6568 0 48.6568 0 48.6568 0 48.6568 0 48.6568 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="antoon.bosselaers@esat.kuleuven.be"/>
+	<ITEXT CH="tomer.ashur@esat.kuleuven.be"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="http://homes.esat.kuleuven.be/~bosselae/"/>
+	<ITEXT CH="http://homes.esat.kuleuven.be/~tashur/"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="+32 (0) 16 32 18 07"/>
+	<ITEXT CH="+32 (0) 16 32 03 66"/>
     <trail PARENT="Propcouriersans" ALIGN="0"/>
     <PageItemAttributes/>
 </PAGEOBJECT>
@@ -1592,9 +1592,9 @@
     
     WIDTH="109.370063" HEIGHT="47.56044016" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 109.37 0 109.37 0 109.37 0 109.37 0 109.37 47.5604 109.37 47.5604 109.37 47.5604 109.37 47.5604 0 47.5604 0 47.5604 0 47.5604 0 47.5604 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Antoon Bosselaers"/>
+	<ITEXT CH="Tomer Ashur"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
-	<ITEXT CH="Senior Researcher"/>
+	<ITEXT CH="Researcher"/>
     <para PARENT="Propcouriersans" ALIGN="0"/>
     <para/>
     <PageItemAttributes/>

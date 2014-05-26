@@ -1,4 +1,4 @@
-{% load mathfilters %}
+{% load mathfilters mathfiltersextra%}
 
 <PAGEOBJECT OwnPage="{{ forloop.counter0 }}" PTYPE="4" XPOS="108.50456690326" 
     
